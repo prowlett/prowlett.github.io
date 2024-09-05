@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1725540365.638433">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1725547985.043796">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725540365.638433">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1725547985.043796">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1725540365.638433">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1725547985.043796">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1725540365.638433', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1725547985.043796', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1725540365.638433"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1725547985.043796"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1725540365.638433"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1725547985.043796"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1725540365.638433"></script>
+            <script defer src="../../static/customisation.js?build_time=1725547985.043796"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1725540365.638433" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1725540365.638433" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1725540365.638433" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1725547985.043796" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1725547985.043796" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1725547985.043796" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1725540365.638433">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1725547985.043796">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725540365.638433">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1725547985.043796">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -422,6 +422,8 @@
             <a rel="prev" href="../installing_python_3_/installing_python_3/index.html">Previous: Installing Python 3 - Linux</a>
             
             
+            <a rel="next" href="../getting_started_wi_1/index.html">Next: Getting Started with GitHub</a>
+            
         </p>
         
     </nav>
@@ -462,58 +464,7 @@
     </li>
 
     <li>
-        <a href="#get_setup_to_do_math">Get setup to do maths</a>
-        
-    </li>
-
-    <li>
-        <a href="#do_calculations">Do calculations</a>
-        
-    </li>
-
-    <li>
-        <a href="#one_command_at_a_tim">One command at a time</a>
-        
-    </li>
-
-    <li>
-        <a href="#evaluating_an_expres">Evaluating an expression</a>
-        
-    </li>
-
-    <li>
-        <a href="#simplifying_expressi">Simplifying expressions</a>
-        
-    </li>
-
-    <li>
-        <a href="#expanding_expression">Expanding expressions</a>
-        
-    </li>
-
-    <li>
-        <a href="#solving_equations">Solving equations</a>
-        
-    </li>
-
-    <li>
-        <a href="#calculus">Calculus</a>
-        
-        <ol>
-            
-            
-    <li>
-        <a href="#differentiation">Differentiation</a>
-        
-    </li>
-
-    <li>
-        <a href="#integration">Integration</a>
-        
-    </li>
-
-            
-        </ol>
+        <a href="#run_some_code">Run some code</a>
         
     </li>
 
@@ -531,7 +482,7 @@
     <article class="item-content" id="item-content">
         <section>
 <h1 id="getting_started_with">Getting started with Python</h1>
-<p>Here we are going to type commands into the IDLE Shell to show some of the mathematical functionality in Python.</p>
+<p>Here we are going to type commands into the IDLE Shell to check Python has loaded and is working.</p>
 <h2 id="load_idle_shell">Load IDLE Shell</h2>
 <ol>
 <li>
@@ -539,111 +490,32 @@
 </li>
 <li>
 <p>When this shows you a IDLE Shell, check that what loads says "Python 3.something" at the top and not "Python 2.something". If it says "Python 2.something" on opening, then something has gone wrong (ask for help). </p>
-<figure><img alt="IDLE editor shell window" src="images/idle.png"/></figure>
+<figure><img alt="IDLE editor shell window" src="images/idle-0000.png"/></figure>
 </li>
 </ol>
-<h2 id="get_setup_to_do_math">Get setup to do maths</h2>
+<h2 id="run_some_code">Run some code</h2>
 <ol>
 <li>
-<p>Type or copy this command and press enter to load maths options. Nothing should happen, Python just runs your command and produces no output. </p>
-<div class="highlight"><pre><span></span>from sympy import *
+<p>Type of copy this command and press enter. You should find Python outputs "Hello, world!".</p>
+<div class="highlight"><pre><span></span>print("Hello, world!")
 </pre></div>
 </li>
 <li>
-<p>Type or copy this command and press enter to define common letters that we might want to use as variable names. Again there is no output.</p>
-<div class="highlight"><pre><span></span>from sympy.abc import x,y,z,t,n
+<p>Try some simple calculator operations. For example, multiple two numbers using <code>*</code>.</p>
+<div class="highlight"><pre><span></span>7*8
+</pre></div>
+</li>
+<li>
+<p>Let's try some more advanced mathematics. First we must import additional maths functionality. </p>
+<div class="highlight"><pre><span></span>from sympy import sin
+</pre></div>
+<p>Now we can ask for <script type="math/tex">\sin(1.3)</script> using</p>
+<div class="highlight"><pre><span></span>sin(1.3)
 </pre></div>
 </li>
 </ol>
-<h2 id="do_calculations">Do calculations</h2>
-<p>Now we are ready to do some maths. The IDLE Shell will take commands and act like an advanced calculator, similar to how you might have seen with other programs such as Matlab. </p>
-<p>For example, you can do basic calculations. Type a formula involving numbers and it will reply with the answer. You can use <code>+</code> and <code>-</code> as well as <code>*</code> for multiplication and <code>\</code> for division. For example, you could try this and Python should respond with the answer.</p>
-<div class="highlight"><pre><span></span>2*(5+7)
-</pre></div>
-<p>There are two main ways computers understand powers. Some programs use <code>^</code>, as in <code>2^6</code>, and others use <code>**</code>, as in <code>2**6</code>. Python uses <code>**</code>. Try this</p>
-<div class="highlight"><pre><span></span>(5+4)**2*4/2
-</pre></div>
-<h2 id="one_command_at_a_tim">One command at a time</h2>
-<p>Sometimes on this page, I might give several commands. You must run these one at a time. (We'll deal with writing programs, where a sequences of commands are given all together, next week.)</p>
-<p>For example, if you copy all these lines into the IDLE Shell together, you will get an error <code>SyntaxError: multiple statements found while compiling a single statement</code>. Instead, copy across one at a time.</p>
-<div class="highlight"><pre><span></span>a = 12
-b = 18
-a*b
-</pre></div>
-<h2 id="evaluating_an_expres">Evaluating an expression</h2>
-<p>We can define an expression using the variable names we have told Python about. Type and run this command to define a function function <script type="math/tex">f(x)=x^7 + 3 x^5 + 9</script>. There is no response at this stage.</p>
-<div class="highlight"><pre><span></span>f = x**7 + 3 * x**5 + 9
-</pre></div>
-<p>Now we can evaluate <script type="math/tex">f(x)</script> at particular values of <script type="math/tex">x</script>. We do this using a command <code>subs</code> to substitute values into our function. For example, type and run this command to evaluate <script type="math/tex">f(15)</script>. </p>
-<div class="highlight"><pre><span></span>f.subs(x, 15)
-</pre></div>
-<p>Sometimes, Python keeps things in exact form rather than giving a decimal number. For example, here we ask it to substitute <script type="math/tex">x=2</script> into the expression <script type="math/tex">\sqrt{x}</script> and it just says <code>sqrt(2)</code>. Runs these commands one at a time.</p>
-<div class="highlight"><pre><span></span>s = sqrt(x)
-s.subs(x,2)
-</pre></div>
-<p>We can get a decimal number from a SymPy expression using <code>.evalf()</code>. For example, here is a version of the example above where we ask for a decimal form at the end.</p>
-<div class="highlight"><pre><span></span>s.subs(x,2).evalf()
-</pre></div>
-<h2 id="simplifying_expressi">Simplifying expressions</h2>
-<p>One use of a symbolic computation package is to simplify mathematical expressions, which we can do in SymPy using <code>simplify</code>. Here we simplify</p>
-<script type="math/tex; mode=display"> \cos(x)\sin^2(x) + \frac{x^3+x^2-x}{x^2+x-1} + \cos^3(x) </script>
-<div class="highlight"><pre><span></span>simplify(cos(x)*sin(x)**2 + (x**3 + x**2 - x)/(x**2 + x - 1) + cos(x)**3)
-</pre></div>
-<p>One useful thing simplification can do for us is tell us whether two expressions are algebraically equivalent. Take, for example, <script type="math/tex">(2x + 3)^2</script> and <script type="math/tex">4x^2+12x+9</script>. If we simplify <script type="math/tex">(2x + 3)^2 - (4x^2+12x+9)</script>, then if these expressions are the same we should get <script type="math/tex">0</script>.</p>
-<div class="highlight"><pre><span></span>simplify((2*x + 3)**2 - (4*x**2 + 12*x + 9))
-</pre></div>
-<h2 id="expanding_expression">Expanding expressions</h2>
-<p>We can expand expressions using <code>expand</code>. For example, here we expand <script type="math/tex"> (x^9-2)^4 (x^4+x^2+7) </script>. </p>
-<div class="highlight"><pre><span></span>expand((x**9-2)**4*(x**4+x**2+7))
-</pre></div>
-<h2 id="solving_equations">Solving equations</h2>
-<p>SymPy has a command called <code>solve</code> which takes an expression and puts it equal to zero, then tries to solve it.</p>
-<p>Here is a simple example - this takes <script type="math/tex">\sin(x)</script> as the input and puts this equal to zero, so the equation it is trying to solve is <script type="math/tex">\sin(x)=0</script>.</p>
-<div class="highlight"><pre><span></span>solve(sin(x))
-</pre></div>
-<p>If you want to solve an equation that is not equal to zero, the simplest thing to do might be to rearrange it for zero. For example, if you want to solve <script type="math/tex">x^2 = -4</script>, ask <code>solve</code> to solve <script type="math/tex">x^2+4=0</script>.</p>
-<div class="highlight"><pre><span></span>solve(x**2+4)
-</pre></div>
-<p>Notice how sympy uses <code>I</code> for <script type="math/tex">\mathrm{i}=\sqrt{-1}</script>? To use this you need to multiply <code>I</code> by a number and don't forget the multiplication <code>*</code>, for example to enter <script type="math/tex">3i</script> you would enter</p>
-<div class="highlight"><pre><span></span>3*I
-</pre></div>
-<p>You can use <code>solve</code> to combine powers in an expression. For example, to find a value for <script type="math/tex">n</script> in <script type="math/tex">2^n</script> that equals <script type="math/tex">2^{3} \times 2^{5} \times 2^{7}</script>, run this code.</p>
-<div class="highlight"><pre><span></span>solve(2**3*2**5*2**7-2**n)
-</pre></div>
-<p>We can solve systems of equations by passing them in a list to the <code>solve</code> function. Take the following system of equations:</p>
-<script type="math/tex; mode=display">\begin{align*}
-3x+2y-4z&=-27\text{;}\\
-8x+15y-3z&=1\text{;}\\
-5x+4y+z&=10\text{.}
-\end{align*}</script>
-<p>We can solve this system using <code>solve</code> - remember we rearrange each equation to be equal to zero. The list is in square brackets <code>[...]</code> with commas <code>,</code> between items. </p>
-<div class="highlight"><pre><span></span>solve([3*x+2*y-4*z+27,8*x+15*y-3*z-1,5*x+4*y+z-10])
-</pre></div>
-<h2 id="calculus">Calculus</h2>
-<p>Let's do a bit of calculus.</p>
-<h3 id="differentiation">Differentiation</h3>
-<p>Here we differentiate <script type="math/tex"> \cos^3(t) + \sin^2(t) </script> with respect to <script type="math/tex">t</script>.</p>
-<div class="highlight"><pre><span></span>diff(cos(t)**3 + sin(t)**2,t)
-</pre></div>
-<p>Here is a more complicated example using <code>solve</code> to find the stationary points of a function</p>
-<script type="math/tex; mode=display"> f(x) = 25 x^6 + 78 x^5 - 45 x^4 </script>
-<p>First we define <code>f</code>.</p>
-<div class="highlight"><pre><span></span>f = 25 * x**6 + 78 * x**5 - 45 * x**4
-</pre></div>
-<p>Now we can use solve to get the <script type="math/tex">x</script> values when <script type="math/tex">f(x)=0</script>:</p>
-<div class="highlight"><pre><span></span>solve(diff(f,x))
-</pre></div>
-<p>We can find the value of <script type="math/tex">f(x)</script> at these points using <code>subs</code>. For example, to find the value of <script type="math/tex">f(3)</script>:</p>
-<div class="highlight"><pre><span></span>f.subs(x,3)
-</pre></div>
-<h3 id="integration">Integration</h3>
-<p>Here we evaluate <script type="math/tex"> \int t^2 \cos(t) \, \mathrm{d}t </script>.</p>
-<div class="highlight"><pre><span></span>integrate(t**2 * cos(t),t)
-</pre></div>
-<p>To solve a definite integral, we pass a list that includes the variable, the lower limit and the upper limit, and use <code>.evalf()</code> to get a decimal number. Here we compute</p>
-<script type="math/tex; mode=display"> \int_{2\pi}^{9\pi/4} t^2 \cos(t) \, \mathrm{d}t\text{.} </script>
-<div class="highlight"><pre><span></span>integrate(t**2 * cos(t),[t,2*pi,9/4*pi]).evalf()
-</pre></div>
+<p>If you got the output "Hello, world!", "56" and "0.963558185417193", then congratulations - you have Python running. </p>
+<figure><img alt="IDLE with commands and output as described above" src="images/idle-gettingstarted.png"/></figure>
 </section>
 
     </article>
