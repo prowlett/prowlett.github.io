@@ -1,0 +1,1324 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2024-09-11" />
+        
+
+        <title>Problem solving introduction | Proof and Reasoning</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1726069090.440946">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1726069090.440946">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1726069090.440946">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1726069090.440946', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1726069090.440946"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1726069090.440946"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1726069090.440946"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1726069090.440946" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1726069090.440946" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1726069090.440946" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1726069090.440946">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1726069090.440946">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Proof and Reasoning</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Problem solving</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Problem solving introduction
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../collected_quotes/index.html">Previous: Collected quotes</a>
+            
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="problem_solving_intr.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#what_does_this_tell_">What does this tell us?</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_happens_when_yo">What happens when you encounter an unseen problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_you_can_solve_it">If you can solve it</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_you_can_t_solve_i">If you can’t solve it</a>
+        
+    </li>
+
+    <li>
+        <a href="#advice_for_problem_s">Advice for problem solving</a>
+        
+    </li>
+
+    <li>
+        <a href="#1_plan">1. Plan</a>
+        
+    </li>
+
+    <li>
+        <a href="#2_carry_out_your_pla">2. Carry out your plan</a>
+        
+    </li>
+
+    <li>
+        <a href="#3_review">3. Review</a>
+        
+    </li>
+
+    <li>
+        <a href="#3_revi_1">3. Review</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_does_this_mean_">What does this mean for an unseen problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#attempting_a_solutio">Attempting a solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_all_else_fails_an">If all else fails and you can’t find a solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_you_do_find_a_sol">If you do find a solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#golden_rule_for_this">Golden rule for this module</a>
+        
+    </li>
+
+    <li>
+        <a href="#no_spoilers_">No spoilers!</a>
+        
+    </li>
+
+    <li>
+        <a href="#mathematical_thinkin">Mathematical thinking</a>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        
+<section class="beamer-frame">
+<div class="beamer-columns">
+<div class="beamer-column">
+<ul class="itemize" id="a0000000002">
+<li id="a0000000003">
+<p>
+The oldest written mathematics contains two kinds of content: 
+</p>
+<ol class="enumerate" id="a0000000004">
+<li id="a0000000005" value="">
+<p>
+Methods for serious, important, useful problems, like 
+</p>
+<ul class="itemize" id="a0000000006">
+<li id="a0000000007">
+<p>
+What is the volume of a cylindrical granary of diameter 9 and height 10? 
+</p>
+</li>
+<li id="a0000000008">
+<p>
+If 10 <i class="itshape">hekat</i> of fat are issued to last a year, how much can be used up in a day? 
+</p>
+</li>
+<li id="a0000000009">
+<p>
+In a fair trade, how many loaves made from 45 <i class="itshape">hekat</i> of grain should be exchanged for 100 loaves made from 10 <i class="itshape">hekat</i> of grain? 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000010" value="">
+<p>
+But also playful diversions, like 
+</p>
+<ul class="itemize" id="a0000000011">
+<li id="a0000000012">
+<p>
+Think of a number. Add two-thirds of the number to itself, take away a third of the result, and give the answer. 
+</p>
+</li>
+<li id="a0000000013">
+<p>
+Find a number such that when two-thirds of it is added and then one third of the sum, a third of the total is equal to 10. 
+</p>
+</li>
+<li id="a0000000014">
+<p>
+In each of 7 houses, there are 7 cats. Each cat catches 7 mice. Each mouse would eat 7 ears of corn, each ear of corn would, if sown, produce 7 <i class="itshape">hekat</i> of grain. How many houses, cats, mice, ears and hekats in total? 
+</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<span class="vspace" style="height: -28.452755905511815pt"></span> <div class="centered"><img alt="papyrus with writing" src="images/img-0001.jpg" style="width:469.755pt"/></div> <small class="tiny"><b class="bfseries">Image</b>: © Trustees of the British Museum.<br/></small>
+</div>
+</div>
+<p>
+<span class="vspace bigskip"></span>
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="what_does_this_tell_">What does this tell us?</h2>
+</header>
+<ul class="itemize" id="a0000000015">
+<li id="a0000000016">
+</li>
+<li id="a0000000017">
+<p>
+For as long as we have evidence of mathematics, it has both practical applications and a playful, curious side. 
+</p>
+<p>
+Plato tells us the Ancient Egyptians taught maths to their children through play, and recommends this. 
+</p>
+<p>
+Throughout history, we have evidence of mathematicians playing with puzzles and curious oddities, and trying out ideas around the maths they are using.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000018">
+</li>
+<li id="a0000000019">
+<p>
+Mathematics is often presented as a neat, finished product. 
+</p>
+<p>
+But it has another side, creative, messy, playful, and experimental. Pólya called this “mathematics in the making”. 
+</p>
+<p>
+The neat presentation hides this method of discovery, but it was always there – and it involved mistakes, mis-steps, and dead-ends.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000020">
+</li>
+<li id="a0000000021">
+<p>
+This means you have only been shown the products of doing mathematics rather than being shown the process by which it was created. 
+</p>
+<p>
+This module includes some of the products, but really it is about thinking, trying to teach you to solve problems and make mathematics. 
+</p>
+<p>
+So ask questions, play around, and be curious!
+</p>
+</li>
+<li id="">
+</li>
+</ul>
+</section>
+<section class="beamer-section" id="a0000000022">
+<h2 aria-hidden="true" class="beamer-section-heading" id="what_happens_when_yo">What happens when you encounter an unseen problem?</h2>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_you_can_solve_it">If you can solve it</h2>
+</header>
+<ul class="itemize" id="a0000000023">
+<li id="a0000000024">
+<p>
+Gosh, well done! 
+</p>
+</li>
+<li id="a0000000025">
+<p>
+Remember, we are interested in your problem-solving abilities. The fact you can solve this problem is lovely, but may just be a fluke or coincidence. 
+</p>
+</li>
+<li id="a0000000026">
+<p>
+Can you do it on different unseen problems, or did you get lucky? 
+</p>
+</li>
+<li id="a0000000027">
+<p>
+It’s good if you are able to communicate your result clearly and show us you solved this via a sensible problem-solving method. 
+</p>
+</li>
+<li id="a0000000028">
+<p>
+Perhaps try a different problem. Better to practice when you can’t just see the solution. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_you_can_t_solve_i">If you can’t solve it</h2>
+</header>
+<ul class="itemize" id="a0000000029">
+<li id="a0000000030">
+<p>
+Good! Here’s where it gets interesting. 
+</p>
+</li>
+<li id="a0000000031">
+<p>
+There are problem-solving approaches you can try to get to a solution. 
+</p>
+</li>
+<li id="a0000000032">
+<p>
+For this module: 
+</p>
+<ul class="itemize" id="a0000000033">
+<li id="a0000000034">
+<p>
+it is very important that you try a sensible problem-solving approach which has a good chance at working towards a solution; 
+</p>
+</li>
+<li id="a0000000035">
+<p>
+the aim is to learn about problem solving, not necessarily to solve a particular problem; 
+</p>
+</li>
+<li id="a0000000036">
+<p>
+this is especially true if your solution relies on you getting a hint or sneaking a look at the answer; 
+</p>
+</li>
+<li id="a0000000037">
+<p>
+acknowledge that this is hard, because the emotions in problem solving are all around getting a solution. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000038">
+<h2 aria-hidden="true" class="beamer-section-heading" id="advice_for_problem_s">Advice for problem solving</h2>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="1_plan">1. Plan</h2>
+</header>
+<ul class="itemize" id="a0000000039">
+<li id="a0000000040">
+<p>
+Advice: 
+</p>
+<ul class="itemize" id="a0000000041">
+<li id="a0000000042">
+</li>
+<li id="a0000000043">
+<p>
+Stop and really read the problem. 
+</p>
+<p>
+Ask yourself: What am I being asked to do? What information have I been given? What information is missing? What would a solution look like?
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000044">
+</li>
+<li id="a0000000045">
+<p>
+Draw a picture. Introduce suitable notation for the information you have been given and information you are being asked for.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000046">
+</li>
+<li id="a0000000047">
+<p>
+Have you seen a similar problem before? How did you solve that one?
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000048">
+</li>
+<li id="a0000000049">
+<p>
+Separate the problem into smaller parts and examine them separately.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000050">
+</li>
+<li id="a0000000051">
+<p>
+Can you write the problem in a different way? Try it. Is what you have written actually the same problem? If not, what is different? If it is, can you solve this version of the problem? 
+</p>
+<p>
+Can you solve a related problem? Can you remove part of the restriction and solve a more general problem? Or, can you come up with a specific example and solve that? Do your solutions help you plan to approach the main problem?
+</p>
+</li>
+<li id="">
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="2_carry_out_your_pla">2. Carry out your plan</h2>
+</header>
+<ul class="itemize" id="a0000000052">
+<li id="a0000000053">
+<p>
+When your plan is ready, put it into action. <br/>
+</p>
+</li>
+<li id="a0000000054">
+<p>
+Advice: 
+</p>
+<ul class="itemize" id="a0000000055">
+<li id="a0000000056">
+<p>
+Check each step. Is each step correct? 
+</p>
+</li>
+<li id="a0000000057">
+<p>
+You should expect to be stuck quite a lot of the time. Recognise that you are stuck and accept it. Calmly review where you are and try to get unstuck. 
+</p>
+</li>
+<li id="a0000000058">
+<p>
+It is (usually!) okay to wait and mull over the problem for a while. 
+</p>
+</li>
+<li id="a0000000059">
+<p>
+If you are sure your plan cannot work, you may need to return to the <i class="itshape">Plan</i> stage. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="3_review">3. Review</h2>
+</header>
+<ul class="itemize" id="a0000000060">
+<li id="a0000000061">
+<p>
+First, if you found a solution, check it is correct. 
+</p>
+<ul class="itemize" id="a0000000062">
+<li id="a0000000063">
+<p>
+Can you check your solution is correct? 
+</p>
+</li>
+<li id="a0000000064">
+<p>
+Does it answer the original problem? 
+</p>
+</li>
+<li id="a0000000065">
+<p>
+Can you get the same solution from a different method? 
+</p>
+</li>
+<li id="a0000000066">
+<p>
+Can you work from your solution and get back to the original problem and, doing so, is the problem you get to the same as the original problem you tried to solve? 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="3_revi_1">3. Review</h2>
+</header>
+<ul class="itemize" id="a0000000067">
+<li id="a0000000068">
+<p>
+Second, reflect on what happened. 
+</p>
+<ul class="itemize" id="a0000000069">
+<li id="a0000000070">
+</li>
+<li id="a0000000071">
+<p>
+Remember that the point of solving problems is not just to get marks in assessments. The purpose here is to think about what has happened and see what you can learn.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000072">
+</li>
+<li id="a0000000073">
+<p>
+Think about the process you took and particularly any dead ends you went down. 
+</p>
+<ul class="itemize" id="a0000000074">
+<li id="a0000000075">
+<p>
+What went wrong? 
+</p>
+</li>
+<li id="a0000000076">
+<p>
+Could you have avoided the dead ends, or were they a necessary part of solving the problem? 
+</p>
+</li>
+<li id="a0000000077">
+<p>
+What do you wish you had know when you first attempted the problem? 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+<li id="a0000000078">
+</li>
+<li id="a0000000079">
+<p>
+What can you do now that you couldn’t before?
+</p>
+<ul class="itemize" id="a0000000080">
+<li id="a0000000081">
+<p>
+Can you use the method, or the result, for some other problem? 
+</p>
+</li>
+<li id="a0000000082">
+<p>
+Can you write down a new problem that you are now able to solve? 
+</p>
+</li>
+<li id="a0000000083">
+<p>
+Is the problem you have solved part of a wider family of problems? 
+</p>
+</li>
+<li id="a0000000084">
+<p>
+Can your method be adapted to solve more of them? 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000085">
+<h2 aria-hidden="true" class="beamer-section-heading" id="what_does_this_mean_">What does this mean for an unseen problem?</h2>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="attempting_a_solutio">Attempting a solution</h2>
+</header>
+<ul class="itemize" id="a0000000086">
+<li id="a0000000087">
+</li>
+<li id="a0000000088">
+<p>
+Make sure you have understood the question and explored this understanding: 
+</p>
+<ul class="itemize" id="a0000000089">
+<li id="a0000000090">
+<p>
+Rewrite the question in your own words. 
+</p>
+</li>
+<li id="a0000000091">
+<p>
+State the crucial features of the question. 
+</p>
+</li>
+<li id="a0000000092">
+<p>
+Draw a diagram showing the question. 
+</p>
+</li>
+<li id="a0000000093">
+<p>
+Write an explanation of what the question is asking you to do and why this is difficult. Where does the difficulty lay? 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+<li id="a0000000094">
+</li>
+<li id="a0000000095">
+<p>
+Try variants: 
+</p>
+<ul class="itemize" id="a0000000096">
+<li id="a0000000097">
+<p>
+Try to state and solve a simpler version of the problem. 
+</p>
+<ul class="itemize" id="a0000000098">
+<li id="a0000000099">
+<p>
+Remove part of the restrictions. 
+</p>
+</li>
+<li id="a0000000100">
+<p>
+Add more restrictions. 
+</p>
+</li>
+<li id="a0000000101">
+<p>
+Try it for a smaller number. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000102">
+<p>
+Make a conjecture and test it. 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_all_else_fails_an">If all else fails and you can’t find a solution</h2>
+</header>
+<ul class="itemize" id="a0000000103">
+<li id="a0000000104">
+<p>
+Make it clear what you have tried and why you are sure that it doesn’t work. 
+</p>
+</li>
+<li id="a0000000105">
+<p>
+Critique the problem – what is making it hard to solve? 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_you_do_find_a_sol">If you do find a solution</h2>
+</header>
+<ul class="itemize" id="a0000000106">
+<li id="a0000000107">
+<p>
+Check your answer is correct. 
+</p>
+<ul class="itemize" id="a0000000108">
+<li id="a0000000109">
+<p>
+You should be mostly in a position to be able to check the answer against the original puzzle, or at least to verify your method. 
+</p>
+</li>
+<li id="a0000000110">
+<p>
+Perhaps having solved it, you can see a different method that would work? If you get the same answer via different methods, this is good evidence you may be correct. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000111">
+<p>
+Reflect on what happened. 
+</p>
+</li>
+<li id="a0000000112">
+<p>
+Play around with the puzzle. 
+</p>
+<ul class="itemize" id="a0000000113">
+<li id="a0000000114">
+<p>
+Can you rephrase the puzzle into a different context? 
+</p>
+</li>
+<li id="a0000000115">
+<p>
+Can you make a variant of the puzzle? 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="golden_rule_for_this">Golden rule for this module</h2>
+</header>
+<ul class="itemize" id="a0000000116">
+<li id="a0000000117">
+<p>
+Introducing his section of hints and solutions, Pólya says “The reader who has earnestly tried to solve the problem has the best chance to profit by the hint and the solution.” 
+</p>
+</li>
+<li id="a0000000118">
+<p>
+<b class="bfseries">Please please please</b>, if you have already seen a problem and know how to solve it, allow others the chance to profit from trying it themselves, rather than simply telling them the solution. Even if you do decide to tell them, try giving hints and asking questions to try to lead them to a solution, rather than giving them the solution wholesale. You and they will benefit from the practice. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="no_spoilers_">No spoilers!</h2>
+</header>
+<ul class="itemize" id="a0000000119">
+<li id="a0000000120">
+<p>
+It is really tempting to get invested in the problem and want to know the solution. 
+</p>
+</li>
+<li id="a0000000121">
+<p>
+If you tell someone how to answer a question, you are robbing them of the opportunity to practice and this is a serious business indeed. (This is hard, because there are positive emotions for some people associated with knowing more than others and showing this.) 
+</p>
+</li>
+<li id="a0000000122">
+<p>
+If you spoil a problem for yourself by looking at someone’s work or searching online for how to answer it, more fool you. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="mathematical_thinkin">Mathematical thinking</h2>
+</header>
+<div class="centered"><img alt='Table in school classroom with written prompts such as "More than", "What is the same?" "How many?" and "Convince me".' src="images/img-0002.jpg" style="height:&lt;plasTeX.TeXFragment object at 0x7b5a7ee57710&gt;"/><img alt="Convince me" src="images/img-0003.jpg" style="height:&lt;plasTeX.TeXFragment object at 0x7b5a7ee57a10&gt;"/> </div>
+</section>
+</section>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-11</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
