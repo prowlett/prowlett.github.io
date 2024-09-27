@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-09-11" />
+            <meta name="date" content="2024-09-21" />
         
 
         <title>Logic notes | Proof and Reasoning</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1726071453.096626">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1726905867.534721">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1726071453.096626">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1726905867.534721">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1726071453.096626">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1726905867.534721">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1726071453.096626', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1726905867.534721', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1726071453.096626"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1726905867.534721"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1726071453.096626"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1726905867.534721"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1726071453.096626"></script>
+            <script defer src="../../static/customisation.js?build_time=1726905867.534721"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1726071453.096626" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1726071453.096626" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1726071453.096626" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1726905867.534721" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1726905867.534721" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1726905867.534721" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1726071453.096626">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1726905867.534721">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1726071453.096626">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1726905867.534721">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -491,6 +491,16 @@
 
             
         </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000010">3 Implication</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000011">4 Arguments</a>
         
     </li>
 
@@ -798,6 +808,110 @@ True
 </tr>
 </table>
 </section>
+</section><section class="section">
+<h2 id="a0000000010">3 Implication</h2>
+<p>
+The connective \(\implies \) is called “implies”. A proposition \(p \implies q\) can be read “\(p\) implies \(q\)” or “if \(p\), then \(q\)”. 
+</p>
+<p>
+We can also think about situations where \(q \implies p\), and if both \(p \implies q\) and \(q \implies p\) are true, then we write \(p \iff q\) and say “\(p\) if and only if \(q\)”. 
+</p>
+<p>
+The implication \(p \implies q\) is true unless \(p\) is true and \(q\) is false. The truth table is as follows. The \(p \implies q\) column refers to the truth of the implication, not the truth of either \(p\) or \(q\). 
+</p>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(p\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(q\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(p \implies q\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+true 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ true 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center"><p>
+ true
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+true 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ false 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ false
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+false 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ true 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ true
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+false 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ false 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ true 
+</p>
+</td>
+</tr>
+</table>
+<p>
+In the cases where \(p\) is false, this tells us nothing to refute the idea that \(p \implies q\), so we say the implication is true. 
+</p>
+<p>
+It is also worth nothing that if \(q\) is always true, then \(p \implies q\) is true regardless of \(p\). In fact, \(q\) being true tells us nothing about the truth value of \(p\). 
+</p>
+</section><section class="section">
+<h2 id="a0000000011">4 Arguments</h2>
+<p>
+Within propositional logic we can make arguments. An argument is made up of two parts: 
+</p>
+<ol class="enumerate" id="a0000000012">
+<li id="a0000000013" value="1">
+<p>
+a number of propositions, called the premises; 
+</p>
+</li>
+<li id="a0000000014" value="2">
+<p>
+a proposition, called the conclusion. 
+</p>
+</li>
+</ol>
+<p>
+For example, if say we want to establish \(p \implies q\). If we know \(p \implies r\) and \(r \implies q\), then we can form an argument \(p \implies r \implies q\). 
+</p>
 </section>
 <script id="plastex-labels" type="application/json">{}</script>
     </article>
@@ -814,7 +928,7 @@ True
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-09-11</p>
+        <p>This page last generated: 2024-09-21</p>
         
         
         
