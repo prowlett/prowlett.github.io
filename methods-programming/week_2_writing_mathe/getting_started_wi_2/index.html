@@ -1,0 +1,1651 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2024-09-27" />
+        
+
+        <title>Getting started with LaTeX | Introduction to Programming</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1727429966.668986">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1727429966.668986">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1727429966.668986">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1727429966.668986', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1727429966.668986"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1727429966.668986"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1727429966.668986"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1727429966.668986" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1727429966.668986" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1727429966.668986" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1727429966.668986">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1727429966.668986">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Introduction to Programming</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Week 2: Writing mathematical documents</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Getting started with LaTeX
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../index.html">Previous: Week 2: Writing mathematical documents</a>
+            
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="getting_started_wi_2.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#an_introduction_to_l">An Introduction to L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000002">1 Introduction</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000003">1.1 What is L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X?</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000013">1.2 Why are we looking at L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X?</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000014">1.3 What we will cover</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000021">1.4 Basic Concepts</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000022">2 Creating a Basic Document</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000023">2.1 <a href="https://www.overleaf.com/">Overleaf.com</a></a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000028">2.2 Page Structure</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000029">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000030">2.3 Simple Mathematical Expressions</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000035">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000036">2.4 Sections and Lists</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000037">1 Main Heading</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000038">1.1 Subheading</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000039">Sub sub headings...</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#MT_ClassPack">2.3 Classes and Packages</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000056">3 More on Writing Equations</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000058">Examples</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000060">Note</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#Sec_bib">4 Bibliography</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000083">5 Cross Referencing</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000087">6 Different Types of Documents</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000088">7 Some useful links</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000092">8 L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>Xoff-line</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000093">References</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+         <div class="titlepage">
+<h1 id="an_introduction_to_l">An Introduction to L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X</h1>
+<p class="authors">
+<span class="author">Angharad Ugonna</span>
+</p>
+</div> <section class="section">
+<h2 id="a0000000002">1 Introduction</h2>
+<section class="subsection">
+<h3 id="a0000000003">1.1 What is L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X?</h3>
+<p>
+L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X, pronounced “Lay-Tech” or “lah-tech”, is a document preparation system used for high quality typesetting. It is commonly used to produce technical or scientific documents but can be used for almost any form of publishing. It is popular amongst mathematicians for writing mathematical equations. 
+</p>
+<p>
+L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  is NOT a word processor such as <span class="ttfamily">MS Word</span>. You are encouraged to focus on content and not on the appearance when you use L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X! 
+</p>
+<p>
+L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X contains features for: 
+</p>
+<ul class="itemize" id="a0000000004">
+<li id="a0000000005">
+<p>
+Typesetting journal articles, technical reports, books, and slide presentations. 
+</p>
+</li>
+<li id="a0000000006">
+<p>
+Control over large documents containing sectioning, cross-references, tables and figures. 
+</p>
+</li>
+<li id="a0000000007">
+<p>
+Typesetting of complex mathematical formulas. 
+</p>
+</li>
+<li id="a0000000008">
+<p>
+Advanced typesetting of mathematics with AMS-LaTeX. 
+</p>
+</li>
+<li id="a0000000009">
+<p>
+Automatic generation of bibliographies and indexes. 
+</p>
+</li>
+<li id="a0000000010">
+<p>
+Multi-lingual typesetting. 
+</p>
+</li>
+<li id="a0000000011">
+<p>
+Inclusion of artwork, and process or spot colour. 
+</p>
+</li>
+<li id="a0000000012">
+<p>
+Using PostScript or Metafont fonts. 
+</p>
+</li>
+</ul>
+<p>
+A good introduction to what L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  is can be found at <br/><a href="http://www.techscribe.co.uk/ta/latex-introduction.pdf">http://www.techscribe.co.uk/ta/latex-introduction.pdf</a> <br/>and <br/><a href="http://scottmcpeak.com/latex/whatislatex.html">http://scottmcpeak.com/latex/whatislatex.html</a>. 
+</p>
+<p>
+A more in-depth introduction is given by: <br/><a href="http://anorien.csc.warwick.ac.uk/mirrors/CTAN/info/lshort/english/lshort.pdf">Short Introduction to </a>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000013">1.2 Why are we looking at L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X?</h3>
+<p>
+ You may have noticed by now that you are required to do a reasonable amount of writing on this course! Many assignments have electronic submission which means that you need to be able to write mathematical notation competently and in a way that is understandable to the marker. My experience is that this could be vastly improved. However, it is not always that easy in MS Word. The equation editor has improved hugely in recent years but it can still be pretty long winded and has a propensity to change when viewed on different PCs. I have had to ask people on multiple occasions to resubmit work to me on pdf because Word has changed all of their equations to boxes or better still cocktail glasses! This does not happen using L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X. 
+</p>
+<p>
+The L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  language is also embedded into other programmes such as MATLAB - where terms such as \(\alpha , \beta , \gamma \) or whole equations can be written in titles for plots and so it is useful to be aware of the basics in writing simple mathematical equations. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000014">1.3 What we will cover</h3>
+<p>
+ L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X is going to be introduced to you so that you are familiar with the idea of a typesetting language and are able to give it a go yourself if you want to use something other than Word or another WYSIWYG (what you see is what you get) word processor. 
+</p>
+<p>
+We may not have enough time to cover everything in this session but these notes will provide you with enough to get started. We are going to look at an online tool for using L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X. The main topics that we are going to cover are: 
+</p>
+<ul class="itemize" id="a0000000015">
+<li id="a0000000016">
+<p>
+Producing basic documents, inputting pictures and mathematical equations, producing lists etc.. 
+</p>
+</li>
+<li id="a0000000017">
+<p>
+Different types of documents that you can produce using L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  including ‘article’, ‘report’, ‘book’ and even ‘CV’ as well as slides and posters (‘beamer’). 
+</p>
+</li>
+<li id="a0000000018">
+<p>
+Producing tables, systems of equations, matrices; 
+</p>
+</li>
+<li id="a0000000019">
+<p>
+Inserting bibliographies and some basic formatting. 
+</p>
+</li>
+<li id="a0000000020">
+<p>
+Using L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X at home and the different GUIs (Graphical User Interfaces) available. 
+</p>
+</li>
+</ul>
+</section><section class="subsection">
+<h3 id="a0000000021">1.4 Basic Concepts</h3>
+<p>
+ L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  is used to create documents for others to read - just like you use Microsoft Word. That is where the similarities end however. 
+</p>
+<p>
+To prepare a L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  document you use a text editor (eg. Notepad) to edit a Latex source file which you save with the extension <span class="ttfamily">.tex</span>. You then run the latex program to convert the source file to a document interchange format such as PDF. It can then be viewed on the screen, sent to other people, printed etc. L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  is an example of a <b class="bfseries">Mark-Up</b> language whereas <span class="ttfamily">MS Word</span> is a <b class="bfseries">WYSIWYG</b> editor. 
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000022">2 Creating a Basic Document</h2>
+<section class="subsection">
+<h3 id="a0000000023">2.1 <a href="https://www.overleaf.com/">Overleaf.com</a></h3>
+<p>
+We are going to use an online Latex compiler called Overleaf. You will need to create an account with them to use it. It is free and serves as a good example of how to use Latex. 
+</p>
+<p>
+The advantage of using Overleaf at the moment is that it has numerous example files showing different things that you can do with L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X. It also has extensive help documents helping you with both overleaf and latex in general. <span class="vspace" style="height: 14.226377952755904pt"></span> <div class="tcolorbox" style="background-color:LightCoral; border-color:DarkRed">
+<header style="None">Task: Create and account in Overleaf</header> <ol class="enumerate" id="a0000000024">
+<li id="a0000000025" value="1">
+<p>
+Go to <a href="https://www.overleaf.com/">Overleaf.com</a>. 
+</p>
+</li>
+<li id="a0000000026" value="2">
+<p>
+Create and account - click on Register (top right hand side). 
+</p>
+</li>
+<li id="a0000000027" value="3">
+<p>
+To begin select <code class="verbatim">New Project</code>, then select <code class="verbatim">blank project</code> and give the project a name of your choosing. 
+</p>
+</li>
+</ol>
+</div>
+</p>
+</section><section class="subsection">
+<h3 id="a0000000028">2.2 Page Structure</h3>
+<p>
+To create a simple document you need to first define what <span class="ttfamily">type</span> or <span class="ttfamily">class</span> of document you wish to create. For example, you may wish to create a shorter <span class="ttfamily">article</span>, a longer <span class="ttfamily">report</span> or an even longer <span class="ttfamily">book</span>. This is done by defining the <span class="ttfamily">documentclass</span>. These are predetermined packages that you call from the Latex documentation. You can also specify <span class="ttfamily">fontsize</span> here - either 10pt (default), 11pt or 12pt. For example if you want a large fontsize you would write 
+</p>
+<div class="centered"> <code class="verbatim">\</code><span class="ttfamily">documentclass[12pt]{article}</span>. </div>
+<p>
+ This, much like in <span class="ttfamily">.</span>html language for webpages, forms the “head” of the document. The main “body” (that which is seen on your PDF document) is written in between the <code class="verbatim">\begin{document}</code> and <code class="verbatim">\end{document}</code> commands. A summary of this can be seen in Figure <a class="ref" href="#MTLatex_structure">1</a>. 
+</p>
+<figure id="MTLatex_structure">
+<div class="tcolorbox" style="None">
+<p>
+<code class="verbatim">\documentclass{article}</code>
+</p>
+<pre class="verbatim">
+\usepackage{package}
+</pre>
+<pre class="verbatim">
+\title{An Introduction to \LaTeX{} continued}
+\author{Maths Tech 2016}
+\date{April 2016}
+</pre>
+<pre class="verbatim">
+\begin{document}
+\maketitle
+\tableofcontents
+</pre>
+<pre class="verbatim">
+\end{document}
+ </pre>
+</div>
+<figcaption>
+<span class="caption_title">Figure</span>
+<span class="caption_ref">1</span>
+<span class="caption_text">An outline of the basic structure of any latex file</span>
+</figcaption>
+</figure>
+<p>
+<br/>
+</p>
+<p>
+You can add a title, author, date etc. in the preamble (before <code class="verbatim">\begin{document}</code>) and <code class="verbatim">\maketitle</code> after it. For example, <div class="tcolorbox" style="None">
+<pre class="verbatim">
+\documentclass{article}
+\title{Title Here}
+\author{Author Name Here}
+\date{today}
+\begin{document}
+  \maketitle
+  A warm welcome to the world of latex.
+  A \textbf{bold \textit{Hello \LaTeX}} 
+  to start.
+\end{document}
+</pre>
+</div>
+<p>
+gives: 
+</p>
+<div class="tcolorbox" style="None">
+<img alt="\includegraphics[scale=0.4]{pictures/basic_intro_1.jpg}" src="images/img-0001.jpg"/>
+</div>
+</p>
+<h4 id="a0000000029">Note</h4>
+<p>
+ That if you are writing this code in overleaf.com then the document automatically compiles and you will see it on the right hand screen.
+</p>
+</section><section class="subsection">
+<h3 id="a0000000030">2.3 Simple Mathematical Expressions</h3>
+<p>
+To add a maths expression in line with the current sentence, start this with <code class="verbatim">\(</code> and end it with <code class="verbatim">\)</code>, like this: 
+</p>
+<pre class="verbatim">
+The quadratic \(x^2+x-6=0\) has two roots.
+</pre>
+<p>
+To put a maths equation on its own line it’s very similar, but with different brackets: start with <code class="verbatim">\[</code> and end with <code class="verbatim">\]</code>, like this: 
+</p>
+<pre class="verbatim">
+\[ \int_0^\pi sin(3x) dx\]
+</pre>
+<p>
+If you want a numbered equation, use <code class="verbatim">\begin{equation}</code> and <code class="verbatim">\end{equation}</code>, for example: 
+</p>
+<pre class="verbatim">
+\begin{equation}
+	x^2+x-6
+\end{equation}
+</pre>
+<p>
+For example, within the body of the text you may have: <div class="tcolorbox" style="None">
+<pre class="verbatim">
+If you want an equation written inline 
+then \(\frac{dy}{dx}=x^2 \Rightarrow 
+y=\frac{x^3}{3}+C\). However, if you want
+a separate line then you have
+ \[\frac{dy}{dx}=x^2 \Rightarrow 
+	y=\frac{x^3}{3}+C.\]
+Furthermore, if you want that equation
+to be numbered then you write
+\begin{equation}
+  \frac{dy}{dx}=x^2 \Rightarrow 
+  y=\frac{x^3}{3}+C
+\end{equation}
+</pre>
+</div>
+<p>
+which will give: 
+</p>
+<div class="tcolorbox" style="None">
+<img alt="\includegraphics[scale=0.35]{pictures/basic_intro_2.png}" src="images/img-0002.png"/>
+</div>
+</p>
+<p>
+<span class="vspace" style="height: 14.226377952755904pt"></span> <div class="tcolorbox" style="background-color:LightCoral; border-color:DarkRed">
+<header style="None">Exercise</header> <ol class="enumerate" id="a0000000031">
+<li id="a0000000032" value="1">
+<p>
+Write the above code into your L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X document on overleaf. 
+</p>
+</li>
+<li id="a0000000033" value="2">
+<p>
+Add a new equation \( \frac{dy}{dx}=x^3+4 \Rightarrow y=\frac{x^4}{4}+4x+C_2 \). 
+</p>
+</li>
+<li id="a0000000034" value="3">
+<p>
+Construct some equations of your own. You can use <br/><a href="https://www.overleaf.com/latex/templates/a-quick-guide-to-latex/fghqpfgnxggz">A quick guide to latex.pdf</a> <br/>for some simple commands and symbols. This will be easier using a desktop version where mathematical symbols are listed on the left hand side of the screen 
+</p>
+</li>
+</ol>
+</div>
+</p>
+<h4 id="a0000000035">Note</h4>
+<p>
+ that L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  may require specific packages (see Section <a class="ref" href="#MT_ClassPack">2.3</a>) to show particular symbols. The name of that package is given in brackets in the top left hand window and can be inserted into your document by writing <code class="verbatim">\usepackage{package name}</code> in the preamble. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000036">2.4 Sections and Lists</h3>
+<p>
+ Headings and subheadings are an important part of your report writing. L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>Xdoes this very well. A basic structure could be given as: 
+</p>
+<p>
+<div class="tcolorbox" style="None">
+<pre class="verbatim">
+\section{Main Heading}
+	
+	\subsection{Subheading}
+	
+	\subsubsection{Sub sub headings...}
+	
+		</pre>
+</div>
+<p>
+which will give:  
+</p>
+<div class="tcolorbox" style="None">
+</div>
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000037">1 Main Heading</h2>
+<section class="subsection">
+<h3 id="a0000000038">1.1 Subheading</h3>
+<section class="subsubsection">
+<h4 id="a0000000039">Sub sub headings...</h4>
+<div class="tcolorbox" style="None">
+</div>
+<p>
+<br/>
+</p>
+<p>
+Just as you can have bullet points and ordered lists in word, you can also in L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X. This is achieved by using the following: 
+</p>
+<p>
+<div class="tcolorbox" style="None">
+<pre class="verbatim">
+\begin{itemize}
+	\item Use itemize for bullet points 
+\end{itemize}
+
+\begin{enumerate}
+	\item enumerate for an ordered list
+	\item counting... 
+\end{enumerate}
+
+\begin{description}
+	\item[Descriptive] You could use 
+	description if you are defining 
+	things
+\end{description}
+		</pre>
+</div>
+<p>
+which will give: 
+</p>
+<div class="tcolorbox" style="None">
+<ul class="itemize" id="a0000000040">
+<li id="a0000000041">
+<p>
+Use itemize for bullet points 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: 28.452755905511808pt"></span>
+</p>
+<ol class="enumerate" id="a0000000042">
+<li id="a0000000043" value="1">
+<p>
+enumerate for an ordered list 
+</p>
+</li>
+<li id="a0000000044" value="2">
+<p>
+counting... 
+</p>
+</li>
+</ol>
+<p>
+<span class="vspace" style="height: 28.452755905511808pt"></span>
+</p>
+<dl class="description">
+<dt>Descriptive</dt>
+<dd><p>
+You could use description if you are defining things 
+</p>
+</dd>
+</dl>
+</div>
+</p>
+<p>
+See <a href="https://www.overleaf.com/learn/latex/Lists">https://www.overleaf.com/learn/latex/Lists</a> for more on lists. 
+</p>
+</section>
+</section><section class="subsection">
+<h3 id="MT_ClassPack">2.3 Classes and Packages</h3>
+<p>
+As well as classes, which determines the overall structure of the document there are a huge number of packages that we can use to enhance our document. These packages are wide ranging in their application from ones that improve the overall appearance of your document, to others that enable you to insert <span class="ttfamily">figures, hyperlinks</span> or change <span class="ttfamily">fonts</span>. To use these packages you need to specify them in the preamble (or head) - after the <code class="verbatim">documentclass{}</code> but before <code class="verbatim">\begin{document}</code> using <code class="verbatim">\usepackage{package name}</code>. 
+</p>
+<p>
+The following websites give a good overview of packages and how to use them: 
+</p>
+<ul class="itemize" id="a0000000045">
+<li id="a0000000046">
+<p>
+<a href="https://www.latex-tutorial.com/tutorials/beginners/latex-packages/">https://www.latex-tutorial.com/tutorials/beginners/latex-packages/</a>
+</p>
+</li>
+<li id="a0000000047">
+<p>
+<a href="http://archive.is/20140611173352/www.howtotex.com/packages/9-essential-latex-packages-everyone-should-use/">http://archive.is/20140611173352/www.howtotex.com/packages/9-essential-latex-packages-everyone-should-use/</a>
+</p>
+</li>
+</ul>
+<p>
+<div class="tcolorbox" style="background-color:LightCoral; border-color:DarkRed">
+<header style="None">Exercises</header> <ol class="enumerate" id="a0000000048">
+<li id="a0000000049" value="1">
+<p>
+Go back to the overleaf home page. 
+</p>
+</li>
+<li id="a0000000050" value="2">
+<p>
+Click on “New Project” and select “Example Project.” In the box provided type in the name of your project - this will appear as the title of your document. Click on “Create.” 
+</p>
+</li>
+<li id="a0000000051" value="3">
+<p>
+Change the title to “My first go at L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X” and the name to yours. 
+</p>
+</li>
+<li id="a0000000052" value="4">
+<p>
+Can you identify how we put figures into Latex? Change the picture by uploading a new picture (Add Files... on top left of screen and selecting Upload from My Computer). Alternatively, see if you can find a picture of the solar system and add that to the document. 
+</p>
+</li>
+<li id="a0000000053" value="5">
+<p>
+Add a new section to the file entitled “What I need to do” and write a list of all the things that you need to do before the beginning of the next Semester. This should be an <b class="bfseries">ordered</b> list. 
+</p>
+</li>
+<li id="a0000000054" value="6">
+<p>
+Insert the following equation into your file. Note that the equation is numbered (Equation (<a class="ref" href="#Eqn1">1</a>). 
+</p>
+<div class="eqn" id="Eqn1">
+<script type="math/tex; mode=display">\begin{equation}\label{Eqn1} \frac{dx}{dt} =2x^2\tag{1}\end{equation}</script>
+</div>
+<p>
+ To do equations you will need to include <code class="verbatim">\usepackage{amsmath}</code> in the preamble. 
+</p>
+</li>
+<li id="a0000000055" value="7">
+<p>
+Return to the home page and select “New Project” then “Homework Assignment” menu. From here you are given a number of example files. Have a look at these example files for different ideas about formatting your L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>Xfile. 
+</p>
+</li>
+</ol>
+</div>
+</p>
+<p>
+Remember that Google is your friend and you can search for any L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X commands. 
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000056">3 More on Writing Equations</h2>
+<p>
+ One of the main reasons for showing you L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  is because of its ability to write equations in a consistent and efficient way. So how do you start? Recall that all commands begin with a “<code class="verbatim">\</code>”. 
+</p>
+<div class="tcolorbox" style="None">
+<pre class="verbatim">
+\begin{equation}
+ ax^2 + bx+c \quad \text{has solution} \quad x=\dfrac{-b\pm \sqrt{b^2-4ac}}{2a}
+\end{equation}
+ 		</pre>
+</div>
+<p>
+gives: 
+</p>
+<div class="tcolorbox" style="None">
+<div class="eqn" id="a0000000057">
+<script type="math/tex; mode=display">\begin{equation}\nonumber ax^2 + bx+c \quad \text{has solution} \quad x=\dfrac {-b\pm \sqrt{b^2-4ac}}{2a}\tag{2}\end{equation}</script>
+</div>
+</div>
+<p>
+Note that 
+</p>
+<dl class="description">
+<dt>Fractions</dt>
+<dd><p>
+Are given by <code class="verbatim">\frac{num}{den}</code> or, if larger fraction required then <code class="verbatim">\dfrac{num}{den}</code>. 
+</p>
+</dd>
+<dt>Text</dt>
+<dd><p>
+We may wish to write some text. To do this we need to use <code class="verbatim">\text{}</code> within the equation. 
+</p>
+</dd>
+<dt>Space</dt>
+<dd><p>
+To allow space between mathematical expressions we use <code class="verbatim">~, \quad</code> or <code class="verbatim">\qquad</code> for larger space. 
+</p>
+</dd>
+</dl>
+<p>
+ We may also wish to write systems of equations. For this it is advisable to use either <br/><code class="verbatim">\begin{eqnarray}</code>\(\ldots \) <code class="verbatim">\end{eqnarray}</code> or 
+</p>
+<pre class="verbatim">
+\begin{array}{number of colums: l-left, c-centre or r-right}
+...
+\end{array}.
+</pre>
+<h4 id="a0000000058">Examples</h4>
+<p>
+ Take the simultaneous equations: <div class="tcolorbox" style="None">
+<pre class="verbatim">
+\begin{equation}
+	\begin{array}{lll}
+		 ax+bc &amp;=&amp; u \\
+		 cx+dc &amp;=&amp; v \\
+	\end{array}
+\end{equation}
+	</pre>
+</div>
+<p>
+ giving: 
+</p>
+<div class="tcolorbox" style="None">
+<div class="eqn" id="a0000000059">
+<script type="math/tex; mode=display">\begin{equation}\begin{array}{lll} ax+bc & =&  u \\ cx+dc & =&  v \\ \end{array}\tag{2}\end{equation}</script>
+</div>
+</div>
+</p>
+<h4 id="a0000000060">Note</h4>
+<p>
+ that the number of \(l's\) refers to the number of columns in the array (think of it like a table without lines), “&amp;” is an alignment tab and “<code class="verbatim">\\</code>” is a newline.  
+</p>
+<p>
+You can also write it in matrix form: <div class="tcolorbox" style="None">
+<pre class="verbatim">
+\begin{equation}
+	\left[\begin{array}{cc}
+		a &amp; b \\  c &amp; d\\
+	\end{array}\right]
+	\left[
+	\begin{array}{cc}
+	x \\	y\\
+	\end{array}\right]=
+	\left[\begin{array}{cc}
+	u \\	v\\
+	\end{array}\right]
+\end{equation}
+		</pre>
+</div> which yields: <div class="tcolorbox" style="None">
+<div class="eqn" id="a0000000061">
+<script type="math/tex; mode=display">\begin{equation}\left[\begin{array}{cc} a &  b \\ c &  d\\ \end{array}\right] \left[ \begin{array}{cc} x \\ y\\ \end{array}\right]= \left[\begin{array}{cc} u \\ v\\ \end{array}\right]\tag{3}\end{equation}</script>
+</div>
+</div> As with all things in L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X  there is more than one way of doing things and matrices can be drawn using different brackets, see <br/><a href="http://latex.wikia.com/wiki/Matrix_environments">http://latex.wikia.com/wiki/Matrix_environments</a> <br/>for more details.  Your \(a\),\(b\) etc. could be replaced by Greek letters (see \(\lambda \) on left hand side of window in texstudio).<div class="tcolorbox" style="None">
+<pre class="verbatim">
+		\begin{equation}
+		\begin{pmatrix}
+		\alpha &amp; \beta \\  \gamma &amp; \delta\\
+		\end{pmatrix}.
+		\begin{pmatrix}
+		x \\  y\\
+		\end{pmatrix}
+		\begin{pmatrix}
+		u \\ 	v\\
+	\end{pmatrix} 
+		\end{equation}
+		</pre>
+</div> to give: <div class="tcolorbox" style="None">
+<div class="eqn" id="a0000000062">
+<script type="math/tex; mode=display">\begin{equation}\begin{pmatrix}  \alpha 
+
+&  \beta 
+
+\\ \gamma 
+
+&  \delta 
+
+\\ \end{pmatrix}. \begin{pmatrix}  x 
+
+\\ y
+
+\\ \end{pmatrix}= \begin{pmatrix}  u 
+
+\\ v
+
+\\ \end{pmatrix}\tag{4}\end{equation}</script>
+</div>
+</div>  You can use the <span class="ttfamily">array</span> tool to create tables using mathematical terms. 
+</p>
+<div class="tcolorbox" style="None">
+<pre class="verbatim">
+\begin{table}\begin{equation}\nonumber
+  \begin{array}{|l|l|l|l|}
+  \hline
+  \textbf{Roots}&amp; \textbf{Lambda} &amp; \textbf{Discriminant} &amp; 
+  \textbf{General Solutions} \\
+ \hline
+	\text{Two real roots} 			&amp; \lambda_1\neq \lambda_2 \in \mathbb{R} &amp;
+	 b^2-4ac&gt;0 &amp; x=A\mathrm{e}^{\lambda_1t}+B\mathrm{e}^{\lambda_2t}\\
+	\text{One repeated real root} 	&amp; \lambda_1=\lambda_2=\lambda\in\mathbb{R} &amp;
+	 b^2-4ac=0 &amp; x=\mathrm{e}^{\lambda t}(A+Bt)\\
+	\text{Two complex roots} 	&amp; \lambda=p+iq &amp; b^2-4ac&lt;0 &amp;
+	 x=\mathrm{e}^{pt}(A\cos(qt)+B\sin(qt))\\
+\hline
+  \end{array}
+\end{equation}
+\caption{Table as shown in Semester 2 Methods notes on ODEs.}\label{Tab_ODEs}
+\end{table}
+		</pre>
+</div>
+<p>
+ The above code can be used to give Table <a class="ref" href="#Tab_ODEs">1</a>. Note here that in order to get the \(\mathbb {R}\) symbol you need to include <br/><code class="verbatim">\usepackage{amssymb}</code> <br/>in the preamble. Here <code class="verbatim">\hline</code> gives a horizontal line and \(| . |\) gives vertical lines between columns. 
+</p>
+<div class="table" id="Tab_ODEs">
+<div class="eqn" id="a0000000063">
+<script type="math/tex; mode=display">\begin{equation}\nonumber \begin{array}{|l|l|l|l|} \hline \textbf{Roots}&  \textbf{Lambda} &  \textbf{Discriminant} &  \textbf{General Solutions} \\ \hline \text{Two real roots} &  \lambda _1\neq \lambda _2 \in \mathbb {R} &  b^2-4ac>0 &  x=A\mathrm{e}^{\lambda _1t}+B\mathrm{e}^{\lambda _2t}\\ \text{One repeated real root} &  \lambda _1=\lambda _2=\lambda \in \mathbb {R} &  b^2-4ac=0 &  x=\mathrm{e}^{\lambda t}(A+Bt)\\ \text{Two complex roots} &  \lambda =p+iq &  b^2-4ac<0 &  x=\mathrm{e}^{pt}(A\cos (qt)+B\sin (qt))\\ \end{array}\tag{5}\end{equation}</script>
+</div> <figcaption>
+<span class="caption_title">Table</span>
+<span class="caption_ref">1</span>
+<span class="caption_text">Table as shown in Semester 2 Methods notes on ODEs.</span>
+</figcaption>
+</div>
+<p>
+<span class="vspace" style="height: 14.226377952755904pt"></span>
+</p>
+<p>
+<div class="tcolorbox" style="background-color:LightCoral; border-color:DarkRed">
+<header style="None">Exercises</header> <ol class="enumerate" id="a0000000064">
+<li id="a0000000065" value="1">
+<p>
+Write out the following equations: 
+</p>
+<ol class="enumerate" id="a0000000066">
+<li id="a0000000067" value="1">
+</li>
+<li id="a0000000068" value="2">
+<p>
+\(3+\sqrt[3]{9}\) 
+</p>
+</li>
+<li id="a0000000069" value="3">
+<p>
+\( \left[ \begin{array}{cc} u \\ v\\ w\\ \end{array}\right]=\left[ \begin{array}{ccc} x_{11} &amp;  x_{12} &amp;  x_{13} \\ x_{21} &amp;  x_{22} &amp;  x_{23} \\ x_{31} &amp;  x_{32} &amp;  x_{33} \\ \end{array}\right] \left[ \begin{array}{cc} x \\ y\\ z\\ \end{array}\right] \) 
+</p>
+</li>
+<li id="a0000000070" value="4">
+<p>
+\(\dfrac {dx}{dt}=2x^3 \) 
+</p>
+</li>
+<li id="a0000000071" value="5">
+<p>
+\( r_{k+2}=\lambda ^kr_{k+1}-(1-\lambda )r_k\) 
+</p>
+</li>
+<li id="a0000000072" value="6">
+<span class="dmath">\[ y=\sum _{i=1}^{12} b_i^2  \]</span>
+</li>
+<li id="a0000000073" value="7">
+<p>
+\( \sin ^2(\phi )-\cos ^2(\phi )=-\cos (2\phi ),\quad \forall \phi \in [0,2\pi ) \) 
+</p>
+</li>
+<li id="a0000000074" value="8">
+<p>
+\(\dfrac {dx}{dt}=f(t)\implies x(t)=\int _c^t f(u)du \) 
+</p>
+</li>
+<li id="a0000000075" value="9">
+<p>
+\( \dfrac {d^2p}{dt^2}+3\dfrac {dp}{dr}-2p=\tan ^3(3t)\mbox{ for }t\geq 0\) 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000076" value="2">
+<p>
+Construct a table with four columns titles Name, age, home town and favourite colour. Populate this table with people sat on your table. 
+</p>
+</li>
+</ol>
+</div>
+</p>
+<p>
+If you are unsure ask or use Google (or any other search engine). Precede any searches with the word Latex. 
+</p>
+</section><section class="section">
+<h2 id="Sec_bib">4 Bibliography</h2>
+<p>
+ There are many examples of how to create a bibliography on <a href="www.overleaf.com">Overleaf.com</a>. The basics are as follows: 
+</p>
+<ol class="enumerate" id="a0000000077">
+<li id="a0000000078" value="1">
+<p>
+You need to open a separate folder and save it as a <span class="ttfamily">name.bib</span> file. 
+</p>
+</li>
+<li id="a0000000079" value="2">
+<p>
+In the place that you want your bibliography you need to write the following code: 
+</p>
+<pre class="verbatim">
+	\addcontentsline{toc}{section}{References}
+	\bibliographystyle{apalike}
+	\bibliography{name}
+	</pre>
+<p>
+ This should be included in the main body of the text. 
+</p>
+</li>
+<li id="a0000000080" value="3">
+<p>
+The format of this file is slightly different. A typical entry depends on the format of the item you are referencing. A couple of examples are given as follows: 
+</p>
+<dl class="description">
+<dt>Book</dt>
+<dd><pre class="verbatim">
+		@Book{Dhillon,
+		author = {Dhillon, S. and Kostrzewski, A.},
+		title = {Clinical Pharmacokinetics},
+		publisher = {Pharmaceutical Press},
+		year = {2006},
+		}
+		</pre>
+</dd>
+<dt>Article</dt>
+<dd><pre class="verbatim">
+		@Article{Clewell:2008,
+		author = {Clewell, H.J. and Reddy, M.B. and Lave, T. and Andersen, M.E. },
+		title ={Physiologically Based Pharmacokinetic Modelling},
+		journal = {Preclinical Development Handbook: ADME and Biopharmaceutical
+		Properties},
+		year = {2008},
+		}
+		</pre>
+</dd>
+<dt>Website</dt>
+<dd><pre class="verbatim">
+		@misc{BBCBitesize,
+		author = {BBC Copyright},
+		title = {BBC Bitesize - Rates of reaction},
+		howpublished = {\url{http://www.bbc.co.uk/schools/gcsebitesize/science/
+		add_aqa/reaction/ratesrev1.shtml}},
+		note = {Accessed: 10-10-2015}
+		}
+		</pre>
+</dd>
+</dl>
+<p>
+ Blank entries can be obtained from the Bibliography menu where a table is provided for you to fill in. 
+</p>
+</li>
+<li id="a0000000081" value="4">
+<p>
+To cite any of these items you use the <code class="verbatim">\cite{}</code> where the entry in the brackets is the first word after defining the type of reference. For example, if I wanted to reference Dhillon then I would write <code class="verbatim">\cite{Dhillon}</code>, <span class="cite">
+	[
+	<a href="#Dhillon">Dhillon and Kostrzewski, 2006</a>
+	]
+</span>. That reference is then pulled from the bibliography file and referenced where stated. The reference is only shown if it is cited. You can therefore keep one file for multiple assignments. 
+</p>
+</li>
+<li id="a0000000082" value="5">
+<p>
+In order to include the bibliography you need to run <span class="ttfamily">BibTex</span>. On overleaf, this is done automatically. For offline versions of L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X, it may be necessary to run Bibtex and then compile. You may need to do it twice for it to compile correctly. 
+</p>
+</li>
+</ol>
+</section><section class="section">
+<h2 id="a0000000083">5 Cross Referencing</h2>
+<p>
+ Key commands to enable you to cross reference your work are: 
+</p>
+<ul class="itemize" id="a0000000084">
+<li id="a0000000085">
+<p>
+<code class="verbatim">\label{Sec_bib}</code> is used to label a particular equation, figure or section. 
+</p>
+</li>
+<li id="a0000000086">
+<p>
+<code class="verbatim">\ref{Sec_bib}</code> is used to reference that section, figure or equation. Most text editors keep track of these and give you a drop down list to choose from. 
+</p>
+</li>
+</ul>
+</section><section class="section">
+<h2 id="a0000000087">6 Different Types of Documents</h2>
+<p>
+ Go to <a href="www.overleaf.com">Overleaf.com</a> and click on New Project. Scroll down the list and have a look at the different available templates. These give you a good overview of the range of possibilities that you have with L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X. 
+</p>
+</section><section class="section">
+<h2 id="a0000000088">7 Some useful links</h2>
+<p>
+ L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>Xhas some very good online communities. If you are unsure about something then Google it. Someone has, in all likelihood, had the same problem before and written a solution! 
+</p>
+<p>
+As an example of some help documents we have: 
+</p>
+<ul class="itemize" id="a0000000089">
+<li id="a0000000090">
+<p>
+<a href="http://texdoc.net/texmf-dist/doc/latex/latex2e-help-texinfo/latex2e.pdf">http://texdoc.net/texmf-dist/doc/latex/latex2e-help-texinfo/latex2e.pdf</a>
+</p>
+</li>
+<li id="a0000000091">
+<p>
+<a href="https://tobi.oetiker.ch/lshort/lshort.pdf">https://tobi.oetiker.ch/lshort/lshort.pdf</a>
+</p>
+</li>
+</ul>
+</section><section class="section">
+<h2 id="a0000000092">8 L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>Xoff-line</h2>
+<p>
+ We have focused on the on-line compiler, <a href="www.Overleaf.com">www.Overleaf.com</a>. This is useful to know about because they have a pretty good help function and also lots of example files! However, if you are writing a document then the need to be online and the relatively simple nature of the editor may be a little frustrating. As such it is useful to learn how to use a specific editor. You can access MikTeX (the means by which L<sup style="font-variant:small-caps; margin-left:-0.3em">a</sup>T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>X is implemented) by clicking on the AppsAnywhere icon and searching for MikTex - Launch this. Upon running this a text editor is opened. This can be used but is not the most refined package - I advise then launching TeXstudio or TexMaker which are separate compiler apps. You will then be able to open a blank document and follow the instructions below. 
+</p>
+<p>
+If you are at home you can download MikTeX from <a href="http://miktex.org/">http://miktex.org/</a>. You will also need a compiler. There are many examples of these but some that I quite like (and which are also free) are TeX Studio (<a href="http://texstudio.sourceforge.net/">http://texstudio.sourceforge.net/</a>) or TeXnicCenter (<a href="http://www.texniccenter.org/">http://www.texniccenter.org/</a>). For those of you with Macs then TeXstudio also has a mac friendly version and TexShop (<a href="http://pages.uoregon.edu/koch/texshop/">http://pages.uoregon.edu/koch/texshop/</a>) is pretty comprehensive and you don’t need MikTex:-). 
+</p>
+<p>
+There are many other text editors and it is a question of personal preference. 
+</p>
+<div class="centered"> <figure id="WinTex">
+<p>
+<img alt="\includegraphics[scale=0.4]{pictures/TexStudio_SS.jpg}" src="images/img-0003.jpg"/>
+</p>
+<figcaption>
+<span class="caption_title">Figure</span>
+<span class="caption_ref">2</span>
+<span class="caption_text">Screenshot of T<sub style="text-transform:uppercase; margin-left:-0.2em">e</sub>XStudio. Note that symbols on the left hand side will give you a list of commands for different mathematical functions.</span>
+</figcaption>
+</figure> </div>
+</section><section class="section bibliography">
+<h2 id="a0000000093">References</h2>
+<ul class="bibliography">
+<li id="Dhillon" style="list-style: none"> <div class="bibcite">[Dhillon and Kostrzewski, 2006]</div> <p>
+Dhillon, S. and Kostrzewski, A. (2006). <em>Clinical Pharmacokinetics</em>. Pharmaceutical Press. 
+</p>
+</li>
+</ul>
+</section>
+<script id="plastex-labels" type="application/json">{"MTLatex_structure": {"ref": "1", "url": "#MTLatex_structure"}, "MT_ClassPack": {"ref": "2.3", "url": "#MT_ClassPack"}, "Eqn1": {"ref": "1", "url": "#Eqn1"}, "Tab_ODEs": {"ref": "1", "url": "#Tab_ODEs"}, "Sec_bib": {"ref": "4", "url": "#Sec_bib"}, "WinTex": {"ref": "2", "url": "#WinTex"}}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2024-09-27</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
