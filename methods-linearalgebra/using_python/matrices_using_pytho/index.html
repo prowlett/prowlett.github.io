@@ -10,43 +10,46 @@
             <meta name="date" content="2024-09-27" />
         
 
-        <title>Exercises | Introduction to Linear Algebra</title>
+        <title>Matrices using Python | Introduction to Linear Algebra</title>
 
         
     
-            <link rel="stylesheet" href="../static/styles.css?build_time=1727434209.703846">
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1727434209.703846">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../static/pygmentize.css?build_time=1727434209.703846">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1727434209.703846">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1727434209.703846">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../static?build_time=1727434209.703846', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1727434209.703846', location.href);
 			</script>
 
             
-                <script defer src="../static/mathjax_config.js?build_time=1727434209.703846"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1727434209.703846"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../static/localisation.js?build_time=1727434209.703846"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1727434209.703846"></script>
 
-            <script defer src="../static/customisation.js?build_time=1727434209.703846"></script>
+            <script defer src="../../static/customisation.js?build_time=1727434209.703846"></script>
 
             
 
             
         
-    <script defer src="../static/code.js?build_time=1727434209.703846" type="module"></script>
-    <script defer src="../static/embed_numbas.js?build_time=1727434209.703846" type="module"></script>
-    <script defer src="../static/embed_qrcode.js?build_time=1727434209.703846" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1727434209.703846" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1727434209.703846" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1727434209.703846" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../static/code.css?build_time=1727434209.703846">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1727434209.703846">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -227,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../static/embed_numbas.css?build_time=1727434209.703846">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1727434209.703846">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -245,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -401,21 +404,25 @@
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="../index.html">Introduction to Linear Algebra</a>
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Using Python</a>
             </li>
             
             <li class="breadcrumb-item active">
-                Exercises
+                Matrices using Python
             </li>
         </ul>
 
         
         <p class="pager" id="item-pager">
             
-            <a rel="prev" href="../using_python/matrices_using_pytho/index.html">Previous: Matrices using Python</a>
+            <a rel="prev" href="../index.html">Previous: Using Python</a>
             
             
-            <a rel="next" href="week_1_matrices_by_h/index.html">Next: Week 1 - Matrices by hand</a>
+            <a rel="next" href="../../exercises/index.html">Next: Exercises</a>
             
         </p>
         
@@ -423,88 +430,240 @@
     
 
             
-    <h1>Exercises</h1>
-
+            
         </header>
 
         <main id="main-content">
             
-    <article class="item-content">
-        <section class="leading-text">
-            <p></p>
-        </section>
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="matrices_using_pytho.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#matrix_methods_using">Matrix methods using Python</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#importing_mathematic">Importing mathematical functionality</a>
+        
+    </li>
+
+    <li>
+        <a href="#matrix_operations">Matrix operations</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#inputting_a_matrix">Inputting a matrix</a>
+        
+    </li>
+
+    <li>
+        <a href="#matrix_addition">Matrix addition</a>
+        
+    </li>
+
+    <li>
+        <a href="#multiply_a_matrix_by">Multiply a matrix by a scalar</a>
+        
+    </li>
+
+    <li>
+        <a href="#matrix_multiplicatio">Matrix multiplication</a>
+        
+    </li>
+
+    <li>
+        <a href="#transpose">Transpose</a>
+        
+    </li>
+
+    <li>
+        <a href="#powers">Powers</a>
+        
+    </li>
+
+    <li>
+        <a href="#identity_matrix">Identity matrix</a>
+        
+    </li>
+
+    <li>
+        <a href="#zero_matrix">Zero matrix</a>
+        
+    </li>
+
+    <li>
+        <a href="#exact_values_and_dec">Exact values and decimal approximations</a>
+        
+    </li>
+
+    <li>
+        <a href="#referring_to_matrix_">Referring to matrix elements</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
         <section>
-            
-        </section>
-    </article>
-
-    
-        <ul class="chirun-structure">
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_1_matrices_by_h/index.html">Week 1 - Matrices by hand</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_1_matrices_by_h/week_1_matrices_by_h.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_1_matrices_by_p/index.html">Week 1 - Matrices by Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_1_matrices_by_p/week_1_matrices_by_p.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
+<h1 id="matrix_methods_using">Matrix methods using Python</h1>
+<p>Matrices come into their own if they get big, in which case you are much better off using technology. These instructions explain how to work with matrices in Python.</p>
+<h2 id="importing_mathematic">Importing mathematical functionality</h2>
+<p>Run IDLE, so you are looking at a window like this.</p>
+<figure><img alt="IDLE editor shell window" src="images/idle.png"/></figure>
+<p>At this stage, we are going to type commands into the IDLE Shell, rather than writing a program. </p>
+<p>To import the mathematical functions we need, run these two commands:</p>
+<div class="highlight"><pre><span></span>from sympy import *
+</pre></div>
+<p>and</p>
+<div class="highlight"><pre><span></span>init_printing(use_unicode=True)
+</pre></div>
+<p>The second line asks Python to make the output a bit prettier, which can be a help when dealing with matrices.</p>
+<h2 id="matrix_operations">Matrix operations</h2>
+<h3 id="inputting_a_matrix">Inputting a matrix</h3>
+<p>To input a matrix</p>
+<script type="math/tex; mode=display">\mathbf{M}=\begin{bmatrix}
+1 & 2\\
+4 & 3
+\end{bmatrix}</script>
+<p>use this command in Python:</p>
+<div class="highlight"><pre><span></span>M = Matrix([[1,2],[4,3]])
+</pre></div>
+<p>This breaks down like this:</p>
+<ul>
+<li>The matrix is called <script type="math/tex">\mathbf{M}</script>, so we start <code>M =</code>.</li>
+<li>We tell Python we are entering a matrix using <code>Matrix()</code>.</li>
+<li>Inside this, the whole matrix is in a set of square brackets <code>[...]</code>. </li>
+<li>Inside <em>this</em>, each row is within its own pair of square brackets <code>[...]</code>, with a comma between each entry and between each row.</li>
 </ul>
-    
+<p>It's quite fiddly, but if you can keep track of the brackets that'd be good. If you want to see whether you've entered it correctly, type <code>M</code> and press enter and it will display the rows and columns for you to check.</p>
+<p>For example, to input the matrices</p>
+<script type="math/tex; mode=display"> \begin{align*}
+\mathbf{A}&=\begin{bmatrix}
+-8 & -5 & -4 & 2 & 1\\
+2 & 7 & 2 & -1 & 1\\
+4 & 1 & -6 & -3 & 3\\
+0 & -1 & 1 & 11 & 3\\
+1 & 1 & -1 & 0 & -4
+\end{bmatrix}\\
+\mathbf{B}&=\begin{bmatrix}
+0 & 9 & -2 & 0 & -3\\
+-3 & -10 & -7 & -2 & 0\\
+-11 & 12 & 13 & 0 & 11\\
+-7 & 10 & 7 & -7 & 12\\
+8 & -9 & 11 & 4 & 0
+\end{bmatrix}
+\end{align*} </script>
+<p>We use</p>
+<div class="highlight"><pre><span></span>A = Matrix([[-8,-5,-4,2,1],[2,7,2,-1,1],[4,1,-6,-3,3],[0,-1,1,11,3],[1,1,-1,0,-4]])
+B = Matrix([[0,9,-2,0,-3],[-3,-10,-7,-2,0],[-11,12,13,0,11],[-7,10,7,-7,12],[8,-9,11,4,0]])
+</pre></div>
+<h3 id="matrix_addition">Matrix addition</h3>
+<p>Python will store these two matrices as <code>A</code> and <code>B</code>, and we can ask for them by those names. So if we want to add <script type="math/tex"> \mathbf{A} + \mathbf{B} </script>, we do this using</p>
+<div class="highlight"><pre><span></span>A+B
+</pre></div>
+<h3 id="multiply_a_matrix_by">Multiply a matrix by a scalar</h3>
+<p>To multiply a matrix by a scalar, simply use the number and <code>*</code> for multiplication. For example, to calculate <script type="math/tex"> 4\mathbf{A} </script> use</p>
+<div class="highlight"><pre><span></span>4*A
+</pre></div>
+<h3 id="matrix_multiplicatio">Matrix multiplication</h3>
+<p>To multiply two matrices together, again we use <code>*</code> for multiplication. To calculate <script type="math/tex">\mathbf{A}\mathbf{B}</script> we use</p>
+<div class="highlight"><pre><span></span>A*B
+</pre></div>
+<h3 id="transpose">Transpose</h3>
+<p>To calculate <script type="math/tex"> \mathbf{A}^{\mathsf{T}} </script>, use</p>
+<div class="highlight"><pre><span></span>A.T
+</pre></div>
+<h3 id="powers">Powers</h3>
+<p>To raise a matrix to a power, note that Python uses <code>**</code> and not <code>^</code>. For example, to calculate <script type="math/tex">\mathrm{A}^5</script> use</p>
+<div class="highlight"><pre><span></span>A**5
+</pre></div>
+<h3 id="identity_matrix">Identity matrix</h3>
+<p>If you need an identity matrix, you can use a Python command <code>eye</code>, so for example to get a <script type="math/tex"> 5 \times 5 </script> identity matrix use</p>
+<div class="highlight"><pre><span></span>I = eye(5)
+</pre></div>
+<h3 id="zero_matrix">Zero matrix</h3>
+<p>You can get a matrix of all zeros using <code>zeros</code>. For example, a <script type="math/tex">10 \times 10</script> zero matrix is given by</p>
+<div class="highlight"><pre><span></span>Z = zeros(10,10)
+</pre></div>
+<h3 id="exact_values_and_dec">Exact values and decimal approximations</h3>
+<p>If you are entering a matrix and want to use exact values for, say, fractions, you can do this using <code>S()</code>. For example if I enter</p>
+<div class="highlight"><pre><span></span>C = Matrix([[0,1/2,1/2,1/3],[1,0,1/2,1/3],[0,0,0,1/3],[0,1/2,0,0]])
+</pre></div>
+<p>and ask Python to tell me what <code>A</code> is, I get this:</p>
+<div class="highlight"><pre><span></span>&gt;&gt;&gt; C
+C
+⎡0  0.5  0.5  0.333333333333333⎤
+⎢                              ⎥
+⎢1   0   0.5  0.333333333333333⎥
+⎢                              ⎥
+⎢0   0    0   0.333333333333333⎥
+⎢                              ⎥
+⎣0  0.5   0           0        ⎦
+</pre></div>
+<p>Instead of using the exact values, Python has converted these into decimals. This can cause small rounding errors that can introduce small errors into the final result.</p>
+<p>We can enclose the entire <code>Matrix()</code> command inside an <code>S()</code>, like this:</p>
+<div class="highlight"><pre><span></span>C = S('Matrix([[0,1/2,1/2,1/3],[1,0,1/2,1/3],[0,0,0,1/3],[0,1/2,0,0]])')
+</pre></div>
+<p>Now when we ask to see <code>A</code>, we get fractions rather than decimals, meaning Python is treating these as exact (symbolic) values.</p>
+<div class="highlight"><pre><span></span>&gt;&gt;&gt; C
+C
+⎡0  1/2  1/2  1/3⎤
+⎢                ⎥
+⎢1   0   1/2  1/3⎥
+⎢                ⎥
+⎢0   0    0   1/3⎥
+⎢                ⎥
+⎣0  1/2   0    0 ⎦
+</pre></div>
+<p>If Python is displaying fractions but you would like decimal values, you can use <code>.evalf()</code>. </p>
+<p>For example, to view the matrix <code>C</code> above with all values given as decimal approximation, run </p>
+<div class="highlight"><pre><span></span>C.evalf()
+</pre></div>
+<h3 id="referring_to_matrix_">Referring to matrix elements</h3>
+<p>If you need to use a matrix element for further calculation, it is a very bad idea to copy and paste a number that may be truncated. Instead, you can refer to elements in a matrix directly. Python counts from <code>0</code> not <code>1</code>, so to access the first element on the first row use </p>
+<div class="highlight"><pre><span></span>A[0,0]
+</pre></div>
+<p>To get the 5th row, 3rd colum, use </p>
+<div class="highlight"><pre><span></span>A[4,2]
+</pre></div>
+<p>You can also do this on matrices you have worked on, for example to get the element on the 2nd row, 3rd column of the result of <script type="math/tex">\mathrm{A}\mathrm{B}</script>, use </p>
+<div class="highlight"><pre><span></span>(A*B)[1,2]
+</pre></div>
+</section>
+
+    </article>
 
         </main>
 
