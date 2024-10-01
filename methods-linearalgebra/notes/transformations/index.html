@@ -10,35 +10,46 @@
             <meta name="date" content="2024-10-01" />
         
 
-        <title>Introduction to Linear Algebra</title>
+        <title>Transformations | Introduction to Linear Algebra</title>
 
         
-            <link rel="stylesheet" href="static/styles.css?build_time=1727790525.742894">
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1727790733.621671">
             
             
         
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1727790733.621671">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1727790733.621671">
+
 
         
+    
 			<script>
-				var chirun_static_url = new URL('static?build_time=1727790525.742894', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1727790733.621671', location.href);
 			</script>
 
             
-                <script defer src="static/mathjax_config.js?build_time=1727790525.742894"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1727790733.621671"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="static/localisation.js?build_time=1727790525.742894"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1727790733.621671"></script>
 
-            <script defer src="static/customisation.js?build_time=1727790525.742894"></script>
+            <script defer src="../../static/customisation.js?build_time=1727790733.621671"></script>
 
             
 
             
         
+    <script defer src="../../static/code.js?build_time=1727790733.621671" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1727790733.621671" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1727790733.621671" type="module"></script>
+
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="static/code.css?build_time=1727790525.742894">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1727790733.621671">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -219,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="static/embed_numbas.css?build_time=1727790525.742894">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1727790733.621671">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -237,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -389,221 +400,965 @@
 </svg>
 </button>
             
-            
     
-        <div id="topbar">
-            <h1 class="title">Introduction to Linear Algebra</h1>
-            <p class="author">Peter Rowlett</p>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
             
-            <p class="year">2024/25</p>
+            <li class="breadcrumb-item">
+                <a href="../index.html">Notes</a>
+            </li>
             
-            <p class="leading-text">Welcome to these notes for the linear algebra section of Mathematical and Statistical Methods. Please read through the notes and have a go at the exercise sheet before the class on Fridays. In class, some examples will be demonstrated and you will have a chance to ask questions and work on exercises. Answers to exercises will be released in the week after the class for you to self-mark.</p>
-        </div>
+            <li class="breadcrumb-item active">
+                Transformations
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../matrices/index.html">Previous: Matrices</a>
+            
+            
+            <a rel="next" href="../../using_python/index.html">Next: Using Python</a>
+            
+        </p>
+        
+    </nav>
     
 
-    
-
+            
+            
         </header>
 
         <main id="main-content">
             
-    
-        <ul class="chirun-structure">
-
-    
-
-    
-    <li>
-        <article class="item has-content">
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
+            <li><a rel="alternate" type="application/pdf" href="transformations.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
                 
-<header>
-    <h2>
-        <a class="undecorated" href="notes/index.html">Notes</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
+                    
     <li>
+        <a href="#matrix_transformatio">Matrix transformations</a>
         
-
-    
-        <a class="undecorated" href="notes/matrices/index.html">Matrices</a>
-
-        <ul class="alternative-formats">
+        <ol>
             
-            <li><a class="undecorated" href="notes/matrices/matrices.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
             
-        </ul>
-    
-
-    </li>
-    
-    
-    
     <li>
+        <a href="#a0000000002">1 Introduction</a>
         
-
-    
-        <a class="undecorated" href="notes/transformations/index.html">Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="notes/transformations/transformations.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
     </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
 
-    
     <li>
-        <article class="item has-content">
+        <a href="#a0000000003">2 Shapes</a>
+        
+    </li>
+
+    <li>
+        <a href="#sec:scaling">3 Scaling</a>
+        
+    </li>
+
+    <li>
+        <a href="#sec:rotation">4 Rotation</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000007">5 Reflection</a>
+        
+        <ol>
             
+            
+    <li>
+        <a href="#a0000000008">5.1 Reflection in the \(x\)-axis</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000010">5.2 Reflection in the \(y\)-axis</a>
+        
+    </li>
+
+    <li>
+        <a href="#sec:yequalsx">5.3 Reflection in the line \(y=x\)</a>
+        
+    </li>
+
+    <li>
+        <a href="#sec:yequalsminusx">5.4 Reflection in the line \(y=-x\)</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000014">6 Shearing</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000017">7 Translation</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000019">8 Composite transformations</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000021">8.1 Example</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
                 
-<header>
-    <h2>
-        <a class="undecorated" href="using_python/index.html">Using Python</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
-    <li>
+            </ol>
         
 
-    
-        <a class="undecorated" href="using_python/matrices_using_pytho/index.html">Matrices using Python</a>
+    </nav>
 
-        <ul class="alternative-formats">
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="matrix_transformatio">Matrix transformations</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<section class="section">
+<h2 id="a0000000002">1 Introduction</h2>
+<p>
+In what follows, we will represent a point with coordinates \((x,y)\) by a \(2 \times 1\) matrix 
+</p>
+<span class="dmath">\[  \mathbf{X} = \begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+We will consider how to use matrices to transform points on a computer screen. Transformations include scaling, translation, rotation, reflection, and shearing. Mathematically, each can be represented by a <i class="itshape">transformation matrix</i>. 
+</p>
+<p>
+In general, if we transform our point using the transformation matrix 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  a 
+
+&amp;  b
+
+\\ c 
+
+&amp;  d 
+
+\end{bmatrix} \]</span>
+<p>
+then we obtain 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{TX} & = \begin{bmatrix}  a 
+
+&  b
+
+\\ c 
+
+&  d 
+
+\end{bmatrix}\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\\ & = \begin{bmatrix}  ax+by
+
+\\ cx+dy 
+
+\end{bmatrix}\text{.}\end{align*}</script></span>
+<p>
+We can say the point \(\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\) has been translated to the point \(\begin{bmatrix}  ax+by
+
+\\ cx+dy 
+
+\end{bmatrix}\). 
+</p>
+</section><section class="section">
+<h2 id="a0000000003">2 Shapes</h2>
+<p>
+We can consider a line as being defined by two end-points. Hence the matrix 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  1 
+
+&amp;  5
+
+\\ 2 
+
+&amp;  3 
+
+\end{bmatrix} \]</span>
+<p>
+represents the line joining the points \(\begin{bmatrix}  1
+
+\\ 2 
+
+\end{bmatrix}\) and \(\begin{bmatrix}  5
+
+\\ 3 
+
+\end{bmatrix}\). 
+</p>
+<p>
+Similarly, a triangle can be stored as a \(2 \times 3\) matrix, for example 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  2
+
+&amp; 5
+
+&amp; 3
+
+\\ 3
+
+&amp; 6
+
+&amp; -1 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+And so on. 
+</p>
+</section><section class="section">
+<h2 id="sec:scaling">3 Scaling</h2>
+<p>
+Consider the square 
+</p>
+<span class="dmath">\[  \mathbf{S} = \begin{bmatrix}  0
+
+&amp; 0
+
+&amp; 1
+
+&amp; 1
+
+\\ 0
+
+&amp; 1
+
+&amp; 1
+
+&amp; 0 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+We can draw this. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000004">
+<img alt="\begin{tikzpicture} 
+    		\draw[-&gt;] (-0.25,0) -- (1.25,0);
+    		\draw[-&gt;] (0,-0.25) -- (0,1.25);
+    		\node at (-0.25,-0.25) {0};
+    		\node at (-0.25,1) {1};
+    		\node at (1,-0.25) {1};
+    		\draw[thick,fill=lightgray] (0,0) rectangle (1,1);
+    	\end{tikzpicture}" src="images/img-0001.svg"/>
+</div> </div>
+<p>
+Now if we apply the transformation 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  4
+
+&amp; 0
+
+\\ 0
+
+&amp; 1 
+
+\end{bmatrix} \]</span>
+<p>
+we obtain 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{TS} & = \begin{bmatrix}  4
+
+& 0
+
+\\ 0
+
+& 1 
+
+\end{bmatrix}\begin{bmatrix}  0
+
+& 0
+
+& 1
+
+& 1
+
+\\ 0
+
+& 1
+
+& 1
+
+& 0 
+
+\end{bmatrix}\\ & = \begin{bmatrix}  0
+
+& 0
+
+& 4
+
+& 4
+
+\\ 0
+
+& 1
+
+& 1
+
+& 0 
+
+\end{bmatrix}\text{.}\end{align*}</script></span>
+<p>
+We can draw this. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000005">
+<img alt="\begin{tikzpicture} 
+    		\draw[-&gt;] (-0.25,0) -- (4.25,0);
+    		\draw[-&gt;] (0,-0.25) -- (0,1.25);
+    		\node at (-0.25,-0.25) {0};
+    		\node at (-0.25,1) {1};
+    		\node at (4,-0.25) {4};
+    		\draw[thick,fill=lightgray] (0,0) rectangle (4,1);
+    	\end{tikzpicture}" src="images/img-0002.svg"/>
+</div> </div>
+<p>
+In general, scaling is done using a diagonal matrix, with the first row determining the horizontal scaling and the second the vertical. 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  \alpha 
+
+&amp;  0
+
+\\ 0 
+
+&amp;  \beta 
+
+\end{bmatrix}\text{.} \]</span>
+</section><section class="section">
+<h2 id="sec:rotation">4 Rotation</h2>
+<p>
+In this diagram, the point \((x,y)\) is rotated by \(\theta \) around the origin to \((x',y')\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000006">
+<img alt="\begin{tikzpicture} 
+    		\draw[-&gt;] (-0.25,0) -- (3.25,0);
+    		\draw[-&gt;] (0,-0.25) -- (0,3.25);
+    		
+    		\node[inner sep=0] (O) at (0,0) {};
+    		\node[draw,circle,fill=black, inner sep=0.3ex] (X) at (2.5,1.5) {};
+    		\node[draw,circle,fill=black, inner sep=0.3ex] (Y) at (1.5,2.5) {};
+    		
+    		\draw (O) -- (X);
+    		\draw (O) -- (Y);
+    		\draw[-&gt;] (X) to[bend right] (Y);
+    		
+    		\node at (3,1.5) {\((x,y)\)};
+    		\node at (1.25,2.75) {\((x',y')\)};
+    		\node at (0.65,0.65) {\(\theta\)};
+            \draw (0.5,0.3) to[bend right] (0.3,0.5);
+    	\end{tikzpicture}" src="images/img-0003.svg"/>
+</div> </div>
+<p>
+The transformation matrix that rotates a point anticlockwise around the origin by an angle \(\theta \) is given by 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  \cos \theta 
+
+&amp;  -\sin \theta 
+
+\\ \sin \theta 
+
+&amp;  \cos \theta 
+
+\end{bmatrix}\text{.} \]</span>
+</section><section class="section">
+<h2 id="a0000000007">5 Reflection</h2>
+<section class="subsection">
+<h3 id="a0000000008">5.1 Reflection in the \(x\)-axis</h3>
+<p>
+In the diagram below, the point \((x,y)\) is reflected in the \(x\)-axis to \((x',y')\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000009">
+<img alt="\begin{tikzpicture} 
+    		\draw[-&gt;] (-0.25,0) -- (2.25,0);
+    		\draw[-&gt;] (0,-1.25) -- (0,1.25);
+    		
+    		\node[draw,circle,fill=black, inner sep=0.3ex] at (1,0.5) {};
+    		\node at (1,0.75) {\((x,y)\)};
+    		\node[draw,circle,fill=black, inner sep=0.3ex] at (1,-0.5) {};
+    		\node at (1,-0.75) {\((x',y')\)};
+    	\end{tikzpicture}" src="images/img-0004.svg"/>
+</div> </div>
+<p>
+The two points have the same horizontal coordinate, so \(x' = x\). However, the vertical coordinate has flipped, so \(y' = - y\). 
+</p>
+<p>
+The transformation matrix that produces this effect is 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  1 
+
+&amp;  0
+
+\\ 0 
+
+&amp;  -1 
+
+\end{bmatrix}\text{.} \]</span>
+</section><section class="subsection">
+<h3 id="a0000000010">5.2 Reflection in the \(y\)-axis</h3>
+<p>
+In the diagram below, the point \((x,y)\) is reflected in the \(y\)-axis to \((x',y')\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000011">
+<img alt="\begin{tikzpicture} 
+    		\draw[-&gt;] (-2.25,0) -- (2.25,0);
+    		\draw[-&gt;] (0,-0.25) -- (0,1.25);
+    		
+    		\node[draw,circle,fill=black, inner sep=0.3ex] at (1,0.5) {};
+    		\node at (1,0.75) {\((x,y)\)};
+    		\node[draw,circle,fill=black, inner sep=0.3ex] at (-1,0.5) {};
+    		\node at (-1,0.75) {\((x',y')\)};
+    	\end{tikzpicture}" src="images/img-0005.svg"/>
+</div> </div>
+<p>
+The two points have the same vertical coordinate, so \(y' = y\). However, the horizontal coordinate has flipped, so \(x' = - x\). 
+</p>
+<p>
+The transformation matrix that produces this effect is 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  -1 
+
+&amp;  0
+
+\\ 0 
+
+&amp;  1 
+
+\end{bmatrix}\text{.} \]</span>
+</section><section class="subsection">
+<h3 id="sec:yequalsx">5.3 Reflection in the line \(y=x\)</h3>
+<p>
+In the diagram below, the point \((x,y)\) is reflected in the line \(y=x\) to \((x',y')\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000012">
+<img alt="\begin{tikzpicture} 
+    		\draw[-&gt;] (-0.25,0) -- (2.25,0);
+    		\draw[-&gt;] (0,-0.25) -- (0,2.25);
+    		
+    		\draw[dotted] (0,0) -- (2.25,2.25);
+    		
+    		\node[draw,circle,fill=black, inner sep=0.3ex] at (1.5,0.5) {};
+    		\node at (1.5,0.75) {\((x,y)\)};
+    		\node[draw,circle,fill=black, inner sep=0.3ex] at (0.5,1.5) {};
+    		\node at (0.75,1.75) {\((x',y')\)};
+    	\end{tikzpicture}" src="images/img-0006.svg"/>
+</div> </div>
+<p>
+In effect, the \(x\) and \(y\) coordinates have swapped. The transformation matrix that brings this about is 
+</p>
+<span class="dmath">\[ \begin{bmatrix}  0 
+
+&amp;  1
+
+\\ 1 
+
+&amp;  0 
+
+\end{bmatrix}\text{.} \]</span>
+</section><section class="subsection">
+<h3 id="sec:yequalsminusx">5.4 Reflection in the line \(y=-x\)</h3>
+<p>
+In the diagram below, the point \((x,y)\) is reflected in the line \(y=x\) to \((x',y')\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000013">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;] (-2.25,0) -- (2.25,0);
+            \draw[-&gt;] (0,-2.25) -- (0,2.25);
             
-            <li><a class="undecorated" href="using_python/matrices_using_pytho/matrices_using_pytho.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
+            \draw[dotted] (2.25,-2.25) -- (-2.25,2.25);
             
-        </ul>
-    
+            \node[draw,circle,fill=black, inner sep=0.3ex] at (0.5,1.5) {};
+            \node at (0.5,1.85) {\((x,y)\)};
+            \node[draw,circle,fill=black, inner sep=0.3ex] at (-1.5,-0.5) {};
+            \node at (-1.5,-0.85) {\((x',y')\)};
+        \end{tikzpicture}" src="images/img-0007.svg"/>
+</div> </div>
+<p>
+Here the \(x\) and \(y\) coordinates have swapped and also changed sign. The transformation matrix that brings this about is 
+</p>
+<span class="dmath">\[ \begin{bmatrix}  0 
 
-    </li>
-    
-    
-</ul>
+&amp;  -1
+
+\\ -1 
+
+&amp;  0 
+
+\end{bmatrix}\text{.} \]</span>
+</section>
+</section><section class="section">
+<h2 id="a0000000014">6 Shearing</h2>
+<p>
+A shear is a distortion. The diagram below shows a shear in the \(x\)-direction. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000015">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;] (-0.25,0) -- (1.25,0);
+            \draw[-&gt;] (0,-0.25) -- (0,1.25);
+            \node at (-0.25,-0.25) {0};
+            \node at (-0.25,1) {1};
+            \node at (1,-0.25) {1};
+            \draw[thick,fill=lightgray] (0,0) rectangle (1,1);
             
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item has-content">
+            \draw[-&gt;,ultra thick] (1.75,0.5) -- (2.25,0.5);
             
-                
-<header>
-    <h2>
-        <a class="undecorated" href="exercises/index.html">Exercises</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
-    <li>
-        
-
-    
-        <a class="undecorated" href="exercises/week_1_matrices_by_h/index.html">Week 1 - Matrices by hand</a>
-
-        <ul class="alternative-formats">
+            \begin{scope}[shift={(3,0)}]
+                \draw[-&gt;] (-0.25,0) -- (1.75,0);
+                \draw[-&gt;] (0,-0.25) -- (0,1.25);
+                \node at (-0.25,-0.25) {0};
+                \node at (-0.25,1) {1};
+                \node at (1,-0.25) {1};
+                \draw[thick,fill=lightgray] (0,0) -- (0.5,1) -- (1.5,1) -- (1,0) -- cycle;
+            \end{scope}
+        \end{tikzpicture}" src="images/img-0008.svg"/>
+</div> </div>
+<p>
+And the diagram below shows a shear in the \(y\)-direction. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000016">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;] (-0.25,0) -- (1.25,0);
+            \draw[-&gt;] (0,-0.25) -- (0,1.25);
+            \node at (-0.25,-0.25) {0};
+            \node at (-0.25,1) {1};
+            \node at (1,-0.25) {1};
+            \draw[thick,fill=lightgray] (0,0) rectangle (1,1);
             
-            <li><a class="undecorated" href="exercises/week_1_matrices_by_h/week_1_matrices_by_h.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
+            \draw[-&gt;,ultra thick] (1.75,0.5) -- (2.25,0.5);
             
-        </ul>
-    
+            \begin{scope}[shift={(3,0)}]
+                \draw[-&gt;] (-0.25,0) -- (1.25,0);
+                \draw[-&gt;] (0,-0.25) -- (0,1.75);
+                \node at (-0.25,-0.25) {0};
+                \node at (-0.25,1) {1};
+                \node at (1,-0.25) {1};
+                \draw[thick,fill=lightgray] (0,0) -- (0,1) -- (1,1.5) -- (1,0.5) -- cycle;
+            \end{scope}
+        \end{tikzpicture}" src="images/img-0009.svg"/>
+</div> </div>
+<p>
+A shear is brought about by the transformation matrix 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  a
 
-    </li>
-    
-    
-    
-    <li>
-        
+&amp; b
 
-    
-        <a class="undecorated" href="exercises/week_1_matrices_by_p/index.html">Week 1 - Matrices by Python</a>
+\\ c
 
-        <ul class="alternative-formats">
+&amp; d 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+The off-diagonal terms, \(b\) and \(c\), determine the type of shear produced, with \(b\) acting in the \(x\) direction and \(c\) in the \(y\) direction. Similarly to section <a class="ref" href="#sec:scaling">3</a>, the element \(a\) is a scale factor in the \(x\) direction and \(d\) is a scale factor in the \(y\) direction. 
+</p>
+</section><section class="section">
+<h2 id="a0000000017">7 Translation</h2>
+<p>
+A translation is a movement in a specific direction by a specific amount. For example, in the diagram below the point \((x,y)\) is translated to \((x',y')\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000018">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;] (-0.25,0) -- (2.25,0);
+            \draw[-&gt;] (0,-0.25) -- (0,2.25);
             
-            <li><a class="undecorated" href="exercises/week_1_matrices_by_p/week_1_matrices_by_p.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
+            \node[draw,circle,fill=black, inner sep=0.3ex] (X) at (0.5,0.75) {};
+            \node at (0.5,0.5) {\((x,y)\)};
+            \node[draw,circle,fill=black, inner sep=0.3ex] (Y) at (1.5,2) {};
+            \node at (1.5,2.25) {\((x',y')\)};
             
-        </ul>
-    
+            \draw[dotted,-&gt;] (X) -- (Y);
+        \end{tikzpicture}" src="images/img-0010.svg"/>
+</div> </div>
+<p>
+Consider a point at \(\begin{bmatrix}  1
 
-    </li>
-    
-    
-    
-    <li>
-        
+\\ 3 
 
-    
-        <a class="undecorated" href="exercises/week_2_transformatio/index.html">Week 2 - Transformations</a>
+\end{bmatrix}\) which is shifted to \(\begin{bmatrix}  4
 
-        <ul class="alternative-formats">
+\\ 7 
+
+\end{bmatrix}\). The translation has added \(3\) to the \(x\) coordinate and added \(4\) to the \(y\) coordinate. That is 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  4 & = 1+3\\ 7 & = 4+4\text{.}\end{align*}</script></span>
+<p>
+In general, to translate \( \begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\) to \( \begin{bmatrix}  x'
+
+\\ y' 
+
+\end{bmatrix}\), we use 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  x' = x + t_x\\ y' = y + t_y \end{align*}</script></span>
+<p>
+where \(t_x\) is the translation in the \(x\) direction and \(t_y\) is the translation in the \(y\) direction. 
+</p>
+<p>
+The previous transformations all involved multiplication of coordinates by some factor, but this one is different. It requires us to add a number to the different coordinates. 
+</p>
+<p>
+To enable this to be represented by matrix multiplication, we introduce <i class="itshape">homogeneous coordinates</i>. The point \( \begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\) is represented in homogeneous coodinates by 
+</p>
+<span class="dmath">\[  \mathbf{X} = \begin{bmatrix}  x
+
+\\ y
+
+\\ 1 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+The extra ‘\(1\)’ is used to increase the order of the transformation matrix from \(2 \times 2\) to \(3 \times 3\). We now use a transformation matrix 
+</p>
+<span class="dmath">\[ \mathbf{T} = \begin{bmatrix}  1
+
+&amp; 0
+
+&amp; t_x
+
+\\ 0
+
+&amp; 1
+
+&amp; t_y
+
+\\ 0
+
+&amp; 0
+
+&amp; 1 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+Applying \(\mathbf{T}\) to \(\mathbf{X}\), we obtain 
+</p>
+<span class="dmath">\[  \mathbf{T}\mathbf{X} = \begin{bmatrix}  1
+
+&amp; 0
+
+&amp; t_x
+
+\\ 0
+
+&amp; 1
+
+&amp; t_y
+
+\\ 0
+
+&amp; 0
+
+&amp; 1 
+
+\end{bmatrix} \begin{bmatrix}  x
+
+\\ y
+
+\\ 1 
+
+\end{bmatrix} = \begin{bmatrix}  x+ t_x
+
+\\ y + t_y
+
+\\ 1 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+The homogenous coordinates 
+</p>
+<span class="dmath">\[ \begin{bmatrix}  x+ t_x
+
+\\ y + t_y
+
+\\ 1 
+
+\end{bmatrix} \]</span>
+<p>
+ represent the point 
+</p>
+<span class="dmath">\[ \begin{bmatrix}  x+ t_x
+
+\\ y + t_y 
+
+\end{bmatrix}\text{.} \]</span>
+</section><section class="section">
+<h2 id="a0000000019">8 Composite transformations</h2>
+<p>
+Since we have transformations encoded as matrices, we can multiply these together to form composite transformations. 
+</p>
+<p>
+For example, we saw in section <a class="ref" href="#sec:yequalsminusx">5.4</a> that reflection in the \(y=-x\) line is obtained using 
+</p>
+<span class="dmath">\[  \mathbf{T}_{\text{ref}} = \begin{bmatrix}  0
+
+&amp; -1
+
+\\ -1
+
+&amp; 0
+
+\\ \end{bmatrix} \]</span>
+<p>
+and using the technique in section <a class="ref" href="#sec:rotation">4</a>, rotation about the origin by \(70^\circ \) would be represented by 
+</p>
+<span class="dmath">\[  \mathbf{T}_{\text{rot}} = \begin{bmatrix}  \cos (70^\circ )
+
+&amp; -\sin (70^\circ )
+
+\\ \sin (70^\circ )
+
+&amp; \cos (70^\circ )
+
+\\ \end{bmatrix}\text{.} \]</span>
+<p>
+The composite transformation is obtained by multiplying these matrices together. Remember that in matrix multiplication, \(\mathbf{AB}\ne \mathbf{BA}\), so we must think about the order in which we want to apply the transformations. 
+</p>
+<p>
+Acting on a point \(\mathbf{X}\), if we perform the reflection then a rotation we would calculate \(\mathbf{T}_{\text{rot}}\mathbf{T}_{\text{ref}}\mathbf{X}\). Note that the last transformation comes first in our multiplication. 
+</p>
+<p>
+We can calculate the composite transformation matrix 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{T}_{\text{rot}}\mathbf{T}_{\text{ref}} & = \begin{bmatrix}  \cos (70^\circ )
+
+& -\sin (70^\circ )
+
+\\ \sin (70^\circ )
+
+& \cos (70^\circ )
+
+\\ \end{bmatrix}\begin{bmatrix}  0
+
+& -1
+
+\\ -1
+
+& 0
+
+\\ \end{bmatrix}\\ & = \begin{bmatrix}  \sin (70^\circ ) 
+
+&  -\cos (70^\circ )
+
+\\ -\cos (70^\circ ) 
+
+&  -\sin (70^\circ ) 
+
+\end{bmatrix}\text{.}\end{align*}</script></span>
+<p>
+For example, if we apply our transformation to the point \(\begin{bmatrix}  1.5
+
+\\ 2 
+
+\end{bmatrix}\) we obtain 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  \sin (70^\circ ) 
+
+&amp;  -\cos (70^\circ )
+
+\\ -\cos (70^\circ ) 
+
+&amp;  -\sin (70^\circ ) 
+
+\end{bmatrix}\begin{bmatrix}  1.5
+
+\\ 2 
+
+\end{bmatrix} = \begin{bmatrix}  0.725
+
+\\ -2.392 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+This is represented on the diagram below. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000020">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;] (-2.25,0) -- (2.25,0);
+            \draw[-&gt;] (0,-2.25) -- (0,2.25);
             
-            <li><a class="undecorated" href="exercises/week_2_transformatio/week_2_transformatio.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
+            \draw[dotted] (2.25,-2.25) -- (-2.25,2.25);
             
-        </ul>
-    
+            \node[draw,circle,fill=black, inner sep=0.3ex] at (1.5,2) {};
+            \node at (1.5,2.25) {\((1.5,2)\)};
+            \node[draw,circle,fill=black, inner sep=0.3ex] at (0.725,-2.392) {};
+            \node at (0.725,-2.65) {\((0.725,-2.392)\)};
+        \end{tikzpicture}" src="images/img-0011.svg"/>
+</div> </div>
+<p>
+If a composite transformation involves a translation, we must use homogenous coordinates for the point and all transformations. 
+</p>
+<section class="subsection">
+<h3 id="a0000000021">8.1 Example</h3>
+<p>
+Determine a transformation matrix that rotates a point \(30^\circ \) anticlockwise about the point \(\begin{bmatrix}  1
 
-    </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
+\\ 2 
 
-</ul>
-    
+\end{bmatrix}\). 
+</p>
+<p>
+The rotation matrices so far have represented rotation about the origin. To represent rotation about \(\begin{bmatrix}  1
 
-    
-    <section class="intro-content">
-         Peter Rowlett. Email: <a href="mailto:p.rowlett@shu.ac.uk">p.rowlett@shu.ac.uk</a>. <a href="https://meetings.peterrowlett.net/">Availability calendar</a>. 
-<script id="plastex-labels" type="application/json">{}</script>
-    </section>
-    
+\\ 2 
 
-    
-    <section class="zipfile-download">
-        <p><a href="introduction_to_line.zip" download>Download a copy of these notes.</a></p>
-    </section>
-    
+\end{bmatrix}\) we require three transformations: 
+</p>
+<ol class="enumerate" id="a0000000022">
+<li id="a0000000023" value="1">
+<p>
+translation of \(\begin{bmatrix}  1
+
+\\ 2 
+
+\end{bmatrix}\) to the origin, \(\mathbf{T}_\text {trans}\); 
+</p>
+</li>
+<li id="a0000000024" value="2">
+<p>
+rotation of \(30^\circ \) anticlockwise, \(\mathbf{T}_\text {rot}\); 
+</p>
+</li>
+<li id="a0000000025" value="3">
+<p>
+translation from the origin back to \(\begin{bmatrix}  1
+
+\\ 2 
+
+\end{bmatrix}\), \(\mathbf{T}_\text {back}\). 
+</p>
+</li>
+</ol>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{T}_\text {trans} & = \begin{bmatrix}  1
+
+& 0
+
+& -1
+
+\\ 0
+
+& 1
+
+& -2
+
+\\ 0
+
+& 0
+
+& 1 
+
+\end{bmatrix}\text{;}\\ \mathbf{T}_\text {rot} & = \begin{bmatrix}  \cos (30^\circ ) 
+
+&  -\sin (30^\circ )
+
+& 0
+
+\\ \sin (30^\circ ) 
+
+&  \cos (30^\circ )
+
+& 0
+
+\\ 0
+
+& 0
+
+& 1 
+
+\end{bmatrix}\text{;}\\ \mathbf{T}_\text {back} & = \begin{bmatrix}  1
+
+& 0
+
+& 1
+
+\\ 0
+
+& 1
+
+& 2
+
+\\ 0
+
+& 0
+
+& 1 
+
+\end{bmatrix}\text{.}\end{align*}</script></span>
+<p>
+The composite transformation is then 
+</p>
+<span class="dmath">\[  \mathbf{T}_\text {back}\mathbf{T}_\text {rot}\mathbf{T}_\text {trans} = \begin{bmatrix}  0.8660 
+
+&amp;  -0.5 
+
+&amp;  1.1340
+
+\\ 0.5 
+
+&amp;  0.8660 
+
+&amp;  -0.232
+
+\\ 0
+
+&amp; 0
+
+&amp; 1 
+
+\end{bmatrix}\text{.} \]</span>
+</section>
+</section>
+<script id="plastex-labels" type="application/json">{"sec:scaling": {"ref": "3", "url": "#sec:scaling"}, "sec:rotation": {"ref": "4", "url": "#sec:rotation"}, "sec:yequalsx": {"ref": "5.3", "url": "#sec:yequalsx"}, "sec:yequalsminusx": {"ref": "5.4", "url": "#sec:yequalsminusx"}}</script>
+    </article>
 
         </main>
 

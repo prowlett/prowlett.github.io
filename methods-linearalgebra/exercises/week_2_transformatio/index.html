@@ -10,35 +10,46 @@
             <meta name="date" content="2024-10-01" />
         
 
-        <title>Introduction to Linear Algebra</title>
+        <title>Week 2 - Transformations | Introduction to Linear Algebra</title>
 
         
-            <link rel="stylesheet" href="static/styles.css?build_time=1727790525.742894">
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1727790074.235697">
             
             
         
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1727790074.235697">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1727790074.235697">
+
 
         
+    
 			<script>
-				var chirun_static_url = new URL('static?build_time=1727790525.742894', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1727790074.235697', location.href);
 			</script>
 
             
-                <script defer src="static/mathjax_config.js?build_time=1727790525.742894"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1727790074.235697"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="static/localisation.js?build_time=1727790525.742894"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1727790074.235697"></script>
 
-            <script defer src="static/customisation.js?build_time=1727790525.742894"></script>
+            <script defer src="../../static/customisation.js?build_time=1727790074.235697"></script>
 
             
 
             
         
+    <script defer src="../../static/code.js?build_time=1727790074.235697" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1727790074.235697" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1727790074.235697" type="module"></script>
+
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="static/code.css?build_time=1727790525.742894">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1727790074.235697">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -219,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="static/embed_numbas.css?build_time=1727790525.742894">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1727790074.235697">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -237,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -389,221 +400,417 @@
 </svg>
 </button>
             
-            
     
-        <div id="topbar">
-            <h1 class="title">Introduction to Linear Algebra</h1>
-            <p class="author">Peter Rowlett</p>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
             
-            <p class="year">2024/25</p>
+            <li class="breadcrumb-item">
+                <a href="../index.html">Exercises</a>
+            </li>
             
-            <p class="leading-text">Welcome to these notes for the linear algebra section of Mathematical and Statistical Methods. Please read through the notes and have a go at the exercise sheet before the class on Fridays. In class, some examples will be demonstrated and you will have a chance to ask questions and work on exercises. Answers to exercises will be released in the week after the class for you to self-mark.</p>
-        </div>
+            <li class="breadcrumb-item active">
+                Week 2 - Transformations
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../week_1_matrices_by_p/index.html">Previous: Week 1 - Matrices by Python</a>
+            
+            
+        </p>
+        
+    </nav>
     
 
-    
-
+            
+            
         </header>
 
         <main id="main-content">
             
-    
-        <ul class="chirun-structure">
-
-    
-
-    
-    <li>
-        <article class="item has-content">
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
+            <li><a rel="alternate" type="application/pdf" href="week_2_transformatio.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
                 
-<header>
-    <h2>
-        <a class="undecorated" href="notes/index.html">Notes</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
+                    
     <li>
+        <a href="#tutorial_exercise_sh">Tutorial exercise sheet – Transformations</a>
         
-
-    
-        <a class="undecorated" href="notes/matrices/index.html">Matrices</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="notes/matrices/matrices.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
     </li>
-    
-    
-    
-    <li>
-        
 
-    
-        <a class="undecorated" href="notes/transformations/index.html">Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="notes/transformations/transformations.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-    </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item has-content">
-            
                 
-<header>
-    <h2>
-        <a class="undecorated" href="using_python/index.html">Using Python</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
-    <li>
+            </ol>
         
 
-    
-        <a class="undecorated" href="using_python/matrices_using_pytho/index.html">Matrices using Python</a>
+    </nav>
 
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="using_python/matrices_using_pytho/matrices_using_pytho.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="tutorial_exercise_sh">Tutorial exercise sheet – Transformations</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<ol class="enumerate" id="a0000000002">
+<li id="a0000000003" value="1">
+<p>
+Write matrices that represent the shapes shown below. 
+</p>
+<ol class="enumerate" id="a0000000004">
+<li id="a0000000005" value="1">
+<div class="tikzcd" id="a0000000006">
+<img alt="\begin{tikzpicture} 
+        		\draw[lightgray] (0,0) grid (4,4);
+        		\draw[-&gt;] (-0.25,0) -- (4.25,0);
+        		\draw[-&gt;] (0,-0.25) -- (0,4.25);
+        		\node at (-0.35, -0.35) {0};
+        		\foreach \i in {1,2,3,4}{
+        			\draw (\i,0) -- (\i,-0.1);
+        			\draw (0,\i) -- (-0.1,\i);
+        			\node at (\i,-0.35) {\i};
+        			\node at (-0.35,\i) {\i};
+        		}
+        		
+        		\draw[very thick] (1,2) -- (3,3) -- (4,1) -- cycle;
+        		
+        	\end{tikzpicture}" src="images/img-0001.svg"/>
+</div>
+</li>
+<li id="a0000000007" value="2">
+<div class="tikzcd" id="a0000000008">
+<img alt="\begin{tikzpicture} 
+        		\draw[lightgray] (0,-2) grid (4,4);
+        		\draw[-&gt;] (-0.25,0) -- (4.25,0);
+        		\draw[-&gt;] (0,-2.25) -- (0,4.25);
+        		\node at (-0.35, -0.35) {0};
+        		\foreach \i in {1,2,3,4}{
+        			\draw (\i,0) -- (\i,-0.1);
+        			\draw (0,\i) -- (-0.1,\i);
+        			\node at (\i,-0.35) {\i};
+        			\node at (-0.35,\i) {\i};
+        		}
+        		
+        		\draw[very thick] (2,4) -- (3,3) -- (3,-2) -- (1,1) -- cycle;
+        		
+        	\end{tikzpicture}" src="images/img-0002.svg"/>
+</div>
+</li>
+</ol>
+</li>
+<li id="a0000000009" value="2">
+<p>
+Consider three transformation matrices 
+</p>
+<span class="dmath">\[  \mathbf{T}_1 = \begin{bmatrix}  3
 
-    </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
+&amp; 0
 
-    
-    <li>
-        <article class="item has-content">
-            
-                
-<header>
-    <h2>
-        <a class="undecorated" href="exercises/index.html">Exercises</a>
-        
-    </h2>
-    
-</header>
+\\ 0
 
-<ul class="contents">
-    
-    
-    <li>
-        
+&amp; 1 
 
-    
-        <a class="undecorated" href="exercises/week_1_matrices_by_h/index.html">Week 1 - Matrices by hand</a>
+\end{bmatrix}\text{,}\quad \mathbf{T}_2 = \begin{bmatrix}  1
 
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_1_matrices_by_h/week_1_matrices_by_h.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
+&amp; 0
 
-    </li>
-    
-    
-    
-    <li>
-        
+\\ 0
 
-    
-        <a class="undecorated" href="exercises/week_1_matrices_by_p/index.html">Week 1 - Matrices by Python</a>
+&amp; 2 
 
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_1_matrices_by_p/week_1_matrices_by_p.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
+\end{bmatrix}\quad \text{and}\quad \mathbf{T}_3 = \begin{bmatrix}  5
 
-    </li>
-    
-    
-    
-    <li>
-        
+&amp; 0
 
-    
-        <a class="undecorated" href="exercises/week_2_transformatio/index.html">Week 2 - Transformations</a>
+\\ 0
 
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_2_transformatio/week_2_transformatio.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
+&amp; 3 
 
-    </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
+\end{bmatrix}  \]</span>
+<p>
+ and the rectangle 
+</p>
+<span class="dmath">\[ \mathbf{R} = \begin{bmatrix}  0
 
-</ul>
-    
+&amp; 0
 
-    
-    <section class="intro-content">
-         Peter Rowlett. Email: <a href="mailto:p.rowlett@shu.ac.uk">p.rowlett@shu.ac.uk</a>. <a href="https://meetings.peterrowlett.net/">Availability calendar</a>. 
+&amp; 1
+
+&amp; 1
+
+\\ 0
+
+&amp; 1
+
+&amp; 1
+
+&amp; 0 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+ What are the coordinates of the transformations: 
+</p>
+<ol class="enumerate" id="a0000000010">
+<li id="a0000000011" value="1">
+<p>
+\(\mathbf{T}_1\mathbf{R}\); 
+</p>
+</li>
+<li id="a0000000012" value="2">
+<p>
+\(\mathbf{T}_2\mathbf{R}\); 
+</p>
+</li>
+<li id="a0000000013" value="3">
+<p>
+\(\mathbf{T}_3\mathbf{R}\)? 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000014" value="3">
+<p>
+Write down the transformation matrix that 
+</p>
+<ol class="enumerate" id="a0000000015">
+<li id="a0000000016" value="1">
+<p>
+scales horizontal distance by a factor of 3 and vertical distances by a factor of 7; 
+</p>
+</li>
+<li id="a0000000017" value="2">
+<p>
+scales horizontal distances by a factor of 0.7 and vertical distances by a factor of 1.2; 
+</p>
+</li>
+<li id="a0000000018" value="3">
+<p>
+leaves horizontal distances unchanged and trebles vertical distances. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000019" value="4">
+<p>
+The point \(\begin{bmatrix}  2
+
+\\ 6 
+
+\end{bmatrix}\) is rotates anticlockwise about the origin through \(40^\circ \). Calculate the position of the new point. 
+</p>
+</li>
+<li id="a0000000020" value="5">
+<p>
+The triangle defined by 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  1
+
+&amp; 2
+
+&amp; 3
+
+\\ 1
+
+&amp; 5
+
+&amp; 1 
+
+\end{bmatrix} \]</span>
+<p>
+ is rotated clockwise about the origin through \(120^\circ \). Determine the coordinates of the resulting triangle. 
+</p>
+</li>
+<li id="a0000000021" value="6">
+<p>
+The point \(\begin{bmatrix}  3
+
+\\ 5 
+
+\end{bmatrix}\) is reflected in the line \(y=-x\). Give the coordinates of the resulting point. 
+</p>
+</li>
+<li id="a0000000022" value="7">
+<p>
+The point \(\begin{bmatrix}  -1
+
+\\ 4 
+
+\end{bmatrix}\) is reflected in the \(y\) axis and the resulting point is then reflected in the line \(y=x\). Give the coordinates of the resulting point. 
+</p>
+</li>
+<li id="a0000000023" value="8">
+<p>
+The point \(\begin{bmatrix}  a
+
+\\ b 
+
+\end{bmatrix}\) is reflected in the \(x\) axis. The resulting point is then reflected in the line \(y=-x\). Give the coordinates of the resulting point. 
+</p>
+</li>
+<li id="a0000000024" value="9">
+<p>
+The square 
+</p>
+<span class="dmath">\[ \mathbf{S} = \begin{bmatrix}  0
+
+&amp; 0
+
+&amp; 1
+
+&amp; 1
+
+\\ 0
+
+&amp; 1
+
+&amp; 0
+
+&amp; 1 
+
+\end{bmatrix} \]</span>
+<p>
+ is sheared by 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  1
+
+&amp; 0
+
+\\ 3
+
+&amp; 1 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+ What are the coordinates of the vertices of the shape after shearing? 
+</p>
+</li>
+<li id="a0000000025" value="10">
+<p>
+State the effect of the transformation matrix 
+</p>
+<span class="dmath">\[  \mathbf{T} = \begin{bmatrix}  1
+
+&amp; 2
+
+\\ 0
+
+&amp; 1 
+
+\end{bmatrix} \]</span>
+</li>
+<li id="a0000000026" value="11">
+<p>
+A point is translated from \(\begin{bmatrix}  1
+
+\\ 6 
+
+\end{bmatrix}\) to \(\begin{bmatrix}  4
+
+\\ 8 
+
+\end{bmatrix}\). State the corresponding translation matrix. 
+</p>
+</li>
+<li id="a0000000027" value="12">
+<p>
+A point is translated from \(\begin{bmatrix}  -3
+
+\\ -1 
+
+\end{bmatrix}\) to \(\begin{bmatrix}  -6
+
+\\ 0 
+
+\end{bmatrix}\). State the corresponding translation matrix. 
+</p>
+</li>
+<li id="a0000000028" value="13">
+<p>
+State the effect of the translation matrix 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  1
+
+&amp; 0
+
+&amp; 4
+
+\\ 0
+
+&amp; 1
+
+&amp; -3
+
+\\ 0
+
+&amp; 0
+
+&amp; 1 
+
+\end{bmatrix}\text{.} \]</span>
+</li>
+<li id="a0000000029" value="14">
+<p>
+Determine a matrix that shears vertically by a factor of 2 and then rotates anticlockwise about the origin by \(30^\circ \). 
+</p>
+</li>
+<li id="a0000000030" value="15">
+<p>
+Determine a matrix that rotates anticlockwise through \(40^\circ \) about the point \(\begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix}\). 
+</p>
+</li>
+<li id="a0000000031" value="16">
+<p>
+The zoom facility of a computer graphics package has the following options: 
+</p>
+<ol class="enumerate" id="a0000000032">
+<li id="a0000000033" value="1">
+<p>
+double horizontal lengths only; 
+</p>
+</li>
+<li id="a0000000034" value="2">
+<p>
+double vertical lengths only; 
+</p>
+</li>
+<li id="a0000000035" value="3">
+<p>
+double both horizontal and vertical lengths; 
+</p>
+</li>
+<li id="a0000000036" value="4">
+<p>
+halve both horizontal and vertical lengths. 
+</p>
+</li>
+</ol>
+<p>
+Write down the transformation matrix for each option. 
+</p>
+</li>
+</ol>
 <script id="plastex-labels" type="application/json">{}</script>
-    </section>
-    
-
-    
-    <section class="zipfile-download">
-        <p><a href="introduction_to_line.zip" download>Download a copy of these notes.</a></p>
-    </section>
-    
+    </article>
 
         </main>
 
