@@ -10,43 +10,46 @@
             <meta name="date" content="2024-10-10" />
         
 
-        <title>Exercises | Introduction to Linear Algebra</title>
+        <title>Linear systems | Introduction to Linear Algebra</title>
 
         
     
-            <link rel="stylesheet" href="../static/styles.css?build_time=1728583685.328065">
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1728582973.651997">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../static/pygmentize.css?build_time=1728583685.328065">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1728582973.651997">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1728582973.651997">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../static?build_time=1728583685.328065', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1728582973.651997', location.href);
 			</script>
 
             
-                <script defer src="../static/mathjax_config.js?build_time=1728583685.328065"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1728582973.651997"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../static/localisation.js?build_time=1728583685.328065"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1728582973.651997"></script>
 
-            <script defer src="../static/customisation.js?build_time=1728583685.328065"></script>
+            <script defer src="../../static/customisation.js?build_time=1728582973.651997"></script>
 
             
 
             
         
-    <script defer src="../static/code.js?build_time=1728583685.328065" type="module"></script>
-    <script defer src="../static/embed_numbas.js?build_time=1728583685.328065" type="module"></script>
-    <script defer src="../static/embed_qrcode.js?build_time=1728583685.328065" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1728582973.651997" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1728582973.651997" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1728582973.651997" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../static/code.css?build_time=1728583685.328065">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1728582973.651997">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -227,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../static/embed_numbas.css?build_time=1728583685.328065">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1728582973.651997">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -245,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -401,21 +404,25 @@
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="../index.html">Introduction to Linear Algebra</a>
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Notes</a>
             </li>
             
             <li class="breadcrumb-item active">
-                Exercises
+                Linear systems
             </li>
         </ul>
 
         
         <p class="pager" id="item-pager">
             
-            <a rel="prev" href="../using_python/determinants_and_i_1/index.html">Previous: Determinants and inverses using Python</a>
+            <a rel="prev" href="../determinants_and_i_1/index.html">Previous: Determinants and inverses using Python</a>
             
             
-            <a rel="next" href="weekly_work_schedule/index.html">Next: Weekly work schedule</a>
+            <a rel="next" href="../../using_python/index.html">Next: Using Python</a>
             
         </p>
         
@@ -423,181 +430,382 @@
     
 
             
-    <h1>Exercises</h1>
-
+            
         </header>
 
         <main id="main-content">
             
-    <article class="item-content">
-        <section class="leading-text">
-            <p></p>
-        </section>
-        <section>
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
-        </section>
+            <li><a rel="alternate" type="application/pdf" href="linear_systems.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#linear_systems">Linear systems</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000002">1 Introduction</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000003">Example</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000004">2 Inverse matrix method</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000005">Example</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000006">3 Cramer’s Rule</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="linear_systems">Linear systems</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<section class="section">
+<h2 id="a0000000002">1 Introduction</h2>
+<p>
+A general linear system of \(n\) equations in \(n\) unknowns 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  a_{11}x_1+a_{12}x_2+\ldots +a_{1n}x_n& =b_1\\ a_{21}x_1+a_{22}x_2+\ldots +a_{2n}x_n& =b_2\\ \vdots ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ & ~ ~ ~ ~ ~  \vdots \\ a_{n1}x_1+a_{n2}x_2+\ldots +a_{nn}x_n& =b_n \end{align*}</script></span>
+<p>
+ can be written as a matrix in the form 
+</p>
+<span class="dmath">\[ \begin{bmatrix}  a_{11} 
+
+&amp;  a_{12} 
+
+&amp;  \ldots 
+
+&amp;  a_{1n}
+
+\\ a_{21} 
+
+&amp;  a_{22} 
+
+&amp;  \ldots 
+
+&amp;  a_{2n}
+
+\\ \vdots 
+
+&amp;  ~  
+
+&amp;  \ddots 
+
+&amp;  \vdots 
+
+\\ a_{n1} 
+
+&amp;  a_{n2} 
+
+&amp;  \ldots 
+
+&amp;  a_{nn}
+
+\\ \end{bmatrix} \begin{bmatrix}  x_1 
+
+\\ x_2 
+
+\\ \vdots 
+
+\\ x_n 
+
+\\ \end{bmatrix} = \begin{bmatrix}  b_1 
+
+\\ b_2 
+
+\\ \vdots 
+
+\\ b_n 
+
+\\ \end{bmatrix} \]</span>
+<p>
+Write this as \(\mathbf{A}\mathbf{x}=\mathbf{b}\). <br/> <br/>\(\mathbf{A}\) is called the coefficient matrix. 
+</p>
+<section class="subsection">
+<h3 id="a0000000003">Example</h3>
+<p>
+ Write the following linear system in matrix notation. 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  x+2y& =5\\ 3x-5y& =14 \end{align*}</script></span>
+<span class="dmath">\[  \begin{bmatrix}  1
+
+&amp; 2
+
+\\ 3
+
+&amp; -5 
+
+\end{bmatrix}\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix} = \begin{bmatrix}  5
+
+\\ 14 
+
+\end{bmatrix}  \]</span>
+</section>
+</section><section class="section">
+<h2 id="a0000000004">2 Inverse matrix method</h2>
+<p>
+For a system of equations 
+</p>
+<span class="dmath">\[ \mathbf{A}\mathbf{x}=\mathbf{b}\text{,} \]</span>
+<p>
+ we use the inverse of \(\mathbf{A}\), \(\mathbf{A}^{-1}\) to get 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{A}^{-1}\mathbf{A}\mathbf{x} & = \mathbf{A}^{-1}\mathbf{b}\\ \mathbf{I}\mathbf{x} & = \mathbf{A}^{-1}\mathbf{b}\\ \mathbf{x} & = \mathbf{A}^{-1}\mathbf{b} \end{align*}</script></span>
+<section class="subsection">
+<h3 id="a0000000005">Example</h3>
+<p>
+ Solve the following linear system. 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  2x-y+4z& =12\\ x+y+2z& =3\\ -3x-z& =-10 \end{align*}</script></span>
+<p>
+Let 
+</p>
+<span class="dmath">\[ \mathbf{A} = \begin{bmatrix}  2
+
+&amp; -1
+
+&amp; 4
+
+\\ 1
+
+&amp; 1
+
+&amp; 2
+
+\\ -3
+
+&amp; 0
+
+&amp; -1 
+
+\end{bmatrix} \]</span>
+<p>
+Taking the determinant down the middle column we get 
+</p>
+<span class="dmath">\[  \det (\mathbf{A}) = -(-1) \begin{vmatrix}  1
+
+&amp; 2
+
+\\ -3
+
+&amp; -1 
+
+\end{vmatrix} + 1 \begin{vmatrix}  2
+
+&amp; 4
+
+\\ -3
+
+&amp; -1 
+
+\end{vmatrix} + 0 = 15 \ne 0\text{.} \]</span>
+<p>
+Then 
+</p>
+<span class="dmath">\[  \text{cof}(\mathbf{A}) = \begin{bmatrix}  -1
+
+&amp; -5
+
+&amp; 3
+
+\\ -1
+
+&amp; 10
+
+&amp; 3
+
+\\ -6
+
+&amp; 0
+
+&amp; 3 
+
+\end{bmatrix}\text{,} \]</span>
+<p>
+ so 
+</p>
+<span class="dmath">\[  \text{Adj}(\mathbf{A}) = \begin{bmatrix}  -1
+
+&amp; -1
+
+&amp; -6
+
+\\ -5
+
+&amp; 10
+
+&amp; 0
+
+\\ 3
+
+&amp; 3
+
+&amp; 3 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+Now 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{A}^{-1} & = \frac{1}{\det (\mathbf{A})} \text{Adj}(\mathbf{A})\\ & = \frac{1}{15} \begin{bmatrix}  -1
+
+& -1
+
+& -6
+
+\\ -5
+
+& 10
+
+& 0
+
+\\ 3
+
+& 3
+
+& 3 
+
+\end{bmatrix}\text{.}\end{align*}</script></span>
+<p>
+Therefore 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*} \begin{bmatrix}  x
+
+\\ y
+
+\\ z 
+
+\end{bmatrix}& = \mathbf{A}^{-1}\begin{bmatrix}  12
+
+\\ 3
+
+\\ -10 
+
+\end{bmatrix}\\ & = \frac{1}{15} \begin{bmatrix}  -1
+
+& -1
+
+& -6
+
+\\ -5
+
+& 10
+
+& 0
+
+\\ 3
+
+& 3
+
+& 3 
+
+\end{bmatrix}\begin{bmatrix}  12
+
+\\ 3
+
+\\ -10 
+
+\end{bmatrix}\\ & = \begin{bmatrix}  3
+
+\\ -2
+
+\\ 1 
+
+\end{bmatrix}\text{.}\end{align*}</script></span>
+<p>
+The answer is that \(x=3\), \(y=-2\) and \(z=1\). 
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000006">3 Cramer’s Rule</h2>
+<p>
+A <i class="itshape">Cramer system</i> is any system of \(n\) linear equations in \(n\) unknowns if and only if the matrix formed by the coefficients is non-singular. 
+</p>
+<p>
+<i class="itshape">Cramer’s Rule</i> (also known as Method of Determinants) makes use of determinants to solve such a non-singular square system. 
+</p>
+<p>
+For a system 
+</p>
+<span class="dmath">\[  \mathbf{A}\mathbf{x} = \mathbf{b}\text{,} \]</span>
+<p>
+where \(\mathbf{x}=\begin{bmatrix}  x_1
+
+\\ x_2
+
+\\ \vdots x_n 
+
+\end{bmatrix}\) 
+</p>
+<p>
+let \(\mathbf{A}_i\) be the matrix obtained by replacing the entries of the \(i\)th column of \(\mathbf{A}\) by the answer vector. 
+</p>
+<p>
+Then 
+</p>
+<span class="dmath">\[ x_i = \frac{\det (\mathbf{A}_i)}{\det (\mathbf{A})}\text{.} \]</span>
+<p>
+Note that for \(\mathbf{A}\mathbf{x}=\mathbf{b}\), if \(\det (\mathbf{A})=0\) then Cramer’s Rule will not work. 
+</p>
+</section>
+<script id="plastex-labels" type="application/json">{}</script>
     </article>
-
-    
-        <ul class="chirun-structure">
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="weekly_work_schedule/index.html">Weekly work schedule</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="weekly_work_schedule/weekly_work_schedule.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_1_matrices_by_h/index.html">Week 1 - Matrices by hand</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_1_matrices_by_h/week_1_matrices_by_h.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_1_matrices_by_p/index.html">Week 1 - Matrices by Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_1_matrices_by_p/week_1_matrices_by_p.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_2_transformatio/index.html">Week 2 - Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_2_transformatio/week_2_transformatio.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_3_determinants_/index.html">Week 3 - Determinants and inverses</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_3_determinants_/week_3_determinants_.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-</ul>
-    
 
         </main>
 
