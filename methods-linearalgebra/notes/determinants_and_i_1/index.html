@@ -10,35 +10,46 @@
             <meta name="date" content="2024-10-10" />
         
 
-        <title>Introduction to Linear Algebra</title>
+        <title>Determinants and inverses using Python | Introduction to Linear Algebra</title>
 
         
-            <link rel="stylesheet" href="static/styles.css?build_time=1728578590.952846">
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1728578590.952846">
             
             
         
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1728578590.952846">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1728578590.952846">
+
 
         
+    
 			<script>
-				var chirun_static_url = new URL('static?build_time=1728578590.952846', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1728578590.952846', location.href);
 			</script>
 
             
-                <script defer src="static/mathjax_config.js?build_time=1728578590.952846"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1728578590.952846"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="static/localisation.js?build_time=1728578590.952846"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1728578590.952846"></script>
 
-            <script defer src="static/customisation.js?build_time=1728578590.952846"></script>
+            <script defer src="../../static/customisation.js?build_time=1728578590.952846"></script>
 
             
 
             
         
+    <script defer src="../../static/code.js?build_time=1728578590.952846" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1728578590.952846" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1728578590.952846" type="module"></script>
+
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="static/code.css?build_time=1728578590.952846">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1728578590.952846">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -219,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="static/embed_numbas.css?build_time=1728578590.952846">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1728578590.952846">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -237,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -389,297 +400,102 @@
 </svg>
 </button>
             
-            
     
-        <div id="topbar">
-            <h1 class="title">Introduction to Linear Algebra</h1>
-            <p class="author">Peter Rowlett</p>
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
             
-            <p class="year">2024/25</p>
+            <li class="breadcrumb-item">
+                <a href="../index.html">Notes</a>
+            </li>
             
-            <p class="leading-text">Welcome to these notes for the linear algebra section of Mathematical and Statistical Methods. Please read through the notes and have a go at the exercise sheet before the class on Fridays. In class, some examples will be demonstrated and you will have a chance to ask questions and work on exercises. Answers to exercises will be released in the week after the class for you to self-mark.</p>
-        </div>
+            <li class="breadcrumb-item active">
+                Determinants and inverses using Python
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../determinants_and_inv/index.html">Previous: Determinants and inverses</a>
+            
+            
+            <a rel="next" href="../../using_python/index.html">Next: Using Python</a>
+            
+        </p>
+        
+    </nav>
     
 
-    
-
+            
+            
         </header>
 
         <main id="main-content">
             
-    
-        <ul class="chirun-structure">
-
-    
-
-    
-    <li>
-        <article class="item has-content">
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
+            <li><a rel="alternate" type="application/pdf" href="determinants_and_i_1.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
                 
-<header>
-    <h2>
-        <a class="undecorated" href="notes/index.html">Notes</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
+                    
     <li>
+        <a href="#determinants_and_inv">Determinants and inverses using Python</a>
         
-
-    
-        <a class="undecorated" href="notes/matrices/index.html">Matrices</a>
-
-        <ul class="alternative-formats">
+        <ol>
             
-            <li><a class="undecorated" href="notes/matrices/matrices.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
             
-        </ul>
-    
-
-    </li>
-    
-    
-    
     <li>
+        <a href="#determinants">Determinants</a>
         
-
-    
-        <a class="undecorated" href="notes/transformations/index.html">Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="notes/transformations/transformations.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
     </li>
-    
-    
-    
+
     <li>
+        <a href="#inverse_matrix">Inverse matrix</a>
         
-
-    
-        <a class="undecorated" href="notes/determinants_and_inv/index.html">Determinants and inverses</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="notes/determinants_and_inv/determinants_and_inv.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
     </li>
-    
-    
-    
-    <li>
+
+            
+        </ol>
         
-
-    
-        <a class="undecorated" href="notes/determinants_and_i_1/index.html">Determinants and inverses using Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="notes/determinants_and_i_1/determinants_and_i_1.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
     </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
 
-    
-    <li>
-        <article class="item has-content">
-            
                 
-<header>
-    <h2>
-        <a class="undecorated" href="using_python/index.html">Using Python</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
-    <li>
+            </ol>
         
 
-    
-        <a class="undecorated" href="using_python/matrices_using_pytho/index.html">Matrices using Python</a>
+    </nav>
 
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="using_python/matrices_using_pytho/matrices_using_pytho.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
+    <article class="item-content" id="item-content">
+        <section>
+<h1 id="determinants_and_inv">Determinants and inverses using Python</h1>
+<h2 id="determinants">Determinants</h2>
+<p>To calculate <script type="math/tex"> \det(\mathbf{A}) </script>, use</p>
+<div class="highlight"><pre><span></span>A.det()
+</pre></div>
+<h2 id="inverse_matrix">Inverse matrix</h2>
+<p>To calculate <script type="math/tex"> \mathbf{A}^{-1} </script>, you can either raise the matrix to the power <script type="math/tex">-1</script> like this</p>
+<div class="highlight"><pre><span></span>A**-1
+</pre></div>
+<p>or use the <code>.inv()</code> function like this</p>
+<div class="highlight"><pre><span></span>A.inv()
+</pre></div>
+</section>
 
-    </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item has-content">
-            
-                
-<header>
-    <h2>
-        <a class="undecorated" href="exercises/index.html">Exercises</a>
-        
-    </h2>
-    
-</header>
-
-<ul class="contents">
-    
-    
-    <li>
-        
-
-    
-        <a class="undecorated" href="exercises/weekly_work_schedule/index.html">Weekly work schedule</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/weekly_work_schedule/weekly_work_schedule.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-    </li>
-    
-    
-    
-    <li>
-        
-
-    
-        <a class="undecorated" href="exercises/week_1_matrices_by_h/index.html">Week 1 - Matrices by hand</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_1_matrices_by_h/week_1_matrices_by_h.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-    </li>
-    
-    
-    
-    <li>
-        
-
-    
-        <a class="undecorated" href="exercises/week_1_matrices_by_p/index.html">Week 1 - Matrices by Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_1_matrices_by_p/week_1_matrices_by_p.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-    </li>
-    
-    
-    
-    <li>
-        
-
-    
-        <a class="undecorated" href="exercises/week_2_transformatio/index.html">Week 2 - Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_2_transformatio/week_2_transformatio.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-    </li>
-    
-    
-    
-    <li>
-        
-
-    
-        <a class="undecorated" href="exercises/week_3_determinants_/index.html">Week 3 - Determinants and inverses</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="exercises/week_3_determinants_/week_3_determinants_.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-    </li>
-    
-    
-</ul>
-            
-        </article>
-    </li>
-    
-
-</ul>
-    
-
-    
-    <section class="intro-content">
-         Peter Rowlett. Email: <a href="mailto:p.rowlett@shu.ac.uk">p.rowlett@shu.ac.uk</a>. <a href="https://meetings.peterrowlett.net/">Availability calendar</a>. 
-<script id="plastex-labels" type="application/json">{}</script>
-    </section>
-    
-
-    
-    <section class="zipfile-download">
-        <p><a href="introduction_to_line.zip" download>Download a copy of these notes.</a></p>
-    </section>
-    
+    </article>
 
         </main>
 
