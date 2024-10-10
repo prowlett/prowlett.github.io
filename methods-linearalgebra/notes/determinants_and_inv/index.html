@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-10-04" />
+            <meta name="date" content="2024-10-10" />
         
 
         <title>Determinants and inverses | Introduction to Linear Algebra</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1728037532.608364">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1728541294.127134">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1728037532.608364">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1728541294.127134">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1728037532.608364">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1728541294.127134">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1728037532.608364', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1728541294.127134', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1728037532.608364"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1728541294.127134"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1728037532.608364"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1728541294.127134"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1728037532.608364"></script>
+            <script defer src="../../static/customisation.js?build_time=1728541294.127134"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1728037532.608364" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1728037532.608364" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1728037532.608364" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1728541294.127134" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1728541294.127134" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1728541294.127134" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1728037532.608364">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1728541294.127134">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1728037532.608364">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1728541294.127134">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -541,30 +541,8 @@
         
     </li>
 
-            
-        </ol>
-        
-    </li>
-
     <li>
-        <a href="#a0000000016">2 Inverting matrices</a>
-        
-        <ol>
-            
-            
-    <li>
-        <a href="#a0000000017">2.1 Matrix of cofactors</a>
-        
-    </li>
-
-    <li>
-        <a href="#a0000000018">2.2 Adjoint matrix</a>
-        
-        <ol>
-            
-            
-    <li>
-        <a href="#a0000000019">Example</a>
+        <a href="#a0000000016">1.5 Properties of determinants</a>
         
     </li>
 
@@ -574,18 +552,24 @@
     </li>
 
     <li>
-        <a href="#a0000000020">2.3 Identity matrix</a>
-        
-    </li>
-
-    <li>
-        <a href="#a0000000021">2.4 Inverse of a matrix</a>
+        <a href="#a0000000020">2 Inverting matrices</a>
         
         <ol>
             
             
     <li>
-        <a href="#a0000000022">Properties</a>
+        <a href="#a0000000021">2.1 Matrix of cofactors</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000022">2.2 Adjoint matrix</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000023">Example</a>
         
     </li>
 
@@ -595,13 +579,34 @@
     </li>
 
     <li>
-        <a href="#a0000000026">2.5 Finding an inverse matrix</a>
+        <a href="#a0000000024">2.3 Identity matrix</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000025">2.4 Inverse of a matrix</a>
         
         <ol>
             
             
     <li>
-        <a href="#a0000000032">Example</a>
+        <a href="#a0000000026">Properties</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000030">2.5 Finding an inverse matrix</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000036">Example</a>
         
     </li>
 
@@ -1172,21 +1177,38 @@ Higher order determinants follow in the same way. For the \(n \times n\) matrix
 <p>
  where \(A_{ij} = (-1)^{i+j} M_{ij}\) and \(M_{ij}\) is the determinant of the matrix formed by removing the \(i\)th row and \(j\)th column from \(\mathbf{A}\). 
 </p>
+</section><section class="subsection">
+<h3 id="a0000000016">1.5 Properties of determinants</h3>
+<p>
+In general, for two \(n \times n\) matrices \(\mathbf{A}\) and \(\mathbf{B}\): 
+</p>
+<ul class="itemize" id="a0000000017">
+<li id="a0000000018">
+<p>
+\(\det (\mathbf{AB}) = \det (\mathbf{A})\det (\mathbf{B})\); 
+</p>
+</li>
+<li id="a0000000019">
+<p>
+\(\det (k\mathbf{A}) = k^n \det (\mathbf{A})\) for scalar \(k\). 
+</p>
+</li>
+</ul>
 </section>
 </section><section class="section">
-<h2 id="a0000000016">2 Inverting matrices</h2>
+<h2 id="a0000000020">2 Inverting matrices</h2>
 <section class="subsection">
-<h3 id="a0000000017">2.1 Matrix of cofactors</h3>
+<h3 id="a0000000021">2.1 Matrix of cofactors</h3>
 <p>
 The matrix of cofactors for a matrix \(\mathbf{A}\), \(\text{cof}(\mathbf{A})\), is the matrix where the \((i,j)\) entry is the cofactor of \(a_{ij}\) in \(\mathbf{A}\). 
 </p>
 </section><section class="subsection">
-<h3 id="a0000000018">2.2 Adjoint matrix</h3>
+<h3 id="a0000000022">2.2 Adjoint matrix</h3>
 <p>
 The adjoint matrix of \(\mathbf{A}\), \(\text{Adj}(\mathbf{A})\), is the transpose of the matrix of cofactors. 
 </p>
 <section class="subsubsection">
-<h4 id="a0000000019">Example</h4>
+<h4 id="a0000000023">Example</h4>
 <span class="dmath">\[ \mathbf{A}= \begin{bmatrix}  ~ a~  
 
 &amp;  ~ b~  
@@ -1222,7 +1244,7 @@ so
 \end{bmatrix}\text{.} \]</span>
 </section>
 </section><section class="subsection">
-<h3 id="a0000000020">2.3 Identity matrix</h3>
+<h3 id="a0000000024">2.3 Identity matrix</h3>
 <p>
 An identity matrix is a diagonal matrix with all diagonal elements \(=1\). For example 
 </p>
@@ -1250,7 +1272,7 @@ This is called the identity for matrix multiplication because it leaves the matr
 </p>
 <span class="dmath">\[  \mathbf{IA} = \mathbf{AI} = \mathbf{A} \text{.} \]</span>
 </section><section class="subsection">
-<h3 id="a0000000021">2.4 Inverse of a matrix</h3>
+<h3 id="a0000000025">2.4 Inverse of a matrix</h3>
 <p>
 For any scalar \(a\), there is a multiplicative inverse of \(a\), such that \(ab=1\), so that \(a=b^{-1}\) and \(b=a^{-1}\). 
 </p>
@@ -1271,14 +1293,14 @@ A matrix that is invertible is called non-singular (or regular). A matrix that i
 We write \( \mathbf{A}^{-1}\) for the inverse of \(\mathbf{A}\). 
 </p>
 <section class="subsubsection">
-<h4 id="a0000000022">Properties</h4>
-<ol class="enumerate" id="a0000000023">
-<li id="a0000000024" value="1">
+<h4 id="a0000000026">Properties</h4>
+<ol class="enumerate" id="a0000000027">
+<li id="a0000000028" value="1">
 <p>
 \(\mathbf{A}^{-1}\) is unique. It is impossible that there are two different inverse matrices for \(\mathbf{A}\). 
 </p>
 </li>
-<li id="a0000000025" value="2">
+<li id="a0000000029" value="2">
 <p>
 A square matrix \(\mathbf{A}\) is invertible if and only if \(\det (\mathbf{A}) \ne 0\). 
 </p>
@@ -1286,27 +1308,27 @@ A square matrix \(\mathbf{A}\) is invertible if and only if \(\det (\mathbf{A}) 
 </ol>
 </section>
 </section><section class="subsection">
-<h3 id="a0000000026">2.5 Finding an inverse matrix</h3>
+<h3 id="a0000000030">2.5 Finding an inverse matrix</h3>
 <p>
 Steps for finding an inverse matrix: 
 </p>
-<ol class="enumerate" id="a0000000027">
-<li id="a0000000028" value="1">
+<ol class="enumerate" id="a0000000031">
+<li id="a0000000032" value="1">
 <p>
 Find the determinant, \(\det (\mathbf{A})\), and check that it is non-zero. 
 </p>
 </li>
-<li id="a0000000029" value="2">
+<li id="a0000000033" value="2">
 <p>
 Form the cofactors matrix \(\text{cof}(\mathbf{A})\). 
 </p>
 </li>
-<li id="a0000000030" value="3">
+<li id="a0000000034" value="3">
 <p>
 Find the adjoint matrix \(\text{Adj}(\mathbf{A})\). 
 </p>
 </li>
-<li id="a0000000031" value="4">
+<li id="a0000000035" value="4">
 <p>
 Find the inverse, \(\mathbf{A}^{-1}\). 
 </p>
@@ -1317,7 +1339,7 @@ If \(\mathbf{A}\) is a square and non-singular matrix, then \(\mathbf{A}^{-1}\) 
 </p>
 <span class="dmath">\[ \mathbf{A}^{-1} = \frac{1}{\det (\mathbf{A})}\text{Adj}(\mathbf{A})\text{.} \]</span>
 <section class="subsubsection">
-<h4 id="a0000000032">Example</h4>
+<h4 id="a0000000036">Example</h4>
 <p>
  Find the inverse of the following matrix. 
 </p>
@@ -1330,8 +1352,8 @@ If \(\mathbf{A}\) is a square and non-singular matrix, then \(\mathbf{A}^{-1}\) 
 &amp;  5 
 
 \end{bmatrix} \]</span>
-<ol class="enumerate" id="a0000000033">
-<li id="a0000000034" value="1">
+<ol class="enumerate" id="a0000000037">
+<li id="a0000000038" value="1">
 <p>
 First find the determinant. 
 </p>
@@ -1345,7 +1367,7 @@ First find the determinant.
 
 \end{vmatrix} = -4 \times 5 - -2 \times 5 = -10\text{.} \]</span>
 </li>
-<li id="a0000000035" value="2">
+<li id="a0000000039" value="2">
 <p>
 Now form the matrix of cofactors. 
 </p>
@@ -1359,7 +1381,7 @@ Now form the matrix of cofactors.
 
 \end{bmatrix}\text{.} \]</span>
 </li>
-<li id="a0000000036" value="3">
+<li id="a0000000040" value="3">
 <p>
 Now the adjoint matrix 
 </p>
@@ -1373,7 +1395,7 @@ Now the adjoint matrix
 
 \end{bmatrix}\text{.} \]</span>
 </li>
-<li id="a0000000037" value="4">
+<li id="a0000000041" value="4">
 <p>
 Now find the inverse 
 </p>
@@ -1414,7 +1436,7 @@ Now find the inverse
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-10-04</p>
+        <p>This page last generated: 2024-10-10</p>
         
         
         
