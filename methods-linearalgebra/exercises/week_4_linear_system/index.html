@@ -10,43 +10,46 @@
             <meta name="date" content="2024-10-11" />
         
 
-        <title>Exercises | Introduction to Linear Algebra</title>
+        <title>Week 4 - Linear systems | Introduction to Linear Algebra</title>
 
         
     
-            <link rel="stylesheet" href="../static/styles.css?build_time=1728672332.956873">
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1728672332.956873">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../static/pygmentize.css?build_time=1728672332.956873">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1728672332.956873">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1728672332.956873">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../static?build_time=1728672332.956873', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1728672332.956873', location.href);
 			</script>
 
             
-                <script defer src="../static/mathjax_config.js?build_time=1728672332.956873"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1728672332.956873"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../static/localisation.js?build_time=1728672332.956873"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1728672332.956873"></script>
 
-            <script defer src="../static/customisation.js?build_time=1728672332.956873"></script>
+            <script defer src="../../static/customisation.js?build_time=1728672332.956873"></script>
 
             
 
             
         
-    <script defer src="../static/code.js?build_time=1728672332.956873" type="module"></script>
-    <script defer src="../static/embed_numbas.js?build_time=1728672332.956873" type="module"></script>
-    <script defer src="../static/embed_qrcode.js?build_time=1728672332.956873" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1728672332.956873" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1728672332.956873" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1728672332.956873" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../static/code.css?build_time=1728672332.956873">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1728672332.956873">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -227,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../static/embed_numbas.css?build_time=1728672332.956873">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1728672332.956873">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -245,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -401,21 +404,23 @@
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="../index.html">Introduction to Linear Algebra</a>
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Exercises</a>
             </li>
             
             <li class="breadcrumb-item active">
-                Exercises
+                Week 4 - Linear systems
             </li>
         </ul>
 
         
         <p class="pager" id="item-pager">
             
-            <a rel="prev" href="../using_python/determinants_and_i_1/index.html">Previous: Determinants and inverses using Python</a>
+            <a rel="prev" href="../week_3_determinants_/index.html">Previous: Week 3 - Determinants and inverses</a>
             
-            
-            <a rel="next" href="weekly_work_schedule/index.html">Next: Weekly work schedule</a>
             
         </p>
         
@@ -423,212 +428,155 @@
     
 
             
-    <h1>Exercises</h1>
-
+            
         </header>
 
         <main id="main-content">
             
-    <article class="item-content">
-        <section class="leading-text">
-            <p></p>
-        </section>
-        <section>
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
-        </section>
+            <li><a rel="alternate" type="application/pdf" href="week_4_linear_system.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#tutorial_exercise_sh">Tutorial exercise sheet – Linear systems</a>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="tutorial_exercise_sh">Tutorial exercise sheet – Linear systems</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<ol class="enumerate" id="a0000000002">
+<li id="a0000000003" value="1">
+<p>
+Use the inverse matrix method to solve the following systems of equations. 
+</p>
+<ol class="enumerate" id="a0000000004">
+<li id="a0000000005" value="1">
+<p>
+\(4x-3y=-3\text{,}~ ~ ~ 2x-5y=9\); 
+</p>
+</li>
+<li id="a0000000006" value="2">
+<p>
+\(5r+s-2t=-1\text{,}~ ~ ~ r+s+t=-3\text{,}~ ~ ~ 7r+8s=-7\); 
+</p>
+</li>
+<li id="a0000000007" value="3">
+<p>
+\(x+2y+3z=0\text{,}~ ~ ~ 2x+5y+3z=0\text{,}~ ~ ~ x+8z=0\); 
+</p>
+</li>
+<li id="a0000000008" value="4">
+<p>
+\(\alpha +3\beta +\gamma =4\text{,}~ ~ ~ 2\alpha +2\beta +\gamma =-1\text{,}~ ~ ~ 2\alpha +3\beta +\gamma =3\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000009" value="2">
+<p>
+Solve the following systems of linear equations using Cramer’s rule. 
+</p>
+<ol class="enumerate" id="a0000000010">
+<li id="a0000000011" value="1">
+<p>
+\(3x-7y=47\text{,}~ ~ ~ 5x+2y=10\); 
+</p>
+</li>
+<li id="a0000000012" value="2">
+<p>
+\(f+3g+h=3\text{,}~ ~ ~ 2f+g+4h=-1\text{,}~ ~ ~ 3f+g-2h=6\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000013" value="3">
+<p>
+Choose an appropriate method to solve, where possible, the following linear systems. 
+</p>
+<ol class="enumerate" id="a0000000014">
+<li id="a0000000015" value="1">
+<p>
+\(i+j+2k=8\text{,}~ ~ ~ -i-2j+3k=1\text{,}~ ~ ~ 3i-7j+4k=10\); 
+</p>
+</li>
+<li id="a0000000016" value="2">
+<p>
+\(2u+2v+2w=0\text{,}~ ~ ~ -2u+5v+2w=1\text{,}~ ~ ~ 8u+v+4w=-1\); 
+</p>
+</li>
+<li id="a0000000017" value="3">
+<p>
+\(-2b+3c=1\text{,}~ ~ ~ 3a+6b-3c=-2\text{,}~ ~ ~ 6a+6b+3c=5\); 
+</p>
+</li>
+<li id="a0000000018" value="4">
+<p>
+\(w-x+2y-z=-1\text{,}~ ~ ~ 2w+x-2y-2z=-2\text{,}~ ~ ~ -w+2x-4y+z=1\text{,}~ ~ ~ 3w-3z=-3\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000019" value="4">
+<p>
+Solve the following systems of linear equations using Cramer’s rule. 
+</p>
+<ol class="enumerate" id="a0000000020">
+<li id="a0000000021" value="1">
+<p>
+\(1.985a-1.358b=2.212\text{,}~ ~ ~ 0.953a-0.652b=1.062\); 
+</p>
+</li>
+<li id="a0000000022" value="2">
+<p>
+\(3\theta +2\phi +\zeta =4\text{,}~ ~ ~ \theta -\phi +2\zeta =-7\text{,}~ ~ ~ 2\theta +3\phi +5\zeta =-7\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000023" value="5">
+<p>
+Use determinants to show that the following pairs of linear equations do not have a unique solution. If the solution to a pair of linear equations represents the point of intersection of two straight lines, give the geometric explanation for a lack of unique solution. 
+</p>
+<ol class="enumerate" id="a0000000024">
+<li id="a0000000025" value="1">
+<p>
+\(2x+3y=4\text{,}~ ~ ~ 4x+6y=5\); 
+</p>
+</li>
+<li id="a0000000026" value="2">
+<p>
+\(y-2t=3\text{,}~ ~ ~ 3y-6t=9\). 
+</p>
+</li>
+</ol>
+</li>
+</ol>
+<script id="plastex-labels" type="application/json">{}</script>
     </article>
-
-    
-        <ul class="chirun-structure">
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="weekly_work_schedule/index.html">Weekly work schedule</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="weekly_work_schedule/weekly_work_schedule.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_1_matrices_by_h/index.html">Week 1 - Matrices by hand</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_1_matrices_by_h/week_1_matrices_by_h.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_1_matrices_by_p/index.html">Week 1 - Matrices by Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_1_matrices_by_p/week_1_matrices_by_p.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_2_transformatio/index.html">Week 2 - Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_2_transformatio/week_2_transformatio.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_3_determinants_/index.html">Week 3 - Determinants and inverses</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_3_determinants_/week_3_determinants_.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="week_4_linear_system/index.html">Week 4 - Linear systems</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="week_4_linear_system/week_4_linear_system.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-</ul>
-    
 
         </main>
 
