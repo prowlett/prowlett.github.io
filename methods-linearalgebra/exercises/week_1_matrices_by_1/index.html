@@ -10,43 +10,46 @@
             <meta name="date" content="2024-10-14" />
         
 
-        <title>Notes | Introduction to Linear Algebra</title>
+        <title>Week 1 - Matrices by hand - answers | Introduction to Linear Algebra</title>
 
         
     
-            <link rel="stylesheet" href="../static/styles.css?build_time=1728892733.996919">
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1728892733.996919">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../static/pygmentize.css?build_time=1728892733.996919">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1728892733.996919">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1728892733.996919">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../static?build_time=1728892733.996919', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1728892733.996919', location.href);
 			</script>
 
             
-                <script defer src="../static/mathjax_config.js?build_time=1728892733.996919"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1728892733.996919"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../static/localisation.js?build_time=1728892733.996919"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1728892733.996919"></script>
 
-            <script defer src="../static/customisation.js?build_time=1728892733.996919"></script>
+            <script defer src="../../static/customisation.js?build_time=1728892733.996919"></script>
 
             
 
             
         
-    <script defer src="../static/code.js?build_time=1728892733.996919" type="module"></script>
-    <script defer src="../static/embed_numbas.js?build_time=1728892733.996919" type="module"></script>
-    <script defer src="../static/embed_qrcode.js?build_time=1728892733.996919" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1728892733.996919" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1728892733.996919" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1728892733.996919" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../static/code.css?build_time=1728892733.996919">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1728892733.996919">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -227,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../static/embed_numbas.css?build_time=1728892733.996919">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1728892733.996919">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -245,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -401,21 +404,25 @@
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="../index.html">Introduction to Linear Algebra</a>
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Exercises</a>
             </li>
             
             <li class="breadcrumb-item active">
-                Notes
+                Week 1 - Matrices by hand - answers
             </li>
         </ul>
 
         
         <p class="pager" id="item-pager">
             
-            <a rel="prev" href="../index.html">Previous: Introduction</a>
+            <a rel="prev" href="../week_1_matrices_by_h/index.html">Previous: Week 1 - Matrices by hand</a>
             
             
-            <a rel="next" href="matrices/index.html">Next: Matrices</a>
+            <a rel="next" href="../week_1_matrices_by_p/index.html">Next: Week 1 - Matrices by Python</a>
             
         </p>
         
@@ -423,150 +430,399 @@
     
 
             
-    <h1>Notes</h1>
-
+            
         </header>
 
         <main id="main-content">
             
-    <article class="item-content">
-        <section class="leading-text">
-            <p></p>
-        </section>
-        <section>
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
-        </section>
+            <li><a rel="alternate" type="application/pdf" href="week_1_matrices_by_1.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#tutorial_answer_shee">Tutorial answer sheet – Matrices</a>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="tutorial_answer_shee">Tutorial answer sheet – Matrices</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<ol class="enumerate" id="a0000000002">
+<li id="a0000000003" value="1">
+<ol class="enumerate" id="a0000000004">
+<li id="a0000000005" value="1">
+<p>
+\(\begin{bmatrix}  ~ 3~  
+
+&amp;  ~ 6~  
+
+\\ -1 
+
+&amp;  4 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000006" value="2">
+<p>
+\(\begin{bmatrix}  -1 
+
+&amp;  -2 
+
+\\ -3 
+
+&amp;  7 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000007" value="3">
+<p>
+Not possible; 
+</p>
+</li>
+<li id="a0000000008" value="4">
+<p>
+\(\begin{bmatrix}  ~ 4~  
+
+&amp;  ~ 0~  
+
+&amp;  ~ 0~  
+
+\\ 0 
+
+&amp;  1 
+
+&amp;  0
+
+\\ 0 
+
+&amp;  0 
+
+&amp;  -1 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000009" value="5">
+<p>
+\(\begin{bmatrix}  ~ 2~  
+
+&amp;  ~ 6~  
+
+\\ -2 
+
+&amp;  -1 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000010" value="6">
+<p>
+\(\begin{bmatrix}  -2 
+
+&amp;  16 
+
+\\ -1 
+
+&amp;  3 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000011" value="7">
+<p>
+\(\begin{bmatrix}  ~ 5~  
+
+&amp;  -5 
+
+&amp;  ~ 2~  
+
+\\ 0 
+
+&amp;  -5 
+
+&amp;  -2 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000012" value="8">
+<p>
+Not possible; 
+</p>
+</li>
+<li id="a0000000013" value="9">
+<p>
+\(\begin{bmatrix}  ~ 3~  
+
+&amp;  ~ 7~  
+
+\\ -7 
+
+&amp;  -1 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000014" value="10">
+<p>
+\(\begin{bmatrix}  20 
+
+&amp;  ~ 2~  
+
+&amp;  ~ 8~  
+
+\\ 11 
+
+&amp;  3 
+
+&amp;  9 
+
+\\ 21 
+
+&amp;  6 
+
+&amp;  21 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000015" value="11">
+<p>
+\(\begin{bmatrix}  -5 
+
+&amp;  -4 
+
+\\ -4 
+
+&amp;  6 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000016" value="12">
+<p>
+\(\begin{bmatrix}  -9 
+
+&amp;  22 
+
+\\ -11 
+
+&amp;  13 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000017" value="13">
+<p>
+\(\begin{bmatrix}  -3 
+
+&amp;  ~ 1~  
+
+&amp;  -1 
+
+\\ -19 
+
+&amp;  21 
+
+&amp;  -7
+
+\\ -7 
+
+&amp;  35 
+
+&amp;  7 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000018" value="14">
+<p>
+\(\begin{bmatrix}  ~ 1~  
+
+&amp;  ~ 3~  
+
+\\ 2 
+
+&amp;  -7 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000019" value="15">
+<p>
+\(\begin{bmatrix}  ~ 0~  
+
+&amp;  -2
+
+\\ 2 
+
+&amp;  2 
+
+\end{bmatrix}\). 
+</p>
+</li>
+<li id="a0000000020" value="16">
+<p>
+\(\begin{bmatrix}  ~ 5~  
+
+&amp;  20 
+
+&amp;  10 
+
+\\ 0 
+
+&amp;  -20 
+
+&amp;  -35
+
+\\ 4 
+
+&amp;  8 
+
+&amp;  -6 
+
+\end{bmatrix}\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000021" value="2">
+<ol class="enumerate" id="a0000000022">
+<li id="a0000000023" value="1">
+<p>
+Both equal \(\begin{bmatrix}  -3 
+
+&amp;  ~ 3~  
+
+\\ -24 
+
+&amp;  -21 
+
+\\ 18 
+
+&amp;  27 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000024" value="2">
+<p>
+\(\mathbf{A}(\mathbf{B}+\mathbf{C})=\begin{bmatrix}  ~ 2~  
+
+&amp;  -4 
+
+\\ -2 
+
+&amp;  -20 
+
+\\ 6 
+
+&amp;  12 
+
+\end{bmatrix}=\mathbf{A}\mathbf{B}+\mathbf{A}\mathbf{C}\) 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000025" value="3">
+<p>
+\(\mathbf{A}-\mathbf{I}=\begin{bmatrix}  ~ 2~  
+
+&amp;  ~ 2~  
+
+\\ -2 
+
+&amp;  -2 
+
+\end{bmatrix}\); \(\begin{bmatrix}  ~ 2~  
+
+&amp;  ~ 2~  
+
+\\ -2 
+
+&amp;  -2 
+
+\end{bmatrix}\begin{bmatrix}  ~ 2~  
+
+&amp;  ~ 2~  
+
+\\ -2 
+
+&amp;  -2 
+
+\end{bmatrix}=\begin{bmatrix}  ~ 0~  
+
+&amp;  ~ 0~  
+
+\\ 0 
+
+&amp;  0 
+
+\end{bmatrix}\) 
+</p>
+</li>
+<li id="a0000000026" value="4">
+<ol class="enumerate" id="a0000000027">
+<li id="a0000000028" value="1">
+<p>
+false; 
+</p>
+</li>
+<li id="a0000000029" value="2">
+<p>
+true; 
+</p>
+</li>
+<li id="a0000000030" value="3">
+<p>
+false; 
+</p>
+</li>
+<li id="a0000000031" value="4">
+<p>
+true; 
+</p>
+</li>
+<li id="a0000000032" value="5">
+<p>
+false; 
+</p>
+</li>
+<li id="a0000000033" value="6">
+<p>
+false. 
+</p>
+</li>
+</ol>
+</li>
+</ol>
+<script id="plastex-labels" type="application/json">{}</script>
     </article>
-
-    
-        <ul class="chirun-structure">
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="matrices/index.html">Matrices</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="matrices/matrices.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="transformations/index.html">Transformations</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="transformations/transformations.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="determinants_and_inv/index.html">Determinants and inverses</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="determinants_and_inv/determinants_and_inv.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="linear_systems/index.html">Linear systems</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="linear_systems/linear_systems.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-</ul>
-    
 
         </main>
 
