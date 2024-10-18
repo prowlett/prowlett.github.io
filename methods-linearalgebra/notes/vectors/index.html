@@ -7,46 +7,49 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-10-18" />
+            <meta name="date" content="2024-10-17" />
         
 
-        <title>Using Python | Introduction to Linear Algebra</title>
+        <title>Vectors | Introduction to Linear Algebra</title>
 
         
     
-            <link rel="stylesheet" href="../static/styles.css?build_time=1729262838.544896">
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1729195680.919073">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../static/pygmentize.css?build_time=1729262838.544896">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1729195680.919073">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1729195680.919073">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../static?build_time=1729262838.544896', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1729195680.919073', location.href);
 			</script>
 
             
-                <script defer src="../static/mathjax_config.js?build_time=1729262838.544896"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1729195680.919073"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../static/localisation.js?build_time=1729262838.544896"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1729195680.919073"></script>
 
-            <script defer src="../static/customisation.js?build_time=1729262838.544896"></script>
+            <script defer src="../../static/customisation.js?build_time=1729195680.919073"></script>
 
             
 
             
         
-    <script defer src="../static/code.js?build_time=1729262838.544896" type="module"></script>
-    <script defer src="../static/embed_numbas.js?build_time=1729262838.544896" type="module"></script>
-    <script defer src="../static/embed_qrcode.js?build_time=1729262838.544896" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1729195680.919073" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1729195680.919073" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1729195680.919073" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../static/code.css?build_time=1729262838.544896">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1729195680.919073">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -227,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../static/embed_numbas.css?build_time=1729262838.544896">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1729195680.919073">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -245,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -401,21 +404,25 @@
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="../index.html">Introduction to Linear Algebra</a>
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Notes</a>
             </li>
             
             <li class="breadcrumb-item active">
-                Using Python
+                Vectors
             </li>
         </ul>
 
         
         <p class="pager" id="item-pager">
             
-            <a rel="prev" href="../notes/vectors/index.html">Previous: Vectors</a>
+            <a rel="prev" href="../linear_systems/index.html">Previous: Linear systems</a>
             
             
-            <a rel="next" href="matrices_using_pytho/index.html">Next: Matrices using Python</a>
+            <a rel="next" href="../../using_python/index.html">Next: Using Python</a>
             
         </p>
         
@@ -423,88 +430,570 @@
     
 
             
-    <h1>Using Python</h1>
-
+            
         </header>
 
         <main id="main-content">
             
-    <article class="item-content">
-        <section class="leading-text">
-            <p></p>
-        </section>
-        <section>
-            
-        </section>
-    </article>
-
-    
-        <ul class="chirun-structure">
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="matrices_using_pytho/index.html">Matrices using Python</a>
-
+    <nav id="sidebar">
+        
         <ul class="alternative-formats">
             
-            <li><a class="undecorated" href="matrices_using_pytho/matrices_using_pytho.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+            <li><a rel="alternate" type="application/pdf" href="vectors.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
     <use href="#pdf"/>
-</svg></a></li>
+</svg> Download as PDF</a></li>
             
         </ul>
-    
+        
 
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
                 
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="determinants_and_i_1/index.html">Determinants and inverses using Python</a>
-
-        <ul class="alternative-formats">
+                    
+    <li>
+        <a href="#vectors">Vectors</a>
+        
+        <ol>
             
-            <li><a class="undecorated" href="determinants_and_i_1/determinants_and_i_1.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
             
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
+    <li>
+        <a href="#a0000000002">1 Position vector</a>
+        
     </li>
-    
 
+    <li>
+        <a href="#a0000000003">2 Scalar and vector quantities</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000005">3 Representation</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000009">4 Magnitude</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000012">5 Unit vectors</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000013">6 Manipulation of vectors</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000014">7 Dot product</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000021">7.1 Example: angle between two vectors</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000022">7.2 Example: component of a vector in the direction of another</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000024">8 Cross product</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="vectors">Vectors</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<section class="section">
+<h2 id="a0000000002">1 Position vector</h2>
+<p>
+A position in the \((x,y)\)-plane with coordinates \((a,b)\) can be represented as a vector, which is a one-column matrix \(\begin{bmatrix}  a
+
+\\ b 
+
+\end{bmatrix}\). This does not give any more information, but it can be useful to manipulate the information in this form. 
+</p>
+</section><section class="section">
+<h2 id="a0000000003">2 Scalar and vector quantities</h2>
+<p>
+Some quantities, such as mass or time, are scalars. We represent these by a single number which is its <i class="itshape">magnitude</i>, e.g. 26kg or 39 seconds. Other quantities we might want to model have both a magnitude and a <i class="itshape">direction</i>. For example, if we talk about a force of 10N applied vertically upwards or a force of 10N applied horizontally to the right, these would produce quite different effects. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000004">
+<img alt="\begin{tikzpicture} 
+            \draw[black,fill=lightgray,ultra thick] (0,0) rectangle (3,2);
+            \draw[-&gt;,ultra thick] (1.5,2) -- (1.5,3);
+            \begin{scope}[shift={(5,0)}]
+                \draw[black,fill=lightgray,ultra thick] (0,0) rectangle (3,2);
+                \draw[-&gt;,ultra thick] (3,1) -- (4,1);
+            \end{scope}
+        \end{tikzpicture}" src="images/img-0001.svg"/>
+</div> </div>
+<p>
+We represent quantities which have these two components magnitude and direction using a <i class="itshape">vector</i>. We can represent a vector using a one-column matrix. 
+</p>
+<p>
+Some examples of scalar quantities are distance, area, mass, temperature, price, work, and energy. Some examples of vector quantities are displacement, force, velocity, acceleration, and momentum. 
+</p>
+</section><section class="section">
+<h2 id="a0000000005">3 Representation</h2>
+<p>
+Vectors can be represented by drawing a line. For example, here the vector \(\mathbf{F}\) represents a force acting on a block. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000006">
+<img alt="\begin{tikzpicture} 
+            \draw[black,fill=lightgray,ultra thick] (0,0) rectangle (3,2);
+            \draw[-&gt;,ultra thick] (3,1) -- node[below right] {\(\mathbf{F}\)} (4.5,3);
+        \end{tikzpicture}" src="images/img-0002.svg"/>
+</div> </div>
+<p>
+Two vectors are said to be equal if they have the same magnitude and the same direction. For example, here \(\mathbf{a}\) and \(\mathbf{b}\) are equal, even though they don’t coincide. Unless a vector represents a position in space, it can be translated without changing the vector itself. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000007">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;,ultra thick] (0.5,0) -- node[below right]  {\(\mathbf{b}\)} (3.5,2);
+            \draw[-&gt;,ultra thick] (0,1) -- node[above left]  {\(\mathbf{a}\)} (3,3);
+        \end{tikzpicture}" src="images/img-0003.svg"/>
+</div> </div>
+<p>
+For a vector \(\mathbf{a}\), the negative vector \(-\mathbf{a}\) acts with the same magnitude in the opposite direction. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000008">
+<img alt="\begin{tikzpicture} 
+            \draw[&lt;-,ultra thick] (0.5,0) -- node[below right] {\(-\mathbf{a}\)}(3.5,2);
+            \draw[-&gt;,ultra thick] (0,1) -- node[above left] {\(\mathbf{a}\)} (3,3);
+        \end{tikzpicture}" src="images/img-0004.svg"/>
+</div> </div>
+</section><section class="section">
+<h2 id="a0000000009">4 Magnitude</h2>
+<p>
+If \(\mathbf{r}\) is a vector quantity, then its magnitude is \(|\mathbf{r}|\). 
+</p>
+<p>
+If \(\mathbf{r} = \begin{bmatrix}  a
+
+\\ b 
+
+\end{bmatrix}\), then we can draw this vector 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000010">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;,ultra thick] (0,0) -- node[above] {\(\mathbf{r}\)} (3,2);
+            \draw[dashed] (0,0) -- node[below] {\(a\)} (3,0);
+            \draw[dashed] (3,0) -- node[right] {\(b\)} (3,2);
+            
+        \end{tikzpicture}" src="images/img-0005.svg"/>
+</div> </div>
+<p>
+By the Pythagorean theorem, 
+</p>
+<span class="dmath">\[  |\mathbf{r}| = \sqrt{a^2+b^2}\text{.} \]</span>
+<p>
+If we know a vector \(\mathbf{r}\) acts at an angle \(\theta \) and has some magnitude \(|\mathbf{r}|\), we can draw this as below. 
+</p>
+<p>
+There are equivalent results in higher dimensions. For example, a 3D vector \(\mathbf{r} = \begin{bmatrix}  a
+
+\\ b
+
+\\ c 
+
+\end{bmatrix}\) has magnitude \(|\mathbf{r}| = \sqrt{a^2+b^2+c^2}\). 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000011">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;,ultra thick] (0,0) -- node[above left] {\(\mathbf{r}\)} (3,4);
+            \draw[dashed] (0,0) -- node[below] {\(x\)} (3,0);
+            \draw[dashed] (3,0) -- node[right] {\(y\)} (3,4);
+            \node at (0.75,0.4) {\(\theta\)};
+            \draw (0.5,0) to[bend right] (0.3,0.4);
+        \end{tikzpicture}" src="images/img-0006.svg"/>
+</div> </div>
+<p>
+Then we can determine the two components of this force, one horizontal and one vertical, using 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  x = |\mathbf{r}| \cos (\theta )\text{;}\\ y = |\mathbf{r}| \sin (\theta )\text{.}\end{align*}</script></span>
+<p>
+Therefore, we can write 
+</p>
+<span class="dmath">\[  \mathbf{r} = \begin{bmatrix}  |\mathbf{r}| \cos (\theta )
+
+\\ |\mathbf{r}| \sin (\theta ) 
+
+\end{bmatrix}  \]</span>
+</section><section class="section">
+<h2 id="a0000000012">5 Unit vectors</h2>
+<p>
+If we have a vector \(\mathbf{r}\), we can form a vector of magnitude 1 acting in the direction of \(\mathbf{r}\). This is called a unit vector and is written \(\hat{\mathbf{r}}\). We can scale a vector to a unit vector by dividing by its magnitude, so 
+</p>
+<span class="dmath">\[  \hat{\mathbf{r}} = \frac{\mathbf{r}}{|\mathbf{r}|}\text{.} \]</span>
+<p>
+By convention, the unit vector on the \(x\)-axis is denoted \({\mathbf{i}}\). Similarly, the unit vector on the \(y\)-axis is denoted \({\mathbf{j}}\) and the unit vector on the \(z\)-axis (in 3D geometry) is denoted \({\mathbf{k}}\). 
+</p>
+<p>
+In a 2D system, \({\mathbf{i}} = \begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix}\) and \({\mathbf{j}} = \begin{bmatrix}  0
+
+\\ 1 
+
+\end{bmatrix}\). 
+</p>
+<p>
+So a vector can be represented as a combination of these quantities 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  a
+
+\\ b 
+
+\end{bmatrix} = a \begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix} + b \begin{bmatrix}  0
+
+\\ 1 
+
+\end{bmatrix} = a {\mathbf{i}} + b {\mathbf{j}}\text{.} \]</span>
+<p>
+In a 3D system, \({\mathbf{i}} = \begin{bmatrix}  1
+
+\\ 0
+
+\\ 0 
+
+\end{bmatrix}\), \({\mathbf{j}} = \begin{bmatrix}  0
+
+\\ 1
+
+\\ 0 
+
+\end{bmatrix}\) and \({\mathbf{k}} = \begin{bmatrix}  0
+
+\\ 0
+
+\\ 1 
+
+\end{bmatrix}\). 
+</p>
+<p>
+So a vector can be represented as a combination of these quantities 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  a
+
+\\ b
+
+\\ c 
+
+\end{bmatrix} = a \begin{bmatrix}  1
+
+\\ 0
+
+\\ 0 
+
+\end{bmatrix} + b \begin{bmatrix}  0
+
+\\ 1
+
+\\ 0 
+
+\end{bmatrix} + c \begin{bmatrix}  0
+
+\\ 0
+
+\\ 1 
+
+\end{bmatrix} = a {\mathbf{i}} + b {\mathbf{j}} + c {\mathbf{k}}\text{.} \]</span>
+</section><section class="section">
+<h2 id="a0000000013">6 Manipulation of vectors</h2>
+<p>
+Since vectors are matrices, we can add them together and apply transformations just as we have seen with vectors. 
+</p>
+<p>
+For example, if an object starts at the origin, moves along a vector \(\begin{bmatrix}  2
+
+\\ 3 
+
+\end{bmatrix}\), then moves along a vector \(\begin{bmatrix}  5
+
+\\ 1 
+
+\end{bmatrix}\), then we can locate its final position by matrix addition 
+</p>
+<span class="dmath">\[  \begin{bmatrix}  2
+
+\\ 3 
+
+\end{bmatrix} + \begin{bmatrix}  5
+
+\\ 1 
+
+\end{bmatrix} = \begin{bmatrix}  7
+
+\\ 4 
+
+\end{bmatrix} \text{.} \]</span>
+</section><section class="section">
+<h2 id="a0000000014">7 Dot product</h2>
+<p>
+The <i class="itshape">dot product</i>, also known as the <i class="itshape">scalar product</i>, is defined for vectors \(\mathbf{a}\) and \(\mathbf{b}\) as 
+</p>
+<span class="dmath">\[  \mathbf{a}\cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}| \cos (\theta )  \]</span>
+<p>
+ where \(\theta \) is the angle between the vectors. 
+</p>
+<p>
+The dot product is a scalar quantity – it has magnitude only. 
+</p>
+<p>
+Some properties of the dot product: 
+</p>
+<ul class="itemize" id="a0000000015">
+<li id="a0000000016">
+<p>
+The dot product is commutative, that is 
+</p>
+<span class="dmath">\[  \mathbf{a}\cdot \mathbf{b} = \mathbf{b}\cdot \mathbf{a}\text{.} \]</span>
+</li>
+<li id="a0000000017">
+<p>
+The dot product is distributive over addition, that is 
+</p>
+<span class="dmath">\[  \mathbf{a}\cdot (\mathbf{b}+\mathbf{c}) = \mathbf{a}\cdot \mathbf{b}+\mathbf{a}\cdot \mathbf{c} \text{.} \]</span>
+</li>
+<li id="a0000000018">
+<p>
+For a unit vector \(\hat{\mathbf{b}}\), then \(|\hat{\mathbf{b}}|=1\) and 
+</p>
+<span class="dmath">\[  \mathbf{a}\cdot \hat{\mathbf{b}} = |\mathbf{a}|\cos (\theta )\text{,} \]</span>
+<p>
+ which is equal to the component of \(\mathbf{a}\) in the direction of \(\hat{\mathbf{b}}\). 
+</p>
+</li>
+<li id="a0000000019">
+<p>
+Since \(\cos (0) = 1\), the dot product of a vector with itself is 
+</p>
+<span class="dmath">\[  \mathbf{a}\cdot \mathbf{a} = |\mathbf{a}||\mathbf{a}|\cos (0) = |\mathbf{a}|^2 \qquad \text{or}\qquad |\mathbf{a}| = \sqrt{\mathbf{a}\cdot \mathbf{a}} \text{.} \]</span>
+</li>
+<li id="a0000000020">
+<p>
+If \(\mathbf{a}\) and \(\mathbf{b}\) are perpendicular then \(\theta =90^\circ \), then \(\cos (\theta ) = 0 \) and \(\mathbf{a}\cdot \mathbf{b} = 0\). Indeed, if \(\mathbf{a}\) and \(\mathbf{b}\) are non-zero vectors and \(\mathbf{a}\cdot \mathbf{b} = 0\), then \(\mathbf{a}\) and \(\mathbf{b}\) are perpendicular. 
+</p>
+</li>
 </ul>
-    
+<p>
+The unit vectors \(\mathbf{i}\) and \(\mathbf{j}\) are perpendicular, so \(\mathbf{i}\cdot \mathbf{j}=0\). Further, since \(|\mathbf{i}|=1\), it follows that \(\mathbf{i}\cdot \mathbf{i} = |\mathbf{i}|^2 = 1\). We can use these to develop a formula for finding the dot product of two vectors 
+</p>
+<span class="dmath">\[  \mathbf{a}=\begin{bmatrix}  a_1
+
+\\ a_2 
+
+\end{bmatrix} \quad \text{and}\quad \mathbf{b}=\begin{bmatrix}  b_1
+
+\\ b_2 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+That is, 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{a}\cdot \mathbf{b} & = (a_1 \mathbf{i} + a_2 \mathbf{j})\cdot (b_1 \mathbf{i} + b_2 \mathbf{j})\\ & = a_1 \mathbf{i} \cdot (b_1 \mathbf{i} + b_2 \mathbf{j}) + a_2 \mathbf{j} (b_1 \mathbf{i} + b_2 \mathbf{j})\\ & = a_1 b_1 + a_2 b_2\text{.}\end{align*}</script></span>
+<section class="subsection">
+<h3 id="a0000000021">7.1 Example: angle between two vectors</h3>
+<p>
+Find the angle between two vectors \(\mathbf{a}=\begin{bmatrix}  7
+
+\\ 8 
+
+\end{bmatrix}\) and \(\mathbf{b}=\begin{bmatrix}  5
+
+\\ -2 
+
+\end{bmatrix}\). 
+</p>
+<p>
+First, we can find \(|\mathbf{a}| = \sqrt{7^2+8^2} = \sqrt{113}\) and \(|\mathbf{b}| = \sqrt{5^2+2^2}=\sqrt{29}\). 
+</p>
+<p>
+Now note that \(\mathbf{a}\cdot \mathbf{b} = 7 \times 5 + 8 \times -2 = 19\). 
+</p>
+<p>
+Therefore 
+</p>
+<span class="dmath">\[  \cos (\theta ) = \frac{\mathbf{a}\cdot \mathbf{b}}{|\mathbf{a}||\mathbf{b}|} = \frac{19}{\sqrt{113}\sqrt{29}} \approx 70.6^\circ \text{.} \]</span>
+</section><section class="subsection">
+<h3 id="a0000000022">7.2 Example: component of a vector in the direction of another</h3>
+<div class="centered"> <div class="tikzcd" id="a0000000023">
+<img alt="\begin{tikzpicture} 
+            \draw[-&gt;,ultra thick] (0,0) -- node[above left] {\(\mathbf{a}\)} (3,4);
+            \draw[dashed] (0,0) -- node[below] {\(x\)} (3,0);
+            \draw[dashed] (3,0) -- node[right] {\(y\)} (3,4);
+%            \node at (0.75,0.4) {\(\theta\)};
+%            \draw (0.5,0) to[bend right] (0.3,0.4);
+            
+            \draw[-&gt;,ultra thick] (0,0) -- (5,0);
+            \node at (4,-0.3) {\(\mathbf{b}\)};
+        \end{tikzpicture}" src="images/img-0007.svg"/>
+</div> </div>
+<p>
+Recall that for a vector \(\mathbf{a} = \begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\), we had \( x = |\mathbf{a}| \cos (\theta )\). 
+</p>
+<p>
+If we take the dot product of \(\mathbf{a}\) with a unit vector in the \(\mathbf{b}\) direction, \(\hat{\mathbf{b}}\), then we get 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{a}\cdot \hat{\mathbf{b}} & = |\mathbf{a}||\hat{\mathbf{b}}| \cos (\theta )\\ & = |\mathbf{a}|\cos (\theta ) \quad \text{since }|\hat{\mathbf{b}}|=1\text{.}\end{align*}</script></span>
+<p>
+So the component of the vector \(\mathbf{a}\) in the direction of vector \(\mathbf{b}\) is given by \(\mathbf{a}\cdot \hat{\mathbf{b}}\). 
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000024">8 Cross product</h2>
+<p>
+The <i class="itshape">cross product</i> or <i class="itshape">vector product</i> of two vectors \(\mathbf{a}\) and \(\mathbf{b}\) is defined as 
+</p>
+<span class="dmath">\[  \mathbf{a} \times \mathbf{b} = |\mathbf{a}||\mathbf{b}| \sin (\theta ) \hat{\mathbf{n}}\text{,} \]</span>
+<p>
+ where \(\theta \) is the angle between \(\mathbf{a}\) and \(\mathbf{b}\), and \(\hat{\mathbf{n}}\) is the unit vector perpendicular to both \(\mathbf{a}\) and \(\mathbf{b}\). 
+</p>
+<p>
+The result of the vector product is a vector at right angles to both \(\mathbf{a}\) and \(\mathbf{b}\). 
+</p>
+<p>
+Some properties of the cross product: 
+</p>
+<ol class="enumerate" id="a0000000025">
+<li id="a0000000026" value="1">
+<p>
+\(\mathbf{a} \times \mathbf{b} = -\mathbf{b} \times \mathbf{a}\); 
+</p>
+</li>
+<li id="a0000000027" value="2">
+<p>
+\(\mathbf{a} \times \mathbf{a} = 0\); 
+</p>
+</li>
+<li id="a0000000028" value="3">
+<p>
+\(\mathbf{a}\cdot (\mathbf{a} \times \mathbf{b}) = 0\); 
+</p>
+</li>
+<li id="a0000000029" value="4">
+<p>
+\(\mathbf{a}\times (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) \times \mathbf{c}\); 
+</p>
+</li>
+<li id="a0000000030" value="5">
+<p>
+\(\mathbf{a}\times (\mathbf{b} + \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) + (\mathbf{a} \times \mathbf{c})\). 
+</p>
+</li>
+</ol>
+<p>
+Note the following results about the unit vectors \(\mathbf{i}\), \(\mathbf{j}\) and \(\mathbf{k}\): 
+</p>
+<span class="dmath">\[ \begin{array}{lll} {\mathbf{i}}\times {\mathbf{i}} = 0 &amp;  {\mathbf{j}}\times {\mathbf{j}} = 0 &amp;  {\mathbf{k}}\times {\mathbf{k}} = 0\\ {\mathbf{i}}\times {\mathbf{j}} = {\mathbf{k}} &amp;  {\mathbf{j}}\times {\mathbf{k}} = {\mathbf{i}} &amp;  {\mathbf{k}}\times {\mathbf{i}} = {\mathbf{j}}\\ {\mathbf{j}}\times {\mathbf{i}} = -{\mathbf{k}} &amp;  {\mathbf{k}}\times {\mathbf{j}} = -{\mathbf{i}} &amp;  {\mathbf{i}}\times {\mathbf{k}} = -{\mathbf{j}}\\ \end{array} \]</span>
+<p>
+Taking 
+</p>
+<span class="dmath">\[ \mathbf{a}=\begin{bmatrix}  a_1
+
+\\ a_2
+
+\\ a_3 
+
+\end{bmatrix} \quad \text{and}\quad \mathbf{b}=\begin{bmatrix}  b_1
+
+\\ b_2
+
+\\ b_3 
+
+\end{bmatrix} \]</span>
+<p>
+ we get 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{a} \times \mathbf{b} & = (a_1 \mathbf{i} + a_2 \mathbf{j} + a_3 \mathbf{k}) \times (b_1 \mathbf{i} + b_2 \mathbf{j} + b_3 \mathbf{k})\\ & = (a_2b_3 - a_3b_2) \mathbf{i} + (a_3b_1 - a_1b_3) \mathbf{k} + (a_1b_2 - a_2b_1) \mathbf{k}\text{.}\end{align*}</script></span>
+<p>
+The quantities like \(a_2b_3 - a_3b_2\) might look like determinants. In fact, we can define the cross product as a determinant. 
+</p>
+<span class="dmath">\[  \mathbf{a}\times \mathbf{b} = \begin{vmatrix}  \mathbf{i}
+
+&amp;  \mathbf{j} 
+
+&amp;  \mathbf{k}
+
+\\ a_1
+
+&amp; a_2
+
+&amp; a_3
+
+\\ b_1
+
+&amp; b_2
+
+&amp; b_3 
+
+\end{vmatrix} = \begin{vmatrix}  a_2
+
+&amp; a_3
+
+\\ b_2
+
+&amp; b_3 
+
+\end{vmatrix} \mathbf{i} + \begin{vmatrix}  a_1
+
+&amp; a_3
+
+\\ b_1
+
+&amp; b_3 
+
+\end{vmatrix} \mathbf{j} + \begin{vmatrix}  a_1
+
+&amp; a_2
+
+\\ b_1
+
+&amp; b_2 
+
+\end{vmatrix} \mathbf{k}\text{.} \]</span>
+</section>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
 
         </main>
 
@@ -518,7 +1007,7 @@
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-10-18</p>
+        <p>This page last generated: 2024-10-17</p>
         
         
         

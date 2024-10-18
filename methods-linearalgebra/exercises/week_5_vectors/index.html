@@ -7,46 +7,49 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-10-18" />
+            <meta name="date" content="2024-10-17" />
         
 
-        <title>Using Python | Introduction to Linear Algebra</title>
+        <title>Week 5 - Vectors | Introduction to Linear Algebra</title>
 
         
     
-            <link rel="stylesheet" href="../static/styles.css?build_time=1729262838.544896">
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1729196324.143994">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../static/pygmentize.css?build_time=1729262838.544896">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1729196324.143994">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1729196324.143994">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../static?build_time=1729262838.544896', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1729196324.143994', location.href);
 			</script>
 
             
-                <script defer src="../static/mathjax_config.js?build_time=1729262838.544896"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1729196324.143994"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../static/localisation.js?build_time=1729262838.544896"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1729196324.143994"></script>
 
-            <script defer src="../static/customisation.js?build_time=1729262838.544896"></script>
+            <script defer src="../../static/customisation.js?build_time=1729196324.143994"></script>
 
             
 
             
         
-    <script defer src="../static/code.js?build_time=1729262838.544896" type="module"></script>
-    <script defer src="../static/embed_numbas.js?build_time=1729262838.544896" type="module"></script>
-    <script defer src="../static/embed_qrcode.js?build_time=1729262838.544896" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1729196324.143994" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1729196324.143994" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1729196324.143994" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../static/code.css?build_time=1729262838.544896">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1729196324.143994">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -227,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../static/embed_numbas.css?build_time=1729262838.544896">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1729196324.143994">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -245,7 +248,7 @@
         </template>
 
     </head>
-    <body class=" structure" >
+    <body class="" >
         
 
         <a class="skip-to-content-link" href="#main-content">Skip to content</a>
@@ -401,21 +404,23 @@
     <nav aria-label="breadcrumb">
         <ul class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="../index.html">Introduction to Linear Algebra</a>
+                <a href="../../index.html">Introduction to Linear Algebra</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Exercises</a>
             </li>
             
             <li class="breadcrumb-item active">
-                Using Python
+                Week 5 - Vectors
             </li>
         </ul>
 
         
         <p class="pager" id="item-pager">
             
-            <a rel="prev" href="../notes/vectors/index.html">Previous: Vectors</a>
+            <a rel="prev" href="../week_4_linear_system/index.html">Previous: Week 4 - Linear systems</a>
             
-            
-            <a rel="next" href="matrices_using_pytho/index.html">Next: Matrices using Python</a>
             
         </p>
         
@@ -423,88 +428,298 @@
     
 
             
-    <h1>Using Python</h1>
-
+            
         </header>
 
         <main id="main-content">
             
-    <article class="item-content">
-        <section class="leading-text">
-            <p></p>
-        </section>
-        <section>
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
             
-        </section>
+            <li><a rel="alternate" type="application/pdf" href="week_5_vectors.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#tutorial_exercise_sh">Tutorial exercise sheet – Vectors</a>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="tutorial_exercise_sh">Tutorial exercise sheet – Vectors</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<ol class="enumerate" id="a0000000002">
+<li id="a0000000003" value="1">
+<p>
+Which of the following are scalars and which are vectors? 
+</p>
+<ol class="enumerate" id="a0000000004">
+<li id="a0000000005" value="1">
+<p>
+the volume of a water tank; 
+</p>
+</li>
+<li id="a0000000006" value="2">
+<p>
+a length measured in metres; 
+</p>
+</li>
+<li id="a0000000007" value="3">
+<p>
+a length measured in miles; 
+</p>
+</li>
+<li id="a0000000008" value="4">
+<p>
+the angular velocity of a flywheel; 
+</p>
+</li>
+<li id="a0000000009" value="5">
+<p>
+the relative velocity of two aircraft; 
+</p>
+</li>
+<li id="a0000000010" value="6">
+<p>
+the work done by a force; 
+</p>
+</li>
+<li id="a0000000011" value="7">
+<p>
+the momentum of an atomic particle. 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000012" value="2">
+<p>
+A force of \(13N\) acts at an angle of \(62^\circ \) above the \(x\)-axis. Resolve this force into two components, one horizontal and one vertical, and represent this as a matrix. 
+</p>
+</li>
+<li id="a0000000013" value="3">
+<p>
+Find the modulus of each of the following vectors: 
+</p>
+<ol class="enumerate" id="a0000000014">
+<li id="a0000000015" value="1">
+<p>
+\(\begin{bmatrix}  7
+
+\\ 3 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000016" value="2">
+<p>
+\(\begin{bmatrix}  17
+
+\\ 0 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000017" value="3">
+<p>
+\(\begin{bmatrix}  0
+
+\\ -3 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000018" value="4">
+<p>
+\(\begin{bmatrix}  2
+
+\\ 3 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000019" value="5">
+<p>
+\(\begin{bmatrix}  2
+
+\\ -3 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000020" value="6">
+<p>
+\(\begin{bmatrix}  -2
+
+\\ -3 
+
+\end{bmatrix}\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000021" value="4">
+<p>
+If \(\mathbf{a} = \begin{bmatrix}  4
+
+\\ 6 
+
+\end{bmatrix}\) and \(\mathbf{b} = \begin{bmatrix}  3
+
+\\ -3 
+
+\end{bmatrix}\), find \(\mathbf{a}\cdot \mathbf{b}\). 
+</p>
+</li>
+<li id="a0000000022" value="5">
+<p>
+If \(\mathbf{a} = \begin{bmatrix}  5
+
+\\ 3
+
+\\ 7 
+
+\end{bmatrix}\) and \(\mathbf{b} = \begin{bmatrix}  1
+
+\\ -2
+
+\\ -7 
+
+\end{bmatrix}\), find \(\mathbf{a}\cdot \mathbf{b}\). 
+</p>
+</li>
+<li id="a0000000023" value="6">
+<p>
+Find the angle between \(\mathbf{a} = \begin{bmatrix}  2
+
+\\ 1 
+
+\end{bmatrix}\) and \(\mathbf{b} = \begin{bmatrix}  5
+
+\\ 11 
+
+\end{bmatrix}\). 
+</p>
+</li>
+<li id="a0000000024" value="7">
+<p>
+Find the component of the vector \(\mathbf{a} = \begin{bmatrix}  2
+
+\\ 3 
+
+\end{bmatrix} \) in the direction of the vector \(\mathbf{b} = \begin{bmatrix}  1
+
+\\ 5 
+
+\end{bmatrix}\). 
+</p>
+</li>
+<li id="a0000000025" value="8">
+<p>
+Evaluate \(\mathbf{a}\cdot \mathbf{i}\) where \(\mathbf{a} = \begin{bmatrix}  4
+
+\\ 8 
+
+\end{bmatrix}\). Hence find the angle that \(\mathbf{a}\) makes with the \(x\)-axis. 
+</p>
+</li>
+<li id="a0000000026" value="9">
+<p>
+Find the cross product of \(\mathbf{a}= \begin{bmatrix}  -2
+
+\\ -3
+
+\\ 0 
+
+\end{bmatrix}\) and \(\mathbf{b} = \begin{bmatrix}  4
+
+\\ 7
+
+\\ 0 
+
+\end{bmatrix}\). 
+</p>
+</li>
+<li id="a0000000027" value="10">
+<p>
+Find the cross product of \(\mathbf{a}= \begin{bmatrix}  3
+
+\\ -2
+
+\\ 5 
+
+\end{bmatrix}\) and \(\mathbf{b} = \begin{bmatrix}  7
+
+\\ 4
+
+\\ -8 
+
+\end{bmatrix}\). 
+</p>
+</li>
+<li id="a0000000028" value="11">
+<p>
+For the following vectors, calculate \(\mathbf{a}\cdot \mathbf{b}\), \(\mathbf{b}\cdot \mathbf{a}\), \(\mathbf{a}\cdot \mathbf{a}\), \(\mathbf{b}\cdot \mathbf{b}\), \(\mathbf{a}\times \mathbf{b}\), and \(\mathbf{b}\times \mathbf{a}\). 
+</p>
+<ol class="enumerate" id="a0000000029">
+<li id="a0000000030" value="1">
+<p>
+\(\mathbf{a}= \begin{bmatrix}  4
+
+\\ 3
+
+\\ 2 
+
+\end{bmatrix}\), \(\mathbf{b} = \begin{bmatrix}  2
+
+\\ -1
+
+\\ 11 
+
+\end{bmatrix}\); 
+</p>
+</li>
+<li id="a0000000031" value="2">
+<p>
+\(\mathbf{a}= \begin{bmatrix}  2
+
+\\ -3
+
+\\ -4 
+
+\end{bmatrix}\), \(\mathbf{b} = \begin{bmatrix}  -2
+
+\\ 14
+
+\\ 1 
+
+\end{bmatrix}\). 
+</p>
+</li>
+</ol>
+</li>
+</ol>
+<script id="plastex-labels" type="application/json">{}</script>
     </article>
-
-    
-        <ul class="chirun-structure">
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="matrices_using_pytho/index.html">Matrices using Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="matrices_using_pytho/matrices_using_pytho.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-    
-    <li>
-        <article class="item">
-            
-                
-
-                <ul class="contents">
-                    <li>
-                        
-                        
-
-    
-        <a class="undecorated" href="determinants_and_i_1/index.html">Determinants and inverses using Python</a>
-
-        <ul class="alternative-formats">
-            
-            <li><a class="undecorated" href="determinants_and_i_1/determinants_and_i_1.pdf" download title="PDF"><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
-    <use href="#pdf"/>
-</svg></a></li>
-            
-        </ul>
-    
-
-                        
-                    </li>
-                </ul>
-            
-        </article>
-    </li>
-    
-
-</ul>
-    
 
         </main>
 
@@ -518,7 +733,7 @@
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-10-18</p>
+        <p>This page last generated: 2024-10-17</p>
         
         
         
