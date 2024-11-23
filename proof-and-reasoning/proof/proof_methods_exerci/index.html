@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-11-22" />
+            <meta name="date" content="2024-11-23" />
         
 
         <title>Proof methods - exercises | Proof and Reasoning</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1732306422.589119">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1732339618.04968">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1732306422.589119">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1732339618.04968">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1732306422.589119">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1732339618.04968">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1732306422.589119', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1732339618.04968', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1732306422.589119"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1732339618.04968"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1732306422.589119"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1732339618.04968"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1732306422.589119"></script>
+            <script defer src="../../static/customisation.js?build_time=1732339618.04968"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1732306422.589119" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1732306422.589119" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1732306422.589119" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1732339618.04968" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1732339618.04968" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1732339618.04968" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1732306422.589119">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1732339618.04968">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1732306422.589119">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1732339618.04968">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -503,43 +503,86 @@
 <ol class="enumerate" id="a0000000002">
 <li id="a0000000003" value="1">
 <p>
+In logic, we talk about <i class="itshape">necessary</i> conditions and <i class="itshape">sufficient</i> conditions. If \(p\) is a necessary condition for \(q\) it does not mean that \(p\) on its own is enough to guarantee \(q\). Rather, it means \(p\) will have to be true if there is to be any question of \(q\) being true – we need \(p\) for \(q\). It means \(q \implies p\). 
+</p>
+<p>
+We also talk about <i class="itshape">sufficient</i> conditions. If \(p\) is a sufficient condition for \(q\) it means that \(p\) being true is enough to say \(q\) is true, though it is possible \(q\) is true without \(p\) being true. It means \(p \implies q\). 
+</p>
+<p>
+If \(p\) is necessary and sufficient for \(q\) it means \(p \iff q\). 
+</p>
+<p>
+Which of the following conditions is <i class="itshape">necessary</i> for \(n \in \mathbb {N}\) to be divisible by \(6\)? Which conditions are <i class="itshape">sufficient</i> for \(n\) to be divisible by \(6\)? 
+</p>
+<ol class="enumerate" id="a0000000004">
+<li id="a0000000005" value="1">
+<p>
+\(n\) is divisible by \(3\); 
+</p>
+</li>
+<li id="a0000000006" value="2">
+<p>
+\(n\) is divisible by \(9\); 
+</p>
+</li>
+<li id="a0000000007" value="3">
+<p>
+\(n\) is divisible by \(12\); 
+</p>
+</li>
+<li id="a0000000008" value="4">
+<p>
+\(n=24\); 
+</p>
+</li>
+<li id="a0000000009" value="5">
+<p>
+\(n^2\) is divisible by \(3\); 
+</p>
+</li>
+<li id="a0000000010" value="6">
+<p>
+\(n\) is even and divisible by \(3\). 
+</p>
+</li>
+</ol>
+<p>
+<span class="vspace bigskip"></span>
+</p>
+</li>
+<li id="a0000000011" value="2">
+<p>
 Choose any five consecutive positive whole numbers, and multiply them together. Did you get a multiple of 120? Will you always get a multiple of 120? How would you convince someone?<span class="vspace bigskip"></span>
 </p>
 </li>
-<li id="a0000000004" value="2">
+<li id="a0000000012" value="3">
 <p>
 Prove or disprove the following. 
 </p>
-<ol class="enumerate" id="a0000000005">
-<li id="a0000000006" value="1">
+<ol class="enumerate" id="a0000000013">
+<li id="a0000000014" value="1">
 <p>
-Let \(m\) be an integer. If \(m\) is odd, then \(m^2\) is odd. <span class="vspace medskip"></span>
+Let \(m\) be an integer. If \(m\) is odd, then \(m^2\) is odd. 
 </p>
 </li>
-<li id="a0000000007" value="2">
+<li id="a0000000015" value="2">
 <p>
-Suppose that \(p \in \mathbb {Q}\) and \(p^2 \in \mathbb {Z}\). Then, \(p \in \mathbb {Z}\).<span class="vspace medskip"></span>
+Suppose that \(p \in \mathbb {Q}\) and \(p^2 \in \mathbb {Z}\). Then, \(p \in \mathbb {Z}\). 
 </p>
 </li>
-<li id="a0000000008" value="3">
+<li id="a0000000016" value="3">
 <p>
 Let \(m\) and \(n\) be real numbers. If \(n {\gt} m {\gt} 0\), then 
 </p>
 <span class="dmath">\[  \frac{m+1}{n+1} {\gt} \frac{m}{n}\text{.} \]</span>
-<p>
-<span class="vspace medskip"></span>
-</p>
 </li>
-<li id="a0000000009" value="4">
+<li id="a0000000017" value="4">
 <p>
 Let \(A\), \(B\) and \(C\) be sets. Then, 
 </p>
 <span class="dmath">\[  A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\text{.} \]</span>
-<p>
-<span class="vspace medskip"></span>
-</p>
 </li>
-<li id="a0000000010" value="5">
+<li id="a0000000018" value="5">
 <p>
 Let \(A\) and \(B\) be sets. Then, \(A=B\) if and only if \(A \subseteq B\) and \(B \subseteq A\). 
 </p>
@@ -549,27 +592,27 @@ Let \(A\) and \(B\) be sets. Then, \(A=B\) if and only if \(A \subseteq B\) and 
 <span class="vspace bigskip"></span>
 </p>
 </li>
-<li id="a0000000011" value="3">
+<li id="a0000000019" value="4">
 <p>
 Show that the sum of two consecutive odd numbers is a multiple of 4. What is the converse and is it true? <span class="vspace bigskip"></span>
 </p>
 </li>
-<li id="a0000000012" value="4">
+<li id="a0000000020" value="5">
 <p>
 Let \(f: X \to Y\). Suppose \(A\) and \(B\) are subsets of \(X\). Show \(f(A \cup B) = f(A) \cup f(B)\). <span class="vspace bigskip"></span>
 </p>
 </li>
-<li id="a0000000013" value="5">
+<li id="a0000000021" value="6">
 <p>
 Prove or disprove the following. 
 </p>
-<ol class="enumerate" id="a0000000014">
-<li id="a0000000015" value="1">
+<ol class="enumerate" id="a0000000022">
+<li id="a0000000023" value="1">
 <p>
-\(a + b = c \implies a^2 + b^2 = c^2\).<span class="vspace medskip"></span>
+\(a + b = c \implies a^2 + b^2 = c^2\). 
 </p>
 </li>
-<li id="a0000000016" value="2">
+<li id="a0000000024" value="2">
 <p>
 Let \(x \in \mathbb {Z}\). Then \(-x\) is negative. 
 </p>
@@ -578,16 +621,13 @@ Let \(x \in \mathbb {Z}\). Then \(-x\) is negative.
 <p>
 <span class="vspace bigskip"></span>
 </p>
-<p>
-<br/>
-</p>
 </li>
-<li id="a0000000017" value="6">
+<li id="a0000000025" value="7">
 <p>
 The following is a proof that \(1=2\). You may have reason to doubt that this is a true fact! Where is the error? 
 </p>
 <p>
-<div class="thmwrapper theorem*_thmwrapper" id="a0000000018">
+<div class="thmwrapper theorem*_thmwrapper" id="a0000000026">
 <h5 class="thmheading theorem*_thmheading" id="_theorem_">
 <span class="thmcaption theorem*_thmcaption">
     Theorem
@@ -598,7 +638,7 @@ The following is a proof that \(1=2\). You may have reason to doubt that this is
 \(1=2\). 
 </p>
 </div></div></p>
-<div class="proof_wrapper" id="a0000000019">
+<div class="proof_wrapper" id="a0000000027">
 <h6 class="proof_heading" id="_proof_">
 <span class="proof_caption">
     Proof.
@@ -616,27 +656,27 @@ Let \(a=b\), where \(a,b \in \mathbb {Z}\). Then,
 <span class="vspace bigskip"></span>
 </p>
 </div></div></li>
-<li id="a0000000020" value="7">
+<li id="a0000000028" value="8">
 <p>
 Prove or disprove the following. 
 </p>
-<ol class="enumerate" id="a0000000021">
-<li id="a0000000022" value="1">
+<ol class="enumerate" id="a0000000029">
+<li id="a0000000030" value="1">
 <p>
-Suppose \(n \in \mathbb {N}\). Then \(n^3-n\) is a multiple of \(3\).<span class="vspace medskip"></span>
+Suppose \(n \in \mathbb {N}\). Then \(n^3-n\) is a multiple of \(3\). 
 </p>
 </li>
-<li id="a0000000023" value="2">
+<li id="a0000000031" value="2">
 <p>
-Suppose \(x,y \in \mathbb {R}\). Then \(|x+y| \le |x| + |y|\).<span class="vspace medskip"></span>
+Suppose \(x,y \in \mathbb {R}\). Then \(|x+y| \le |x| + |y|\). 
 </p>
 </li>
-<li id="a0000000024" value="3">
+<li id="a0000000032" value="3">
 <p>
-The square of any integer is of the form \(3k\) or \(3k+1\) for some \(k \in \mathbb {Z}\).<span class="vspace medskip"></span>
+The square of any integer is of the form \(3k\) or \(3k+1\) for some \(k \in \mathbb {Z}\). 
 </p>
 </li>
-<li id="a0000000025" value="4">
+<li id="a0000000033" value="4">
 <p>
 Suppose \(a=bc\) for \(a,b,c \in \mathbb {R}\). If two of \(a\), \(b\) or \(c\) are non-zero, then so is the third. 
 </p>
@@ -646,37 +686,37 @@ Suppose \(a=bc\) for \(a,b,c \in \mathbb {R}\). If two of \(a\), \(b\) or \(c\) 
 <span class="vspace bigskip"></span>
 </p>
 </li>
-<li id="a0000000026" value="8">
+<li id="a0000000034" value="9">
 <p>
 Prove or disprove the following. 
 </p>
-<ol class="enumerate" id="a0000000027">
-<li id="a0000000028" value="1">
+<ol class="enumerate" id="a0000000035">
+<li id="a0000000036" value="1">
 <p>
-There are no positive integers \(x\) and \(y\) such that \(x^2-y^2 =1\).<span class="vspace medskip"></span>
+There are no positive integers \(x\) and \(y\) such that \(x^2-y^2 =1\). 
 </p>
 </li>
-<li id="a0000000029" value="2">
+<li id="a0000000037" value="2">
 <p>
-The sum of a rational and an irrational number is an irrational number.<span class="vspace medskip"></span>
+The sum of a rational and an irrational number is an irrational number. 
 </p>
 </li>
-<li id="a0000000030" value="3">
+<li id="a0000000038" value="3">
 <p>
-\(\sqrt{3}\) is irrational.<span class="vspace medskip"></span>
+\(\sqrt{3}\) is irrational. 
 </p>
 </li>
-<li id="a0000000031" value="4">
+<li id="a0000000039" value="4">
 <p>
-\(\sqrt{4}\) is irrational. (What happens is you try the same approach as for \(\sqrt{3}\)?)<span class="vspace medskip"></span>
+\(\sqrt{4}\) is irrational. (What happens is you try the same approach as for \(\sqrt{3}\)?) 
 </p>
 </li>
-<li id="a0000000032" value="5">
+<li id="a0000000040" value="5">
 <p>
-There are no positive integer solutions to \(x^2+x+1=y^2\). <span class="vspace medskip"></span>
+There are no positive integer solutions to \(x^2+x+1=y^2\). 
 </p>
 </li>
-<li id="a0000000033" value="6">
+<li id="a0000000041" value="6">
 <p>
 Suppose \(x,y \in \mathbb {Z}\). Then \(\sqrt{x^2+y^2} \ne x+y\). 
 </p>
@@ -699,7 +739,7 @@ Suppose \(x,y \in \mathbb {Z}\). Then \(\sqrt{x^2+y^2} \ne x+y\).
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-11-22</p>
+        <p>This page last generated: 2024-11-23</p>
         
         
         
