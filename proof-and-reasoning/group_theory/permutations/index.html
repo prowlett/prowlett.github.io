@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-11-22" />
+            <meta name="date" content="2024-11-25" />
         
 
         <title>Permutations | Proof and Reasoning</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1732302170.30897">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1732565814.507513">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1732302170.30897">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1732565814.507513">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1732302170.30897">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1732565814.507513">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1732302170.30897', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1732565814.507513', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1732302170.30897"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1732565814.507513"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1732302170.30897"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1732565814.507513"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1732302170.30897"></script>
+            <script defer src="../../static/customisation.js?build_time=1732565814.507513"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1732302170.30897" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1732302170.30897" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1732302170.30897" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1732565814.507513" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1732565814.507513" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1732565814.507513" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1732302170.30897">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1732565814.507513">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1732302170.30897">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1732565814.507513">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -542,6 +542,11 @@
 
             
         </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000024">7 Choosing objects without repetition</a>
         
     </li>
 
@@ -1021,7 +1026,7 @@ Inverse permutations have the property that
 </p>
 </div></div></p>
 <p>
-Consider \(S_5\). How many elements does it have? i.e. how many permutations are there of five elements? 
+Consider \(S_4\). How many elements does it have? i.e. how many permutations are there of four elements? 
 </p>
 <p>
 There are: 
@@ -1029,35 +1034,78 @@ There are:
 <ul class="itemize" id="a0000000019">
 <li id="a0000000020">
 <p>
-5 choices for the first number; 
+4 choices for the first number; 
 </p>
 </li>
 <li id="a0000000021">
 <p>
-4 remaining choices for the second number; 
+3 remaining choices for the second number; 
 </p>
 </li>
 <li id="a0000000022">
 <p>
-3 remaining choices for the third number; 
+2 remaining choices for the third number; 
 </p>
 </li>
 <li id="a0000000023">
 <p>
-2 remaining choices for the fourth number; 
-</p>
-</li>
-<li id="a0000000024">
-<p>
-1 remaining choices for the fifth number. 
+1 remaining choices for the fourth number. 
 </p>
 </li>
 </ul>
 <p>
-Therefore there are \(5 \times 4 \times 3 \times 2 \times 1 = 5! = 120\) elements in \(S_5\). 
+Therefore there are \(4 \times 3 \times 2 \times 1 = 5! = 24\) elements in \(S_4\). 
 </p>
 <p>
-In general, there are \(n!\) permutations of \(\mathbb {Z}(n)\), so \(n!\) elements in \(S_n\). 
+In general, there are \(n!\) permutations of \(\mathbb {Z}(n)\), so \(n!\) elements in \(S_n\), where 
+</p>
+<span class="dmath">\[  n! = n \times (n-1) \times (n-2) \times \ldots 3 \times 2 \times 1\text{.}  \]</span>
+<p>
+ Thus, \(1!=1\). What about \(0!\)? 
+</p>
+<p>
+Consider this way of defining the factorial: 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  (n+1)! & = (n+1) n! \\ n! & = \frac{(n+1)!}{(n+1)}\text{.}\\ \end{align*}</script></span>
+<p>
+So 
+</p>
+<span class="dmath">\[  0! = \frac{(0+1)!}{(0+1)} = \frac{1!}{1} = \frac{1}{1} = 1\text{.}  \]</span>
+<p>
+Another way to think about this: \(n!\) is the number of ways of arranging \(n\) objects, and there’s only one way to arrange \(0\) objects. 
+</p>
+</section><section class="section">
+<h2 id="a0000000024">7 Choosing objects without repetition</h2>
+<p>
+Say we have a pile of ten numbered balls and we want to choose three of them. Choosing the first, there are \(10\) possibilities for which ball that could be. Then we come to choose the second. Well, now there are only \(9\) balls remaining, so there are \(9\) ways we could choose the second one. Similarly, there are \(8\) ways to choose the third. In total, then, there are \(10 \times 9 \times 8\) ways to choose three balls from ten. To denote this using factorials, say: 
+</p>
+<span class="dmath">\[ 10 \times 9 \times 8 = \frac{10 \times 9 \times 8 \times 7 \times \ldots \times 1}{7 \times \ldots \times 1} = \frac{10!}{(10-3)!} = 720 \text{.}  \]</span>
+<p>
+In general, we can pick \(r\) objects from \(n\) without repetition in 
+</p>
+<span class="dmath">\[  \frac{n!}{(n-r)!}  \]</span>
+<p>
+ ways. 
+</p>
+<p>
+In fact, the story doesn’t end there. Within our \(720\) different ways of choosing three balls from ten, there will be lots that are just rearrangements of each other. For example (assuming the balls are numbered \(1\)–\(10\)), we might draw ball number \(7\) first, then ball number \(3\), then ball number \(9\). What if we had chosen ball \(3\), then \(7\), then \(9\)? Depending on the circumstances we are dealing with, we might consider this different or we might think these two are the same outcome really. 
+</p>
+<p>
+In fact, we know that the number of ways of arranging \(3\) balls is \(3!=6\). So our \(720\) selections could be reduced by a factor of \(6\) if we didn’t care about the order in which they were chosen. 
+</p>
+<p>
+That would give 
+</p>
+<span class="dmath">\[  \frac{10!}{(10-3)!} \times \frac{1}{3!} = \frac{10!}{3!(10-3)!} = \frac{720}{6} = 120\text{.} \]</span>
+<p>
+In general, the number of ways of choosing \(r\) objects from \(n\) without repetition when we don’t care about the order of the \(r\) objects is 
+</p>
+<span class="dmath">\[  \frac{n!}{r!(n-r)!}\text{.}  \]</span>
+<p>
+This is the binomial coefficient and can be written using the notation \(\binom {n}{r}\). 
+</p>
+<p>
+\(\binom {n}{r}\) gives the entries on the \(n\)th row of Pascal’s triangle, for \(r=0,1,\dots ,n\). 
 </p>
 </section>
 <script id="plastex-labels" type="application/json">{"def:symmetric_group": {"ref": "6", "url": "#def:symmetric_group"}}</script>
@@ -1075,7 +1123,7 @@ In general, there are \(n!\) permutations of \(\mathbb {Z}(n)\), so \(n!\) eleme
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-11-22</p>
+        <p>This page last generated: 2024-11-25</p>
         
         
         
