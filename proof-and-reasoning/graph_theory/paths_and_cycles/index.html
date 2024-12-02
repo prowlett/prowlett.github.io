@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2024-11-29" />
+            <meta name="date" content="2024-12-02" />
         
 
         <title>Paths and cycles | Proof and Reasoning</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1732897714.435068">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1733155318.473581">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1732897714.435068">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1733155318.473581">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1732897714.435068">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1733155318.473581">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1732897714.435068', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1733155318.473581', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1732897714.435068"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1733155318.473581"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1732897714.435068"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1733155318.473581"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1732897714.435068"></script>
+            <script defer src="../../static/customisation.js?build_time=1733155318.473581"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1732897714.435068" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1732897714.435068" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1732897714.435068" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1733155318.473581" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1733155318.473581" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1733155318.473581" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1732897714.435068">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1733155318.473581">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1732897714.435068">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1733155318.473581">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -759,10 +759,15 @@ The following are representations of the same graph.
 <ul class="itemize" id="a0000000017">
 <li id="a0000000018">
 <p>
-Then entries of \(\mathbf{G}^k\) count the number of paths of length \(k\) between vertices. 
+We can perform matrix operations on \(\mathbf{G}\). 
 </p>
 </li>
 <li id="a0000000019">
+<p>
+For example, entries of \(\mathbf{G}^k\) count the number of paths of length \(k\) between vertices. 
+</p>
+</li>
+<li id="a0000000020">
 <p>
 i.e. the \((i,j)\)th entry of \(\mathbf{G}^k\) gives the number of paths of length \(k\) from vertex \(i\) to vertex \(j\). 
 </p>
@@ -771,7 +776,7 @@ i.e. the \((i,j)\)th entry of \(\mathbf{G}^k\) gives the number of paths of leng
 <p>
 <div class="beamer-columns">
 <div class="beamer-column">
-<div class="centered"><span class="vspace" style="height: -15.0pt"></span> <div class="tikzcd" id="a0000000020">
+<div class="centered"><span class="vspace" style="height: -15.0pt"></span> <div class="tikzcd" id="a0000000021">
 <img alt="\begin{tikzpicture} 
                     \drawvertex[left]{c}{0,0}
                     \drawvertex{a}{1,2}
@@ -944,14 +949,14 @@ i.e. the \((i,j)\)th entry of \(\mathbf{G}^k\) gives the number of paths of leng
 <header>
 <h2 class="beamer-frame-title" id="königsberg_bridges_p">Königsberg Bridges Problem</h2>
 </header>
-<ul class="itemize" id="a0000000021">
-<li id="a0000000022">
+<ul class="itemize" id="a0000000022">
+<li id="a0000000023">
 <p>
 In the town of Königsberg there were seven bridges across the river Pregel. Is it possible to go for a walk, crossing each bridge once, but not crossing any bridge twice? 
 </p>
 </li>
 </ul>
-<div class="centered"><div class="tikzcd" id="a0000000023">
+<div class="centered"><div class="tikzcd" id="a0000000024">
 <img alt="A river moving from west to east has two banks on the north and south and two islands in it. Two bridges connect the north bank to island 1. Two bridges connect the south bank to island 1. One bridge connects the north bank to island 2. One bridge connects the south bank to island 2. One bridge connects islands 1 and 2." src="images/img-0003.svg"/>
 </div> </div>
 </section>
@@ -959,27 +964,27 @@ In the town of Königsberg there were seven bridges across the river Pregel. Is 
 <header>
 <h2 class="beamer-frame-title" id="königsberg_bridges_1">Königsberg Bridges Problem</h2>
 </header>
-<ul class="itemize" id="a0000000024">
-<li id="a0000000025">
+<ul class="itemize" id="a0000000025">
+<li id="a0000000026">
 <p>
 This was solved by Euler in 1736 using an essentially topological argument. 
 </p>
 </li>
-<li id="a0000000026">
+<li id="a0000000027">
 <p>
 We might redraw the map as a graph. 
 </p>
 </li>
 </ul>
-<div class="centered"><div class="tikzcd" id="a0000000027">
+<div class="centered"><div class="tikzcd" id="a0000000028">
 <img alt="A river moving from west to east has two banks on the north and south and two islands in it. Two bridges connect the north bank to island 1. Two bridges connect the south bank to island 1. One bridge connects the north bank to island 2. One bridge connects the south bank to island 2. One bridge connects islands 1 and 2." src="images/img-0004.svg"/>
-</div><div class="tikzcd" id="a0000000028">
+</div><div class="tikzcd" id="a0000000029">
 <img alt="\begin{tikzpicture} 
-            \draw[lightgray,fill=lightgray] (0,3) rectangle (2,2.5);
-            \draw[lightgray,fill=lightgray] (4,3.25) rectangle (5.5,2.25);
-            \draw[lightgray,fill=lightgray] (3,2.75) circle [x radius=2, y radius=1];
+            \draw[wildblueyonder,fill=wildblueyonder] (0,3) rectangle (2,2.5);
+            \draw[wildblueyonder,fill=wildblueyonder] (4,3.25) rectangle (5.5,2.25);
+            \draw[wildblueyonder,fill=wildblueyonder] (3,2.75) circle [x radius=2, y radius=1];
             \draw[white,fill=white] (3,2.75) circle [x radius=1.5, y radius=0.75];
-            \draw[lightgray,fill=lightgray] (7,3.8) arc(90:270:2cm and 1cm);
+            \draw[wildblueyonder,fill=wildblueyonder] (7,3.8) arc(90:270:2cm and 1cm);
             \draw[white,fill=white] (7.25,3.55) arc(90:270:1.75cm and 0.75cm);
             
             \draw[gray,fill=gray,rotate around={-70:(1.75,3.45)}] (1.5,4.2) rectangle (2.25,3.9);
@@ -997,22 +1002,23 @@ We might redraw the map as a graph.
             \drawvertexnolabel{b}{3,2.75}
             \drawvertexnolabel{c}{3,0.75}
             \drawvertexnolabel{d}{6.75,2.75}
-            \drawedges{b/d}
             
-            \phantom{\draw[very thick] (d) to[bend right] (a);
+            
+            \phantom{\drawedges{b/d}
+           	\draw[very thick] (d) to[bend right] (a);
             \draw[very thick] (d) to[bend left] (c);
             \draw[very thick] (b) to[bend left=80] (a);
             \draw[very thick] (b) to[bend right=80] (a);
             \draw[very thick] (b) to[bend left=80] (c);
             \draw[very thick] (b) to[bend right=80] (c);}
     \end{tikzpicture}" src="images/img-0005.svg"/>
-</div><div class="tikzcd" id="a0000000029">
+</div><div class="tikzcd" id="a0000000030">
 <img alt="\begin{tikzpicture} 
-            \draw[lightgray,fill=lightgray] (0,3) rectangle (2,2.5);
-            \draw[lightgray,fill=lightgray] (4,3.25) rectangle (5.5,2.25);
-            \draw[lightgray,fill=lightgray] (3,2.75) circle [x radius=2, y radius=1];
+            \draw[wildblueyonder,fill=wildblueyonder] (0,3) rectangle (2,2.5);
+            \draw[wildblueyonder,fill=wildblueyonder] (4,3.25) rectangle (5.5,2.25);
+            \draw[wildblueyonder,fill=wildblueyonder] (3,2.75) circle [x radius=2, y radius=1];
             \draw[white,fill=white] (3,2.75) circle [x radius=1.5, y radius=0.75];
-            \draw[lightgray,fill=lightgray] (7,3.8) arc(90:270:2cm and 1cm);
+            \draw[wildblueyonder,fill=wildblueyonder] (7,3.8) arc(90:270:2cm and 1cm);
             \draw[white,fill=white] (7.25,3.55) arc(90:270:1.75cm and 0.75cm);
             
             \draw[gray,fill=gray,rotate around={-70:(1.75,3.45)}] (1.5,4.2) rectangle (2.25,3.9);
@@ -1039,13 +1045,13 @@ We might redraw the map as a graph.
             \draw[very thick] (b) to[bend left=80] (c);
             \draw[very thick] (b) to[bend right=80] (c);
     \end{tikzpicture}" src="images/img-0006.svg"/>
-</div><div class="tikzcd" id="a0000000030">
+</div><div class="tikzcd" id="a0000000031">
 <img alt="\begin{tikzpicture} 
-            \phantom{\draw[lightgray,fill=lightgray] (0,3) rectangle (2,2.5);
-                \draw[lightgray,fill=lightgray] (4,3.25) rectangle (5.5,2.25);
-                \draw[lightgray,fill=lightgray] (3,2.75) circle [x radius=2, y radius=1];
+            \phantom{\draw[wildblueyonder,fill=wildblueyonder] (0,3) rectangle (2,2.5);
+                \draw[wildblueyonder,fill=wildblueyonder] (4,3.25) rectangle (5.5,2.25);
+                \draw[wildblueyonder,fill=wildblueyonder] (3,2.75) circle [x radius=2, y radius=1];
                 \draw[white,fill=white] (3,2.75) circle [x radius=1.5, y radius=0.75];
-                \draw[lightgray,fill=lightgray] (7,3.8) arc(90:270:2cm and 1cm);
+                \draw[wildblueyonder,fill=wildblueyonder] (7,3.8) arc(90:270:2cm and 1cm);
                 \draw[white,fill=white] (7.25,3.55) arc(90:270:1.75cm and 0.75cm);
                 \draw[gray,fill=gray,rotate around={-70:(1.75,3.45)}] (1.5,4.2) rectangle (2.25,3.9);
                 \draw[gray,fill=gray,rotate around={70:(1.75,3.45)}] (0.95,2.5) rectangle (0.2,2.2);
@@ -1075,46 +1081,46 @@ We might redraw the map as a graph.
 </header>
 <div class="beamer-columns">
 <div class="beamer-column">
-<ul class="itemize" id="a0000000031">
-<li id="a0000000032">
-</li>
+<ul class="itemize" id="a0000000032">
 <li id="a0000000033">
+</li>
+<li id="a0000000034">
 <p>
-Now we ask whether there is an <i class="itshape">Eulerian cycle</i> – a cycle that includes every edge of the graph. (It may visit vertices more than once.)
+Now we ask whether there is an <i class="itshape">Eulerian cycle</i> – a cycle that includes every edge of the graph exactly once. (It may visit vertices more than once.)
 </p>
 </li>
 <li id="">
 </li>
-<li id="a0000000034">
-</li>
 <li id="a0000000035">
+</li>
+<li id="a0000000036">
 <p>
 For a vertex with two edges, we can enter the vertex along one and exit along the other.
 </p>
 </li>
 <li id="">
 </li>
-<li id="a0000000036">
-</li>
 <li id="a0000000037">
+</li>
+<li id="a0000000038">
 <p>
 However, for a vertex with one edge, we enter the vertex and cannot proceed.
 </p>
 </li>
 <li id="">
 </li>
-<li id="a0000000038">
-</li>
 <li id="a0000000039">
+</li>
+<li id="a0000000040">
 <p>
 Or if we started at that vertex, we leave and cannot return at the end of the cycle.
 </p>
 </li>
 <li id="">
 </li>
-<li id="a0000000040">
-</li>
 <li id="a0000000041">
+</li>
+<li id="a0000000042">
 <p>
 So, for a Eulerian cycle, we require that every vertex has even degree. 
 </p>
@@ -1126,7 +1132,7 @@ A graph which contains an Eulerian cycle is called an <i class="itshape">Euleria
 </li>
 </ul>
 </div> <div class="beamer-column">
-<div class="centered"><div class="tikzcd" id="a0000000042">
+<div class="centered"><div class="tikzcd" id="a0000000043">
 <img alt="\begin{tikzpicture} 
                 \drawvertexnolabel{a}{3,4.75}
                 \drawvertexnolabel{b}{3,2.75}
@@ -1141,20 +1147,20 @@ A graph which contains an Eulerian cycle is called an <i class="itshape">Euleria
                 \draw[very thick] (b) to[bend left=80] (c);
                 \draw[very thick] (b) to[bend right=80] (c);
             \end{tikzpicture}" src="images/img-0008.svg"/>
-</div> <div class="tikzcd" id="a0000000043">
+</div> <div class="tikzcd" id="a0000000044">
 <img alt="\begin{tikzpicture} [scale=2]
                 \drawvertexnolabel{a}{0,0}
                 \node (b) at (-0.5,1) {};
                 \node (c) at (1,-0.5) {};
                 \digraphedges{b/a,a/c}
             \end{tikzpicture}" src="images/img-0009.svg"/>
-</div> <div class="tikzcd" id="a0000000044">
+</div> <div class="tikzcd" id="a0000000045">
 <img alt="\begin{tikzpicture} [scale=2]
                 \drawvertexnolabel{a}{0,0}
                 \node (b) at (-0.5,1) {};
                 \digraphedges{b/a}
             \end{tikzpicture}" src="images/img-0010.svg"/>
-</div> <div class="tikzcd" id="a0000000045">
+</div> <div class="tikzcd" id="a0000000046">
 <img alt="\begin{tikzpicture} [scale=2]
                 \drawvertexnolabel{a}{0,0}
                 \node (b) at (-0.5,1) {};
@@ -1168,23 +1174,23 @@ A graph which contains an Eulerian cycle is called an <i class="itshape">Euleria
 <header>
 <h2 class="beamer-frame-title" id="eulerian_path">Eulerian path</h2>
 </header>
-<ul class="itemize" id="a0000000046">
-<li id="a0000000047">
+<ul class="itemize" id="a0000000047">
+<li id="a0000000048">
 <p>
 A related concept is an <i class="itshape">Eulerian path</i>. 
 </p>
 </li>
-<li id="a0000000048">
+<li id="a0000000049">
 <p>
 This is a path that includes every edge of the graph but does not return to the starting point. 
 </p>
 </li>
-<li id="a0000000049">
+<li id="a0000000050">
 <p>
-A graph that contains an Eulerian cycle also contains an Eulerian path, since we can just leave off the edge that returns us to the starting vertex. 
+A graph that contains an Eulerian cycle also contains an Eulerian path, since a cycle is a type of path. 
 </p>
 </li>
-<li id="a0000000050">
+<li id="a0000000051">
 <p>
 A graph that contains an Eulerian path but not an Eulerian cycle is called <i class="itshape">Semi-Eulerian</i>. 
 </p>
@@ -1206,19 +1212,19 @@ A graph that contains an Eulerian path but not an Eulerian cycle is called <i cl
 <header>
 <h2 class="beamer-frame-title" id="königsberg_bridges_2">Königsberg Bridges Problem</h2>
 </header>
-<ul class="itemize" id="a0000000051">
-<li id="a0000000052">
+<ul class="itemize" id="a0000000052">
+<li id="a0000000053">
 <p>
 In the Königsberg Bridges graph, all four vertices are odd. 
 </p>
 </li>
-<li id="a0000000053">
+<li id="a0000000054">
 <p>
 This graph is neither Eulerian nor semi-Eulerian. 
 </p>
 </li>
 </ul>
-<div class="centered"><div class="tikzcd" id="a0000000054">
+<div class="centered"><div class="tikzcd" id="a0000000055">
 <img alt="\begin{tikzpicture} 
         \drawvertexnolabel{a}{3,4.75}
         \drawvertexnolabel{b}{3,2.75}
@@ -1239,20 +1245,20 @@ This graph is neither Eulerian nor semi-Eulerian.
 <header>
 <h2 class="beamer-frame-title" id="königsberg_bridges_3">Königsberg Bridges Problem</h2>
 </header>
-<ul class="itemize" id="a0000000055">
-<li id="a0000000056">
+<ul class="itemize" id="a0000000056">
+<li id="a0000000057">
 <p>
 This means we cannot cross every bridge exactly once, we must cross at least one bridge more than once. 
 </p>
 </li>
 </ul>
-<div class="centered"><div class="tikzcd" id="a0000000057">
+<div class="centered"><div class="tikzcd" id="a0000000058">
 <img alt="\begin{tikzpicture} [scale=2]
-        \draw[lightgray,fill=lightgray] (0,3) rectangle (2,2.5);
-        \draw[lightgray,fill=lightgray] (4,3.25) rectangle (5.5,2.25);
-        \draw[lightgray,fill=lightgray] (3,2.75) circle [x radius=2, y radius=1];
+        \draw[wildblueyonder,fill=wildblueyonder] (0,3) rectangle (2,2.5);
+        \draw[wildblueyonder,fill=wildblueyonder] (4,3.25) rectangle (5.5,2.25);
+        \draw[wildblueyonder,fill=wildblueyonder] (3,2.75) circle [x radius=2, y radius=1];
         \draw[white,fill=white] (3,2.75) circle [x radius=1.5, y radius=0.75];
-        \draw[lightgray,fill=lightgray] (7,3.8) arc(90:270:2cm and 1cm);
+        \draw[wildblueyonder,fill=wildblueyonder] (7,3.8) arc(90:270:2cm and 1cm);
         \draw[white,fill=white] (7.25,3.55) arc(90:270:1.75cm and 0.75cm);
         \draw[gray,fill=gray,rotate around={-70:(1.75,3.45)}] (1.5,4.2) rectangle (2.25,3.9);
         \draw[gray,fill=gray,rotate around={70:(1.75,3.45)}] (0.95,2.5) rectangle (0.2,2.2);
@@ -1268,21 +1274,21 @@ This means we cannot cross every bridge exactly once, we must cross at least one
 <header>
 <h2 class="beamer-frame-title" id="different_bridges">Different bridges</h2>
 </header>
-<ul class="itemize" id="a0000000058">
-<li id="a0000000059">
+<ul class="itemize" id="a0000000059">
+<li id="a0000000060">
 <p>
 If we remove the central bridge, we obtain a different graph. 
 </p>
 </li>
 </ul>
 <div class="centered"><p>
-<div class="tikzcd" id="a0000000060">
+<div class="tikzcd" id="a0000000061">
 <img alt="\begin{tikzpicture} [scale=2]
-        \draw[lightgray,fill=lightgray] (0,3) rectangle (2,2.5);
-        \draw[lightgray,fill=lightgray] (4,3.25) rectangle (5.5,2.25);
-        \draw[lightgray,fill=lightgray] (3,2.75) circle [x radius=2, y radius=1];
+        \draw[wildblueyonder,fill=wildblueyonder] (0,3) rectangle (2,2.5);
+        \draw[wildblueyonder,fill=wildblueyonder] (4,3.25) rectangle (5.5,2.25);
+        \draw[wildblueyonder,fill=wildblueyonder] (3,2.75) circle [x radius=2, y radius=1];
         \draw[white,fill=white] (3,2.75) circle [x radius=1.5, y radius=0.75];
-        \draw[lightgray,fill=lightgray] (7,3.8) arc(90:270:2cm and 1cm);
+        \draw[wildblueyonder,fill=wildblueyonder] (7,3.8) arc(90:270:2cm and 1cm);
         \draw[white,fill=white] (7.25,3.55) arc(90:270:1.75cm and 0.75cm);
         \draw[gray,fill=gray,rotate around={-70:(1.75,3.45)}] (1.5,4.2) rectangle (2.25,3.9);
         \draw[gray,fill=gray,rotate around={70:(1.75,3.45)}] (0.95,2.5) rectangle (0.2,2.2);
@@ -1292,7 +1298,7 @@ If we remove the central bridge, we obtain a different graph.
         \draw[gray,fill=gray,rotate around={-50:(6,4)}] (6.1,3.7) rectangle (6.85,4);
         \draw[gray,fill=gray,rotate around={50:(6,1.5)}] (6.1,1.5) rectangle (6.85,1.8);
     \end{tikzpicture}" src="images/img-0014.svg"/>
-</div><div class="tikzcd" id="a0000000061">
+</div><div class="tikzcd" id="a0000000062">
 <img alt="\begin{tikzpicture} 
             \drawvertexnolabel{a}{3,4.75}
             \drawvertexnolabel{b}{3,2.75}
@@ -1310,8 +1316,8 @@ If we remove the central bridge, we obtain a different graph.
 </div>
 </p>
 <p>
-<ul class="itemize" id="a0000000062">
-<li id="a0000000063">
+<ul class="itemize" id="a0000000063">
+<li id="a0000000064">
 <p>
 Since we now have exactly two vertices of odd degree, we can make an Eulerian path on this graph. 
 </p>
@@ -1324,28 +1330,28 @@ Since we now have exactly two vertices of odd degree, we can make an Eulerian pa
 <header>
 <h2 class="beamer-frame-title" id="hamiltonian_graphs">Hamiltonian graphs</h2>
 </header>
-<ul class="itemize" id="a0000000064">
-<li id="a0000000065">
+<ul class="itemize" id="a0000000065">
+<li id="a0000000066">
 <p>
 A path that visits every vertex exactly once is called a <i class="itshape">Hamiltonian path</i>. 
 </p>
 </li>
-<li id="a0000000066">
+<li id="a0000000067">
 <p>
 A cycle that visits every vertex once and then returns to the starting vertex is called a <i class="itshape">Hamiltonian cycle</i>. 
 </p>
 </li>
-<li id="a0000000067">
-<p>
-A graph that includes a Hamiltonian cycle is called a <i class="itshape">Hamiltonian graph</i>, and a graph that includes a Hamiltonian path is called a <i class="itshape">Hamiltonian path</i>. 
-</p>
-</li>
 <li id="a0000000068">
 <p>
-A graph that contains an Hamiltonian cycle also contains an Hamiltonian path, since we can just leave off the edge that returns us to the starting vertex. 
+A graph that includes a Hamiltonian cycle is called a <i class="itshape">Hamiltonian graph</i>, and a graph that includes a Hamiltonian path is called a <i class="itshape">semi-Hamiltonian graph</i>. 
 </p>
 </li>
 <li id="a0000000069">
+<p>
+A graph that contains an Hamiltonian cycle also contains an Hamiltonian path, since a cycle is a type of path. 
+</p>
+</li>
+<li id="a0000000070">
 <p>
 (Note this is about visiting vertices, rather than edges.) 
 </p>
@@ -1358,20 +1364,20 @@ A graph that contains an Hamiltonian cycle also contains an Hamiltonian path, si
 </header>
 <div class="beamer-columns">
 <div class="beamer-column">
-<ul class="itemize" id="a0000000070">
-<li id="a0000000071">
+<ul class="itemize" id="a0000000071">
+<li id="a0000000072">
 <p>
 The name comes from this game invented by mathematician William Rowan Hamilton in 1857. 
 </p>
 </li>
-<li id="a0000000072">
+<li id="a0000000073">
 <p>
 The game is based on finding cycles on this graph. 
 </p>
 </li>
 </ul>
 </div> <div class="beamer-column">
-<div class="centered"><div class="tikzcd" id="a0000000073">
+<div class="centered"><div class="tikzcd" id="a0000000074">
 <img alt="A graph is shown. The vertices correspond to the corners of a dodecahedron and there is an edge between vertices if those corners are adjacent on the dodecahedron." src="images/img-0016.svg"/>
 </div> </div>
 </div>
@@ -1381,19 +1387,19 @@ The game is based on finding cycles on this graph.
 <header>
 <h2 class="beamer-frame-title" id="examp_2">Example</h2>
 </header>
-<ul class="itemize" id="a0000000074">
-<li id="a0000000075">
+<ul class="itemize" id="a0000000075">
+<li id="a0000000076">
 <p>
 This graph contains a Hamiltonian cycle (e.g. \(a \to b \to c \to e \to d \to a\)). 
 </p>
 </li>
-<li id="a0000000076">
+<li id="a0000000077">
 <p>
 And therefore also a Hamiltonian path (e.g. \(a \to b \to c \to e \to d\)). 
 </p>
 </li>
 </ul>
-<div class="centered"><div class="tikzcd" id="a0000000077">
+<div class="centered"><div class="tikzcd" id="a0000000078">
 <img alt="\begin{tikzpicture} 
         \drawvertex[left]{c}{0,0}
         \drawvertex{a}{1,2}
@@ -1419,7 +1425,7 @@ And therefore also a Hamiltonian path (e.g. \(a \to b \to c \to e \to d\)).
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2024-11-29</p>
+        <p>This page last generated: 2024-12-02</p>
         
         
         
