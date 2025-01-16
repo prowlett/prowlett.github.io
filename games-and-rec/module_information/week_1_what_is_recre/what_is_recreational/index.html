@@ -1,0 +1,1968 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2025-01-14" />
+        
+
+        <title>What is recreational mathematics and when did it arise? | Game Theory and Recreational Mathematics</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../../static/styles.css?build_time=1736855818.316739">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../../static/pygmentize.css?build_time=1736855818.316739">
+
+    <link rel="stylesheet" href="../../../static/print.css?build_time=1736855818.316739">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../../static?build_time=1736855818.316739', location.href);
+			</script>
+
+            
+                <script defer src="../../../static/mathjax_config.js?build_time=1736855818.316739"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../../static/localisation.js?build_time=1736855818.316739"></script>
+
+            <script defer src="../../../static/customisation.js?build_time=1736855818.316739"></script>
+
+            
+
+            
+        
+    <script defer src="../../../static/code.js?build_time=1736855818.316739" type="module"></script>
+    <script defer src="../../../static/embed_numbas.js?build_time=1736855818.316739" type="module"></script>
+    <script defer src="../../../static/embed_qrcode.js?build_time=1736855818.316739" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../../static/code.css?build_time=1736855818.316739">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../../static/embed_numbas.css?build_time=1736855818.316739">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../../index.html">Game Theory and Recreational Mathematics</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Week 1: What is recreational maths and combinatorial games?</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                What is recreational mathematics and when did it arise?
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../index.html">Previous: Week 1: What is recreational maths and combinatorial games?</a>
+            
+            
+            <a rel="next" href="../historical_problems/index.html">Next: Historical problems</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="what_is_recreational.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#what_is_recreation_3">What is recreational mathematics and when did it arise?</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#golden_rule_for_this">Golden rule for this module</a>
+        
+    </li>
+
+    <li>
+        <a href="#mathematical_thinkin">Mathematical thinking</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_is_recreational">What is recreational mathematics?</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_is_recreation_1">What is recreational mathematics?</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_is_recreation_2">What is recreational mathematics?</a>
+        
+    </li>
+
+    <li>
+        <a href="#history">History</a>
+        
+    </li>
+
+    <li>
+        <a href="#timeline_from_notes_">Timeline (from notes)</a>
+        
+    </li>
+
+    <li>
+        <a href="#carved_stone_balls_">Carved stone balls?</a>
+        
+    </li>
+
+    <li>
+        <a href="#which_came_first_rec">Which came first, recreational maths or serious maths?</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_does_the_litera">What does the literature say?</a>
+        
+    </li>
+
+    <li>
+        <a href="#difficult">Difficult</a>
+        
+    </li>
+
+    <li>
+        <a href="#_recreational_and_se">‘Recreational’ and ‘serious’ maths</a>
+        
+    </li>
+
+    <li>
+        <a href="#educational_value">Educational value</a>
+        
+    </li>
+
+    <li>
+        <a href="#play">Play</a>
+        
+    </li>
+
+    <li>
+        <a href="#pl_1">Play</a>
+        
+    </li>
+
+    <li>
+        <a href="#pl_2">Play</a>
+        
+    </li>
+
+    <li>
+        <a href="#educational_uses_eng">Educational uses – engagement</a>
+        
+    </li>
+
+    <li>
+        <a href="#play_mathematics_as_">Play – mathematics as an experimental science</a>
+        
+    </li>
+
+    <li>
+        <a href="#understanding">Understanding</a>
+        
+    </li>
+
+    <li>
+        <a href="#formal_syllabus_and_">Formal syllabus and logical thinking</a>
+        
+    </li>
+
+    <li>
+        <a href="#informal_learning">Informal learning</a>
+        
+    </li>
+
+    <li>
+        <a href="#a_definition">A definition</a>
+        
+    </li>
+
+    <li>
+        <a href="#problem_solving">Problem solving</a>
+        
+    </li>
+
+    <li>
+        <a href="#problem_solvi_1">Problem solving</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_happens_when_yo">What happens when you encounter an unseen problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_happens_when_1">What happens when you encounter an unseen problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_you_can_solve_it">If you can solve it</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_you_can_t_solve_i">If you can’t solve it</a>
+        
+    </li>
+
+    <li>
+        <a href="#advice_for_problem_s">Advice for problem solving</a>
+        
+    </li>
+
+    <li>
+        <a href="#advice_for_problem_1">Advice for problem solving</a>
+        
+    </li>
+
+    <li>
+        <a href="#1_plan">1. Plan</a>
+        
+    </li>
+
+    <li>
+        <a href="#2_carry_out_your_pla">2. Carry out your plan</a>
+        
+    </li>
+
+    <li>
+        <a href="#3_review">3. Review</a>
+        
+    </li>
+
+    <li>
+        <a href="#3_revi_1">3. Review</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_does_this_mean_">What does this mean for an unseen problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#what_does_this_mea_1">What does this mean for an unseen problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#attempting_a_solutio">Attempting a solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_all_else_fails_an">If all else fails and you can’t find a solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#if_you_do_find_a_sol">If you do find a solution</a>
+        
+    </li>
+
+    <li>
+        <a href="#references">References</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000152">References</a>
+        
+    </li>
+
+    <li>
+        <a href="#footnot_1">Footnotes</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        
+<section class="beamer-frame">
+<section class="beamer-titlepage">
+<h1 id="what_is_recreation_3">What is recreational mathematics and when did it arise?</h1>
+<p class="beamer-authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</section>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="golden_rule_for_this">Golden rule for this module</h2>
+</header>
+<ul class="itemize" id="a0000000002">
+<li id="a0000000003">
+<p>
+Introducing his section of hints and solutions, Pólya says “The reader who has earnestly tried to solve the problem has the best chance to profit by the hint and the solution.” 
+</p>
+</li>
+<li id="a0000000004">
+<p>
+<b class="bfseries">Please please please</b>, if you have already seen a problem and know how to solve it, allow others the chance to profit from trying it themselves, rather than simply telling them the solution. Even if you do decide to tell them, try giving hints and asking questions to try to lead them to a solution, rather than giving them the solution wholesale. You and they will benefit from the practice. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="mathematical_thinkin">Mathematical thinking</h2>
+</header>
+<div class="centered"><img alt='Table in school classroom with written prompts such as "More than", "What is the same?" "How many?" and "Convince me".' src="images/img-0001.JPG" style="height:&lt;plasTeX.TeXFragment object at 0x7642308e69f0&gt;"/> </div>
+</section>
+<section class="beamer-section" id="a0000000005">
+<h2 aria-hidden="true" class="beamer-section-heading" id="what_is_recreational">What is recreational mathematics?</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="what_is_recreation_1">What is recreational mathematics?</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="what_is_recreation_2">What is recreational mathematics?</h2>
+</header>
+<ul class="itemize" id="a0000000006">
+<li id="a0000000007">
+<p>
+Games and puzzles? What else?
+</p>
+</li>
+<li id="a0000000008">
+<p>
+“Easier to recognise than define” <span class="cite">
+	[
+	<a href="#hankin">Hankin, 2005</a>
+	, 
+	p.
+	
+	48
+	]
+</span>. 
+</p>
+</li>
+<li id="a0000000009">
+<p>
+“No classification of particular mathematical topics as recreational or not is likely to gain universal acceptance” <span class="cite">
+	[
+	<a href="#trigg">Trigg, 1978</a>
+	, 
+	p. 21
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="history">History</h2>
+</header>
+<ul class="itemize" id="a0000000010">
+<li id="a0000000011">
+<p>
+Recreational mathematics has a history as old as formal mathematics, with examples on the oldest mathematical texts <span class="cite">
+	[
+	<a href="#sumpter">Sumpter, 2015</a>
+	]
+</span> (problems 1–4). 
+</p>
+</li>
+<li id="a0000000012">
+<p>
+ <br/><span class="vspace" style="height: -17.071653543307086pt"></span>
+</p>
+<blockquote class="quote">The history of the subject [Mathematical Puzzles] entails nothing short of the actual story of the beginnings and development of exact thinking in man. The historian must start from the time when man first succeeded in counting his ten fingers and in dividing an apple into two approximately equal parts. </blockquote>
+<p>
+ Henry Dudeney, 1917. <br/><small class="footnotesize">(p. v, Preface to <i class="itshape">Amusements in Mathematics</i>)</small>
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="timeline_from_notes_">Timeline (from notes)</h2>
+</header>
+<p>
+<span class="vspace bigskip"></span><img alt="Timeline of approximately 5000 years showing key events referred to in the module notes." src="images/img-0002.png" style="width:469.755pt"/>
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="carved_stone_balls_">Carved stone balls?</h2>
+</header>
+<p>
+<img alt="Neolithic carved stone balls with symmetric round bumps on the sides corresponding to the faces of a cube." src="images/img-0003.jpg" style="width:469.755pt"/><br/><span class="vspace bigskip"></span><small class="tiny">By Johnbod - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=37283607">https://commons.wikimedia.org/w/index.php?curid=37283607</a></small>
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="which_came_first_rec">Which came first, recreational maths or serious maths?</h2>
+</header>
+<p>
+<blockquote class="quote">At the time, graph theory was a mathematical backwater, known for posing fun problems like the four-color conjecture ... “I wouldn’t call it obscure, but certainly graph theory was not mainstream mathematics because many of the problems or results arose from puzzles or sort of recreational mathematics,” said Lovász<a class="footnote" href="#a0000000013" id="a0000000013-reference">
+<sup class="footnotemark">1</sup>
+</a>. </blockquote> <span class="cite">
+	[
+	<a href="#quantaabel">Hartnett, 2021</a>
+	]
+</span>.     <ul class="itemize" id="a0000000014">
+<li id="a0000000015">
+<p>
+There are many examples of recreational problems acting as stimulus for non-recreational topics <span class="cite">
+	[
+	<a href="#singmaster2016">Singmaster, 2016</a>
+	]
+</span>, for example: 
+</p>
+<ul class="itemize" id="a0000000016">
+<li id="a0000000017">
+<p>
+graph theory has origins in the Königsberg bridges problem (problem 32) and Icosian Game; 
+</p>
+</li>
+<li id="a0000000018">
+<p>
+probability has origins in games of chance (problem 30). 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="what_does_the_litera">What does the literature say?</h2>
+</header>
+<ul class="itemize" id="a0000000019">
+<li id="a0000000020">
+<p>
+Some give extremely broad definitions – anything fun, or involving play <span class="cite">
+	[
+	<a href="#moscovich">Moscovich, 2004</a>
+	, 
+	<a href="#singmaster1999">Singmaster, 2000</a>
+	, 
+	<a href="#gardnercmj">Barcellos, 1979</a>
+	]
+</span>. Perhaps too broad! 
+</p>
+</li>
+<li id="a0000000021">
+<p>
+Play in recreational mathematics might be a puzzle, game, magic trick, paradox, fallacy or curious piece of mathematics <span class="cite">
+	[
+	<a href="#gardnersciam">Gardner, 1959</a>
+	]
+</span>. 
+</p>
+</li>
+<li id="a0000000022">
+<p>
+Play is positive <span class="cite">
+	[
+	<a href="#sumpter">Sumpter, 2015</a>
+	]
+</span> and may be a fundamental aspect of mathematics <span class="cite">
+	[
+	<a href="#su">Su, 2017</a>
+	]
+</span>. 
+</p>
+</li>
+<li id="a0000000023">
+<p>
+Popularity <span class="cite">
+	[
+	<a href="#singmaster1999">Singmaster, 2000</a>
+	]
+</span> - e.g. puzzles in the popular press <span class="cite">
+	[
+	<a href="#cockcroft">Cockcroft, 1982</a>
+	, 
+	<a href="#dyson">Dyson, 2011</a>
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="difficult">Difficult</h2>
+</header>
+<ul class="itemize" id="a0000000024">
+<li id="a0000000025">
+<p>
+Some say recreational mathematics should be elementary, not requiring advanced knowledge <span class="cite">
+	[
+	<a href="#dyson">Dyson, 2011</a>
+	, 
+	<a href="#hankin">Hankin, 2005</a>
+	, 
+	<a href="#trigg">Trigg, 1978</a>
+	]
+</span>. 
+</p>
+</li>
+<li id="a0000000026">
+<p>
+However, it is certainly possible to have fun and play with mathematics that is more advanced, depending on an individual’s level of mathematics knowledge <span class="cite">
+	[
+	<a href="#trigg">Trigg, 1978</a>
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="_recreational_and_se">‘Recreational’ and ‘serious’ maths</h2>
+</header>
+<ul class="itemize" id="a0000000027">
+<li id="a0000000028">
+<p>
+Some have recreational maths leading to ‘serious’ maths <span class="cite">
+	[
+	<a href="#gardnercmj">Barcellos, 1979</a>
+	, 
+	<a href="#minor">Minor, 2015</a>
+	]
+</span>, though the distinction is not universally accepted <span class="cite">
+	[
+	<a href="#moscovich">Moscovich, 2004</a>
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="educational_value">Educational value</h2>
+</header>
+<ul class="itemize" id="a0000000029">
+<li id="a0000000030">
+<p>
+Games and puzzles can: 
+</p>
+<ul class="itemize" id="a0000000031">
+<li id="a0000000032">
+<p>
+help learning and develop logical thinking <span class="cite">
+	[
+	<a href="#cockcroft">Cockcroft, 1982</a>
+	]
+</span>; 
+</p>
+</li>
+<li id="a0000000033">
+<p>
+provoke curiosity, help develop concepts and skills through play and motivate engagement <span class="cite">
+	[
+	<a href="#moscovich">Moscovich, 2004</a>
+	, 
+	<a href="#hollisfelder">Hollis and Felder, 1982</a>
+	, 
+	<a href="#gardnercmj">Barcellos, 1979</a>
+	]
+</span>; 
+</p>
+</li>
+<li id="a0000000034">
+<p>
+help take the “drugery” out of practice <span class="cite">
+	[
+	<a href="#ernest">Ernest, 1986</a>
+	]
+</span>, with potential to develop creative, problem-solving skills alongside procedural fluency <span class="cite">
+	[
+	<a href="#foster2013">Foster, 2013</a>
+	, 
+	<a href="#foster2018">Foster, 2018</a>
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="play">Play</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -5.690551181102363pt"></span> <img alt="\includegraphics[width=0.8\textwidth ]{play}" src="images/img-0004.jpg" style="width:375.80400000000003pt"/> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="pl_1">Play</h2>
+</header>
+<blockquote class="quotation"><p>
+“A free soul ought not to pursue any study slavishly; for while bodily labours performed under constraint do not harm the body, nothing that is learned under compulsion stays with the mind.” 
+</p>
+<p>
+“True,” he said. “Do not, then, my friend, keep children to their studies by compulsion but by play.” 
+</p>
+</blockquote>
+<p>
+ — from Plato’s Republic, c. 375 BC 
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="pl_2">Play</h2>
+</header>
+<ul class="itemize" id="a0000000035">
+<li id="a0000000036">
+<p>
+<span class="cite">
+	[
+	<a href="#hollisfelder">Hollis and Felder, 1982</a>
+	]
+</span> have recreational mathematics as “a type of play that enables children to acquire concepts and skills useful to the teaching of mathematics” (p. 71). 
+</p>
+</li>
+<li id="a0000000037">
+<p>
+Martin Gardner said in an interview: “I’ve always felt that a teacher can introduce recreational math; …I don’t know of any better way to hook the interests of the students” <span class="cite">
+	[
+	<a href="#gardnercmj">Barcellos, 1979</a>
+	, 
+	p. 238
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="educational_uses_eng">Educational uses – engagement</h2>
+</header>
+<ul class="itemize" id="a0000000038">
+<li id="a0000000039">
+<p>
+Recreational mathematicatics can be used to enhance the engagement and interest of students <span class="cite">
+	[
+	<a href="#gardnercmj">Barcellos, 1979</a>
+	, 
+	<a href="#bohm2017">Böhm, 2017</a>
+	, 
+	<a href="#devi">Devi, 1976</a>
+	, 
+	<a href="#dyson">Dyson, 2011</a>
+	, 
+	<a href="#sumpter">Sumpter, 2015</a>
+	]
+</span>. 
+</p>
+</li>
+<li id="a0000000040">
+<p>
+Teaching using games has been shown to increase engagement and attitudes <span class="cite">
+	[
+	<a href="#ernest">Ernest, 1986</a>
+	, 
+	<a href="#oldfield">Oldfield, 1991</a>
+	, 
+	<a href="#bragg">Bragg, 2012</a>
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="play_mathematics_as_">Play – mathematics as an experimental science</h2>
+</header>
+<blockquote class="quote">Studying the methods of solving problems, we perceive another face of mathematics. Yes, mathematics has two faces; it is the rigorous science of Euclid but it is also something else. Mathematics presented in the Euclidean way appears as a systematic, deductive science; but mathematics in the making appears as an experimental, inductive science. Both aspects are as old as the science of mathematics itself. </blockquote>
+<p>
+ – <span class="cite">
+	[
+	<a href="#polya">Pólya, 2004</a>
+	, 
+	p. vii
+	]
+</span>
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="understanding">Understanding</h2>
+</header>
+<ul class="itemize" id="a0000000041">
+<li id="a0000000042">
+<p>
+Recreational mathematics has potential to develop and expand mathematical skills and deepen understanding of mathematical concepts and topics. For example: 
+</p>
+<ul class="itemize" id="a0000000043">
+<li id="a0000000044">
+<p>
+playing board games is linked to mathematical and strategic thinking and problem-solving skills <span class="cite">
+	[
+	<a href="#smithgolding">Smith and Golding, 2018</a>
+	]
+</span>; 
+</p>
+</li>
+<li id="a0000000045">
+<p>
+recreational mathematics can be used to develop confidence in problem-solving <span class="cite">
+	[
+	<a href="#eisenberg">Eisenberg, 1991</a>
+	]
+</span>. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="formal_syllabus_and_">Formal syllabus and logical thinking</h2>
+</header>
+<ul class="itemize" id="a0000000046">
+<li id="a0000000047">
+<p>
+The Cockcroft report refers to puzzles and games interacting with the formal syllabus <span class="cite">
+	[
+	<a href="#cockcroft">Cockcroft, 1982</a>
+	, 
+	p. 67
+	]
+</span>: 
+</p>
+</li>
+</ul>
+<blockquote class="quote">Whatever the level of attainment of pupils, carefully planned use of mathematical puzzles and ‘games’ can clarify the ideas in a syllabus and assist the development of logical thinking. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="informal_learning">Informal learning</h2>
+</header>
+<ul class="itemize" id="a0000000048">
+<li id="a0000000049">
+<p>
+<span class="cite">
+	[
+	<a href="#bohm2017">Böhm, 2017</a>
+	, 
+	p. 12, emphasis original
+	]
+</span>: 
+</p>
+<ul class="itemize" id="a0000000050">
+<li id="a0000000051">
+<p>
+“others at my age collected stamps, I collected interesting puzzles …by solving puzzles I learned quite a lot”; 
+</p>
+</li>
+<li id="a0000000052">
+<p>
+“not necessarily <i class="itshape">useful</i> mathematics, in the sense that the acquired knowledge was of much use in our math lessons in school”; 
+</p>
+</li>
+<li id="a0000000053">
+<p>
+e.g. “knowing how to construct a magic square will be of no help when dealing with problems from elementary analysis”. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="a_definition">A definition</h2>
+</header>
+<p>
+<span class="vspace bigskip"></span>
+</p>
+<blockquote class="quote">Recreational mathematics is a type of play which is enjoyable and requires mathematical thinking or skills to engage with; typically, it is accessible to a wide range of people and can be effectively used to motivate engagement with and develop understanding of mathematical ideas or concepts. </blockquote>
+<ul class="itemize" id="a0000000054">
+<li id="a0000000055">
+<p>
+(Not perfect, but matches how the term is used in practice.) 
+</p>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000056">
+<h2 aria-hidden="true" class="beamer-section-heading" id="problem_solving">Problem solving</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="problem_solvi_1">Problem solving</h2>
+</div>
+</section>
+</section><section class="beamer-section" id="a0000000057">
+<h2 aria-hidden="true" class="beamer-section-heading" id="what_happens_when_yo">What happens when you encounter an unseen problem?</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="what_happens_when_1">What happens when you encounter an unseen problem?</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_you_can_solve_it">If you can solve it</h2>
+</header>
+<ul class="itemize" id="a0000000058">
+<li id="a0000000059">
+<p>
+Gosh, well done! 
+</p>
+</li>
+<li id="a0000000060">
+<p>
+Remember, we are interested in your problem-solving abilities. The fact you can solve this problem is lovely, but may just be a fluke or coincidence. 
+</p>
+</li>
+<li id="a0000000061">
+<p>
+Can you do it on different unseen problems, or did you get lucky? 
+</p>
+</li>
+<li id="a0000000062">
+<p>
+It’s good if you are able to communicate your result clearly and show us you solved this via a sensible problem-solving method. 
+</p>
+</li>
+<li id="a0000000063">
+<p>
+Perhaps try a different problem. Better to practice when you can’t just see the solution. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_you_can_t_solve_i">If you can’t solve it</h2>
+</header>
+<ul class="itemize" id="a0000000064">
+<li id="a0000000065">
+<p>
+Good! Here’s where it gets interesting. 
+</p>
+</li>
+<li id="a0000000066">
+<p>
+There are problem-solving approaches you can try to get to a solution. 
+</p>
+</li>
+<li id="a0000000067">
+<p>
+For this module: 
+</p>
+<ul class="itemize" id="a0000000068">
+<li id="a0000000069">
+<p>
+it is very important that you try a sensible problem-solving approach which has a good chance at working towards a solution; 
+</p>
+</li>
+<li id="a0000000070">
+<p>
+the aim is to learn about problem solving, not necessarily to solve a particular problem; 
+</p>
+</li>
+<li id="a0000000071">
+<p>
+this is especially true if your solution relies on you getting a hint or sneaking a look at the answer; 
+</p>
+</li>
+<li id="a0000000072">
+<p>
+acknowledge that this is hard, because the emotions in problem solving are all around getting a solution. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000073">
+<h2 aria-hidden="true" class="beamer-section-heading" id="advice_for_problem_s">Advice for problem solving</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="advice_for_problem_1">Advice for problem solving</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="1_plan">1. Plan</h2>
+</header>
+<ul class="itemize" id="a0000000074">
+<li id="a0000000075">
+<p>
+Advice: 
+</p>
+<ul class="itemize" id="a0000000076">
+<li id="a0000000077">
+</li>
+<li id="a0000000078">
+<p>
+Stop and really read the problem. 
+</p>
+<p>
+Ask yourself: What am I being asked to do? What information have I been given? What information is missing? What would a solution look like?
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000079">
+</li>
+<li id="a0000000080">
+<p>
+Draw a picture. Introduce suitable notation for the information you have been given and information you are being asked for.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000081">
+</li>
+<li id="a0000000082">
+<p>
+Have you seen a similar problem before? How did you solve that one?
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000083">
+</li>
+<li id="a0000000084">
+<p>
+Separate the problem into smaller parts and examine them separately.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000085">
+</li>
+<li id="a0000000086">
+<p>
+Can you write the problem in a different way? Try it. Is what you have written actually the same problem? If not, what is different? If it is, can you solve this version of the problem? 
+</p>
+<p>
+Can you solve a related problem? Can you remove part of the restriction and solve a more general problem? Or, can you come up with a specific example and solve that? Do your solutions help you plan to approach the main problem?
+</p>
+</li>
+<li id="">
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="2_carry_out_your_pla">2. Carry out your plan</h2>
+</header>
+<ul class="itemize" id="a0000000087">
+<li id="a0000000088">
+<p>
+When your plan is ready, put it into action. <br/>
+</p>
+</li>
+<li id="a0000000089">
+<p>
+Advice: 
+</p>
+<ul class="itemize" id="a0000000090">
+<li id="a0000000091">
+<p>
+Check each step. Is each step correct? 
+</p>
+</li>
+<li id="a0000000092">
+<p>
+You should expect to be stuck quite a lot of the time. Recognise that you are stuck and accept it. Calmly review where you are and try to get unstuck. 
+</p>
+</li>
+<li id="a0000000093">
+<p>
+It is (usually!) okay to wait and mull over the problem for a while. 
+</p>
+</li>
+<li id="a0000000094">
+<p>
+If you are sure your plan cannot work, you may need to return to the <i class="itshape">Plan</i> stage. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="3_review">3. Review</h2>
+</header>
+<ul class="itemize" id="a0000000095">
+<li id="a0000000096">
+<p>
+First, if you found a solution, check it is correct. 
+</p>
+<ul class="itemize" id="a0000000097">
+<li id="a0000000098">
+<p>
+Can you check your solution is correct? 
+</p>
+</li>
+<li id="a0000000099">
+<p>
+Does it answer the original problem? 
+</p>
+</li>
+<li id="a0000000100">
+<p>
+Can you get the same solution from a different method? 
+</p>
+</li>
+<li id="a0000000101">
+<p>
+Can you work from your solution and get back to the original problem and, doing so, is the problem you get to the same as the original problem you tried to solve? 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="3_revi_1">3. Review</h2>
+</header>
+<ul class="itemize" id="a0000000102">
+<li id="a0000000103">
+<p>
+Second, reflect on what happened. 
+</p>
+<ul class="itemize" id="a0000000104">
+<li id="a0000000105">
+</li>
+<li id="a0000000106">
+<p>
+Remember that the point of solving problems is not just to get marks in assessments. The purpose here is to think about what has happened and see what you can learn.
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000107">
+</li>
+<li id="a0000000108">
+<p>
+Think about the process you took and particularly any dead ends you went down. 
+</p>
+<ul class="itemize" id="a0000000109">
+<li id="a0000000110">
+<p>
+What went wrong? 
+</p>
+</li>
+<li id="a0000000111">
+<p>
+Could you have avoided the dead ends, or were they a necessary part of solving the problem? 
+</p>
+</li>
+<li id="a0000000112">
+<p>
+What do you wish you had know when you first attempted the problem? 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+<li id="a0000000113">
+</li>
+<li id="a0000000114">
+<p>
+What can you do now that you couldn’t before?
+</p>
+<ul class="itemize" id="a0000000115">
+<li id="a0000000116">
+<p>
+Can you use the method, or the result, for some other problem? 
+</p>
+</li>
+<li id="a0000000117">
+<p>
+Can you write down a new problem that you are now able to solve? 
+</p>
+</li>
+<li id="a0000000118">
+<p>
+Is the problem you have solved part of a wider family of problems? 
+</p>
+</li>
+<li id="a0000000119">
+<p>
+Can your method be adapted to solve more of them? 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000120">
+<h2 aria-hidden="true" class="beamer-section-heading" id="what_does_this_mean_">What does this mean for an unseen problem?</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="what_does_this_mea_1">What does this mean for an unseen problem?</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="attempting_a_solutio">Attempting a solution</h2>
+</header>
+<ul class="itemize" id="a0000000121">
+<li id="a0000000122">
+</li>
+<li id="a0000000123">
+<p>
+Make sure you have understood the question and explored this understanding: 
+</p>
+<ul class="itemize" id="a0000000124">
+<li id="a0000000125">
+<p>
+Rewrite the question in your own words. 
+</p>
+</li>
+<li id="a0000000126">
+<p>
+State the crucial features of the question. 
+</p>
+</li>
+<li id="a0000000127">
+<p>
+Draw a diagram showing the question. 
+</p>
+</li>
+<li id="a0000000128">
+<p>
+Write an explanation of what the question is asking you to do and why this is difficult. Where does the difficulty lay? 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+<li id="a0000000129">
+</li>
+<li id="a0000000130">
+<p>
+Try variants: 
+</p>
+<ul class="itemize" id="a0000000131">
+<li id="a0000000132">
+<p>
+Try to state and solve a simpler version of the problem. 
+</p>
+<ul class="itemize" id="a0000000133">
+<li id="a0000000134">
+<p>
+Remove part of the restrictions. 
+</p>
+</li>
+<li id="a0000000135">
+<p>
+Add more restrictions. 
+</p>
+</li>
+<li id="a0000000136">
+<p>
+Try it for a smaller number. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000137">
+<p>
+Make a conjecture and test it. 
+</p>
+</li>
+</ul>
+</li>
+<li id="">
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_all_else_fails_an">If all else fails and you can’t find a solution</h2>
+</header>
+<ul class="itemize" id="a0000000138">
+<li id="a0000000139">
+<p>
+Make a list of what you have tried and why you are sure that it doesn’t work. 
+</p>
+</li>
+<li id="a0000000140">
+<p>
+Critique the problem – what is making it hard to solve? 
+</p>
+</li>
+<li id="a0000000141">
+<p>
+Sometimes this will help you get unstuck. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="if_you_do_find_a_sol">If you do find a solution</h2>
+</header>
+<ul class="itemize" id="a0000000142">
+<li id="a0000000143">
+<p>
+Check your answer is correct. 
+</p>
+<ul class="itemize" id="a0000000144">
+<li id="a0000000145">
+<p>
+You should be mostly in a position to be able to check the answer against the original puzzle, or at least to verify your method. 
+</p>
+</li>
+<li id="a0000000146">
+<p>
+Perhaps having solved it, you can see a different method that would work? If you get the same answer via different methods, this is good evidence you may be correct. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000147">
+<p>
+Reflect on what happened. 
+</p>
+</li>
+<li id="a0000000148">
+<p>
+Play around with the puzzle. 
+</p>
+<ul class="itemize" id="a0000000149">
+<li id="a0000000150">
+<p>
+Can you rephrase the puzzle into a different context? 
+</p>
+</li>
+<li id="a0000000151">
+<p>
+Can you make a variant of the puzzle? 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="references">References</h2>
+</header>
+</section>
+</section><section class="section bibliography">
+<h2 id="a0000000152">References</h2>
+<ul class="bibliography">
+<li id="gardnercmj" style="list-style: none"> <div class="bibcite">[Barcellos, 1979]</div> <p>
+Barcellos, A. (1979). A conversation with Martin Gardner. <em>The Two-Year College Mathematics Journal</em>, 10(4):223–244. 
+</p>
+</li>
+<li id="bohm2017" style="list-style: none"> <div class="bibcite">[Böhm, 2017]</div> <p>
+Böhm, W. (2017). <em>Interesting Topics for Bachelor Theses</em>. Vienna University of Economics, Vienna. 
+</p>
+</li>
+<li id="bragg" style="list-style: none"> <div class="bibcite">[Bragg, 2012]</div> <p>
+Bragg, L. A. (2012). The effect of mathematical games on on-task behaviours in the primary classroom. <em>Mathematics Education Research Journal</em>, 24(4):385–401. 
+</p>
+</li>
+<li id="cockcroft" style="list-style: none"> <div class="bibcite">[Cockcroft, 1982]</div> <p>
+Cockcroft, W. H. (1982). <em>Mathematics counts: Report of the Committee of Inquiry into the Teaching of Mathematics in Schools</em>. Her Majesty’s Stationery Office, London. 
+</p>
+</li>
+<li id="devi" style="list-style: none"> <div class="bibcite">[Devi, 1976]</div> <p>
+Devi, S. (1976). <em>Puzzles to Puzzle You</em>. Orient Paperbacks, Delhi. 
+</p>
+</li>
+<li id="dyson" style="list-style: none"> <div class="bibcite">[Dyson, 2011]</div> <p>
+Dyson, F. (2011). Foreword: Recreational mathematics. In Pitici, M., editor, <em>The Best Writing on Mathematics 2011</em>, pages xi–xvi. Princeton University Press, Princeton. 
+</p>
+</li>
+<li id="eisenberg" style="list-style: none"> <div class="bibcite">[Eisenberg, 1991]</div> <p>
+Eisenberg, T. (1991). On building self-confidence in mathematics. <em>Teaching Mathematics and its Applications: An International Journal of the IMA</em>, 10(4):154–158. 
+</p>
+</li>
+<li id="ernest" style="list-style: none"> <div class="bibcite">[Ernest, 1986]</div> <p>
+Ernest, P. (1986). Games. a rationale for their use in the teaching of mathematics in school. <em>Mathematics in School</em>, 15(1):2–5. 
+</p>
+</li>
+<li id="foster2013" style="list-style: none"> <div class="bibcite">[Foster, 2013]</div> <p>
+Foster, C. (2013). Mathematical études: embedding opportunities for developing procedural fluency within rich mathematical contexts. <em>International Journal of Mathematical Education in Science and Technology</em>, 44(5):765–774. 
+</p>
+</li>
+<li id="foster2018" style="list-style: none"> <div class="bibcite">[Foster, 2018]</div> <p>
+Foster, C. (2018). Developing mathematical fluency: comparing exercises and rich tasks. <em>Educational Studies in Mathematics</em>, 97(2):121–141. 
+</p>
+</li>
+<li id="gardnersciam" style="list-style: none"> <div class="bibcite">[Gardner, 1959]</div> <p>
+Gardner, M. (1959). <em>The Scientific American Book of Mathematical Puzzles &amp; Diversions</em>. Simon and Schuster, New York. 
+</p>
+</li>
+<li id="hankin" style="list-style: none"> <div class="bibcite">[Hankin, 2005]</div> <p>
+Hankin, R. K. S. (2005). Recreational mathematics with R: introducing the “magic” package. <em>R News</em>, 5(1):48–51. 
+</p>
+</li>
+<li id="quantaabel" style="list-style: none"> <div class="bibcite">[Hartnett, 2021]</div> <p>
+Hartnett, K. (2021). Pioneers linking math and computer science win the abel prize. <em>Quanta Magazine</em>. 
+</p>
+</li>
+<li id="hollisfelder" style="list-style: none"> <div class="bibcite">[Hollis and Felder, 1982]</div> <p>
+Hollis, L. Y. and Felder, B. D. (1982). Recreational mathematics for young children. <em>School Science and Mathematics</em>, 82(1):71–75. 
+</p>
+</li>
+<li id="minor" style="list-style: none"> <div class="bibcite">[Minor, 2015]</div> <p>
+Minor, D. (2015). Summing squares and cubes of integers. <em>Ohio Journal of School Mathematics</em>, 72:13–17. 
+</p>
+</li>
+<li id="moscovich" style="list-style: none"> <div class="bibcite">[Moscovich, 2004]</div> <p>
+Moscovich, I. (2004). <em>The Hinged Square &amp; Other Puzzles</em>. Sterling Publishing, New York. 
+</p>
+</li>
+<li id="oldfield" style="list-style: none"> <div class="bibcite">[Oldfield, 1991]</div> <p>
+Oldfield, B. J. (1991). Games in the learning of mathematics: 1: A classification. <em>Mathematics in School</em>, 20(1):41–43. 
+</p>
+</li>
+<li id="polya" style="list-style: none"> <div class="bibcite">[Pólya, 2004]</div> <p>
+Pólya, G. (2004). <em>How to Solve It: A New Aspect of Mathematical Method</em>. Princeton Science Library, Princeton, New Jersey, second edition. 
+</p>
+</li>
+<li id="singmaster1999" style="list-style: none"> <div class="bibcite">[Singmaster, 2000]</div> <p>
+Singmaster, D. (2000). The utility of recreational mathematics. In Booth, D. J., editor, <em>Proceedings of the Undergraduate Mathematics Teaching Conference, Sheffield, 6th–9th September 1999</em>, pages 13–19. Sheffield Hallam University Press, Sheffield. 
+</p>
+</li>
+<li id="singmaster2016" style="list-style: none"> <div class="bibcite">[Singmaster, 2016]</div> <p>
+Singmaster, D. (2016). The utility of recreational mathematics. <em>The UMAP Journal</em>, 37(4):339–379. 
+</p>
+</li>
+<li id="smithgolding" style="list-style: none"> <div class="bibcite">[Smith and Golding, 2018]</div> <p>
+Smith, E. and Golding, L. (2018). Use of board games in higher education literature review. <em>MSOR Connections</em>, 16(2):24–29. 
+</p>
+</li>
+<li id="su" style="list-style: none"> <div class="bibcite">[Su, 2017]</div> <p>
+Su, F. E. (2017). Mathematics for human flourishing. <em>The American Mathematical Monthly</em>, 124(6):483–493. 
+</p>
+</li>
+<li id="sumpter" style="list-style: none"> <div class="bibcite">[Sumpter, 2015]</div> <p>
+Sumpter, L. (2015). Recreational mathematics – only for fun? <em>Journal of Humanistic Mathematics</em>, 5(1):121–138. 
+</p>
+</li>
+<li id="trigg" style="list-style: none"> <div class="bibcite">[Trigg, 1978]</div> <p>
+Trigg, C. W. (1978). What is recreational mathematics? Definition by example: paradigms of topics, people and publications. <em>Mathematics Magazine</em>, 51(1):18–21. 
+</p>
+</li>
+</ul>
+<section class="beamer-frame">
+</section>
+</section>
+<footer id="footnotes">
+<h2 id="footnot_1">Footnotes</h2>
+<ol>
+<li id="a0000000013"><a aria-label="Jump to reference" class="footnote-jump" href="#a0000000013-reference">^</a> That’s 2021 Abel Prize joint-winner László Lovász.</li>
+</ol>
+</footer>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2025-01-14</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
