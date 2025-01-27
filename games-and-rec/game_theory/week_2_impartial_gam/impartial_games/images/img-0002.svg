@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="406pt" height="256pt" viewBox="0 0 406 256" version="1.1">
+<defs>
+<clipPath id="clip1">
+  <path d="M 0.332031 1 L 405.542969 1 L 405.542969 256 L 0.332031 256 Z M 0.332031 1 "/>
+</clipPath>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="255.118" gradientTransform="matrix(1,0,0,-1,0.331,256)">
+<stop offset="0" style="stop-color:rgb(95.999146%,95.999146%,95.999146%);stop-opacity:1;"/>
+<stop offset="0.0625" style="stop-color:rgb(96.124268%,96.124268%,96.124268%);stop-opacity:1;"/>
+<stop offset="0.125" style="stop-color:rgb(96.374512%,96.374512%,96.374512%);stop-opacity:1;"/>
+<stop offset="0.1875" style="stop-color:rgb(96.624756%,96.624756%,96.624756%);stop-opacity:1;"/>
+<stop offset="0.25" style="stop-color:rgb(96.873474%,96.873474%,96.873474%);stop-opacity:1;"/>
+<stop offset="0.3125" style="stop-color:rgb(97.123718%,97.123718%,97.123718%);stop-opacity:1;"/>
+<stop offset="0.375" style="stop-color:rgb(97.373962%,97.373962%,97.373962%);stop-opacity:1;"/>
+<stop offset="0.4375" style="stop-color:rgb(97.624207%,97.624207%,97.624207%);stop-opacity:1;"/>
+<stop offset="0.5" style="stop-color:rgb(97.874451%,97.874451%,97.874451%);stop-opacity:1;"/>
+<stop offset="0.5625" style="stop-color:rgb(98.124695%,98.124695%,98.124695%);stop-opacity:1;"/>
+<stop offset="0.625" style="stop-color:rgb(98.373413%,98.373413%,98.373413%);stop-opacity:1;"/>
+<stop offset="0.6875" style="stop-color:rgb(98.623657%,98.623657%,98.623657%);stop-opacity:1;"/>
+<stop offset="0.75" style="stop-color:rgb(98.873901%,98.873901%,98.873901%);stop-opacity:1;"/>
+<stop offset="0.8125" style="stop-color:rgb(99.124146%,99.124146%,99.124146%);stop-opacity:1;"/>
+<stop offset="0.875" style="stop-color:rgb(99.37439%,99.37439%,99.37439%);stop-opacity:1;"/>
+<stop offset="0.9375" style="stop-color:rgb(99.624634%,99.624634%,99.624634%);stop-opacity:1;"/>
+<stop offset="1" style="stop-color:rgb(99.873352%,99.873352%,99.873352%);stop-opacity:1;"/>
+</linearGradient>
+<clipPath id="clip2">
+  <path d="M 34 0.882812 L 35 0.882812 L 35 87 L 34 87 Z M 34 0.882812 "/>
+</clipPath>
+<clipPath id="clip3">
+  <path d="M 62 0.882812 L 64 0.882812 L 64 87 L 62 87 Z M 62 0.882812 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 0.332031 256 L 0.332031 0.882812 L 405.542969 0.882812 L 405.542969 256 Z M 0.332031 256 "/>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 28.347875 -0.00109375 L 28.347875 85.041875 " transform="matrix(1,0,0,-1,6.199,86.12)"/>
+</g>
+<g clip-path="url(#clip3)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 56.695531 -0.00109375 L 56.695531 85.041875 " transform="matrix(1,0,0,-1,6.199,86.12)"/>
+</g>
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.00021875 28.346562 L 85.039281 28.346562 " transform="matrix(1,0,0,-1,6.199,86.12)"/>
+<path style="fill:none;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:10;" d="M 0.00021875 56.694219 L 85.039281 56.694219 " transform="matrix(1,0,0,-1,6.199,86.12)"/>
+</g>
+</svg>
