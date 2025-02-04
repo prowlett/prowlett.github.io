@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="406" height="256" viewBox="0 0 406 256">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 0.332031 1 L 405.542969 1 L 405.542969 256 L 0.332031 256 Z M 0.332031 1 "/>
+</clipPath>
+<linearGradient id="linear-pattern-0" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="255.118" gradientTransform="matrix(1, 0, 0, -1, 0.331, 256)">
+<stop offset="0" stop-color="rgb(95.999146%, 95.999146%, 95.999146%)" stop-opacity="1"/>
+<stop offset="0.0625" stop-color="rgb(96.124268%, 96.124268%, 96.124268%)" stop-opacity="1"/>
+<stop offset="0.125" stop-color="rgb(96.374512%, 96.374512%, 96.374512%)" stop-opacity="1"/>
+<stop offset="0.1875" stop-color="rgb(96.624756%, 96.624756%, 96.624756%)" stop-opacity="1"/>
+<stop offset="0.25" stop-color="rgb(96.873474%, 96.873474%, 96.873474%)" stop-opacity="1"/>
+<stop offset="0.3125" stop-color="rgb(97.123718%, 97.123718%, 97.123718%)" stop-opacity="1"/>
+<stop offset="0.375" stop-color="rgb(97.373962%, 97.373962%, 97.373962%)" stop-opacity="1"/>
+<stop offset="0.4375" stop-color="rgb(97.624207%, 97.624207%, 97.624207%)" stop-opacity="1"/>
+<stop offset="0.5" stop-color="rgb(97.874451%, 97.874451%, 97.874451%)" stop-opacity="1"/>
+<stop offset="0.5625" stop-color="rgb(98.124695%, 98.124695%, 98.124695%)" stop-opacity="1"/>
+<stop offset="0.625" stop-color="rgb(98.373413%, 98.373413%, 98.373413%)" stop-opacity="1"/>
+<stop offset="0.6875" stop-color="rgb(98.623657%, 98.623657%, 98.623657%)" stop-opacity="1"/>
+<stop offset="0.75" stop-color="rgb(98.873901%, 98.873901%, 98.873901%)" stop-opacity="1"/>
+<stop offset="0.8125" stop-color="rgb(99.124146%, 99.124146%, 99.124146%)" stop-opacity="1"/>
+<stop offset="0.875" stop-color="rgb(99.37439%, 99.37439%, 99.37439%)" stop-opacity="1"/>
+<stop offset="0.9375" stop-color="rgb(99.624634%, 99.624634%, 99.624634%)" stop-opacity="1"/>
+<stop offset="1" stop-color="rgb(99.873352%, 99.873352%, 99.873352%)" stop-opacity="1"/>
+</linearGradient>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 6 0.882812 L 26 0.882812 L 26 21 L 6 21 Z M 6 0.882812 "/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="url(#linear-pattern-0)" d="M 0.332031 256 L 0.332031 0.882812 L 405.542969 0.882812 L 405.542969 256 Z M 0.332031 256 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="rgb(100%, 0%, 0%)" fill-opacity="1" d="M 25.867188 10.8125 C 25.867188 5.328125 21.417969 0.878906 15.933594 0.878906 C 10.445312 0.878906 6 5.328125 6 10.8125 C 6 16.300781 10.445312 20.746094 15.933594 20.746094 C 21.417969 20.746094 25.867188 16.300781 25.867188 10.8125 Z M 25.867188 10.8125 "/>
+</g>
+</svg>
