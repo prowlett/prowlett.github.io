@@ -1,0 +1,3039 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2025-02-13" />
+        
+
+        <title>Week 5: Matrix games | Game Theory and Recreational Mathematics</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1739429662.057045">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1739429662.057045">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1739429662.057045">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1739429662.057045', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1739429662.057045"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1739429662.057045"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1739429662.057045"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1739429662.057045" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1739429662.057045" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1739429662.057045" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1739429662.057045">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1739429662.057045">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Game Theory and Recreational Mathematics</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Game Theory</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Week 5: Matrix games
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../week_4_game_tree_sea/a_game_of_hex/index.html">Previous: A game of Hex</a>
+            
+            
+            <a rel="next" href="../../weekly_worksheets/index.html">Next: Weekly worksheets</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="week_5_matrix_games.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#matrix_games">Matrix games</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#coin_poker">Coin Poker</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_pok_1">Coin Poker</a>
+        
+    </li>
+
+    <li>
+        <a href="#game_theory">Game Theory</a>
+        
+    </li>
+
+    <li>
+        <a href="#today">Today</a>
+        
+    </li>
+
+    <li>
+        <a href="#play_a_game_coin_pok">Play a game: Coin Poker</a>
+        
+    </li>
+
+    <li>
+        <a href="#classic_game_theory">Classic game theory</a>
+        
+    </li>
+
+    <li>
+        <a href="#classic_game_theo_1">Classic game theory</a>
+        
+    </li>
+
+    <li>
+        <a href="#history">History</a>
+        
+    </li>
+
+    <li>
+        <a href="#some_terminology">Some terminology</a>
+        
+    </li>
+
+    <li>
+        <a href="#more_terminology">More terminology</a>
+        
+    </li>
+
+    <li>
+        <a href="#payoffs">Payoffs</a>
+        
+    </li>
+
+    <li>
+        <a href="#payof_1">Payoffs</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_pok_2">Coin Poker</a>
+        
+    </li>
+
+    <li>
+        <a href="#outcomes_and_payoffs">Outcomes and payoffs</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_poker_game_tree">Coin Poker game tree – first move</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_poker_game_tr_1">Coin Poker game tree – HH</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_poker_game_tr_2">Coin Poker game tree – TH</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_poker_game_tr_3">Coin Poker game tree – HT</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_poker_game_tr_4">Coin Poker game tree – TT</a>
+        
+    </li>
+
+    <li>
+        <a href="#expectation">Expectation</a>
+        
+    </li>
+
+    <li>
+        <a href="#expectati_1">Expectation</a>
+        
+    </li>
+
+    <li>
+        <a href="#strategies">Strategies</a>
+        
+    </li>
+
+    <li>
+        <a href="#expected_outcomes">Expected outcomes</a>
+        
+    </li>
+
+    <li>
+        <a href="#example">Example</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_coin_poker">Back to Coin Poker</a>
+        
+    </li>
+
+    <li>
+        <a href="#e_g_player_1_always_">e.g. Player 1 ‘always bet’, player 2 ‘only H’</a>
+        
+    </li>
+
+    <li>
+        <a href="#e_g_player_1_alway_1">e.g. Player 1 ‘always bet’, player 2 ‘only H’</a>
+        
+    </li>
+
+    <li>
+        <a href="#e_g_player_1_alway_2">e.g. Player 1 ‘always bet’, player 2 ‘only H’</a>
+        
+    </li>
+
+    <li>
+        <a href="#e_g_player_1_alway_3">e.g. Player 1 ‘always bet’, player 2 ‘only H’</a>
+        
+    </li>
+
+    <li>
+        <a href="#e_g_player_1_alway_4">e.g. Player 1 ‘always bet’, player 2 ‘only H’</a>
+        
+    </li>
+
+    <li>
+        <a href="#e_g_player_1_alway_5">e.g. Player 1 ‘always bet’, player 2 ‘only H’</a>
+        
+    </li>
+
+    <li>
+        <a href="#answers">Answers</a>
+        
+    </li>
+
+    <li>
+        <a href="#payoff_matrices">Payoff matrices</a>
+        
+    </li>
+
+    <li>
+        <a href="#payoff_matric_1">Payoff matrices</a>
+        
+    </li>
+
+    <li>
+        <a href="#payoff_matrix">Payoff matrix</a>
+        
+    </li>
+
+    <li>
+        <a href="#our_coin_poker_strat">Our Coin Poker strategies in a payoff matrix</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominance">Dominance</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominan_1">Dominance</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominan_2">Dominance</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominance_example">Dominance: example</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominance_examp_1">Dominance: example</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominance_examp_2">Dominance: example</a>
+        
+    </li>
+
+    <li>
+        <a href="#dominan_3">Dominance</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_our_coin_pok">Back to our Coin Poker strategies…</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_our_coin_p_1">Back to our Coin Poker strategies…</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_our_coin_p_2">Back to our Coin Poker strategies…</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_our_coin_p_3">Back to our Coin Poker strategies…</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_our_coin_p_4">Back to our Coin Poker strategies…</a>
+        
+    </li>
+
+    <li>
+        <a href="#coin_poker_conclusio">Coin Poker conclusions</a>
+        
+    </li>
+
+    <li>
+        <a href="#odds_and_evens">Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#odds_and_eve_1">Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#odds_and_eve_2">Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#equilibria">Equilibria</a>
+        
+    </li>
+
+    <li>
+        <a href="#equilibr_1">Equilibria</a>
+        
+    </li>
+
+    <li>
+        <a href="#nash_equilibrium">Nash equilibrium</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_driving_game">Example: driving game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_driving_ga_1">Example: driving game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_driving_ga_2">Example: driving game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_driving_ga_3">Example: driving game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_driving_ga_4">Example: driving game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_driving_ga_5">Example: driving game</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercise_volunteerin">Exercise: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercise_volunteer_1">Exercise: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_volunteering_">Answer: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_volunteerin_1">Answer: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_volunteerin_2">Answer: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_volunteerin_3">Answer: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_volunteerin_4">Answer: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#mixed_strategies">Mixed strategies</a>
+        
+    </li>
+
+    <li>
+        <a href="#mixed_strategi_1">Mixed strategies</a>
+        
+    </li>
+
+    <li>
+        <a href="#mixed_strategi_2">Mixed strategies</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_volunteering">Example: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_volunteeri_1">Example: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_volunteeri_2">Example: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_volunteeri_3">Example: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_volunteeri_4">Example: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_volunteeri_5">Example: Volunteering game</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_odds_and_eve">Back to Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#back_to_odds_and_e_1">Back to Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_odds_and_even">Answer: Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_odds_and_ev_1">Answer: Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_odds_and_ev_2">Answer: Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_odds_and_ev_3">Answer: Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#answer_odds_and_ev_4">Answer: Odds and Evens</a>
+        
+    </li>
+
+    <li>
+        <a href="#footnot_1">Footnotes</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        
+<section class="beamer-frame">
+<section class="beamer-titlepage">
+<h1 id="matrix_games">Matrix games</h1>
+<p class="beamer-authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</section>
+</section>
+<section class="beamer-section" id="a0000000002">
+<h2 aria-hidden="true" class="beamer-section-heading" id="coin_poker">Coin Poker</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="coin_pok_1">Coin Poker</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="game_theory">Game Theory</h2>
+</header>
+<ul class="itemize" id="a0000000003">
+<li id="a0000000004">
+<p>
+We have mostly looked at <i class="itshape">combinatorial game theory</i>, which is the study of simple, deterministic games. 
+</p>
+</li>
+<li id="a0000000005">
+<p>
+Today we will spend a little time looking at <i class="itshape">classic game theory</i> or <i class="itshape">economic games</i>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="today">Today</h2>
+</header>
+<ul class="itemize" id="a0000000006">
+<li id="a0000000007">
+<p>
+The structure of today is to play and analyse some simple games. 
+</p>
+</li>
+<li id="a0000000008">
+<p>
+The conclusion of the analysis will probably not surprise you if you have played the game a bit. 
+</p>
+</li>
+<li id="a0000000009">
+<p>
+But the point is to see a method of analysis that can be applied to more complicated games. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="play_a_game_coin_pok">Play a game: Coin Poker</h2>
+</header>
+<p>
+Play in pairs. Play proceeds as follows 
+</p>
+<ol class="enumerate" id="a0000000010">
+<li id="a0000000011" value="1">
+<p>
+Both players put one token in the pot and each toss a coin,<a class="footnote" href="#a0000000012" id="a0000000012-reference">
+<sup class="footnotemark">1</sup>
+</a> but do not share the outcome.
+</p>
+</li>
+<li id="a0000000013" value="2">
+<p>
+Player 1 moves. They either: 
+</p>
+<ul class="itemize" id="a0000000014">
+<li id="a0000000015">
+<p>
+fold, ending the game and giving the pot to player 2; or, 
+</p>
+</li>
+<li id="a0000000016">
+<p>
+bet 2 more tokens. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000017" value="3">
+<p>
+Player 2 moves. They either: 
+</p>
+<ul class="itemize" id="a0000000018">
+<li id="a0000000019">
+<p>
+fold, ending the game and giving the pot to player 1; or, 
+</p>
+</li>
+<li id="a0000000020">
+<p>
+bet 2 more tokens. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000021" value="4">
+<p>
+Both coin tosses are revealed. 
+</p>
+<ul class="itemize" id="a0000000022">
+<li id="a0000000023">
+<p>
+If both players have the same coin toss, the pot is split between them; 
+</p>
+</li>
+<li id="a0000000024">
+<p>
+otherwise, the player who tossed heads wins the entire pot. 
+</p>
+</li>
+</ul>
+</li>
+</ol>
+</section>
+</section><section class="beamer-section" id="a0000000025">
+<h2 aria-hidden="true" class="beamer-section-heading" id="classic_game_theory">Classic game theory</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="classic_game_theo_1">Classic game theory</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="history">History</h2>
+</header>
+<ul class="itemize" id="a0000000026">
+<li id="a0000000027">
+<p>
+The origins of modern game theory are in a paper <i class="itshape">On the Theory of Games of Strategy</i> by John von Neumann in 1928. 
+</p>
+</li>
+<li id="a0000000028">
+<p>
+Famous developments were made in analysis of two-person zero-sum games in economics by von Neumann and others in the 1940s and 1950s. 
+</p>
+</li>
+<li id="a0000000029">
+<p>
+Later applications were found starting in the 1970s in biology. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="some_terminology">Some terminology</h2>
+</header>
+<ul class="itemize" id="a0000000030">
+<li id="a0000000031">
+<p>
+Typically, we might consider <i class="itshape">simultaneous</i> games (players play at the same time) without <i class="itshape">perfect information</i> (players don’t know everything about the game in play). 
+</p>
+</li>
+<li id="a0000000032">
+<p>
+Games might be: 
+</p>
+<ul class="itemize" id="a0000000033">
+<li id="a0000000034">
+<p>
+<i class="itshape">Zero-sum</i>: choices by players can neither increase nor decrease the available resources; one player’s win is the other’s loss. (Opposite: <i class="itshape">Non-zero-sum</i>.) 
+</p>
+</li>
+<li id="a0000000035">
+<p>
+<i class="itshape">Symmetric</i>: payoffs depend on the competing strategies, not who is playing them. (Opposite: <i class="itshape">Asymmetric</i>.) 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="more_terminology">More terminology</h2>
+</header>
+<ul class="itemize" id="a0000000036">
+<li id="a0000000037">
+<p>
+A game typically specifies: 
+</p>
+<ul class="itemize" id="a0000000038">
+<li id="a0000000039">
+<p>
+the <i class="itshape">players</i> of the game; 
+</p>
+</li>
+<li id="a0000000040">
+<p>
+the <i class="itshape">actions</i> or <i class="itshape">strategies</i> available to each player at each stage; and, 
+</p>
+</li>
+<li id="a0000000041">
+<p>
+the <i class="itshape">payoffs</i> for each outcome (positive or negative values), which are what a player gains or loses from this outcome. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000042">
+<p>
+Often the payoffs for two players are represented as a pair \((a,b)\), where \(a\) is the payoff for player 1 and \(b\) is the payoff for player 2. 
+</p>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000043">
+<h2 aria-hidden="true" class="beamer-section-heading" id="payoffs">Payoffs</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="payof_1">Payoffs</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_pok_2">Coin Poker</h2>
+</header>
+<ul class="itemize" id="a0000000044">
+<li id="a0000000045">
+<p>
+Coin Poker: 
+</p>
+<ul class="itemize" id="a0000000046">
+<li id="a0000000047">
+<p>
+involves two players, 1 and 2; 
+</p>
+</li>
+<li id="a0000000048">
+<p>
+strategies are related to whether a player chooses to bet or fold. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000049">
+<p>
+Coin Poker is: 
+</p>
+<ul class="itemize" id="a0000000050">
+<li id="a0000000051">
+<p>
+not exactly simultaneous, but players do not have perfect information; 
+</p>
+</li>
+<li id="a0000000052">
+<p>
+zero-sum (either Player 1 takes the pot, or Player 2 does, or the pot is split between them); 
+</p>
+</li>
+<li id="a0000000053">
+<p>
+asymmetric (because Player 1 moves before Player 2). 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000054">
+<p>
+Let’s think about payoffs. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="outcomes_and_payoffs">Outcomes and payoffs</h2>
+</header>
+<ul class="itemize" id="a0000000055">
+<li id="a0000000056">
+<p>
+We wish to think about strategies – ways each player can approach playing the game. 
+</p>
+</li>
+<li id="a0000000057">
+<p>
+First, we need to think about the outcomes that occur when players make particular choices. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_poker_game_tree">Coin Poker game tree – first move</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000058">
+<img alt="Game tree. Start node goes to four nodes labelled HH, TH, HT and TT, each via an edge labelled 1/4." src="images/img-0001.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_poker_game_tr_1">Coin Poker game tree – HH</h2>
+</header>
+<div class="beamer-columns">
+<div class="beamer-column">
+<p>
+Exercise: 
+</p>
+<ul class="itemize" id="a0000000059">
+<li id="a0000000060">
+<p>
+Make the rest of the game tree for the TH, HT and TT situations. 
+</p>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<div class="centered"> <div class="tikzcd" id="a0000000061">
+<img alt='Game tree. Start node labelled HH goes to two options for Player 1 labelled "fold" and "bet". "Fold" gives the outcome -1,1. "Bet" gives a further node with two choices for Player 2 labelled "fold" and "bet". "Fold" gives the outcome 1,-1 and "bet" gives the outcome 0,0.' src="images/img-0002.svg"/>
+</div> </div>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_poker_game_tr_2">Coin Poker game tree – TH</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000062">
+<img alt='Game tree. Start node labelled HH goes to two options for Player 1 labelled "fold" and "bet". "Fold" gives the outcome -1,1. "Bet" gives a further node with two choices for Player 2 labelled "fold" and "bet". "Fold" gives the outcome 1,-1 and "bet" gives the outcome -3,3.' src="images/img-0003.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_poker_game_tr_3">Coin Poker game tree – HT</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000063">
+<img alt='Game tree. Start node labelled HH goes to two options for Player 1 labelled "fold" and "bet". "Fold" gives the outcome -1,1. "Bet" gives a further node with two choices for Player 2 labelled "fold" and "bet". "Fold" gives the outcome 1,-1 and "bet" gives the outcome 3,-3.' src="images/img-0004.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_poker_game_tr_4">Coin Poker game tree – TT</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000064">
+<img alt='Game tree. Start node labelled HH goes to two options for Player 1 labelled "fold" and "bet". "Fold" gives the outcome -1,1. "Bet" gives a further node with two choices for Player 2 labelled "fold" and "bet". "Fold" gives the outcome 1,-1 and "bet" gives the outcome 0,0.' src="images/img-0005.svg"/>
+</div> </div>
+</section>
+</section><section class="beamer-section" id="a0000000065">
+<h2 aria-hidden="true" class="beamer-section-heading" id="expectation">Expectation</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="expectati_1">Expectation</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="strategies">Strategies</h2>
+</header>
+<ul class="itemize" id="a0000000066">
+<li id="a0000000067">
+<p>
+Say the players choose their strategies ahead of the game. 
+</p>
+</li>
+<li id="a0000000068">
+<p>
+Assuming rational play, let’s consider four strategies for each player: 
+</p>
+<ul class="itemize" id="a0000000069">
+<li id="a0000000070">
+<p>
+always bet; 
+</p>
+</li>
+<li id="a0000000071">
+<p>
+never bet; 
+</p>
+</li>
+<li id="a0000000072">
+<p>
+only H: bet if and only if you’ve thrown heads; 
+</p>
+</li>
+<li id="a0000000073">
+<p>
+only T: bet if and only if you’ve thrown tails. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="expected_outcomes">Expected outcomes</h2>
+</header>
+<ul class="itemize" id="a0000000074">
+<li id="a0000000075">
+<p>
+Suppose a strategy leads to \(i\) possible outcomes \(x_i\). 
+</p>
+</li>
+<li id="a0000000076">
+<p>
+Suppose outcome \(x_i\) occurs with probability \(p_i\). 
+</p>
+</li>
+<li id="a0000000077">
+<p>
+Then the player’s <i class="itshape">expected outcome</i> is given by 
+</p>
+<span class="dmath">\[ \sum _i p_ix_i\text{.}  \]</span>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example">Example</h2>
+</header>
+<ul class="itemize" id="a0000000078">
+<li id="a0000000079">
+<p>
+You give me £1 and choose a card at random from a standard deck of playing cards. 
+</p>
+</li>
+<li id="a0000000080">
+<p>
+I give you £10 if and only if you draw the Queen of Hearts. 
+</p>
+</li>
+<li id="a0000000081">
+<p>
+So you expect to be ‘up’ £9 in one time out of 52, and ‘down’ £1 the rest of the time.
+</p>
+</li>
+<li id="a0000000082">
+<p>
+Your expected outcome is therefore 
+</p>
+<span class="dmath">\[  9 \times \frac{1}{52} + -1 \times \frac{51}{52} \approx -0.81  \]</span>
+<p>
+ i.e. on average you expect to lose 81p playing this game. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_coin_poker">Back to Coin Poker</h2>
+</header>
+<ul class="itemize" id="a0000000083">
+<li id="a0000000084">
+<p>
+Let’s consider the outcome of the situation where the players play these strategies: 
+</p>
+<ul class="itemize" id="a0000000085">
+<li id="a0000000086">
+<p>
+Player 1 ‘always bet’; 
+</p>
+</li>
+<li id="a0000000087">
+<p>
+Player 2 ‘only H’. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000088">
+<p>
+The outcomes for each player of these strategies depends how the coin tosses turned out. 
+</p>
+</li>
+<li id="a0000000089">
+<p>
+We can examine the possible outcomes to calculate the expected outcome. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="e_g_player_1_always_">e.g. Player 1 ‘always bet’, player 2 ‘only H’</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000090">
+<img alt="Game tree combining the previous diagrams." src="images/img-0006.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="e_g_player_1_alway_1">e.g. Player 1 ‘always bet’, player 2 ‘only H’</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000091">
+<img alt="Game tree combining the previous diagrams with the relevant strategies highlighted." src="images/img-0007.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000092">
+<li id="a0000000093">
+<p>
+So if the players throw HH, the outcome will be (0,0). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="e_g_player_1_alway_2">e.g. Player 1 ‘always bet’, player 2 ‘only H’</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000094">
+<img alt="Game tree combining the previous diagrams with the relevant strategies highlighted." src="images/img-0008.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000095">
+<li id="a0000000096">
+<p>
+So if the players throw TH, the outcome will be (-3,3). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="e_g_player_1_alway_3">e.g. Player 1 ‘always bet’, player 2 ‘only H’</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000097">
+<img alt="Game tree combining the previous diagrams with the relevant strategies highlighted." src="images/img-0009.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000098">
+<li id="a0000000099">
+<p>
+So if the players throw HT, the outcome will be (1,-1). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="e_g_player_1_alway_4">e.g. Player 1 ‘always bet’, player 2 ‘only H’</h2>
+</header>
+<div class="centered"> <div class="tikzcd" id="a0000000100">
+<img alt="Game tree combining the previous diagrams with the relevant strategies highlighted." src="images/img-0010.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000101">
+<li id="a0000000102">
+<p>
+So if the players throw TT, the outcome will be (1,-1). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="e_g_player_1_alway_5">e.g. Player 1 ‘always bet’, player 2 ‘only H’</h2>
+</header>
+<div class="centered"> <table class="tabular">
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black"><p>
+throw 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ probability 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ outcome
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black"><p>
+HH 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ \(\frac{1}{4}\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ (0,0)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black"><p>
+TH 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ \(\frac{1}{4}\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ (-3,3)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black"><p>
+HT 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ \(\frac{1}{4}\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ (1,-1)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-left:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+TT 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+ \(\frac{1}{4}\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black; border-bottom-style:solid; border-bottom-color:black; border-bottom-width:1px"><p>
+ (1,-1)
+</p>
+</td>
+</tr>
+</table> </div>
+<ul class="itemize" id="a0000000103">
+<li id="a0000000104">
+</li>
+<li id="a0000000105">
+<p>
+Putting this together, the expected outcomes from these strategies are: <span class="vspace" style="height: -5.690551181102363pt"></span>
+</p>
+</li>
+<li id="">
+</li>
+<li id="a0000000106">
+</li>
+<li id="a0000000107">
+<span><script type="math/tex; mode=display">\begin{align*}  \text{Player 1:~ ~ }&  \frac{1}{4} \times 0 + \frac{1}{4} \times -3 + \frac{1}{4} \times 1 + \frac{1}{4} \times 1 = -\frac{1}{4}\text{;} \end{align*}</script></span>
+</li>
+<li id="">
+</li>
+<li id="a0000000108">
+</li>
+<li id="a0000000109">
+<span><script type="math/tex; mode=display">\begin{align*}  \text{Player 1:~ ~ }&  \frac{1}{4} \times 0 + \frac{1}{4} \times -3 + \frac{1}{4} \times 1 + \frac{1}{4} \times 1 = -\frac{1}{4}\text{;}\\ \text{Player 2:~ ~ }&  \frac{1}{4} \times 0 + \frac{1}{4} \times 3 + \frac{1}{4} \times -1 + \frac{1}{4} \times -1 = \frac{1}{4}\text{.} \end{align*}</script></span>
+</li>
+<li id="">
+</li>
+<li id="a0000000110">
+</li>
+<li id="a0000000111">
+<p>
+i.e., the expected outcome from this pair of strategies can be expressed as the payoff \(\left(-\frac{1}{4},\frac{1}{4}\right)\).
+</p>
+</li>
+<li id="">
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<ul class="itemize" id="a0000000112">
+<li id="a0000000113">
+<p>
+Exercise<a class="footnote" href="#a0000000114" id="a0000000114-reference">
+<sup class="footnotemark">2</sup>
+</a>: Work out the payoffs for the following: 
+</p>
+<ol class="enumerate" id="a0000000115">
+<li id="a0000000116" value="1">
+<p>
+Player 1 ‘always bet’, Player 2 ‘always bet’; 
+</p>
+</li>
+<li id="a0000000117" value="2">
+<p>
+Player 1 ‘always bet’, Player 2 ‘never bet’; 
+</p>
+</li>
+<li id="a0000000118" value="3">
+<p>
+Player 1 ‘always bet’, Player 2 ‘only T’; 
+</p>
+</li>
+<li id="a0000000119" value="4">
+<p>
+Player 1 ‘only H’, Player 2 ‘only T’. 
+</p>
+</li>
+</ol>
+</li>
+</ul>
+<div class="centered"> <div class="tikzcd" id="a0000000120">
+<img alt="Game tree combining the previous diagrams." src="images/img-0011.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answers">Answers</h2>
+</header>
+<ol class="enumerate" id="a0000000121">
+<li id="a0000000122" value="1">
+<p>
+Player 1 ‘always bet’, Player 2 ‘always bet’: \((0,0)\); 
+</p>
+</li>
+<li id="a0000000123" value="2">
+<p>
+Player 1 ‘always bet’, Player 2 ‘never bet’: \((1,-1)\); 
+</p>
+</li>
+<li id="a0000000124" value="3">
+<p>
+Player 1 ‘always bet’, Player 2 ‘only T’: \(\left(\frac{5}{4},-\frac{5}{4}\right)\); 
+</p>
+</li>
+<li id="a0000000125" value="4">
+<p>
+Player 1 ‘only H’, Player 2 ‘only T’: \(\left(\frac{1}{2},-\frac{1}{2}\right)\). 
+</p>
+</li>
+</ol>
+</section>
+</section><section class="beamer-section" id="a0000000126">
+<h2 aria-hidden="true" class="beamer-section-heading" id="payoff_matrices">Payoff matrices</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="payoff_matric_1">Payoff matrices</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="payoff_matrix">Payoff matrix</h2>
+</header>
+<ul class="itemize" id="a0000000127">
+<li id="a0000000128">
+<p>
+A game can be represented in a <i class="itshape">payoff matrix</i>. 
+</p>
+</li>
+<li id="a0000000129">
+<p>
+Here is a two-player game where each player has two strategies and 
+</p>
+<ul class="itemize" id="a0000000130">
+<li id="a0000000131">
+<p>
+\(a\), \(b\), \(c\) and \(d\) are the payoffs for Player 1 in the four scenarios. 
+</p>
+</li>
+<li id="a0000000132">
+<p>
+\(w\) \(x\), \(y\) and \(z\) are the payoffs for Player 2, similarly. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="centered"> <div class="tikzcd" id="a0000000133">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are Option 1 and Option 2. Both players choose Option 1 gives (a,w). Player 1 chooses Option 1 and Player 2 chooses Option 2 gives (b,x). Player 1 chooses Option 2 and Player 2 chooses Option 1 gives (c,y). Both players choose Option 2 gives (d,z)." src="images/img-0012.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="our_coin_poker_strat">Our Coin Poker strategies in a payoff matrix</h2>
+</header>
+<div class="centered">
+<div class="tikzcd" id="a0000000134">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are Always bet, Never bet, Only H and 6. Proceeding top to bottom, left to right in this order, the payoffs are (0,0), (1,-1), (-1/4,1/4), (5/4,-5/4), (-1,1), (-1,1), (-1,1), (-1,1), (1/4,-1/4), (0,0), (-1/4,1/4), (1/2,-1/2), (-5/4,5/4), (0,0), (-1,1), (-1/4,1/4)." src="images/img-0013.svg"/>
+</div>
+</div>
+</section>
+</section><section class="beamer-section" id="a0000000135">
+<h2 aria-hidden="true" class="beamer-section-heading" id="dominance">Dominance</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="dominan_1">Dominance</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="dominan_2">Dominance</h2>
+</header>
+<ul class="itemize" id="a0000000136">
+<li id="a0000000137">
+<p>
+We say that player 1’s strategy of row \(i\) <i class="itshape">dominates</i> their strategy of row \(k\) if every entry in row \(i\) is greater than or equal to the corresponding entry in row \(k\). 
+</p>
+</li>
+<li id="a0000000138">
+<p>
+i.e. in any circumstances, they would be better playing strategy \(i\) than strategy \(k\). 
+</p>
+</li>
+<li id="a0000000139">
+<p>
+And similarly for player 2 with columns. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="dominance_example">Dominance: example</h2>
+</header>
+<ul class="itemize" id="a0000000140">
+<li id="a0000000141">
+<p>
+For example, consider this game 
+</p>
+</li>
+</ul>
+<div class="centered"> <div class="tikzcd" id="a0000000142">
+<img alt="A payoff matrix for a game between Player 1 and Player 2. Player 1 has three options, A, B and C. Player 2 has two options, D and E. Proceeding top to bottom, left to right the payoffs are (2,-2), (1,-1), (3,-3), (0,0), (-1,1) and (0,0)." src="images/img-0014.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000143">
+<li id="a0000000144">
+<p>
+For every option in strategy C, Player 1 would be better off using strategy A. 
+</p>
+</li>
+<li id="a0000000145">
+<p>
+So we say Player 1’s strategy A <i class="itshape">dominates</i> strategy C. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="dominance_examp_1">Dominance: example</h2>
+</header>
+<ul class="itemize" id="a0000000146">
+<li id="a0000000147">
+<p>
+Consequently, we can safely remove strategy C as it will never be used. This gives a simpler game to analyse. 
+</p>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -2.8452755905511813pt"></span> <div class="tikzcd" id="a0000000148">
+<img alt="A payoff matrix for a game between Player 1 and Player 2. Player 1 has two options, A and B. Player 2 has two options, D and E. Proceeding top to bottom, left to right the payoffs are (2,-2), (1,-1), (3,-3) and (0,0)." src="images/img-0015.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000149">
+<li id="a0000000150">
+<p>
+Looking at the columns, we see that Player 2 is always better off playing strategy E. 
+</p>
+</li>
+<li id="a0000000151">
+<p>
+So we say that strategy E <i class="itshape">dominates</i> strategy D, and we remove strategy D. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="dominance_examp_2">Dominance: example</h2>
+</header>
+<ul class="itemize" id="a0000000152">
+<li id="a0000000153">
+<p>
+We are now left with only one possible outcome for this game, 
+</p>
+</li>
+</ul>
+<div class="centered"> <div class="tikzcd" id="a0000000154">
+<img alt="A payoff matrix for a game between Player 1 and Player 2. Player 1 has two options, A and B. Player 2 has one option, E. Proceeding top to bottom, the payoffs are (1,-1) and (0,0)." src="images/img-0016.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000155">
+<li id="a0000000156">
+<p>
+Now, Player 1 will play strategy A and the outcome of this game will be \((1,-1)\). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="dominan_3">Dominance</h2>
+</header>
+<ul class="itemize" id="a0000000157">
+<li id="a0000000158">
+<p>
+This process is called <i class="itshape">iterative removal of dominated strategies</i> and can help clarify a game by removing outcomes that would not occur. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_our_coin_pok">Back to our Coin Poker strategies…</h2>
+</header>
+<ul class="itemize" id="a0000000159">
+<li id="a0000000160">
+<p>
+Exercise: Apply iterative removal of dominated strategies to this game. 
+</p>
+</li>
+</ul>
+<div class="centered">
+<div class="tikzcd" id="a0000000161">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are Always bet, Never bet, Only H and 6. Proceeding top to bottom, left to right in this order, the payoffs are (0,0), (1,-1), (-1/4,1/4), (5/4,-5/4), (-1,1), (-1,1), (-1,1), (-1,1), (1/4,-1/4), (0,0), (-1/4,1/4), (1/2,-1/2), (-5/4,5/4), (0,0), (-1,1), (-1/4,1/4)." src="images/img-0013.svg"/>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_our_coin_p_1">Back to our Coin Poker strategies…</h2>
+</header>
+<div class="centered">
+<div class="tikzcd" id="a0000000162">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are Always bet, Never bet, Only H and 6. Proceeding top to bottom, left to right in this order, the payoffs are (0,0), (1,-1), (-1/4,1/4), (5/4,-5/4), (-1,1), (-1,1), (-1,1), (-1,1), (1/4,-1/4), (0,0), (-1/4,1/4), (1/2,-1/2), (-5/4,5/4), (0,0), (-1,1), (-1/4,1/4)." src="images/img-0013.svg"/>
+</div>
+</div>
+<ul class="itemize" id="a0000000163">
+<li id="a0000000164">
+<p>
+Notice that Player 1’s strategy ‘Only T’ is dominated by their ‘Always bet’. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_our_coin_p_2">Back to our Coin Poker strategies…</h2>
+</header>
+<ul class="itemize" id="a0000000165">
+<li id="a0000000166">
+<p>
+So we remove Player 1’s strategy ‘Only T’. 
+</p>
+</li>
+</ul>
+<div class="centered">
+<div class="tikzcd" id="a0000000167">
+<img alt="Payoff matrix for a game with two players, Player 1 and Player 2. Player 1 has three options: Always bet, Never bet and Only H. Player 2 has these three options and also Only T. Going top to bottom, left to right, the payoffs are (0,0), (1,-1), (-1/4,1/4), (5/4,-5/4), (-1,1), (-1,1), (-1,1), (-1,1), (1/4,-1/4), (0,0), (-1/4,1/4), (1/2,-1/2)" src="images/img-0017.svg"/>
+</div>
+</div>
+<ul class="itemize" id="a0000000168">
+<li id="a0000000169">
+<p>
+In this reduced game, notice that Player 2’s ‘Only H’ dominates all other strategies. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_our_coin_p_3">Back to our Coin Poker strategies…</h2>
+</header>
+<ul class="itemize" id="a0000000170">
+<li id="a0000000171">
+<p>
+So we remove all Player 2’s strategies except ‘Only H’. 
+</p>
+</li>
+</ul>
+<div class="centered">
+<div class="tikzcd" id="a0000000172">
+<img alt="Payoff matrix for a game with two players, Player 1 and Player 2. Player 1 has three options: Always bet, Never bet and Only H. Player 2 has one option: Only H. Going top to bottom, the payoffs are (-1/4,1/4), (-1,1), and (-1/4,1/4)." src="images/img-0018.svg"/>
+</div>
+</div>
+<ul class="itemize" id="a0000000173">
+<li id="a0000000174">
+<p>
+Since Player 1 prefers \(-\frac{1}{4}\) to \(-1\), their strategy ‘Never bet‘ is dominated by the other two. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_our_coin_p_4">Back to our Coin Poker strategies…</h2>
+</header>
+<ul class="itemize" id="a0000000175">
+<li id="a0000000176">
+<p>
+We remove Player 1’s ‘Never bet’ strategy. 
+</p>
+</li>
+</ul>
+<div class="centered">
+<div class="tikzcd" id="a0000000177">
+<img alt="Payoff matrix for a game with two players, Player 1 and Player 2. Player 1 has three options: Always bet, Never bet and Only H. Player 2 has one option: Only H. Going top to bottom, the payoffs are (-1/4,1/4) and (-1/4,1/4)." src="images/img-0019.svg"/>
+</div>
+</div>
+<ul class="itemize" id="a0000000178">
+<li id="a0000000179">
+<p>
+We conclude that optimal play leads Player 1 to choose either ‘Always bet’ or ‘Only H’ and Player 2 to choose ‘Only H’, with the expected outcome \(\left(-\frac{1}{4},\frac{1}{4}\right)\). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="coin_poker_conclusio">Coin Poker conclusions</h2>
+</header>
+<ul class="itemize" id="a0000000180">
+<li id="a0000000181">
+<p>
+This is not a good game to be the first player! 
+</p>
+</li>
+<li id="a0000000182">
+<p>
+In fact, it isn’t a particularly interesting game. 
+</p>
+<ul class="itemize" id="a0000000183">
+<li id="a0000000184">
+<p>
+Player 2 bets only when they have a head (no choice). 
+</p>
+</li>
+<li id="a0000000185">
+<p>
+Player 1 has a choice to either always bet or bet only when they throw a head, but the outcome doesn’t change (the illusion of choice). 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000186">
+<p>
+Real poker has: 
+</p>
+<ul class="itemize" id="a0000000187">
+<li id="a0000000188">
+<p>
+a much more complicated probability mechanic than a simple coin toss; 
+</p>
+</li>
+<li id="a0000000189">
+<p>
+the ability to ‘raise’, allowing a more iterative betting dynamic – crucially involving bluffing. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000190">
+<h2 aria-hidden="true" class="beamer-section-heading" id="odds_and_evens">Odds and Evens</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="odds_and_eve_1">Odds and Evens</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="odds_and_eve_2">Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000191">
+<li id="a0000000192">
+<p>
+Play in pairs. 
+</p>
+</li>
+<li id="a0000000193">
+<p>
+Both players at the same time show either one finger or two. 
+</p>
+</li>
+<li id="a0000000194">
+<p>
+If the total number of fingers shown is even, Player 2 gives that number of points to Player 1. 
+</p>
+</li>
+<li id="a0000000195">
+<p>
+If the total number of fingers shown is odd, Player 1 gives that number of points to Player 2. 
+</p>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000196">
+<h2 aria-hidden="true" class="beamer-section-heading" id="equilibria">Equilibria</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="equilibr_1">Equilibria</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="nash_equilibrium">Nash equilibrium</h2>
+</header>
+<ul class="itemize" id="a0000000197">
+<li id="a0000000198">
+<p>
+A useful concept is the <i class="itshape">Nash equilibrium</i>: a pair of strategies, each of which is the best response to the other. 
+</p>
+</li>
+<li id="a0000000199">
+<p>
+This is the state when no player can gain an advantage by changing their action while the others keep theirs. 
+</p>
+</li>
+<li id="a0000000200">
+<p>
+In some games we see <i class="itshape">pure</i> Nash equilibria – pairs of single (pure) strategies that form an equilibrium. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_driving_game">Example: driving game</h2>
+</header>
+<ul class="itemize" id="a0000000201">
+<li id="a0000000202">
+<p>
+Here is a payoff matrix for which side of the road to drive on. 
+</p>
+</li>
+<li id="a0000000203">
+<p>
+Two players are driving in opposite directions towards each other on the same road. 
+</p>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000204">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are L and R. Both players choose L gives (1,1). Player 1 chooses L and Player 2 chooses R gives (-1,-1). Player 1 chooses R and Player 2 chooses L gives (1,1). Both players choose R gives (-1,-1)." src="images/img-0020.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_driving_ga_1">Example: driving game</h2>
+</header>
+<ul class="itemize" id="a0000000205">
+<li id="a0000000206">
+<p>
+One way to find equilibria is: 
+</p>
+<ul class="itemize" id="a0000000207">
+<li id="a0000000208">
+<p>
+for each row, highlight the column player’s best response; 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000209">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are L and R. Both players choose L gives (1,1). Player 1 chooses L and Player 2 chooses R gives (-1,-1). Player 1 chooses R and Player 2 chooses L gives (1,1). Both players choose R gives (-1,-1)." src="images/img-0021.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_driving_ga_2">Example: driving game</h2>
+</header>
+<ul class="itemize" id="a0000000210">
+<li id="a0000000211">
+<p>
+One way to find equilibria is: 
+</p>
+<ul class="itemize" id="a0000000212">
+<li id="a0000000213">
+<p>
+for each row, highlight the column player’s best response; 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000214">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are L and R. Both players choose L gives (1,1). Player 1 chooses L and Player 2 chooses R gives (-1,-1). Player 1 chooses R and Player 2 chooses L gives (1,1). Both players choose R gives (-1,-1)." src="images/img-0022.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_driving_ga_3">Example: driving game</h2>
+</header>
+<ul class="itemize" id="a0000000215">
+<li id="a0000000216">
+<p>
+One way to find equilibria is: 
+</p>
+<ul class="itemize" id="a0000000217">
+<li id="a0000000218">
+<p>
+for each row, highlight the column player’s best response; 
+</p>
+</li>
+<li id="a0000000219">
+<p>
+for each column, highlight the row player’s best response; 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000220">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are L and R. Both players choose L gives (1,1). Player 1 chooses L and Player 2 chooses R gives (-1,-1). Player 1 chooses R and Player 2 chooses L gives (1,1). Both players choose R gives (-1,-1)." src="images/img-0023.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_driving_ga_4">Example: driving game</h2>
+</header>
+<ul class="itemize" id="a0000000221">
+<li id="a0000000222">
+<p>
+One way to find equilibria is: 
+</p>
+<ul class="itemize" id="a0000000223">
+<li id="a0000000224">
+<p>
+for each row, highlight the column player’s best response; 
+</p>
+</li>
+<li id="a0000000225">
+<p>
+for each column, highlight the row player’s best response; 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000226">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are L and R. Both players choose L gives (1,1). Player 1 chooses L and Player 2 chooses R gives (-1,-1). Player 1 chooses R and Player 2 chooses L gives (1,1). Both players choose R gives (-1,-1)." src="images/img-0024.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_driving_ga_5">Example: driving game</h2>
+</header>
+<ul class="itemize" id="a0000000227">
+<li id="a0000000228">
+<p>
+One way to find equilibria is: 
+</p>
+<ul class="itemize" id="a0000000229">
+<li id="a0000000230">
+<p>
+for each row, highlight the column player’s best response; 
+</p>
+</li>
+<li id="a0000000231">
+<p>
+for each column, highlight the row player’s best response; 
+</p>
+</li>
+<li id="a0000000232">
+<p>
+entries with both values highlighted represent equilibria. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000233">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are L and R. Both players choose L gives (1,1). Player 1 chooses L and Player 2 chooses R gives (-1,-1). Player 1 chooses R and Player 2 chooses L gives (1,1). Both players choose R gives (-1,-1)." src="images/img-0025.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000234">
+<li id="a0000000235">
+<p>
+So this game has two equilibria, equally good for either player. 
+</p>
+</li>
+<li id="a0000000236">
+<p>
+(In this game, which happens in practice requires coordination.) 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise_volunteerin">Exercise: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000237">
+<li id="a0000000238">
+<p>
+Two friends need to decide who should wash up. 
+</p>
+</li>
+<li id="a0000000239">
+<p>
+Each has two options: 
+</p>
+<ul class="itemize" id="a0000000240">
+<li id="a0000000241">
+<p>
+volunteer (\(V\)) to wash up; 
+</p>
+</li>
+<li id="a0000000242">
+<p>
+stay silent (\(S\)) and hope the other person does it. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000243">
+<p>
+Both want the washing up done, so the outcome where neither person volunteers is bad. 
+</p>
+</li>
+<li id="a0000000244">
+<p>
+But both would rather the other person did it. 
+</p>
+</li>
+<li id="a0000000245">
+<p>
+If both volunteer, they flip a coin to decide who will do the washing up. 
+</p>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000246">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0026.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise_volunteer_1">Exercise: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000247">
+<li id="a0000000248">
+<p>
+Look at the rows and columns and work out the equilibria options in this game. 
+</p>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000249">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0026.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_volunteering_">Answer: Volunteering game</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000250">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0027.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_volunteerin_1">Answer: Volunteering game</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000251">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0028.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_volunteerin_2">Answer: Volunteering game</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000252">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0029.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_volunteerin_3">Answer: Volunteering game</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000253">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0030.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_volunteerin_4">Answer: Volunteering game</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000254">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0031.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000255">
+<li id="a0000000256">
+<p>
+So we have two equilibria. 
+</p>
+</li>
+<li id="a0000000257">
+<p>
+But neither player really wants to <i class="itshape">always</i> volunteer. 
+</p>
+</li>
+<li id="a0000000258">
+<p>
+Which strategy should each player play? 
+</p>
+</li>
+</ul>
+</section>
+</section><section class="beamer-section" id="a0000000259">
+<h2 aria-hidden="true" class="beamer-section-heading" id="mixed_strategies">Mixed strategies</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="mixed_strategi_1">Mixed strategies</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="mixed_strategi_2">Mixed strategies</h2>
+</header>
+<ul class="itemize" id="a0000000260">
+<li id="a0000000261">
+<p>
+In a situation without a pure Nash equilibrium, it is possible to obtain a Nash equilibrium using <i class="itshape">mixed strategies</i>, in which each player plays different strategies with some probability. 
+</p>
+</li>
+<li id="a0000000262">
+<p>
+We are looking for a combination of strategies for Player 1 so that Player 2 gets the same payoff no matter what they do, and vice versa. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_volunteering">Example: Volunteering game</h2>
+</header>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000263">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are S and V. Both players choose S gives (-10,-10). Player 1 chooses S and Player 2 chooses V gives (2,-2). Player 1 chooses V and Player 2 chooses S gives (-2,2). Both players choose V gives (-1,-1)." src="images/img-0026.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000264">
+<li id="a0000000265">
+<p>
+We can obtain two matrices, one giving the payoffs for Player 1 (\(\mathbf{R}\) for rows) and one for Player 2 (\(\mathbf{C}\) for columns). 
+</p>
+</li>
+</ul>
+<span class="dmath">\[  \mathbf{R}=\begin{bmatrix}  -10 
+
+&amp;  2
+
+\\ -2 
+
+&amp;  -1 
+
+\end{bmatrix} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  \mathbf{C}=\begin{bmatrix}  -10 
+
+&amp;  -2
+
+\\ 2 
+
+&amp;  -1 
+
+\end{bmatrix} \]</span>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_volunteeri_1">Example: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000266">
+<li id="a0000000267">
+<p>
+Say: 
+</p>
+<ul class="itemize" id="a0000000268">
+<li id="a0000000269">
+<p>
+Player 1 plays \(S\) with probability \(p\) (and so plays \(V\) with probability \(1-p\)); 
+</p>
+</li>
+<li id="a0000000270">
+<p>
+Player 2 plays \(S\) with probability \(q\) (and so plays \(V\) with probability \(1-q\)). 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000271">
+<p>
+So let 
+</p>
+<span class="dmath">\[  \mathbf{p} = \begin{bmatrix}  p 
+
+&amp;  1-p 
+
+\end{bmatrix} \text{~ ~ ~ \&amp; ~ ~ ~ } \mathbf{q} = \begin{bmatrix}  q
+
+\\ 1-q 
+
+\end{bmatrix}  \]</span>
+</li>
+<li id="a0000000272">
+<p>
+Then 
+</p>
+<ul class="itemize" id="a0000000273">
+<li id="a0000000274">
+<p>
+the expected outcome for Player 1 is \(\mathbf{p}\mathbf{R}\mathbf{q}\); 
+</p>
+</li>
+<li id="a0000000275">
+<p>
+the expected outcome for Player 2 is \(\mathbf{p}\mathbf{C}\mathbf{q}\); 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_volunteeri_2">Example: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000276">
+<li id="a0000000277">
+<p>
+For an equilibrium, we are looking for a situation where:
+</p>
+<ol class="enumerate" id="a0000000278">
+<li id="a0000000279" value="1">
+<p>
+Player 1 chooses values for \(\mathbf{p}\) such that Player 2 gets the same payoff no matter what they choose for \(\mathbf{q}\). 
+</p>
+</li>
+<li id="a0000000280" value="2">
+<p>
+Player 2 chooses values for \(\mathbf{q}\) such that Player 1 gets the same payoff no matter what they choose for \(\mathbf{p}\). 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000281">
+<p>
+For 1: the expected outcome for Player 2 is \(\mathbf{p}\mathbf{C}\mathbf{q}\), so we are looking for the values of the entries in \(\mathbf{p}\mathbf{C}\) to be the same.
+</p>
+</li>
+<li id="a0000000282">
+<p>
+For 2: similarly, for Player 1’s choice of \(\mathbf{p}\) to make no difference, we are looking for the values of the entries in \(\mathbf{R}\mathbf{q}\) to be the same. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_volunteeri_3">Example: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000283">
+<li id="a0000000284">
+<p>
+Considering Player 1’s choices to restrict the options for Player 2: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -8.535826771653543pt"></span>
+</p>
+<span class="dmath">\[ \mathbf{p}\mathbf{C} = \begin{bmatrix}  p 
+
+&amp;  1-p
+
+\\ \end{bmatrix}\begin{bmatrix}  -10 
+
+&amp;  -2
+
+\\ 2 
+
+&amp;  -1 
+
+\end{bmatrix} = \begin{bmatrix}  -12p+2 
+
+&amp;  -p-1
+
+\\ \end{bmatrix}  \]</span>
+<p>
+<span class="vspace" style="height: -5.690551181102363pt"></span>
+</p>
+<ul class="itemize" id="a0000000285">
+<li id="a0000000286">
+<p>
+Player 2 has the same expected outcome for either strategy if: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -14.226377952755907pt"></span>
+</p>
+<span class="dmath">\[  -12p+2 = -p-1 \implies p = \frac{3}{11} \]</span>
+<p>
+<span class="vspace" style="height: -8.535826771653543pt"></span>
+</p>
+<ul class="itemize" id="a0000000287">
+<li id="a0000000288">
+<p>
+This suggests Player 1 should stay silent \(\frac{3}{11}\) of the time and volunteer \(\frac{8}{11}\) of the time. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_volunteeri_4">Example: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000289">
+<li id="a0000000290">
+<p>
+Similarly for Player 2’s choices: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -8.535826771653543pt"></span>
+</p>
+<span class="dmath">\[ \mathbf{R}\mathbf{q} = \begin{bmatrix}  -10 
+
+&amp;  2
+
+\\ -2 
+
+&amp;  -1 
+
+\end{bmatrix}\begin{bmatrix}  q
+
+\\ 1-q 
+
+\end{bmatrix} = \begin{bmatrix}  -12q+2
+
+\\ -q-1 
+
+\end{bmatrix}  \]</span>
+<ul class="itemize" id="a0000000291">
+<li id="a0000000292">
+<p>
+Player 1 has the same expected outcome for either strategy if: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -14.226377952755907pt"></span>
+</p>
+<span class="dmath">\[  -12q+2 = -q-1 \implies q = \frac{3}{11} \]</span>
+<ul class="itemize" id="a0000000293">
+<li id="a0000000294">
+<p>
+This suggests Player 2 should stay silent \(\frac{3}{11}\) of the time and volunteer \(\frac{8}{11}\) of the time. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_volunteeri_5">Example: Volunteering game</h2>
+</header>
+<ul class="itemize" id="a0000000295">
+<li id="a0000000296">
+<p>
+The expected outcome for Player 1 (\(\mathbf{R}\)) in this equilibrium is: 
+</p>
+</li>
+</ul>
+<span class="dmath">\[  \begin{bmatrix}  \frac{3}{11} 
+
+&amp;  \frac{8}{11} 
+
+\end{bmatrix} \begin{bmatrix}  -10 
+
+&amp;  2
+
+\\ -2 
+
+&amp;  -1 
+
+\end{bmatrix} \begin{bmatrix}  \frac{3}{11}
+
+\\ \frac{8}{11} 
+
+\end{bmatrix} = -\frac{14}{11}  \]</span>
+<ul class="itemize" id="a0000000297">
+<li id="a0000000298">
+<p>
+The expected outcome for Player 2 (\(\mathbf{C}\)) in this equilibrium is: 
+</p>
+</li>
+</ul>
+<span class="dmath">\[  \begin{bmatrix}  \frac{3}{11} 
+
+&amp;  \frac{8}{11} 
+
+\end{bmatrix} \begin{bmatrix}  -10 
+
+&amp;  -2
+
+\\ 2 
+
+&amp;  -1 
+
+\end{bmatrix} \begin{bmatrix}  \frac{3}{11}
+
+\\ \frac{8}{11} 
+
+\end{bmatrix} = -\frac{14}{11}  \]</span>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_odds_and_eve">Back to Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000299">
+<li id="a0000000300">
+<p>
+If the total number of fingers shown is even, Player 1 takes that number of points from Player 2. 
+</p>
+</li>
+<li id="a0000000301">
+<p>
+If the total number of fingers shown is odd, Player 2 takes that number of points from Player 1. 
+</p>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000302">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are 1 and 2. Both players choose 1 gives (2,-2). Player 1 chooses 1 and Player 2 chooses 2 gives (-3,3). Player 1 chooses 2 and Player 2 chooses 1 gives (-3,3). Both players choose 2 gives (4,-4)." src="images/img-0032.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="back_to_odds_and_e_1">Back to Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000303">
+<li id="a0000000304">
+<p>
+Say Player 1 shows one finger with probability \(p\) and two fingers with probability \(1-p\). 
+</p>
+</li>
+<li id="a0000000305">
+<p>
+Say Player 2 shows one finger with probability \(q\) and two fingers with probability \(1-q\). 
+</p>
+</li>
+<li id="a0000000306">
+<p>
+What values of \(p\) and \(q\) create a Nash equilibrium? 
+</p>
+</li>
+<li id="a0000000307">
+<p>
+What are the expected outcomes for each player? 
+</p>
+</li>
+</ul>
+<div class="centered"><span class="vspace" style="height: -17.071653543307086pt"></span> <div class="tikzcd" id="a0000000308">
+<img alt="Payoff matrix between two players: Player 1 and Player 2. The strategies for both are 1 and 2. Both players choose 1 gives (2,-2). Player 1 chooses 1 and Player 2 chooses 2 gives (-3,3). Player 1 chooses 2 and Player 2 chooses 1 gives (-3,3). Both players choose 2 gives (4,-4)." src="images/img-0032.svg"/>
+</div> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_odds_and_even">Answer: Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000309">
+<li id="a0000000310">
+<p>
+Start by obtaining two matrices, one giving the payoffs for Player 1 (\(\mathbf{R}\) for rows) and one for Player 2 (\(\mathbf{C}\) for columns). 
+</p>
+</li>
+</ul>
+<span class="dmath">\[  \mathbf{R}=\begin{bmatrix}  2 
+
+&amp;  -3
+
+\\ -3 
+
+&amp;  4 
+
+\end{bmatrix} ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~  \mathbf{C}=\begin{bmatrix}  -2 
+
+&amp;  3
+
+\\ 3 
+
+&amp;  -4 
+
+\end{bmatrix} \]</span>
+<ul class="itemize" id="a0000000311">
+<li id="a0000000312">
+<p>
+Then we require the entries of \(\mathbf{p}\mathbf{C}\) to be the same and the entries of \(\mathbf{R}\mathbf{q}\) to be the same. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_odds_and_ev_1">Answer: Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000313">
+<li id="a0000000314">
+<p>
+Consider Player 1’s choices: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -5.690551181102363pt"></span>
+</p>
+<span class="dmath">\[ \mathbf{p}\mathbf{C} = \begin{bmatrix}  p 
+
+&amp;  1-p 
+
+\end{bmatrix}\begin{bmatrix}  -2 
+
+&amp;  3
+
+\\ 3 
+
+&amp;  -4 
+
+\end{bmatrix} = \begin{bmatrix}  3-5p 
+
+&amp;  7p-4 
+
+\end{bmatrix}  \]</span>
+<ul class="itemize" id="a0000000315">
+<li id="a0000000316">
+<p>
+Player 2 has the same expected outcome for either strategy if: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -14.226377952755907pt"></span>
+</p>
+<span class="dmath">\[  3-5p = 7p-4 \implies p = \frac{7}{12} \]</span>
+<ul class="itemize" id="a0000000317">
+<li id="a0000000318">
+<p>
+This suggests Player 1 should show one finger \(\frac{7}{12}\) of the time and two fingers \(\frac{5}{12}\) of the time. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_odds_and_ev_2">Answer: Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000319">
+<li id="a0000000320">
+<p>
+Consider Player 2’s strategy \(\begin{bmatrix}  q
+
+\\ 1-q 
+
+\end{bmatrix}\). 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -5.690551181102363pt"></span>
+</p>
+<span class="dmath">\[ \begin{bmatrix}  2 
+
+&amp;  -3
+
+\\ -3 
+
+&amp;  4 
+
+\end{bmatrix}\begin{bmatrix}  q
+
+\\ 1-q 
+
+\end{bmatrix} = \begin{bmatrix}  5q-3
+
+\\ 4-7q 
+
+\end{bmatrix}  \]</span>
+<ul class="itemize" id="a0000000321">
+<li id="a0000000322">
+<p>
+Player 1 has the same expected outcome for either strategy if: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -14.226377952755907pt"></span>
+</p>
+<span class="dmath">\[  5q-3 = 4-7q \implies q = \frac{7}{12} \]</span>
+<ul class="itemize" id="a0000000323">
+<li id="a0000000324">
+<p>
+This suggests Player 2 should show one finger \(\frac{7}{12}\) of the time and two fingers \(\frac{5}{12}\) of the time. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_odds_and_ev_3">Answer: Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000325">
+<li id="a0000000326">
+<p>
+Expected outcome for Player 1 (\(\mathbf{R}\)) is: 
+</p>
+</li>
+</ul>
+<span class="dmath">\[  \begin{bmatrix}  \frac{7}{12} 
+
+&amp;  \frac{5}{12} 
+
+\end{bmatrix} \begin{bmatrix}  2 
+
+&amp;  -3
+
+\\ -3 
+
+&amp;  4 
+
+\end{bmatrix} \begin{bmatrix}  \frac{7}{12}
+
+\\ \frac{5}{12} 
+
+\end{bmatrix} = -\frac{1}{12}  \]</span>
+<ul class="itemize" id="a0000000327">
+<li id="a0000000328">
+<p>
+Expected outcome for Player 2 (\(\mathbf{C}\)) is: 
+</p>
+</li>
+</ul>
+<span class="dmath">\[  \begin{bmatrix}  \frac{7}{12} 
+
+&amp;  \frac{5}{12} 
+
+\end{bmatrix} \begin{bmatrix}  -2 
+
+&amp;  3
+
+\\ 3 
+
+&amp;  -4 
+
+\end{bmatrix} \begin{bmatrix}  \frac{7}{12}
+
+\\ \frac{5}{12} 
+
+\end{bmatrix} = \frac{1}{12}  \]</span>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="answer_odds_and_ev_4">Answer: Odds and Evens</h2>
+</header>
+<ul class="itemize" id="a0000000329">
+<li id="a0000000330">
+<p>
+This analysis suggests both players should show one finger \(\frac{7}{12}\) of the time and two fingers \(\frac{5}{12}\) of the time. 
+</p>
+</li>
+<li id="a0000000331">
+<p>
+Even though this represents an equilibrium (the best response of each player), the game works in favour of Player 2 on average they take \(\frac{1}{12}\) points from Player 1. 
+</p>
+</li>
+</ul>
+</section>
+</section>
+<footer id="footnotes">
+<h2 id="footnot_1">Footnotes</h2>
+<ol>
+<li id="a0000000012"><a aria-label="Jump to reference" class="footnote-jump" href="#a0000000012-reference">^</a> Or somehow generate 50/50 outcomes, for example put “toss a coin” into a search engine.</li>
+<li id="a0000000114"><a aria-label="Jump to reference" class="footnote-jump" href="#a0000000114-reference">^</a> If you finish: how many of the 16 can you work out?</li>
+</ol>
+</footer>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2025-02-13</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
