@@ -1,0 +1,1823 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2025-02-14" />
+        
+
+        <title>Week 5 - Mathematical myths and storytelling | Maths and Society</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1739523324.853421">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1739523324.853421">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1739523324.853421">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1739523324.853421', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1739523324.853421"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1739523324.853421"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1739523324.853421"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1739523324.853421" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1739523324.853421" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1739523324.853421" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1739523324.853421">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1739523324.853421">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Maths and Society</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">History of Maths</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Week 5 - Mathematical myths and storytelling
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../week_4_history_overv/index.html">Previous: Week 4 - History overview part 3</a>
+            
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="week_5_mathematical_.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#mathematical_myths_4">Mathematical myths and storytelling</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#fermat_s_last_theore">Fermat’s Last Theorem</a>
+        
+    </li>
+
+    <li>
+        <a href="#proof">Proof</a>
+        
+    </li>
+
+    <li>
+        <a href="#four_mathematicians">Four mathematicians</a>
+        
+    </li>
+
+    <li>
+        <a href="#common_myths_and_pit">Common myths and pitfalls</a>
+        
+    </li>
+
+    <li>
+        <a href="#ivory_tower_history">Ivory tower history</a>
+        
+    </li>
+
+    <li>
+        <a href="#ivory_tower_histo_1">Ivory tower history</a>
+        
+    </li>
+
+    <li>
+        <a href="#ivory_tower_histo_2">Ivory tower history</a>
+        
+    </li>
+
+    <li>
+        <a href="#ivory_tower_histo_3">Ivory tower history</a>
+        
+    </li>
+
+    <li>
+        <a href="#stepping_stone_histo">Stepping-stone history</a>
+        
+    </li>
+
+    <li>
+        <a href="#stepping_stone_his_1">Stepping-stone history</a>
+        
+    </li>
+
+    <li>
+        <a href="#stepping_stone_his_2">Stepping-stone history</a>
+        
+    </li>
+
+    <li>
+        <a href="#stepping_stone_his_3">Stepping-stone history</a>
+        
+    </li>
+
+    <li>
+        <a href="#elite_history">Elite history</a>
+        
+    </li>
+
+    <li>
+        <a href="#elite_histo_1">Elite history</a>
+        
+    </li>
+
+    <li>
+        <a href="#elite_histo_2">Elite history</a>
+        
+    </li>
+
+    <li>
+        <a href="#elite_histo_3">Elite history</a>
+        
+    </li>
+
+    <li>
+        <a href="#elite_histo_4">Elite history</a>
+        
+    </li>
+
+    <li>
+        <a href="#some_pitfalls_to_be_">Some pitfalls to be aware of in your research</a>
+        
+    </li>
+
+    <li>
+        <a href="#the_story_of_évarist">The story of Évariste Galois</a>
+        
+    </li>
+
+    <li>
+        <a href="#the_story_of_évari_1">The story of Évariste Galois</a>
+        
+    </li>
+
+    <li>
+        <a href="#évariste_galois">Évariste Galois</a>
+        
+    </li>
+
+    <li>
+        <a href="#évariste_galo_1">Évariste Galois</a>
+        
+    </li>
+
+    <li>
+        <a href="#night_before_the_due">Night before the duel</a>
+        
+    </li>
+
+    <li>
+        <a href="#however_">However…</a>
+        
+    </li>
+
+    <li>
+        <a href="#rothman_on_e_t_bell">Rothman on E.T. Bell</a>
+        
+    </li>
+
+    <li>
+        <a href="#mathematical_myths_a">Mathematical myths and legends</a>
+        
+    </li>
+
+    <li>
+        <a href="#mathematical_myths_1">Mathematical myths and legends</a>
+        
+    </li>
+
+    <li>
+        <a href="#mathematical_myths_2">Mathematical myths and legends</a>
+        
+    </li>
+
+    <li>
+        <a href="#mathematical_myths_3">Mathematical myths and legends</a>
+        
+    </li>
+
+    <li>
+        <a href="#how_does_this_happen">How does this happen?</a>
+        
+    </li>
+
+    <li>
+        <a href="#how_does_this_happ_1">How does this happen?</a>
+        
+    </li>
+
+    <li>
+        <a href="#how_does_this_happ_2">How does this happen?</a>
+        
+    </li>
+
+    <li>
+        <a href="#folklore_archimedes_">Folklore: Archimedes and the bathtub</a>
+        
+    </li>
+
+    <li>
+        <a href="#folklore_archimede_1">Folklore: Archimedes and the bathtub</a>
+        
+    </li>
+
+    <li>
+        <a href="#is_this_a_problem_">Is this a problem?</a>
+        
+    </li>
+
+    <li>
+        <a href="#reproducing_inaccura">Reproducing inaccuracies</a>
+        
+    </li>
+
+    <li>
+        <a href="#types_of_source">Types of source</a>
+        
+    </li>
+
+    <li>
+        <a href="#types_of_sour_1">Types of source</a>
+        
+    </li>
+
+    <li>
+        <a href="#types_of_sour_2">Types of source</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_george_green">Example – George Green</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_george_gre_1">Example – George Green</a>
+        
+    </li>
+
+    <li>
+        <a href="#wikipedia_original_r">Wikipedia &amp; original research</a>
+        
+    </li>
+
+    <li>
+        <a href="#wikipedia_golden_rul">Wikipedia Golden Rule</a>
+        
+    </li>
+
+    <li>
+        <a href="#references">References</a>
+        
+    </li>
+
+    <li>
+        <a href="#footnot_1">Footnotes</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <section class="beamer-frame">
+<section class="beamer-titlepage">
+<h1 id="mathematical_myths_4">Mathematical myths and storytelling</h1>
+<p class="beamer-authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</section>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="fermat_s_last_theore">Fermat’s Last Theorem</h2>
+</header>
+<ul class="itemize" id="a0000000002">
+<li id="a0000000003">
+<p>
+Stedall (2012) tells the story of <b class="bfseries">Fermat</b>’s Last Theorem and its solution. 
+</p>
+</li>
+<li id="a0000000004">
+<p>
+Starting with <b class="bfseries">Pythagoras</b>’ Theorem, \(a^2+b^2=c^2\), she says “suppose that, as mathematicians like to do, we tweak the conditions a bit and see what happens” by trying a larger exponent than \(2\). 
+</p>
+</li>
+<li id="a0000000005">
+<p>
+Fermat said there were no values of \(n{\gt}2\) for which there exist integers \(a\), \(b\) and \(c\) such that \(a^n+b^n=c^n\). 
+</p>
+</li>
+<li id="a0000000006">
+<p>
+He wrote this in a margin in a translation of <i class="itshape">Aritmetica</i> by <b class="bfseries">Diophantus</b>, who was writing about Pythagorean triples, sets of three integers that satisfy Pythagoras’ theorem. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="proof">Proof</h2>
+</header>
+<ul class="itemize" id="a0000000007">
+<li id="a0000000008">
+<p>
+<b class="bfseries">Andrew Wiles</b> announced a proof in a lecture in Cambridge in 1993. 
+</p>
+</li>
+<li id="a0000000009">
+<p>
+For seven years before this, Wiles had “worked in near isolation, devoting himself single-mindedly to the deep and complicated mathematics underlying the theorem”. 
+</p>
+</li>
+<li id="a0000000010">
+<p>
+Stedall calls this “a story to which those brought up in the mythologies of western culture were already well attuned: the lonely hero struggling against the odds to attain an elusive goal”. 
+</p>
+</li>
+<li id="a0000000011">
+<p>
+This 200-page proof contained an error, fixed by 1995. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="four_mathematicians">Four mathematicians</h2>
+</header>
+<ul class="itemize" id="a0000000012">
+<li id="a0000000013">
+<p>
+The lives of Pythagoras, Diphantus, Fermat and Wiles, span more than 2,000 years of mathematical history. 
+</p>
+</li>
+<li id="a0000000014">
+<p>
+Stedall asks “have we then ‘done’ the history of Fermat’s Last Theorem from start to finish? The answer is ‘no’”. 
+</p>
+</li>
+<li id="a0000000015">
+<p>
+“One task of the historian is to disentangle fiction from fact, and myth from history”. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="common_myths_and_pit">Common myths and pitfalls</h2>
+</header>
+<ul class="itemize" id="a0000000016">
+<li id="a0000000017">
+<p>
+Stedall identifies three “common myths and pitfalls”: 
+</p>
+<ul class="itemize" id="a0000000018">
+<li id="a0000000019">
+<p>
+ivory tower history; 
+</p>
+</li>
+<li id="a0000000020">
+<p>
+stepping-stone history; 
+</p>
+</li>
+<li id="a0000000021">
+<p>
+elite history. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000022">
+<p>
+These are forms of viewing and communicating history that should be avoided (but often are not). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="ivory_tower_history">Ivory tower history</h2>
+</header>
+<ul class="itemize" id="a0000000023">
+<li id="a0000000024">
+<p>
+Wiles apparently shut himself away for seven years. Fermat lived in the south of France, far from those who might have been able to understand and appreciate his work. 
+</p>
+</li>
+<li id="a0000000025">
+<p>
+The Ivory Tower version of history isolates mathematicians from others. 
+</p>
+</li>
+<li id="a0000000026">
+<p>
+Were these four men all lonely geniuses forging new paths alone? Is this how mathematics is done properly, or done best? 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="ivory_tower_histo_1">Ivory tower history</h2>
+</header>
+<ul class="itemize" id="a0000000027">
+<li id="a0000000028">
+<p>
+Pythagoras (if he existed) apparently had a religious community of followers. 
+</p>
+</li>
+<li id="a0000000029">
+<p>
+Diophantus lived in Alexandria, a great hub of learning, with access to books from around the Mediterranean world. 
+</p>
+</li>
+<li id="a0000000030">
+<p>
+Fermat, though confined to Toulouse and with a full-time job in politics, was influenced by and corresponded with other great mathematicians of his day. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="ivory_tower_histo_2">Ivory tower history</h2>
+</header>
+<ul class="itemize" id="a0000000031">
+<li id="a0000000032">
+<p>
+Wiles was educated at Oxford and Cambridge, worked at Harvard, Bonn, Princeton and Paris, all of which had mathematical communities. 
+</p>
+</li>
+<li id="a0000000033">
+<p>
+He attended conferences, worked with colleagues to check or develop parts of the proof. 
+</p>
+</li>
+<li id="a0000000034">
+<p>
+The proof was checked by six mathematicians prior to publication. 
+</p>
+</li>
+<li id="a0000000035">
+<p>
+During his years working on the proof, he never stopped teaching students or attending departmental seminars. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="ivory_tower_histo_3">Ivory tower history</h2>
+</header>
+<ul class="itemize" id="a0000000036">
+<li id="a0000000037">
+<p>
+Mathematics is fundamentally and necessarily a social activity at every level. 
+</p>
+</li>
+<li id="a0000000038">
+<p>
+Look at Norfolk 6 — you have lots of space to collaborate. 
+</p>
+</li>
+<li id="a0000000039">
+<p>
+And you learn maths from people through lectures and tutorials. 
+</p>
+</li>
+<li id="a0000000040">
+<p>
+You are encouraged to work together in tutorials and outside classes. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="stepping_stone_histo">Stepping-stone history</h2>
+</header>
+<ul class="itemize" id="a0000000041">
+<li id="a0000000042">
+<p>
+Pythagoras, Diophantus, Fermat and Wiles appear isolated in time, like stepping stones in an otherwise featureless river. 
+</p>
+</li>
+<li id="a0000000043">
+<p>
+This ignores the gaps between them — sometimes huge periods of history. 
+</p>
+</li>
+<li id="a0000000044">
+<p>
+“Since the past is supposed to be the subject of history, it seems strange to ignore huge chunks of it…but a surprising number of general histories of mathematics are presented in stepping stone style.” 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="stepping_stone_his_1">Stepping-stone history</h2>
+</header>
+<ul class="itemize" id="a0000000045">
+<li id="a0000000046">
+<p>
+Diophantus probably knew of Pythagoras’ theorem from Euclid’s <i class="itshape">Elements</i>. 
+</p>
+</li>
+<li id="a0000000047">
+<p>
+Six volumes of Diophantus’ <i class="itshape">Arithmetica</i> (of 13) were preserved at Byzantium, and copies brought to western Europe, where they were studied by, e.g., Regiomontanus, Bombelli and Holzman. A new Latin translation was produced in 1621 and this was the version Fermat owned and annotated. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="stepping_stone_his_2">Stepping-stone history</h2>
+</header>
+<ul class="itemize" id="a0000000048">
+<li id="a0000000049">
+<p>
+Between Fermat and Wiles are numerous failed attempts to solve the theorem which made other advances in mathematics, including by Euler and by Sophie Germain (inspired by a prize offered by the Paris Academy of Sciences). Wiles built his proof on the Taniyama-Shimura conjecture and the Kolyvagin-Flach method (four more mathematicians). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="stepping_stone_his_3">Stepping-stone history</h2>
+</header>
+<ul class="itemize" id="a0000000050">
+<li id="a0000000051">
+<p>
+“Generally speaking, the further back one goes, the more difficult it is to trace the ground between the stepping stones, not least because much of the evidence has long since been washed away. But without the attempt, there is no history, only the series of anecdotes on which much of the popular history of mathematics is still too often based.” 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="elite_history">Elite history</h2>
+</header>
+<ul class="itemize" id="a0000000052">
+<li id="a0000000053">
+<p>
+Diophantus and Euclid were 
+</p>
+<ul class="itemize" id="a0000000054">
+<li id="a0000000055">
+<p>
+well-educated; 
+</p>
+</li>
+<li id="a0000000056">
+<p>
+could write fluently in Greek, the intellectual language of the eastern Mediterranean; 
+</p>
+</li>
+<li id="a0000000057">
+<p>
+had access to earlier writings on mathematics; 
+</p>
+</li>
+<li id="a0000000058">
+<p>
+were able to understand, order and extend some of the cutting-edge mathematics of his day; 
+</p>
+</li>
+<li id="a0000000059">
+<p>
+wrote mathematics that had no practical value as a purely intellectual pursuit. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000060">
+<p>
+The number of men engaged in such mathematics can never have been great, even in a city like Alexandria. 
+</p>
+</li>
+<li id="a0000000061">
+<p>
+i.e. both were part of a mathematical elite. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="elite_histo_1">Elite history</h2>
+</header>
+<ul class="itemize" id="a0000000062">
+<li id="a0000000063">
+<p>
+There must have been much more mathematics happening than what they wrote about. 
+</p>
+</li>
+<li id="a0000000064">
+<p>
+Greek society, like every other, had shopkeepers, housekeepers, farmers, builders, and many others who measured and calculated. 
+</p>
+</li>
+<li id="a0000000065">
+<p>
+We know almost nothing about their methods, which would have been taught by example and word of mouth and left few artefacts that were preserved. 
+</p>
+</li>
+<li id="a0000000066">
+<p>
+These activities were carried out by people of relatively low social status, and were of little or no interest to the intellectuals of the academies. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="elite_histo_2">Elite history</h2>
+</header>
+<ul class="itemize" id="a0000000067">
+<li id="a0000000068">
+<p>
+“Whenever mathematics is practiced, we are likely to find a few advanced and highly respected practitioners but many more whose names will never enter any history book.” 
+</p>
+</li>
+<li id="a0000000069">
+<p>
+In Fermat’s day, Stedall estimates there were “as many as three or four Parisians who could have kept up with Fermat. At a generous estimate, there were perhaps as many again in the Netherlands and Italy together, and even one or two in England, but no more than that. 
+</p>
+</li>
+<li id="a0000000070">
+<p>
+“Yet mathematical activity lower down the social scale was more widespread than one might expect”. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="elite_histo_3">Elite history</h2>
+</header>
+<ul class="itemize" id="a0000000071">
+<li id="a0000000072">
+<p>
+Stedall says that perhaps as many as one quarter of the books published in England in the 16th and 17th centuries mentioned mathematics in one way or another, if only in passing, and there was a steady increase in books aimed at tradesmen or craftsmen who wanted to acquire basic mathematical skills. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="elite_histo_4">Elite history</h2>
+</header>
+<ul class="itemize" id="a0000000073">
+<li id="a0000000074">
+<p>
+She talks of “my mother Irene, who at the age of 89 trusted neither banks nor computers, but tallied every penny of her household expenses in carefully ruled books; or of my friend Tatjana, who repeatedly tells me she was no good at mathematics at school but who creates intricately designed quilts” (demonstrating geometry and tessellation patterns). 
+</p>
+</li>
+<li id="a0000000075">
+<p>
+“Elite history does not have any space for Irene or Tatjana: women, in particular, have to rise at least to the level of Sophie Germain before they are taken seriously. Yet without people who do and teach mathematics at every level, the elite could not flourish.” 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="some_pitfalls_to_be_">Some pitfalls to be aware of in your research</h2>
+</header>
+<p>
+ When reading history of mathematics, it is impossible to avoid these, but at least be aware of: 
+</p>
+<ul class="itemize" id="a0000000076">
+<li id="a0000000077">
+<p>
+Ivory tower history: practiced by the lone genius, isolated in the ivory tower. 
+</p>
+</li>
+<li id="a0000000078">
+<p>
+Stepping stone history: ignoring the history between the key advances. 
+</p>
+</li>
+<li id="a0000000079">
+<p>
+Elite history: focused on the elite and ignoring the bulk of mathematical activity. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-section" id="a0000000080">
+<h2 aria-hidden="true" class="beamer-section-heading" id="the_story_of_évarist">The story of Évariste Galois</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="the_story_of_évari_1">The story of Évariste Galois</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="évariste_galois">Évariste Galois</h2>
+</header>
+<div class="beamer-columns">
+<div class="beamer-column">
+<ul class="itemize" id="a0000000081">
+<li id="a0000000082">
+<p>
+Born 25th October 1811 not far from Paris. 
+</p>
+</li>
+<li id="a0000000083">
+<p>
+Died in a duel for unknown reason, 31st May 1832 (aged 20). 
+</p>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<span class="vspace" style="height: -34.14330708661417pt"></span> <div class="centered"><img alt="Galois" src="images/img-0001.jpg" style="width:469.755pt"/></div> <small class="tiny"><b class="bfseries">Image</b>: Évariste Galois. Public domain on Wikimedia Commons.<br/></small>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="évariste_galo_1">Évariste Galois</h2>
+</header>
+<p>
+<span class="vspace" style="height: -5.690551181102363pt"></span>
+</p>
+<ul class="itemize" id="a0000000084">
+<li id="a0000000085">
+<p>
+Goodman (2002) gives a standard summary of the Galois story in an introduction to Galois Theory: 
+</p>
+<ul class="itemize" id="a0000000086">
+<li id="a0000000087">
+<p>
+“He had a very dramatic and difficult life, failing to get much of his work recognised due to his great difficulty in expressing himself clearly.” 
+</p>
+</li>
+<li id="a0000000088">
+<p>
+“He wasn’t admitted to the leading university in Paris, the Ecole Polytechnique, and had to make do with the Ecole Normale.” 
+</p>
+</li>
+<li id="a0000000089">
+<p>
+“He also met with difficulty because of his political sympathies, he was a republican.” 
+</p>
+</li>
+<li id="a0000000090">
+<p>
+“He joined a republican branch of the militia and was later imprisoned (twice) because of his membership.” 
+</p>
+</li>
+<li id="a0000000091">
+<p>
+“The second time whilst in prison he fell in love with the daughter of the prison physician, Stephanie-Felice du Motel and after being released died in a duel with Perscheux d’Herbinville.” 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="night_before_the_due">Night before the duel</h2>
+</header>
+<ul class="itemize" id="a0000000092">
+<li id="a0000000093">
+<p>
+E.T. Bell’s <i class="itshape">Men of Mathematics</i> <small class="footnotesize">(Bell, 1937; p. 413)</small> describes the night before the duel: 
+</p>
+</li>
+</ul>
+<p>
+<span class="vspace" style="height: -5.690551181102363pt"></span>
+</p>
+<blockquote class="quotation">he had spent the fleeting hours feverishly dashing off his scientific last will and testament, writing against time to glean a few of the great things in his teeming mind before the death which he foresaw could overtake him. Time after time he broke off to scribble in the margin ‘I have not time; I have not time,’ and passed on to the next frantically scrawled outline. What he wrote in those desperate last hours before the dawn will keep generations of mathematicians busy for hundreds of years. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="however_">However…</h2>
+</header>
+<ul class="itemize" id="a0000000094">
+<li id="a0000000095">
+<p>
+Stories of Galois’ life are generally exaggerated. 
+</p>
+</li>
+<li id="a0000000096">
+<p>
+Bell in particular has a reputation for doing this in biographies of several mathematicians. 
+</p>
+</li>
+<li id="a0000000097">
+<p>
+A detailed account of the accuracies of myths around Galois’ life is given by Rothman <small class="footnotesize">(1982)</small>. 
+</p>
+<ul class="itemize" id="a0000000098">
+<li id="a0000000099">
+<p>
+“the vision of the doomed boy, sitting by candlelight, feverishly bringing group theory into the world seems to be the major myth which most scientists harbor concerning Galois.” 
+</p>
+</li>
+<li id="a0000000100">
+<p>
+But “Galois had been submitting papers on the subject since the age of 17 …Galois had indeed created a field which would keep mathematicians busy for hundreds of years, but not ‘in those last desperate hours before the dawn’.” 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="rothman_on_e_t_bell">Rothman on E.T. Bell</h2>
+</header>
+<ul class="itemize" id="a0000000101">
+<li id="a0000000102">
+<p>
+Rothman says Bell’s account of Galois’ life is 
+</p>
+</li>
+</ul>
+<blockquote class="quotation">by far the most famous …also the most fictitious. It is a myth devoid of such complications as a protagonist who is faulted as well as gifted. It is myth based on the stereotype of the misunderstood genius whom the conservative hierarchy is out to conquer. …It is a myth based on a misunderstanding of the method by which a scientist works: as if a great theory could be written down coherently in a single night. </blockquote>
+</section>
+</section><section class="beamer-section" id="a0000000103">
+<h2 aria-hidden="true" class="beamer-section-heading" id="mathematical_myths_a">Mathematical myths and legends</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="mathematical_myths_1">Mathematical myths and legends</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="mathematical_myths_2">Mathematical myths and legends</h2>
+</header>
+<ul class="itemize" id="a0000000104">
+<li id="a0000000105">
+<p>
+Miller <small class="footnotesize">(1938)</small> says some readers of Bell will think that errors of detail are unimportant, but that <small class="footnotesize">(p. 388)</small>
+</p>
+</li>
+</ul>
+<blockquote class="quotation">there are others who will be very much annoyed by errors of detail, and whose interest in the book will be greatly diminished when they become convinced that they cannot assume that the author took a reasonable amount of care to avoid misleading remarks even when they are striking. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="mathematical_myths_3">Mathematical myths and legends</h2>
+</header>
+<ul class="itemize" id="a0000000106">
+<li id="a0000000107">
+<p>
+Cooke <small class="footnotesize">(2010)</small> says “a legend is characterized by two properties: 
+</p>
+<ol class="enumerate" id="a0000000108">
+<li id="a0000000109" value="1">
+<p>
+it is not attested by any primary documents or anyone claiming to have been an eyewitness; 
+</p>
+</li>
+<li id="a0000000110" value="2">
+<p>
+it becomes widely known and cited.” 
+</p>
+</li>
+</ol>
+</li>
+<li id="a0000000111">
+<p>
+Cooke suggests a mathematical legend may be cited “to add color to a mathematical achievement” <small class="footnotesize">(p. 464)</small>. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="how_does_this_happen">How does this happen?</h2>
+</header>
+<ul class="itemize" id="a0000000112">
+<li id="a0000000113">
+<p>
+Miller recounts this story <small class="footnotesize">(p. 390)</small>
+</p>
+<ul class="itemize" id="a0000000114">
+<li id="a0000000115">
+<p>
+In 1930 W.W. Struve published a translation of the Moscow Papyrus in which he claimed that they knew a theorem otherwise regarded as one of Archimedes’ (who came later) “most conspicuous mathematical contributions”. 
+</p>
+</li>
+<li id="a0000000116">
+<p>
+This claim was repeated by many other writers. 
+</p>
+</li>
+<li id="a0000000117">
+<p>
+Later, the claim was found to be due to a mistranslation by Struve. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000118">
+<p>
+Miller says “it is difficult to prevent the spreading of erroneous mathematical views when they have been started by men [sic] who command respect”. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="how_does_this_happ_1">How does this happen?</h2>
+</header>
+<ul class="itemize" id="a0000000119">
+<li id="a0000000120">
+<p>
+Rothman says of E.T. Bell: 
+</p>
+</li>
+</ul>
+<blockquote class="quotation">It is unclear how far one can go in forgiving Bell. …I believe consciously or unconsciously Bell saw his opportunity to create a legend. The details which are absent in his account …are those details which lend a concreteness and a humanness to Galois’s life which a legend must not have. Unfortunately, if this was Bell’s intent, he succeeded. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="how_does_this_happ_2">How does this happen?</h2>
+</header>
+<ul class="itemize" id="a0000000121">
+<li id="a0000000122">
+<p>
+Miller suggests that mathematical myths are “numerous in our literature” and <small class="footnotesize">(p.391)</small>
+</p>
+</li>
+</ul>
+<blockquote class="quotation">this is especially true as regards historical statements since progress in the history of mathematics has fortunately been very rapid during recent years<a class="footnote" href="#a0000000123" id="a0000000123-reference">
+<sup class="footnotemark">1</sup>
+</a> and hence many of the older works of reference have become unreliable. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="folklore_archimedes_">Folklore: Archimedes and the bathtub</h2>
+</header>
+<ul class="itemize" id="a0000000124">
+<li id="a0000000125">
+<p>
+Cooke discusses the story of Archimedes (c.287BC–c.212BC), who had been ordered by the King to investigate whether some gold in a crown had been replaced by cheaper metal — without damaging the crown. 
+</p>
+</li>
+<li id="a0000000126">
+<p>
+Archimedes apparently noticed that when he took a bath, the water level rose as he got in, and realised he could determine the volume of the crown, and so its density, using the displacement of water. 
+</p>
+</li>
+<li id="a0000000127">
+<p>
+The story has it that Archimedes leapt from his bath and ran around the streets naked, having in his excitement forgetting to dress, shouting ‘Eureka!’ (meaning ‘I have found it!’). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="folklore_archimede_1">Folklore: Archimedes and the bathtub</h2>
+</header>
+<ul class="itemize" id="a0000000128">
+<li id="a0000000129">
+<p>
+Cooke points out that there is no eyewitness testimony, that the first account we have comes two centuries after Archimedes and that while the method is in theory correct, the practical application of it would present difficulties. 
+</p>
+</li>
+<li id="a0000000130">
+<p>
+He says: <small class="footnotesize">(pp. 464–465)</small>
+</p>
+</li>
+</ul>
+<blockquote class="quotation">What is valuable in the story is the picture of the sudden flash of inspiration that mathematicians sometimes experience. Whether true or not, this story will continue to be told because it amuses people and because it expresses some folklore concerning a legendary figure. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="is_this_a_problem_">Is this a problem?</h2>
+</header>
+<ul class="itemize" id="a0000000131">
+<li id="a0000000132">
+<p>
+Cooke says <small class="footnotesize">(p. 468)</small>
+</p>
+</li>
+</ul>
+<blockquote class="quotation">For mathematicians who are not seriously interested in history, there is no need to address the problem that legends pose for the historian, which is to reconstruct what most likely happened in the past based on what is told in the surviving documents. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="reproducing_inaccura">Reproducing inaccuracies</h2>
+</header>
+<ul class="itemize" id="a0000000133">
+<li id="a0000000134">
+<p>
+Miller warns <small class="footnotesize">(p. 391)</small>: 
+</p>
+</li>
+</ul>
+<blockquote class="quotation">a writer on the history of mathematics may find it difficult to decide whether he should confine himself to well established facts or to include also legends of long standing. </blockquote>
+<ul class="itemize" id="a0000000135">
+<li id="a0000000136">
+<p>
+But that <small class="footnotesize">(p. 389)</small>: 
+</p>
+</li>
+</ul>
+<blockquote class="quotation">the reader should realize that he is in danger of contributing toward the spreading of mathematical myths when he quotes from these writings without verifying the accuracy of statements contained therein. </blockquote>
+</section>
+</section><section class="beamer-section" id="a0000000137">
+<h2 aria-hidden="true" class="beamer-section-heading" id="types_of_source">Types of source</h2>
+<section class="beamer-frame">
+<div class="centered"><p>
+[sep=8pt,center,shadow=true,rounded=true]title 
+</p>
+<h2 class="beamer-section-title" id="types_of_sour_1">Types of source</h2>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="types_of_sour_2">Types of source</h2>
+</header>
+<ol class="enumerate" id="a0000000138">
+<li id="a0000000139" value="1">
+<p>
+Primary sources are original material, from the period being studied. They might be difficult to read and interpret without the help of secondary sources. 
+</p>
+<ul class="itemize" id="a0000000140">
+<li id="a0000000141">
+<p>
+Translations of primary sources are usually considered primary sources, even though different translators might make different choices when translating. 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000142" value="2">
+<p>
+Secondary sources are generally written later with the benefit of hindsight, offering interpretation and evaluation of primary sources and/or other secondary sources. 
+</p>
+</li>
+<li id="a0000000143" value="3">
+<p>
+Tertiary sources are documents which summarise or collect information from primary and secondary sources, for example an encyclopedia would generally fall into this category. 
+</p>
+</li>
+</ol>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_george_green">Example – George Green</h2>
+</header>
+<ul class="itemize" id="a0000000144">
+<li id="a0000000145">
+<p>
+Primary: George Green wrote, in <i class="itshape">An Essay on the Application of Mathematical Analysis to the Theories of Electricity and Magnetism</i> <small class="footnotesize">(Green, 1828; p. viii)</small>: 
+</p>
+</li>
+</ul>
+<blockquote class="quotation">It is hoped the difficulty of the subject will incline mathematicians to read this work with indulgence, more particularly when they are informed that it was written by a young man, who has been obliged to obtain the little knowledge he possesses, at such intervals and by such means, as other indispensable avocations which offer but few opportunities of mental improvement, afforded. </blockquote>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_george_gre_1">Example – George Green</h2>
+</header>
+<ul class="itemize" id="a0000000146">
+<li id="a0000000147">
+<p>
+Secondary: Ferrers <small class="footnotesize">(1871)</small> refers to Green as “an almost entirely self-taught mathematical genius” <small class="footnotesize">(p. v)</small> when printing a collection of Green’s papers. 
+</p>
+</li>
+<li id="a0000000148">
+<p>
+Tertiary: Wikipedia <small class="footnotesize">(2015a)</small> says “Green’s life story is remarkable in that he was almost entirely self-taught”. 
+</p>
+</li>
+<li id="a0000000149">
+<p>
+Although these appear similar, the nature of the sources means that Ferrers is offering comment as a secondary source, but Wikipedia is drawing on sources such as Ferrers as a tertiary source. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="wikipedia_original_r">Wikipedia &amp; original research</h2>
+</header>
+<ul class="itemize" id="a0000000150">
+<li id="a0000000151">
+<p>
+Wikipedia has a “no original research” rule <small class="footnotesize">(Wikipedia, 2015b)</small>: 
+</p>
+</li>
+</ul>
+<blockquote class="quotation">Wikipedia does not publish original thought: all material in Wikipedia must be attributable to a reliable, published source. Articles may not contain any new analysis or synthesis of published material that serves to reach or imply a conclusion not clearly stated by the sources themselves. </blockquote>
+<ul class="itemize" id="a0000000152">
+<li id="a0000000153">
+<p>
+This means Wikipedia cannot be a secondary source. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="wikipedia_golden_rul">Wikipedia Golden Rule</h2>
+</header>
+<ul class="itemize" id="a0000000154">
+<li id="a0000000155">
+<p>
+Wikipedia can be useful to get an overview of a topic. 
+</p>
+</li>
+<li id="a0000000156">
+<p>
+However, for information found there my rule is: 
+</p>
+</li>
+</ul>
+<div class="centered"> if it’s true, there will be a reference, <br/>and you should read and cite that.<br/>If there’s no reference <br/>and you can’t find the information <br/>in a primary or secondary source, <br/>assume it isn’t true. </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="references">References</h2>
+</header>
+<p>
+<small class="footnotesize"><span class="vspace" style="height: -5.690551181102363pt"></span> <ul class="itemize" id="a0000000157">
+<li id="a0000000158">
+</li>
+<li id="">
+</li>
+<li id="a0000000159">
+</li>
+<li id="">
+</li>
+<li id="a0000000160">
+</li>
+<li id="">
+</li>
+<li id="a0000000161">
+<p>
+Bell, E.T. (1937). <i class="itshape">Men of Mathematics</i>, vol. 2. Reprint London, Penguin, 1965. 
+</p>
+</li>
+<li id="a0000000162">
+<p>
+Cooke, R. (2010). Life on the Mathematical Frontier: Legendary Figures and Their Adventures. <i class="itshape">Notices of the AMS</i>, 57(4), 464–475. 
+</p>
+</li>
+<li id="a0000000163">
+<p>
+Ferrers, N.M. (ed.) (1871). <i class="itshape">Mathematical Papers of the Late George Green Fellow of Gonville and Caius College, Cambridge</i>. Cambridge: Gonville and Caius College. 
+</p>
+</li>
+<li id="a0000000164">
+<p>
+Goodman, D. (2011). <i class="itshape">An Introduction to Galois Theory</i>. Retrieved from <a href="https://nrich.maths.org/1422">https://nrich.maths.org/1422</a>
+</p>
+</li>
+<li id="a0000000165">
+<p>
+Green, G. (1828). <i class="itshape">An Essay on the Application of Mathematical Analysis to the Theories of Electricity and Magnetism</i>. Nottingham. 
+</p>
+</li>
+<li id="a0000000166">
+<p>
+Miller, G.A. (1938). Mathematical Myths. <i class="itshape">National Mathematics Magazine</i>, 12(8), 388–392. 
+</p>
+</li>
+<li id="a0000000167">
+<p>
+Rothman, T. (1982). Genius and Biographers: The Fictionalization of Evariste Galois. <i class="itshape">The American Mathematical Monthly</i>, 89(2), 84–106. 
+</p>
+</li>
+<li id="a0000000168">
+<p>
+Stedall (2012). <i class="itshape">The History of Mathematics: A Very Short Introduction</i>. Oxford: OUP. 
+</p>
+</li>
+<li id="a0000000169">
+<p>
+Wikipedia (2015a). <i class="itshape">George Green (mathematician)</i>. Retrieved from <a href="https://en.wikipedia.org/wiki/George_Green_%28mathematician%29">https://en.wikipedia.org/wiki/George_Green_%28mathematician%29</a>
+</p>
+</li>
+<li id="a0000000170">
+<p>
+Wikipedia (2015b). <i class="itshape">Wikipedia:No original research</i>. Retrieved from <a href="https://en.wikipedia.org/wiki/Wikipedia:No_original_research">https://en.wikipedia.org/wiki/Wikipedia:No_original_research</a>
+</p>
+</li>
+</ul>
+</small>
+</p>
+</section>
+</section>
+<footer id="footnotes">
+<h2 id="footnot_1">Footnotes</h2>
+<ol>
+<li id="a0000000123"><a aria-label="Jump to reference" class="footnote-jump" href="#a0000000123-reference">^</a> Miller was writing in 1938!</li>
+</ol>
+</footer>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2025-02-14</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
