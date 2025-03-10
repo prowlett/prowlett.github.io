@@ -1,0 +1,2131 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2025-03-10" />
+        
+
+        <title>Inclusion-exclusion and generators and enumerators | Game Theory and Recreational Mathematics</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../../static/styles.css?build_time=1741623008.636069">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../../static/pygmentize.css?build_time=1741623008.636069">
+
+    <link rel="stylesheet" href="../../../static/print.css?build_time=1741623008.636069">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../../static?build_time=1741623008.636069', location.href);
+			</script>
+
+            
+                <script defer src="../../../static/mathjax_config.js?build_time=1741623008.636069"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../../static/localisation.js?build_time=1741623008.636069"></script>
+
+            <script defer src="../../../static/customisation.js?build_time=1741623008.636069"></script>
+
+            
+
+            
+        
+    <script defer src="../../../static/code.js?build_time=1741623008.636069" type="module"></script>
+    <script defer src="../../../static/embed_numbas.js?build_time=1741623008.636069" type="module"></script>
+    <script defer src="../../../static/embed_qrcode.js?build_time=1741623008.636069" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../../static/code.css?build_time=1741623008.636069">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../../static/embed_numbas.css?build_time=1741623008.636069">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../../index.html">Game Theory and Recreational Mathematics</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Week 8: Inclusion-exclusion and generators and enumerators</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Inclusion-exclusion and generators and enumerators
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../index.html">Previous: Week 8: Inclusion-exclusion and generators and enumerators</a>
+            
+            
+            <a rel="next" href="../caterpillar_table/index.html">Next: Caterpillar table</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="inclusion_exclusion_.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#inclusion_exclusion_">Inclusion-exclusion and generators and enumerators</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#exercise">Exercise</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercise_answer_1">Exercise – answer 1</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercise_answer_2">Exercise – answer 2</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercise_answer_3">Exercise – answer 3</a>
+        
+    </li>
+
+    <li>
+        <a href="#derangements">Derangements</a>
+        
+    </li>
+
+    <li>
+        <a href="#inclusion_exclusion">Inclusion-exclusion</a>
+        
+    </li>
+
+    <li>
+        <a href="#derangemen_1">Derangements</a>
+        
+    </li>
+
+    <li>
+        <a href="#derangemen_2">Derangements</a>
+        
+    </li>
+
+    <li>
+        <a href="#derangemen_3">Derangements</a>
+        
+    </li>
+
+    <li>
+        <a href="#derangemen_4">Derangements</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercise_answer_4">Exercise – answer 4</a>
+        
+    </li>
+
+    <li>
+        <a href="#exercises">Exercises</a>
+        
+    </li>
+
+    <li>
+        <a href="#enumeration">Enumeration</a>
+        
+    </li>
+
+    <li>
+        <a href="#enumerati_1">Enumeration</a>
+        
+    </li>
+
+    <li>
+        <a href="#enumerati_2">Enumeration</a>
+        
+    </li>
+
+    <li>
+        <a href="#arranging_cards">Arranging cards</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functions">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_1">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_2">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_3">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_4">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_5">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#robot_caterpillar">Robot caterpillar</a>
+        
+    </li>
+
+    <li>
+        <a href="#robot_caterpill_1">Robot caterpillar</a>
+        
+    </li>
+
+    <li>
+        <a href="#robot_caterpill_2">Robot caterpillar</a>
+        
+    </li>
+
+    <li>
+        <a href="#an_unbelievable_clai">An unbelievable claim</a>
+        
+    </li>
+
+    <li>
+        <a href="#enter_combinatorics">Enter combinatorics</a>
+        
+    </li>
+
+    <li>
+        <a href="#including_shorter_ca">Including shorter caterpillars</a>
+        
+    </li>
+
+    <li>
+        <a href="#including_shorter_1">Including shorter caterpillars</a>
+        
+    </li>
+
+    <li>
+        <a href="#putting_it_together">Putting it together</a>
+        
+    </li>
+
+    <li>
+        <a href="#complicating_factors">Complicating factors</a>
+        
+    </li>
+
+    <li>
+        <a href="#notation">Notation</a>
+        
+    </li>
+
+    <li>
+        <a href="#over_counting">Over-counting</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_6">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#generating_functio_7">Generating functions</a>
+        
+    </li>
+
+    <li>
+        <a href="#example_caterpillar_">Example caterpillar combination</a>
+        
+    </li>
+
+    <li>
+        <a href="#have_a_go">Have a go</a>
+        
+    </li>
+
+    <li>
+        <a href="#have_a_go_answers">Have a go – answers</a>
+        
+    </li>
+
+    <li>
+        <a href="#all_71_combinations">All \(71\) combinations</a>
+        
+    </li>
+
+    <li>
+        <a href="#footnot_1">Footnotes</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        
+<section class="beamer-frame">
+<section class="beamer-titlepage">
+<h1 id="inclusion_exclusion_">Inclusion-exclusion and generators and enumerators</h1>
+<p class="beamer-authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</section>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise">Exercise</h2>
+</header>
+<ol class="enumerate" id="a0000000002">
+<li id="a0000000003" value="1">
+<p>
+You have three cards labelled <b class="bfseries">A</b>, <b class="bfseries">B</b> and <b class="bfseries">C</b>. How many ways are there of rearranging these three cards into different orders? 
+</p>
+</li>
+<li id="a0000000004" value="2">
+<p>
+You have a bag of three balls labelled with letters <b class="bfseries">A</b>, <b class="bfseries">B</b> and <b class="bfseries">C</b>. How many different ways there are of pulling two balls out of the bag, not worrying about the order? 
+</p>
+</li>
+<li id="a0000000005" value="3">
+<p>
+You have three cards labelled <b class="bfseries">A</b>, <b class="bfseries">B</b> and <b class="bfseries">C</b>. You shuffle them and deal them face up onto a table, saying "A, B, C" as you place each card. What is the probability that you say the name of at least one card as you deal it? 
+</p>
+</li>
+<li id="a0000000006" value="4">
+<p>
+You have three cards, two blue and one green. How many ways can you arrange them into sequences of length 1–3? 
+</p>
+</li>
+</ol>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise_answer_1">Exercise – answer 1</h2>
+</header>
+<div class="beamer-columns">
+<div class="beamer-column">
+<ul class="itemize" id="a0000000007">
+<li id="a0000000008">
+<p>
+There are \(3!=6\) arrangements of three cards. 
+</p>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<div class="centered"><span class="vspace" style="height: -25.0pt"></span> <div class="tikzcd" id="a0000000009">
+<img alt="\begin{tikzpicture} 
+                \node at (0.5,0.5) {1.};
+                \drawcard{1}{A}
+                \drawcard{2}{B}
+                \drawcard{3}{C}
+                
+                \begin{scope}[shift={(0,-1.25)}]
+                    \node at (0.5,0.5) {2.};
+                    \drawcard{1}{A}
+                    \drawcard{2}{C}
+                    \drawcard{3}{B}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-2.5)}]
+                    \node at (0.5,0.5) {3.};
+                    \drawcard{1}{B}
+                    \drawcard{2}{A}
+                    \drawcard{3}{C}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-3.75)}]
+                    \node at (0.5,0.5) {4.};
+                    \drawcard{1}{B}
+                    \drawcard{2}{C}
+                    \drawcard{3}{A}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-5)}]
+                    \node at (0.5,0.5) {5.};
+                    \drawcard{1}{C}
+                    \drawcard{2}{A}
+                    \drawcard{3}{B}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-6.25)}]
+                    \node at (0.5,0.5) {6.};
+                    \drawcard{1}{C}
+                    \drawcard{2}{B}
+                    \drawcard{3}{A}
+                \end{scope}
+            \end{tikzpicture}" src="images/img-0001.svg"/>
+</div> </div>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise_answer_2">Exercise – answer 2</h2>
+</header>
+<div class="beamer-columns">
+<div class="beamer-column">
+<ul class="itemize" id="a0000000010">
+<li id="a0000000011">
+<p>
+There are \(3!=6\) arrangements of three balls. 
+</p>
+</li>
+<li id="a0000000012">
+<p>
+Since we don’t care what order we draw these from the bag, there are \(\binom {3}{2} = 3\) ways (three are reorderings). 
+</p>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<div class="centered"><span class="vspace" style="height: -30.0pt"></span> <div class="tikzcd" id="a0000000013">
+<img alt="\begin{tikzpicture} 
+                \node at (1.75,1.5) {Picked};
+                \node at (4.25,1.5) {Bag};
+                \draw[dashed] (3.25,1.25) -- (3.25,-6.5);
+                
+                \drawball[yellow]{1}{A}
+                \drawball[yellow]{2}{B}
+                \drawball{4}{C}
+                
+                \begin{scope}[shift={(0,-1.25)}]
+                    \drawball[yellow]{1}{A}
+                    \drawball[yellow]{2}{C}
+                    \drawball{4}{B}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-2.5)}]
+                    \drawball{1}{B}
+                    \drawball{2}{A}
+                    \drawball{4}{C}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-3.75)}]
+                    \drawball[yellow]{1}{B}
+                    \drawball[yellow]{2}{C}
+                    \drawball{4}{A}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-5)}]
+                    \drawball{1}{C}
+                    \drawball{2}{A}
+                    \drawball{4}{B}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-6.25)}]
+                    \drawball{1}{C}
+                    \drawball{2}{B}
+                    \drawball{4}{A}
+                \end{scope}
+            \end{tikzpicture}" src="images/img-0002.svg"/>
+</div> </div>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise_answer_3">Exercise – answer 3</h2>
+</header>
+<div class="beamer-columns">
+<div class="beamer-column">
+<ul class="itemize" id="a0000000014">
+<li id="a0000000015">
+<p>
+There are \(3!=6\) arrangements of three cards (as we saw previously). 
+</p>
+</li>
+<li id="a0000000016">
+<p>
+In two of these, we have no card in its right place. 
+</p>
+</li>
+<li id="a0000000017">
+<p>
+The probability that you never say a card when you place that card is \(\frac{2}{6}=\frac{1}{3}\). 
+</p>
+</li>
+<li id="a0000000018">
+<p>
+The probability that you say at least one card when you place it is \(1-\frac{1}{3}=\frac{2}{3}\). 
+</p>
+</li>
+</ul>
+</div>
+<div class="beamer-column">
+<div class="centered"><span class="vspace" style="height: -25.0pt"></span> <div class="tikzcd" id="a0000000019">
+<img alt="\begin{tikzpicture} 
+                \drawcard[yellow]{1}{A}
+                \drawcard[yellow]{2}{B}
+                \drawcard[yellow]{3}{C}
+                
+                \begin{scope}[shift={(0,-1.25)}]
+                    \drawcard[yellow]{1}{A}
+                    \drawcard{2}{C}
+                    \drawcard{3}{B}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-2.5)}]
+                    \drawcard{1}{B}
+                    \drawcard{2}{A}
+                    \drawcard[yellow]{3}{C}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-3.75)}]
+                    \drawcard{1}{B}
+                    \drawcard{2}{C}
+                    \drawcard{3}{A}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-5)}]
+                    \drawcard{1}{C}
+                    \drawcard{2}{A}
+                    \drawcard{3}{B}
+                \end{scope}
+                
+                \begin{scope}[shift={(0,-6.25)}]
+                    \drawcard{1}{C}
+                    \drawcard[yellow]{2}{B}
+                    \drawcard{3}{A}
+                \end{scope}
+            \end{tikzpicture}" src="images/img-0003.svg"/>
+</div> </div>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="derangements">Derangements</h2>
+</header>
+<ul class="itemize" id="a0000000020">
+<li id="a0000000021">
+<p>
+Derangements are the permutations where no item is in its proper place. 
+</p>
+</li>
+<li id="a0000000022">
+<p>
+De Moivre argued that if \(A\) is the set of permutations of \(\{ a,b,c\} \) in which \(a\) is in its correct place, and if \(B\) and \(C\) are similarly defined, then the number of derangements is 
+</p>
+<span class="dmath">\[  3! - |A \cup B \cup C| \]</span>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="inclusion_exclusion">Inclusion-exclusion</h2>
+</header>
+<ul class="itemize" id="a0000000023">
+<li id="a0000000024">
+<p>
+If \(|A|\) and \(|B|\) are the numbers of elements in sets \(A\) and \(B\), respectively, then how many elements are in \(A \cup B\)? 
+</p>
+</li>
+<li id="a0000000025">
+<p>
+If we add \(|A|+|B|\) we have overcounted — we have <i class="itshape">included</i> the ones in both sets twice. 
+</p>
+</li>
+<li id="a0000000026">
+<p>
+We must therefore <i class="itshape">exclude</i> these duplicates from our count. 
+</p>
+</li>
+</ul>
+<div class="beamer-columns">
+<div class="beamer-column">
+<span class="dmath">\[  |A \cup B| = |A|+|B|-|A \cap B|\text{.} \]</span>
+</div> <div class="beamer-column">
+<div class="centered"><div class="tikzcd" id="a0000000027">
+<img alt="\begin{tikzpicture} [scale=0.5]
+                \draw[fill=magenta!50,fill opacity=0.3] (0,0) circle (3);
+                \draw[fill=cyan!50,fill opacity=0.3] (3,0) circle (3);
+                \node at (-1,0) {\(A\)};
+                \node at (4,0) {\(B\)};
+                \node at (1.5,0) {\(A \cap B\)};
+                \node at (1.5,-3.5) {\(A \cup B\)};
+            \end{tikzpicture}" src="images/img-0004.svg"/>
+</div> </div>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<ul class="itemize" id="a0000000028">
+<li id="a0000000029">
+<p>
+If we do the same thing with sets \(A\), \(B\) and \(C\), we include all the sets and exclude their overlaps, now we have included the intersection \(A \cap B \cap C\) three times and excluded it three times, so we must include once more to ensure it is in the final count. 
+</p>
+</li>
+</ul>
+<div class="beamer-columns">
+<div class="beamer-column">
+<span><script type="math/tex; mode=display">\begin{align*}  |A \cup B \cup C| =&  |A|+|B|+|C|\\ & -|A \cap B|-|A \cap C|-|B \cap C| \\ & + |A \cap B \cap C|\text{.}\end{align*}</script></span>
+<ul class="itemize" id="a0000000030">
+<li id="a0000000031">
+<p>
+This generalises and is called the <i class="itshape">inclusion-exclusion principle</i>. 
+</p>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<div class="centered"><span class="vspace" style="height: -10.0pt"></span> <div class="tikzcd" id="a0000000032">
+<img alt="\begin{tikzpicture} [scale=0.5]
+                \draw[fill=magenta!50,fill opacity=0.3] (0,0) circle (3);
+                \draw[fill=cyan!50,fill opacity=0.3] (3,0) circle (3);
+                \draw[fill=lime!50,fill opacity=0.3] (1.5,-3) circle (3);
+                \node at (-1.5,1) {\(A\)};
+                \node at (4.5,1) {\(B\)};
+                \node at (1.5,-4) {\(C\)};
+                \node at (1.5,1) {\footnotesize\(A \cap B\)};
+                \node at (-0.25,-2.25) {\footnotesize\(A \cap C\)};
+                \node at (3.25,-2.25) {\footnotesize\(B \cap C\)};
+                
+                \node at (1.5,-0.75) {\scriptsize\(A \cap B \cap C\)};
+                
+                \node at (1.5,-6.75) {\(A \cup B \cup C\)};
+            \end{tikzpicture}" src="images/img-0005.svg"/>
+</div> </div>
+</div>
+</div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="derangemen_1">Derangements</h2>
+</header>
+<ul class="itemize" id="a0000000033">
+<li id="a0000000034">
+<p>
+So the number of derangements of \(\{ a,b,c\} \) is 
+</p>
+</li>
+</ul>
+<span><script type="math/tex; mode=display">\begin{align*} & 3! - |A \cup B \cup C|\\ = & 3! - (|A|+|B|+|C| -|A \cap B|-|A \cap C|-|B \cap C| + |A \cap B \cap C|)\\ = & 3! - ((|A|+|B|+|C|) -(|A \cap B|+|A \cap C|+|B \cap C|) + (|A \cap B \cap C|))\\ = & 3! - (|A|+|B|+|C|) + (|A \cap B|+|A \cap C|+|B \cap C|) - (|A \cap B \cap C|)\text{.}\\ \end{align*}</script></span>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="derangemen_2">Derangements</h2>
+</header>
+<ul class="itemize" id="a0000000035">
+<li id="a0000000036">
+<p>
+We can choose one item to put in its correct place as \(\binom {3}{1}\), then rearrange the other two elements in \(2!\) ways, for a total of \(\binom {3}{1}2!\) with one item in the correct place.
+</p>
+</li>
+<li id="a0000000037">
+<p>
+We can choose two items to put in their correct places as \(\binom {3}{2}\), then rearrange the other one element in \(1!\) ways, for a total of \(\binom {3}{2}1!\) with two items in the correct place.
+</p>
+</li>
+<li id="a0000000038">
+<p>
+We can choose three items to put in their correct places as \(\binom {3}{3}\), then rearrange the other zero elements in \(0!\) ways, for a total of \(\binom {3}{3}0!\) with three items in the correct place.
+</p>
+</li>
+</ul>
+<span class="dmath">\[  3! - \binom {3}{1}2! + \binom {3}{2}1! - \binom {3}{3}0! = 2\text{.} \]</span>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="derangemen_3">Derangements</h2>
+</header>
+<ul class="itemize" id="a0000000039">
+<li id="a0000000040">
+<p>
+The number of derangements of six elements is 
+</p>
+</li>
+</ul>
+<span><script type="math/tex; mode=display">\begin{align*} & 6! - |A \cup B \cup C \cup D \cup E \cup F|\\ & = 6! - \binom {6}{1}5! + \binom {6}{2}4! - \binom {6}{3}3! + \binom {6}{4}2! - \binom {6}{5}1! + \binom {6}{6}0!\\ & = 265\text{.}\end{align*}</script></span>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="derangemen_4">Derangements</h2>
+</header>
+<ul class="itemize" id="a0000000041">
+<li id="a0000000042">
+<p>
+The probability of a derangement of three objects is 
+</p>
+<span class="dmath">\[  \frac{2}{3!} = \frac{2}{6} = \frac{1}{3}\text{.} \]</span>
+</li>
+<li id="a0000000043">
+<p>
+The probability of a derangement of six objects is 
+</p>
+<span class="dmath">\[  \frac{265}{6!} = \frac{265}{720} \approx 0.368 \text{.} \]</span>
+</li>
+<li id="a0000000044">
+<p>
+Note \(\frac{1}{e} \approx 0.3679\). 
+</p>
+</li>
+<li id="a0000000045">
+<p>
+In fact, the number of derangements of \(n\) objects is always the integer nearest to \(\frac{n!}{e}\), e.g. \(\frac{3!}{e} \approx 2.21\), \(\frac{6!}{e} \approx 264.87\). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercise_answer_4">Exercise – answer 4</h2>
+</header>
+<ul class="itemize" id="a0000000046">
+<li id="a0000000047">
+<p>
+This is fairly straightforward to enumerate by hand: 
+</p>
+</li>
+</ul>
+<div class="centered"> <div class="tikzcd" id="a0000000048">
+<img alt="\begin{tikzpicture} 
+            \drawcard[cyan]{0}{B}
+            
+            \begin{scope}[shift={(2,0)}]
+                \drawcard[lime]{0}{G}
+            \end{scope}
+            
+            \begin{scope}[shift={(4,0)}]
+                \drawcard[cyan]{0}{B}
+                \drawcard[cyan]{1}{B}
+            \end{scope}
+            
+            \begin{scope}[shift={(7,0)}]
+                \drawcard[cyan]{0}{B}
+                \drawcard[lime]{1}{G}
+                \begin{scope}[shift={(0,-1.5)}]
+                    \drawcard[lime]{0}{G}
+                    \drawcard[cyan]{1}{B}
+                \end{scope}
+            \end{scope}
+            
+            \begin{scope}[shift={(10,0)}]
+                \drawcard[cyan]{0}{B}
+                \drawcard[cyan]{1}{B}
+                \drawcard[lime]{2}{G}
+                \begin{scope}[shift={(0,-1.5)}]
+                    \drawcard[cyan]{0}{B}
+                    \drawcard[lime]{1}{G}
+                    \drawcard[cyan]{2}{B}
+                \end{scope}
+                \begin{scope}[shift={(0,-3)}]
+                    \drawcard[lime]{0}{G}
+                    \drawcard[cyan]{1}{B}
+                    \drawcard[cyan]{2}{B}
+                \end{scope}
+            \end{scope}
+        \end{tikzpicture}" src="images/img-0006.svg"/>
+</div> </div>
+<ul class="itemize" id="a0000000049">
+<li id="a0000000050">
+<p>
+So there are 8. 
+</p>
+</li>
+<li id="a0000000051">
+<p>
+Is there a better way to work this out? What if it is a more complicated problem? 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="exercises">Exercises</h2>
+</header>
+<ol class="enumerate" id="a0000000052">
+<li id="a0000000053" value="1">
+<p>
+Expand \((x+a)(x+b)(x+c)\). 
+</p>
+</li>
+<li id="a0000000054" value="2">
+<p>
+Consider a set \(A=\{ a,b,c\} \). What are the possible subsets of \(A\)? 
+</p>
+</li>
+</ol>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="enumeration">Enumeration</h2>
+</header>
+<ul class="itemize" id="a0000000055">
+<li id="a0000000056">
+<p>
+\((x+a)(x+b)(x+c) = x^3+(a+b+c)x^2+(ab+ac+bc)x + abc\). 
+</p>
+</li>
+<li id="a0000000057">
+<p>
+Subsets of \(\{ a,b,c\} \): 
+</p>
+<ul class="itemize" id="a0000000058">
+<li id="a0000000059">
+<p>
+\(\{ \} \); 
+</p>
+</li>
+<li id="a0000000060">
+<p>
+\(\{ a\} \); 
+</p>
+</li>
+<li id="a0000000061">
+<p>
+\(\{ b\} \); 
+</p>
+</li>
+<li id="a0000000062">
+<p>
+\(\{ c\} \); 
+</p>
+</li>
+<li id="a0000000063">
+<p>
+\(\{ a,b\} \); 
+</p>
+</li>
+<li id="a0000000064">
+<p>
+\(\{ a,c\} \); 
+</p>
+</li>
+<li id="a0000000065">
+<p>
+\(\{ b,c\} \); 
+</p>
+</li>
+<li id="a0000000066">
+<p>
+\(\{ a,b,c\} \). 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000067">
+<p>
+Notice how the expansion has enumerated the subsets? 
+</p>
+</li>
+<li id="a0000000068">
+<p>
+Subsets of a set are combinations without repetition. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="enumerati_1">Enumeration</h2>
+</header>
+<ul class="itemize" id="a0000000069">
+<li id="a0000000070">
+<p>
+It is a shame that the coefficient of \(x\) didn’t match the subset size, e.g. the coefficient of \(x^2\) gave us subsets of size 1: \(\{ a\} , \{ b\} , \{ c\} \). 
+</p>
+</li>
+<li id="a0000000071">
+<p>
+We can align these with an alternative expression: 
+</p>
+<span class="dmath">\[  (1+ax)(1+bx)(1+cx) = 1 + (a+b+c)x + (ab+ac+bc)x^2 + abc x^3\text{.} \]</span>
+</li>
+<li id="a0000000072">
+<p>
+Notice how now the subsets of size \(n\) are given by the \(x^n\) term. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="enumerati_2">Enumeration</h2>
+</header>
+<ul class="itemize" id="a0000000073">
+<li id="a0000000074">
+<p>
+If we just want to count the subsets of each size, we don’t need to include \(a, b, c\) (enumerator): 
+</p>
+<span class="dmath">\[  (1+x)(1+x)(1+x) = 1 + 3x+3x^2+x^3\text{.} \]</span>
+<p>
+(N.B. this is how the coefficients of the expansion of \((1+x)^n\) give the \(n\)th row of Pascal’s triangle.) 
+</p>
+</li>
+<li id="a0000000075">
+<p>
+If we just want to list the subsets, we don’t need to include \(x\) (generator): 
+</p>
+<span class="dmath">\[  (1+a)(1+b)(1+c) = 1 + a+b+c + ab+ac+bc + abc\text{.} \]</span>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="arranging_cards">Arranging cards</h2>
+</header>
+<ul class="itemize" id="a0000000076">
+<li id="a0000000077">
+<p>
+Our problem was: 
+</p>
+<ul class="itemize" id="a0000000078">
+<li id="a0000000079">
+<p>
+You have three cards, two blue and one green. How many ways can you arrange them into sequences of length 1–3? 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000080">
+<p>
+We can represent: 
+</p>
+<ul class="itemize" id="a0000000081">
+<li id="a0000000082">
+<p>
+no cards: \(1\); 
+</p>
+</li>
+<li id="a0000000083">
+<p>
+one green card: \(g\); 
+</p>
+</li>
+<li id="a0000000084">
+<p>
+one blue card: \(b\); 
+</p>
+</li>
+<li id="a0000000085">
+<p>
+two blue cards: \(b^2\). 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000086">
+<p>
+We make two functions, each representing a selection of mutually exclusive possibilities: 
+</p>
+<ul class="itemize" id="a0000000087">
+<li id="a0000000088">
+<p>
+\(1+g\) to represent choosing either no green card or one green card; 
+</p>
+</li>
+<li id="a0000000089">
+<p>
+\(1+b+b^2\) to represent choosing zero, one or two blue cards. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functions">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000090">
+<li id="a0000000091">
+<p>
+Now we simply multiply the two functions together. 
+</p>
+<span class="dmath">\[  (1+g)(1+b+b^2) = 1+b+g+b^2+gb+gb^2\text{.} \]</span>
+</li>
+<li id="a0000000092">
+<p>
+Each term of the expansion represents a selection from the set of three cards. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_1">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000093">
+<li id="a0000000094">
+<p>
+Now we simply multiply the two functions together. 
+</p>
+<span class="dmath">\[  (1+g)(1+b+b^2) = 1+b+g+b^2+gb+gb^2  \]</span>
+</li>
+<li id="a0000000095">
+<p>
+Each term of the expansion represents a selection from the set of three cards. 
+</p>
+<ul class="itemize" id="a0000000096">
+<li id="a0000000097">
+<p>
+\(b\) represents 
+</p>
+<div class="tikzcd" id="a0000000098">
+<img alt="B" src="images/img-0007.svg"/>
+</div>
+<p>
+; 
+</p>
+</li>
+<li id="a0000000099">
+<p>
+\(g\) represents 
+</p>
+<div class="tikzcd" id="a0000000100">
+<img alt="G" src="images/img-0008.svg"/>
+</div>
+<p>
+;
+</p>
+</li>
+<li id="a0000000101">
+<p>
+\(b^2\) represents 
+</p>
+<div class="tikzcd" id="a0000000102">
+<img alt="BB" src="images/img-0009.svg"/>
+</div>
+<p>
+. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_2">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000103">
+<li id="a0000000104">
+<p>
+Now we simply multiply the two functions together. 
+</p>
+<span class="dmath">\[  (1+g)(1+b+b^2) = 1+b+g+b^2+gb+gb^2  \]</span>
+</li>
+<li id="a0000000105">
+<p>
+Each term of the expansion represents a selection from the set of three cards. 
+</p>
+<ul class="itemize" id="a0000000106">
+<li id="a0000000107">
+<p>
+\(gb\) represents 
+</p>
+<div class="tikzcd" id="a0000000108">
+<img alt="GB" src="images/img-0010.svg"/>
+</div>
+<p>
+. 
+</p>
+</li>
+<li id="a0000000109">
+<p>
+There are \(2!=2\) ways to arrange these two cards, so really \(gb\) represents 
+</p>
+<div class="tikzcd" id="a0000000110">
+<img alt="GB" src="images/img-0010.svg"/>
+</div>
+<p>
+ and 
+</p>
+<div class="tikzcd" id="a0000000111">
+<img alt="BG" src="images/img-0011.svg"/>
+</div>
+<p>
+. 
+</p>
+</li>
+<li id="a0000000112">
+<p>
+We didn’t have this rearrangement problem with \(b^2\) because the two blue cards are identical. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_3">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000113">
+<li id="a0000000114">
+<p>
+Now we simply multiply the two functions together. 
+</p>
+<span class="dmath">\[  (1+g)(1+b+b^2) = 1+b+g+b^2+gb+gb^2  \]</span>
+</li>
+<li id="a0000000115">
+<p>
+Each term of the expansion represents a selection from the set of three cards. 
+</p>
+<ul class="itemize" id="a0000000116">
+<li id="a0000000117">
+<p>
+The term \(gb^2\) represents 
+</p>
+<div class="tikzcd" id="a0000000118">
+<img alt="GBB" src="images/img-0012.svg"/>
+</div>
+<ul class="itemize" id="a0000000119">
+<li id="a0000000120">
+<p>
+There are \(3!\) ways to arrange three cards, but \(2!\) of them are the same, because the two blue cards are identical. 
+</p>
+</li>
+<li id="a0000000121">
+<p>
+So we can arrange \(gb^2\) in \(\frac{3!}{2!}=3\) ways. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_4">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000122">
+<li id="a0000000123">
+<p>
+Now we simply multiply the two functions together. 
+</p>
+<span class="dmath">\[  (1+g)(1+b+b^2) = 1+b+g+b^2+gb+gb^2  \]</span>
+</li>
+<li id="a0000000124">
+<p>
+Each term of the expansion represents a selection from the set of three cards. 
+</p>
+<ul class="itemize" id="a0000000125">
+<li id="a0000000126">
+<p>
+The first term in our expansion is \(1\), which represents choosing none of the cards. Whether this is a valid sequence depends on the context and the rules you are following. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_5">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000127">
+<li id="a0000000128">
+<p>
+Note that the number of each card was given by its power. For example, zero blue cards is represented by \(b^0=1\), one blue card by \(b^1=b\), two blue cards by \(b^2\). 
+</p>
+</li>
+<li id="a0000000129">
+<p>
+If I wish to count combinations of cards that definitely include at least \(n\) cards, I do not include powers \({\lt}n\) in the function. 
+</p>
+</li>
+<li id="a0000000130">
+<p>
+For example, to count sets of blue and green cards that include at least one blue card, I would use 
+</p>
+<span class="dmath">\[  (1+g)(b+b^2) = b + gb + b^2 + gb^2\text{.} \]</span>
+</li>
+</ul>
+</section>
+<section class="beamer-section" id="a0000000131">
+<h2 aria-hidden="true" class="beamer-section-heading" id="robot_caterpillar">Robot caterpillar</h2>
+<section class="beamer-frame">
+<p>
+<span class="vspace" style="height: 99.58464566929132pt"></span>
+</p>
+<div class="centered"> <big class="xlarge"><h2 class="beamer-section-title" id="robot_caterpill_1">Robot caterpillar</h2></big> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="robot_caterpill_2">Robot caterpillar</h2>
+</header>
+<div class="centered"> <img alt="toy caterpillar made of segments" src="images/img-0001.jpg" style="width:469.755pt"/> </div>
+<ul class="itemize" id="a0000000132">
+<li id="a0000000133">
+<p>
+A harder example, just to show the power of this technique. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="an_unbelievable_clai">An unbelievable claim</h2>
+</header>
+<div class="centered"> <img alt='toy packaging says "8 pieces" and "Endless combinations!"' src="images/img-0002.jpg" style="height:&lt;plasTeX.TeXFragment object at 0x76252ec7a630&gt;"/> </div>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="enter_combinatorics">Enter combinatorics</h2>
+</header>
+<ul class="itemize" id="a0000000134">
+<li id="a0000000135">
+<p>
+It isn’t hard to establish an upper bound somewhat less than \(\infty \). 
+</p>
+</li>
+<li id="a0000000136">
+<p>
+If all eight segments were different, the number of ways of arranging these would yield \(8!\) different caterpillars. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="including_shorter_ca">Including shorter caterpillars</h2>
+</header>
+<ul class="itemize" id="a0000000137">
+<li id="a0000000138">
+<p>
+If all eight segments were different, for sequences using \(k\le 8\) positions: 
+</p>
+<ul class="itemize" id="a0000000139">
+<li id="a0000000140">
+<p>
+we choose \(k\) segments from the \(8\) possible segments \(\left( \text{which is }\binom {8}{k} \right)\) 
+</p>
+</li>
+<li id="a0000000141">
+<p>
+and there are \(k!\) ways to arrange these, 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000142">
+<p>
+so the number of possible sequences would be 
+</p>
+<span class="dmath">\[  \binom {8}{k} k!  \]</span>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="including_shorter_1">Including shorter caterpillars</h2>
+</header>
+<ul class="itemize" id="a0000000143">
+<li id="a0000000144">
+<p>
+If all eight segments were different, for sequences using \(k\le 8\) positions: 
+</p>
+<ul class="itemize" id="a0000000145">
+<li id="a0000000146">
+<p>
+we choose \(k\) segments from the \(8\) possible segments \(\left( \text{which is }\binom {8}{k} \right)\) 
+</p>
+</li>
+<li id="a0000000147">
+<p>
+and there are \(k!\) ways to arrange these, 
+</p>
+</li>
+</ul>
+</li>
+<li id="a0000000148">
+<p>
+so the number of possible sequences would be 
+</p>
+<span class="dmath">\[  \binom {8}{k} k! = \frac{8!}{(8-k)!} \text{.} \]</span>
+<p>
+ Notice that for \(k=8\), this reduces to \(8!\), as you might expect. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="putting_it_together">Putting it together</h2>
+</header>
+<ul class="itemize" id="a0000000149">
+<li id="a0000000150">
+<p>
+The number of possible sequences using any number from \(1\) to \(8\) segments would be the sum of this arrangement for all possible lengths, i.e. 
+</p>
+<span class="dmath">\[  \sum _{k=1}^{8} \frac{8!}{(8-k)!} = 109600 \text{.} \]</span>
+</li>
+<li id="a0000000151">
+<p>
+N.B. \(109,\! 600 {\lt} \infty \). 
+</p>
+</li>
+<li id="a0000000152">
+<p>
+For this problem, though, it’s definitely too large. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="complicating_factors">Complicating factors</h2>
+</header>
+<ul class="itemize" id="a0000000153">
+<li id="a0000000154">
+<p>
+The caterpillar has three identical segments which instruct it to move forwards, two to turn left, two to turn right and one to stop and play music. 
+</p>
+</li>
+<li id="a0000000155">
+<p>
+For the avoidance of doubt, some other features and restrictions: 
+</p>
+<ul class="itemize" id="a0000000156">
+<li id="a0000000157">
+<p>
+there are eight positions that can hold segments, the head is always present; 
+</p>
+</li>
+<li id="a0000000158">
+<p>
+any number of segments from \(1\)–\(8\) may be used, and not \(0\); 
+</p>
+</li>
+<li id="a0000000159">
+<p>
+the order of segments matters, because it is a sequence of commands; 
+</p>
+</li>
+<li id="a0000000160">
+<p>
+segments are connected (by USB), so there can be no gaps in a sequence – if a position is unfilled, the caterpillar ends at the preceding segment. 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="notation">Notation</h2>
+</header>
+<ul class="itemize" id="a0000000161">
+<li id="a0000000162">
+<p>
+Forwards: \(F\); 
+</p>
+</li>
+<li id="a0000000163">
+<p>
+Left: \(L\); 
+</p>
+</li>
+<li id="a0000000164">
+<p>
+Right: \(R\); 
+</p>
+</li>
+<li id="a0000000165">
+<p>
+Music: \(M\).
+</p>
+</li>
+<li id="a0000000166">
+<p>
+Denote a sequence by a string from left to right (the head is to the left of the string). 
+</p>
+</li>
+<li id="a0000000167">
+<p>
+e.g. \(FFFM\), \(FFMF\), \(FLRFLRFM\), \(LRL\), \(F\), and so on. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="over_counting">Over-counting</h2>
+</header>
+<ul class="itemize" id="a0000000168">
+<li id="a0000000169">
+<p>
+Previously, we were over-counting. 
+</p>
+</li>
+<li id="a0000000170">
+<p>
+For example, we counted \(FF\) and \(FF\) as different caterpillars, even though they are functionally the same. 
+</p>
+</li>
+</ul>
+<p>
+<div class="centered"><img alt="Caterpillar with two F segments" src="images/img-0003.jpg" style="width:187.90200000000002pt"/> <img alt="Caterpillar with two F segments, which appears identical" src="images/img-0004.jpg" style="width:187.90200000000002pt"/> </div>
+</p>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_6">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000171">
+<li id="a0000000172">
+<p>
+For the three \(F\) segments, we can use the function \(1+f+f^2+f^3\) to represent these. 
+</p>
+</li>
+<li id="a0000000173">
+<p>
+For the two \(R\) segments, use \(1+r+r^2\). 
+</p>
+</li>
+<li id="a0000000174">
+<p>
+For the two \(L\) segments, use \(1+l+l^2\). 
+</p>
+</li>
+<li id="a0000000175">
+<p>
+For the one \(M\) use \(1+m\). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="generating_functio_7">Generating functions</h2>
+</header>
+<ul class="itemize" id="a0000000176">
+<li id="a0000000177">
+<p>
+To find out how many different ways there are of selecting from these segments, expand 
+</p>
+<span class="dmath">\[ (1+f+f^2+f^3)(1+r+r^2)(1+l+l^2)(1+m)\text{.} \]</span>
+</li>
+<li id="a0000000178">
+<p>
+The expansion has \(72\) terms. 
+</p>
+</li>
+<li id="a0000000179">
+<p>
+One is formed by multiplying the four \(1\)s together to get \(1\), which represents selecting no segments. This isn’t a valid caterpillar. 
+</p>
+</li>
+<li id="a0000000180">
+<p>
+So there are \(71\) different ways of forming caterpillars up to length \(8\). 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="example_caterpillar_">Example caterpillar combination</h2>
+</header>
+<div class="beamer-columns">
+<div class="beamer-column">
+<ul class="itemize" id="a0000000181">
+<li id="a0000000182">
+<p>
+One of the terms of the expansion is \(f^3rl^2m\). 
+</p>
+</li>
+<li id="a0000000183">
+<p>
+This represents choosing \(F\), \(F\), \(F\), \(R\), \(L\), \(L\) and \(M\) for a caterpillar of length \(7\). 
+</p>
+</li>
+</ul>
+</div> <div class="beamer-column">
+<img alt="A pile of caterpillar segments F, F, F, R, L, L and M" src="images/img-0005.jpg" style="width:469.755pt"/>
+</div>
+</div>
+<ul class="itemize" id="a0000000184">
+<li id="a0000000185">
+<p>
+But some of these are duplicates; how many depends which segments are involved. 
+</p>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="have_a_go">Have a go</h2>
+</header>
+<ul class="itemize" id="a0000000186">
+<li id="a0000000187">
+<p>
+How many ways can you form different<a class="footnote" href="#a0000000188" id="a0000000188-reference">
+<sup class="footnotemark">1</sup>
+</a> caterpillars from the following terms of the 71-term expansion? 
+</p>
+<ul class="itemize" id="a0000000189">
+<li id="a0000000190">
+<p>
+\(m\); 
+</p>
+</li>
+<li id="a0000000191">
+<p>
+\(r^2\); 
+</p>
+</li>
+<li id="a0000000192">
+<p>
+\(f^3l\); 
+</p>
+</li>
+<li id="a0000000193">
+<p>
+\(f^3rl^2m\). 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="have_a_go_answers">Have a go – answers</h2>
+</header>
+<ul class="itemize" id="a0000000194">
+<li id="a0000000195">
+<p>
+How many ways can you form caterpillars from the following terms of the 71-term expansion? 
+</p>
+<ul class="itemize" id="a0000000196">
+<li id="a0000000197">
+<p>
+\(m\):          \(1\);
+</p>
+</li>
+<li id="a0000000198">
+<p>
+\(r^2\):          \(\frac{2!}{2!}=1\);
+</p>
+</li>
+<li id="a0000000199">
+<p>
+\(f^3l\):         \(\frac{4!}{3!}=4\);
+</p>
+</li>
+<li id="a0000000200">
+<p>
+\(f^3rl^2m\):    \(\frac{7!}{3!2!}=420\) 
+</p>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section class="beamer-frame">
+<header>
+<h2 class="beamer-frame-title" id="all_71_combinations">All \(71\) combinations</h2>
+</header>
+<ul class="itemize" id="a0000000201">
+<li id="a0000000202">
+<p>
+Doing this calculation for all 71 combinations and summing yields \(5,\! 023\) different caterpillars. 
+</p>
+</li>
+<li id="a0000000203">
+<p>
+Not endless, but certainly enough to keep us busy for a while! 
+</p>
+</li>
+</ul>
+</section>
+</section>
+<footer id="footnotes">
+<h2 id="footnot_1">Footnotes</h2>
+<ol>
+<li id="a0000000188"><a aria-label="Jump to reference" class="footnote-jump" href="#a0000000188-reference">^</a> By ‘different’, I mean if I went out of the room and you changed one into the other, I would be able to identify the change when I came back into the room.</li>
+</ol>
+</footer>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2025-03-10</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
