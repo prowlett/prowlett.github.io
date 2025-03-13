@@ -1,0 +1,1317 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        
+            <meta charset="utf-8">
+            <meta name="robots" content="noindex">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="author" content="Peter Rowlett" />
+            <meta name="date" content="2025-03-10" />
+        
+
+        <title>Markov Chains | Modelling and Differential Equations - Discrete Modelling</title>
+
+        
+    
+    
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1741626460.661147">
+            
+            
+        
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1741626460.661147">
+
+    <link rel="stylesheet" href="../../static/print.css?build_time=1741626460.661147">
+
+
+        
+    
+			<script>
+				var chirun_static_url = new URL('../../static?build_time=1741626460.661147', location.href);
+			</script>
+
+            
+                <script defer src="../../static/mathjax_config.js?build_time=1741626460.661147"></script>
+                <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            
+
+            <script type="module" src="../../static/localisation.js?build_time=1741626460.661147"></script>
+
+            <script defer src="../../static/customisation.js?build_time=1741626460.661147"></script>
+
+            
+
+            
+        
+    <script defer src="../../static/code.js?build_time=1741626460.661147" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1741626460.661147" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1741626460.661147" type="module"></script>
+
+
+        <template id="runnable-code-template">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1741626460.661147">
+            <div class="runnable-code-wrapper">
+                <section class="fullscreenable code">
+                    <div id="code"></div>
+                    <button class="fullscreen icon-button" title="Fullscreen code"><svg class="icon" aria-label="Fullscreen code" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <section class="fullscreenable output">
+                    <div id="output" aria-live="polite">
+                        <pre class="stdout"></pre>
+                        <pre class="result"></pre>
+                        <div class="images"></div>
+                    </div>
+                    <button class="fullscreen icon-button" title="Fullscreen output"><svg class="icon" aria-label="Fullscreen output" viewBox="0 0 180 180">
+    <use href="#fullscreen"/>
+</svg></button>
+                </section>
+                <div class="buttons">
+                    <button type="button" class="run-code">Run code</button>
+                </div>
+                <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+            </div>
+        </template>
+
+        <template id="embed-numbas-template">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1741626460.661147">
+            <details id="wrapper" data-completion-status="incomplete">
+                <summary>
+                    <h1 id="title">Test Yourself</h1>
+                    <div id="completion-status" data-completion-status="unknown">
+                        <span class="complete">Complete</span>
+                        <span class="incomplete">Incomplete</span>
+                    </div>
+                    <label id="score-feedback">
+                        Score:
+                        <progress min="0"></progress>
+                    </label>
+                </summary>
+                <iframe class="embed" title="Numbas"></iframe>
+            </details>
+        </template>
+
+    </head>
+    <body class="" >
+        
+
+        <a class="skip-to-content-link" href="#main-content">Skip to content</a>
+        
+            <form id="display-options">
+    <div class="buttons">
+        <button type="button" id="reset-display-options">Reset to defaults</button>
+
+        <a href="https://chirun.org.uk/accessibility-statement/material">Accessibility statement</a>
+
+        <button type="button" aria-controls="display-options" aria-expanded="false">
+            Close
+        </button>
+    </div>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label for="display-options-font-scale">
+                Text size
+            </label>
+            <input type="range" min="50" max="600" step="5" value="100" id="display-options-font-scale">
+            <output for="display-options-font-scale">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-spacing-factor">
+                Spacing
+            </label>
+            <input type="range" min="0" max="1200" step="5" value="100" id="display-options-spacing-factor">
+            <output for="display-options-spacing-factor">100%</output>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-font-family">
+                Text font
+            </label>
+            <select id="display-options-font-family">
+                <option value="var(--sans-serif-font)" selected>Sans-serif</option>
+                <option value="var(--serif-font)">Serif</option>
+                <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+                <option value="Comic Sans MS">Comic Sans</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="display-options-colour-scheme">
+                Colour scheme
+            </label>
+            <select id="display-options-colour-scheme">
+                <option value="auto" selected>Automatic (default)</option>
+                <option value="light">Black text on white</option>
+                <option value="dark">White text on black</option>
+                <option value="custom">Custom</option>
+            </select>
+        </div>
+
+        <section id="custom-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-text-colour">
+                    Text colour
+                </label>
+                <input type="color" value="#000000" id="display-options-text-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-link-colour">
+                    Link colour
+                </label>
+                <input type="color" value="#0000ee" id="display-options-link-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour">
+                    Background colour
+                </label>
+                <input type="color" value="#ffffff" id="display-options-bg-colour">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-off">
+                    Muted background colour
+                </label>
+                <input type="color" value="#eeeeee" id="display-options-bg-colour-off">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-1">
+                    Accent colour 1
+                </label>
+                <input type="color" value="#4caf50" id="display-options-bg-colour-accent-1">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-2">
+                    Accent colour 2
+                </label>
+                <input type="color" value="#f6f6ff" id="display-options-bg-colour-accent-2">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-3">
+                    Accent colour 3
+                </label>
+                <input type="color" value="#eeffd3" id="display-options-bg-colour-accent-3">
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-bg-colour-accent-4">
+                    Accent colour 4
+                </label>
+                <input type="color" value="#ffeeee" id="display-options-bg-colour-accent-4">
+            </div>
+        </section>
+
+        <section id="filter-colour-scheme-options" class="inputs">
+            <div class="input-group">
+                <label for="display-options-filter-sepia">
+                    Sepia filter
+                </label>
+                <input type="range" min="0" max="100" step="1" value="0" id="display-options-filter-sepia">
+                <output for="display-options-filter-sepia">0%</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-filter-hue-rotate">
+                    Rotate hues
+                </label>
+                <input type="range" min="0" max="1" step="0.01" value="0" id="display-options-filter-hue-rotate">
+                <output for="display-options-filter-hue-rotate">0 turns</output>
+            </div>
+
+            <div class="input-group">
+                <label for="display-options-invert-images">
+                    Invert images in dark mode
+                </label>
+                <input type="checkbox" id="display-options-invert-images">
+            </div>
+
+        </section>
+    </div>
+</form>
+        
+
+        <header>
+            
+<button class="icon-button" type="button" aria-controls="display-options" aria-expanded="false" title="Display options">
+    <svg class="icon" aria-label="Display options" viewBox="0 0 180 180">
+    <use href="#cog"/>
+</svg>
+</button>
+            
+    
+    <nav aria-label="breadcrumb">
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="../../index.html">Modelling and Differential Equations - Discrete Modelling</a>
+            </li>
+            
+            <li class="breadcrumb-item">
+                <a href="../index.html">Week 7 - Predicting future behaviour</a>
+            </li>
+            
+            <li class="breadcrumb-item active">
+                Markov Chains
+            </li>
+        </ul>
+
+        
+        <p class="pager" id="item-pager">
+            
+            <a rel="prev" href="../index.html">Previous: Week 7 - Predicting future behaviour</a>
+            
+            
+            <a rel="next" href="../future_behaviour_wor/index.html">Next: Future behaviour worksheet</a>
+            
+        </p>
+        
+    </nav>
+    
+
+            
+            
+        </header>
+
+        <main id="main-content">
+            
+    <nav id="sidebar">
+        
+        <ul class="alternative-formats">
+            
+            <li><a rel="alternate" type="application/pdf" href="markov_chains.pdf"download><svg class="icon" aria-label="PDF" viewBox="0 0 180 180">
+    <use href="#pdf"/>
+</svg> Download as PDF</a></li>
+            
+        </ul>
+        
+
+        <h1>Table of Contents</h1>
+        <a class="jump-to-item-content" href="#item-content">Jump to content</a>
+        
+            <ol class="table-of-contents">
+                
+                    
+    <li>
+        <a href="#markov_chains">Markov chains</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000002">1 Representation</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000003">1.1 State-transition diagram</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000008">1.2 Matrix</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000009">2 Next time-step</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000010">3 Next few time steps</a>
+        
+        <ol>
+            
+            
+    <li>
+        <a href="#a0000000011">3.1 Example</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000012">4 Long-term behaviour</a>
+        
+    </li>
+
+    <li>
+        <a href="#a0000000013">5 A warning</a>
+        
+    </li>
+
+            
+        </ol>
+        
+    </li>
+
+                
+            </ol>
+        
+
+    </nav>
+
+    <article class="item-content" id="item-content">
+        <div class="titlepage">
+<h1 id="markov_chains">Markov chains</h1>
+<p class="authors">
+<span class="author">Peter Rowlett</span>
+</p>
+</div>
+<p>
+<i class="itshape">Markov chains</i> are used to analyse systems which has a number of different <i class="itshape">states</i> and <i class="itshape">transitions</i> occur between these with some probability in discrete time intervals. 
+</p>
+<section class="section">
+<h2 id="a0000000002">1 Representation</h2>
+<section class="subsection">
+<h3 id="a0000000003">1.1 State-transition diagram</h3>
+<p>
+A Markov Chain can be represented as a labelled, directed graph where the vertices are the states and the edges indicate the transitions and are labelled with the transition probabilities. 
+</p>
+<p>
+For example, here is a simple state-transition diagram for a customer loyalty scenario. 
+</p>
+<ul class="itemize" id="a0000000004">
+<li id="a0000000005">
+<p>
+If someone buys Asgard brand breakfast cereal this month, the probability that they will buy the same brand next month is \(0.7\), otherwise they will transition to buy Vanaheim brand breakfast cereal. 
+</p>
+</li>
+<li id="a0000000006">
+<p>
+If they buy Vanaheim this month, the probability that they will buy the same brand next month is \(0.6\), otherwise they will transition to buy Asgard. 
+</p>
+</li>
+</ul>
+<div class="centered"> <div class="tikzcd" id="a0000000007">
+<img alt="Two vertices labelled Asgard and Vanaheim and four edges connecting them. An edge from Asgard to itself is labelled 0.7. An edge from Asgard to Vanaheim is labelled 0.3. An edge from Vanaheim to itself is labelled 0.6. An edge from Vanaheim to Asgard is labelled 0.4." src="images/img-0001.svg"/>
+</div> </div>
+<p>
+Note that the labels on the outgoing edges of each node sum to \(1\). This is because these are probabilities. 
+</p>
+</section><section class="subsection">
+<h3 id="a0000000008">1.2 Matrix</h3>
+<p>
+A Markov Chain can be represented as a matrix. Here we represent the current state by the columns and the next state by the rows, so that the probability of a transition to state \(i\) from state \(j\) is represented by the element on the \(i\)th row, \(j\)th column of the matrix. 
+</p>
+<p>
+For example, the transition probabilities for the breakfast cereal scenario above can be expressed in the following table. 
+</p>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="text-align:center"><p>
+   
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+   
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+<b class="bfseries">Now</b>
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+  
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center"><p>
+  
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+   
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ Asgard 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ Vanaheim
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center"><p>
+<b class="bfseries">Next</b>
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ Asgard 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center"><p>
+ \(0.7\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center"><p>
+ \(0.4\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center"><p>
+  
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ Vanaheim 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(0.3\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(0.6\)
+</p>
+</td>
+</tr>
+</table>
+<p>
+Note that entries in each column sum to \(1\). This is because these are all the probabilities of transitioning <i class="itshape">from</i> one state. 
+</p>
+<p>
+Representing this table as a matrix \(\mathbf{P}\), we obtain 
+</p>
+<span class="dmath">\[ \mathbf{P}=\begin{bmatrix}  0.7 
+
+&amp;  0.4
+
+\\ 0.3 
+
+&amp;  0.6
+
+\\ \end{bmatrix}\text{.} \]</span>
+<p>
+We can represent the current system using a \(2 \times 1\) column vector \(\mathbf{s}\), with the first entry representing Asgard and the second entry representing Vanaheim. For example, if we know someone bought Vanaheim this month, we can represent this as 
+</p>
+<span class="dmath">\[ \mathbf{s}=\begin{bmatrix}  0
+
+\\ 1 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+Such a vector could be used to represent the probabilities of being in either state, or of the numbers or proportion of a population being in either state. 
+</p>
+<p>
+We can use our matrix of probabilities \(\mathbf{P}\) and our current state vector \(\mathbf{s}\) to predict future behaviour of the system by examining \(\mathbf{P}\mathbf{s}\). 
+</p>
+<p>
+<i class="itshape">Confusing note</i>: Because we have the current state as columns and the next state as rows, we use a column vector and multiply \(\mathbf{P}\mathbf{s}\) to get the next time-step. We might have chosen to represent the transition matrix using rows as ‘now’ and columns as ‘next’ (i.e. the transpose of the matrix we have used), in which case we would use a row vector and multiply \(\mathbf{s}\mathbf{P}\) by this to get the next time-step. You may see either convention used so it is good to be aware of the difference - there is no good multiplying \(\mathbf{P}\mathbf{s}\) if your matrix \(\mathbf{P}\) is formed the other way around! 
+</p>
+</section>
+</section><section class="section">
+<h2 id="a0000000009">2 Next time-step</h2>
+<p>
+We could consider a scenario where we know that \(100\) people bought Asgard this month and \(90\) people bought Vanaheim, and use our transition matrix to predict next month’s numbers. Here we form a column vector with the numbers for each cereal 
+</p>
+<span class="dmath">\[ \mathbf{s}=\begin{bmatrix}  100
+
+\\ 90 
+
+\end{bmatrix}\text{,} \]</span>
+<p>
+and multiply as before. 
+</p>
+<span class="dmath">\[ \mathbf{P}\mathbf{s} = \begin{bmatrix}  0.7 
+
+&amp;  0.4
+
+\\ 0.3 
+
+&amp;  0.6
+
+\\ \end{bmatrix}\begin{bmatrix}  100
+
+\\ 90 
+
+\end{bmatrix}\approx \begin{bmatrix}  106
+
+\\ 84 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+Here we find that we predict \(106\) people to buy Asgard next month and \(84\) to buy Vanaheim. 
+</p>
+<p>
+Note that the two numbers sum to the same number, \(190\), as in the original column vector. This is a useful check to make sure nothing has gone wrong. In a simple model such as this, we have assumed that everyone buys cereal each month and that no new customers enter the system. 
+</p>
+</section><section class="section">
+<h2 id="a0000000010">3 Next few time steps</h2>
+<p>
+As the number of Asgard purchases has increased in one time step, we might wonder whether we can make predictions about this system over subsequent time steps. 
+</p>
+<p>
+Let’s call the initial state vector \(\mathbf{s}_0\), then we can talk about \(\mathbf{s}_i\) after \(i\) time steps. So the vector \(\begin{bmatrix}  106
+
+\\ 84 
+
+\end{bmatrix}\) above is \(\mathbf{s}_1\). 
+</p>
+<p>
+We can make a prediction about \(\mathbf{s}_2\) by multiplying \(\mathbf{s}_1\) by the matrix of transition probabilities again. 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{s}_2 & = \mathbf{P} \mathbf{s}_1\\ & = \mathbf{P} \left( \mathbf{P} \mathbf{s}_0 \right)\\ &  = \mathbf{P}^2 \mathbf{s}_0\text{.}\end{align*}</script></span>
+<p>
+This extends, so we see that we can make a prediction about time step \(i\) by finding 
+</p>
+<span class="dmath">\[  \mathbf{s}_i = \mathbf{P}^i \mathbf{s}_0\text{.} \]</span>
+<section class="subsection">
+<h3 id="a0000000011">3.1 Example</h3>
+<p>
+Say we are interested in the number of people buying cereal each month over the next year. Our time step is one month, so we are interested in finding 
+</p>
+<span class="dmath">\[  \mathbf{s}_{i} = \mathbf{P}^{i} \mathbf{s}_0  \]</span>
+<p>
+for \(i \in {2,\ldots ,12}\). 
+</p>
+<table class="tabular">
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(i\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(\mathbf{s}_i = \mathbf{P}^i \mathbf{s}_0\)
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+\(i\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(\mathbf{s}_i = \mathbf{P}^i \mathbf{s}_0\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+\(2\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+ \(\begin{bmatrix}  107.8
+
+\\ 82.2 
+
+\end{bmatrix}\)
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center; border-right:1px solid black"><p>
+\(8\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="border-top-style:solid; border-top-color:black; border-top-width:1px; text-align:center"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(3\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(\begin{bmatrix}  108.3
+
+\\ 81.7 
+
+\end{bmatrix}\)
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+\(9\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(4\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(\begin{bmatrix}  108.5
+
+\\ 81.5 
+
+\end{bmatrix}\)
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+\(10\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(5\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+\(11\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(6\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+\(12\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+</tr>
+<tr><td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(7\) 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ \(\begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\)
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center; border-right:1px solid black"><p>
+ 
+</p>
+</td>
+<td colspan="" rowspan="" style="text-align:center"><p>
+ 
+</p>
+</td>
+</tr>
+</table>
+</section>
+</section><section class="section">
+<h2 id="a0000000012">4 Long-term behaviour</h2>
+<p>
+When we considered the next few time steps, you may have noticed that the behaviour of our cereal customers settled down to one decimal place after only a few time steps. Other Markov chains may not settle down so quickly, but in general we can look for a long-term behaviour using eigenvectors. 
+</p>
+<p>
+The situation where the behaviour has stabilised corresponds to 
+</p>
+<span class="dmath">\[  \mathbf{P} \mathbf{s}_n = \mathbf{s}_n  \]</span>
+<p>
+for some \(n\). In fact, this is exactly the situation for an eigenvalue \(\lambda _1=1\). 
+</p>
+<p>
+We can find the eigenvalues of \(\mathbf{P}\) using 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*} \begin{vmatrix}  0.7-\lambda 
+
+&  0.4
+
+\\ 0.3 
+
+&  0.6-\lambda 
+
+\end{vmatrix}& = (0.7-\lambda )(0.6-\lambda )-0.4\times 0.3\\ & = \lambda ^2 - 1.3\lambda + 0.3 \end{align*}</script></span>
+<p>
+Now \(\lambda ^2 - 1.3\lambda + 0.3=0\) when \(\lambda =1\) or \(0.3\). 
+</p>
+<p>
+We want an eigenvector corresponding to the eigenvalue \(\lambda _1=1\), so let \(\mathbf{v}=\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\) and consider 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*} \begin{bmatrix}  0.7-\lambda _1 
+
+&  0.4
+
+\\ 0.3 
+
+&  0.6-\lambda _1 
+
+\end{bmatrix}\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}& = \begin{bmatrix}  0.7-1 
+
+&  0.4
+
+\\ 0.3 
+
+&  0.6-1 
+
+\end{bmatrix}\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\\ & = \begin{bmatrix}  -0.3 
+
+&  0.4
+
+\\ 0.3 
+
+&  -0.4 
+
+\end{bmatrix}\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix} = \begin{bmatrix}  0
+
+\\ 0 
+
+\end{bmatrix}\end{align*}</script></span>
+<p>
+From row 1: 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  -0.3x + 0.4y & = 0\\ 0.3x & = 0.4 y\\ 3 x & = 4 y \end{align*}</script></span>
+<p>
+So say \(\mathbf{v}=\begin{bmatrix}  4
+
+\\ 3 
+
+\end{bmatrix}\). 
+</p>
+<p>
+However, this cannot be \(\mathbf{s}_n\). Remember that the state vectors \(\mathbf{s}_i\) either track the proportion of people in each state or the number of people in each state (depending how we set up our model). 
+</p>
+<p>
+Here we used \(\mathbf{s}_0 = \begin{bmatrix}  100
+
+\\ 90 
+
+\end{bmatrix}\) to represent the cereal-buying habits of 190 people. This means our \(\mathbf{s}_n\) must have entries that sum to 190 also. 
+</p>
+<p>
+So what we need for \(\mathbf{s}_n\) is a vector with entries in the ratio \(4:3\) that sums to \(190\), i.e.: 
+</p>
+<span class="dmath">\[ \mathbf{s}_n = 190 \times \begin{bmatrix}  \frac{4}{7}
+
+\\ \frac{3}{7} 
+
+\end{bmatrix} \approx \begin{bmatrix}  108.6
+
+\\ 81.4 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+Note that if you come across a system that has been running for some time, you might expect this (as a modelling assumption) to be already operating in a stable long-term behaviour. 
+</p>
+</section><section class="section">
+<h2 id="a0000000013">5 A warning</h2>
+<p>
+It is important to remember the modelling context in which you are working. Remember that any matrix with columns that sum to 1 has an eigenvalue \(1\), but it is important to consider what aspect of your model this relates to. 
+</p>
+<p>
+For example, consider this scenario: My son makes a new decision about what to do every ten minutes and he is very fickle. If he is playing with his toys, he will want to switch to reading. If he is reading, he will want to switch to playing with his toys. 
+</p>
+<div class="centered"> <div class="tikzcd" id="a0000000014">
+<img alt="Two vertices labelled Toys and Reading and two edges connecting them. An edge from Toys to Reading is labelled 1. An edge from Reading to Toys is labelled 1." src="images/img-0002.svg"/>
+</div> </div>
+<p>
+We represent this using a transition matrix: 
+</p>
+<span class="dmath">\[ \mathbf{P}=\left[\begin{array}{cc} 0 &amp;  1\\ 1 &amp;  0\\ \end{array} \right]\text{.} \]</span>
+<p>
+This says that whatever the state this time, the other option will happen next time. 
+</p>
+<p>
+Say he is currently playing with his toys. So let \(\mathbf{s}_0=\begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix}\). Then 
+</p>
+<span><script type="math/tex; mode=display">\begin{align*}  \mathbf{s}_1= \mathbf{P} \mathbf{s}_0 = & \begin{bmatrix}  0 
+
+&  1
+
+\\ 1 
+
+&  0
+
+\\ \end{bmatrix}\begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix} = \begin{bmatrix}  0
+
+\\ 1 
+
+\end{bmatrix}\\ \mathbf{s}_2= \mathbf{P} \mathbf{s}_1 = & \begin{bmatrix}  0 
+
+&  1
+
+\\ 1 
+
+&  0
+
+\\ \end{bmatrix}\begin{bmatrix}  0
+
+\\ 1 
+
+\end{bmatrix} = \begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix}\\ \mathbf{s}_3= \mathbf{P} \mathbf{s}_2 = & \begin{bmatrix}  0 
+
+&  1
+
+\\ 1 
+
+&  0
+
+\\ \end{bmatrix}\begin{bmatrix}  1
+
+\\ 0 
+
+\end{bmatrix} = \begin{bmatrix}  0
+
+\\ 1 
+
+\end{bmatrix}\\ & \vdots \end{align*}</script></span>
+<p>
+Hopefully it’s clear that this system will simply oscillate between two states forever (or until bedtime), so there is no single stable state that, once reached, will not be moved away from. 
+</p>
+<p>
+We can, however, find an eigenvector which ought to correspond to the long-term behaviour of this system. Considering the eigenvalue \(\lambda =1\) we can find a general eigenvector \(\begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix}\) using 
+</p>
+<span class="dmath">\[ \begin{bmatrix}  -1 
+
+&amp;  1
+
+\\ 1 
+
+&amp;  -1
+
+\\ \end{bmatrix} \begin{bmatrix}  x
+
+\\ y 
+
+\end{bmatrix} = \begin{bmatrix}  -x+y
+
+\\ x-y 
+
+\end{bmatrix} = \begin{bmatrix}  0
+
+\\ 0 
+
+\end{bmatrix}  \]</span>
+<p>
+From this we see \(x=y\) and an eigenvector with entries in the ratio \(1:1\) which sum to \(1\) is: 
+</p>
+<span class="dmath">\[ \mathbf{s}_n = \begin{bmatrix}  \frac{1}{2}
+
+\\ \frac{1}{2} 
+
+\end{bmatrix}\text{.} \]</span>
+<p>
+The model is set up for my son to be in one state or the other, and so this vector cannot be a future state of the system. 
+</p>
+<p>
+This eigenvector does make sense if we think of the state vector \(\mathbf{s}_i\) as telling us the <i class="itshape">probability</i> of my son being in either state at time step \(i\). Then this eigenvector \(\mathbf{s}_n\) is telling us that the long-term behaviour of the system is that we expect him to spend half of his time playing with his toys and half his time reading. What this is not telling us is what he is doing in time step \(n\). 
+</p>
+</section>
+<script id="plastex-labels" type="application/json">{}</script>
+    </article>
+
+        </main>
+
+		
+		<footer>
+	<hr>
+
+    <nav id="footer-nav">
+        <a href="#">Back to top</a>
+    </nav>
+
+    <div id="footer-text">
+        <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
+        <p>This page last generated: 2025-03-10</p>
+        
+        
+        
+    </div>
+</footer>
+		
+
+        
+
+        <svg
+   width="180"
+   height="180"
+   viewBox="0 0 180 180"
+   version="1.1"
+   id="icon-defs"
+   xml:space="preserve"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <g id="cog">
+            <path 
+                style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.91107"
+                d="m 97.752501,14.130132 -9.381402,13.321575 -0.875593,3.780985 0.153413,10.126218 -15.231962,2.683646 -3.320429,-9.569021 -2.115099,-3.246528 -13.372747,-9.313164 -6.817124,3.940185 1.375919,16.23265 1.756892,3.456901 6.623829,7.658625 -9.938582,11.848983 -8.693428,-5.196724 -3.712755,-1.125768 -16.226967,1.461225 -2.695014,7.397083 11.490766,11.553325 3.570636,1.518082 10.001112,1.609049 v 15.465082 l -10.001112,1.609049 -3.570636,1.51808 -11.490766,11.55333 2.695014,7.39707 16.226967,1.46124 3.712755,-1.12577 8.693428,-5.19673 9.938582,11.849 -6.623829,7.6586 -1.756892,3.4569 -1.375919,16.23267 6.817124,3.94017 13.372747,-9.31317 2.115099,-3.24651 3.320429,-9.56902 15.231962,2.68363 -0.153413,10.12623 0.875593,3.78099 9.381402,13.32157 7.749599,-1.37024 4.25858,-15.72665 -0.46624,-3.84919 -3.60472,-9.46099 13.3898,-7.73254 6.39641,7.85192 3.09872,2.33113 15.74934,4.17332 5.06027,-6.02683 -6.84557,-14.78849 -2.83716,-2.64385 -8.84125,-4.93518 5.28767,-14.532632 9.94426,1.910392 3.8777,-0.21038 14.74863,-6.925177 v -7.868995 l -14.74863,-6.925174 -3.8777,-0.210383 -9.94426,1.910392 -5.28767,-14.532629 8.84125,-4.935179 2.83716,-2.643849 6.84557,-14.788484 -5.06027,-6.026831 -15.74934,4.173298 -3.09872,2.331133 -6.39641,7.851938 -13.3898,-7.73254 3.60472,-9.460991 0.46624,-3.849211 -4.25858,-15.726624 z M 88.371099,75.44463 A 14.55537,14.55537 0 0 1 102.92647,90 14.55537,14.55537 0 0 1 88.371099,104.55537 14.55537,14.55537 0 0 1 73.815728,90 14.55537,14.55537 0 0 1 88.371099,75.44463 Z"
+            />
+        </g>
+        <g id="pdf">
+            <path
+                style="fill:var(--bg-colour);fill-opacity:1;fill-rule:nonzero;stroke:currentColor;stroke-width:5.73751;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+                d="m 115.96038,9.1011226 31.41471,31.7977544 m 0,11.232914 V 159.42386 c 0,6.35716 -5.11786,11.47502 -11.47502,11.47502 H 44.099928 c -6.35716,0 -11.475018,-5.11786 -11.475018,-11.47502 V 20.576141 c 0,-6.35716 5.117858,-11.4750184 11.475018,-11.4750184 h 71.860452 l -0.14159,20.0812814 c -0.0449,6.357008 5.11832,11.398586 11.47503,11.475018 l 20.08127,0.241455"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:4.74634;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 56.949794,109.50753 C 70.723931,123.86069 104.41318,45.431956 83.05466,47.805125 61.696136,50.178294 111.53269,116.62705 123.39853,100.01485 135.26439,83.402664 43.175657,95.15437 56.949794,109.50753 Z"
+            />
+        </g>
+        <g id="slides">
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,21.25 30,137.5"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="M 90,21.25 60,158.75"
+            />
+            <rect
+                style="fill:var(--bg-colour);fill-opacity:1;stroke:currentColor;stroke-width:10.4525;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="119.79137"
+                height="82.273766"
+                x="30.104315"
+                y="36.476234"
+                ry="4.7737675"
+                rx="4.7737675"
+            />
+            <rect
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5.90268;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                width="140"
+                height="5.2262344"
+                x="20"
+                y="31.25"
+                ry="1.6724058"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,66.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,76.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,86.25 h 50"
+            />
+            <path
+                style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+                d="m 90,56.25 h 50"
+            />
+            <path
+                style="fill:currentColor;fill-opacity:1;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+                d="M 80.000002,78.84906 A 20.099062,20.099062 0 0 1 67.592518,97.418172 20.099062,20.099062 0 0 1 45.688757,93.061243 20.099062,20.099062 0 0 1 41.331828,71.157482 20.099062,20.099062 0 0 1 59.90094,58.749998 V 78.84906 Z"
+            />
+        </g>
+
+        <g id="notebook">
+            <path
+                style="fill:var(--bg-colour);stroke:currentColor;stroke-width:4.964;stroke-linecap:butt;stroke-linejoin:round;paint-order:stroke fill markers;stroke-dasharray:none"
+                d="M 34.482063,31.89923 V 16.261703 c 0,-5.41792 4.36172,-9.7796397 9.77964,-9.7796397 H 135.7383 c 5.41792,0 9.77964,4.3617197 9.77964,9.7796397 V 163.7383 c 0,5.41792 -4.36172,9.77964 -9.77964,9.77964 H 44.261703 c -5.41792,0 -9.77964,-4.36172 -9.77964,-9.77964 v -23.96224"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="58.699139"
+               cy="59.503937"
+               r="3.8077738"
+            />
+            <circle
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="113.59385"
+               cy="52.885151"
+               r="4.9348516"
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,54.782256 C 74.053011,55.067917 59.927013,65.025096 57.261258,76.89961 69.209289,67.830932 79.817786,64.804678 88.900432,64.855157 97.983077,64.804678 108.59157,67.830932 120.53961,76.89961 117.87385,65.025096 103.74785,55.067917 88.900432,54.782256 Z"
+           
+            />
+            <path
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               d="M 88.900432,121.58085 C 74.053011,121.29519 59.927013,111.33801 57.261258,99.46349 c 11.948031,9.06868 22.556528,12.09494 31.639174,12.04445 9.082643,0.0505 19.691138,-2.97577 31.639178,-12.04445 -2.66576,11.87452 -16.79176,21.8317 -31.639178,22.11736 z"
+              
+            />
+            <ellipse
+               style="fill:currentColor;stroke-width:9.43913;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+               cx="63.813011"
+               cy="125.96338"
+               rx="6.4332962"
+               ry="6.4347191"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="m 28,40 c 2.806997,-4.320074 9.452509,-3.66881 12,0"
+            />
+            <path
+                style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+                d="M 34,46.266514 V 62.316215"
+            
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,71.583335 c 2.806997,-4.320073 9.452509,-3.668809 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="M 34,77.849849 V 93.89955"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,103.16667 c 2.806997,-4.320071 9.452509,-3.668807 12,0"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 34,109.43318 v 16.0497"
+            />
+            <path
+             style="fill:none;fill-opacity:1;stroke:currentColor;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+             d="m 28,134.75 c 2.806997,-4.32007 9.452509,-3.66881 12,0"
+            />
+        </g>
+
+        <g id="fullscreen">
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:10;stroke-dasharray:none;paint-order:stroke markers fill"
+               d="M 19.402776,9.9953678 H 160.51388 c 5.2117,0 9.40741,4.1957032 9.40741,9.4074042 V 160.51388 c 0,5.2117 -4.19571,9.40741 -9.40741,9.40741 H 19.402776 c -5.211704,0 -9.4074082,-4.19571 -9.4074082,-9.40741 V 19.402772 c 0,-5.211701 4.1957042,-9.4074042 9.4074082,-9.4074042 z" />
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="M 150.95833,68.801471 V 28.958332 h -39.84314"
+            />
+            <path
+               style="fill:none;stroke:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+               d="m 28.958332,111.11519 v 39.84314 h 39.843139"
+            />
+        </g>
+    </defs>
+</svg>
+    </body>
+</html>
