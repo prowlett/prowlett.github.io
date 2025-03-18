@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2025-03-14" />
+            <meta name="date" content="2025-03-18" />
         
 
         <title>Counting up to symmetry | Game Theory and Recreational Mathematics</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../../static/styles.css?build_time=1741964839.340413">
+            <link rel="stylesheet" href="../../../static/styles.css?build_time=1742290635.348413">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../../static/pygmentize.css?build_time=1741964839.340413">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../../static/pygmentize.css?build_time=1742290635.348413">
 
-    <link rel="stylesheet" href="../../../static/print.css?build_time=1741964839.340413">
+    <link rel="stylesheet" href="../../../static/print.css?build_time=1742290635.348413">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../../static?build_time=1741964839.340413', location.href);
+				var chirun_static_url = new URL('../../../static?build_time=1742290635.348413', location.href);
 			</script>
 
             
-                <script defer src="../../../static/mathjax_config.js?build_time=1741964839.340413"></script>
+                <script defer src="../../../static/mathjax_config.js?build_time=1742290635.348413"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../../static/localisation.js?build_time=1741964839.340413"></script>
+            <script type="module" src="../../../static/localisation.js?build_time=1742290635.348413"></script>
 
-            <script defer src="../../../static/customisation.js?build_time=1741964839.340413"></script>
+            <script defer src="../../../static/customisation.js?build_time=1742290635.348413"></script>
 
             
 
             
         
-    <script defer src="../../../static/code.js?build_time=1741964839.340413" type="module"></script>
-    <script defer src="../../../static/embed_numbas.js?build_time=1741964839.340413" type="module"></script>
-    <script defer src="../../../static/embed_qrcode.js?build_time=1741964839.340413" type="module"></script>
+    <script defer src="../../../static/code.js?build_time=1742290635.348413" type="module"></script>
+    <script defer src="../../../static/embed_numbas.js?build_time=1742290635.348413" type="module"></script>
+    <script defer src="../../../static/embed_qrcode.js?build_time=1742290635.348413" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../../static/code.css?build_time=1741964839.340413">
+            <link rel="stylesheet" href="../../../static/code.css?build_time=1742290635.348413">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../../static/embed_numbas.css?build_time=1741964839.340413">
+            <link rel="stylesheet" href="../../../static/embed_numbas.css?build_time=1742290635.348413">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -469,7 +469,7 @@
     </li>
 
     <li>
-        <a href="#a0000000023">3 Burnside’s Theorem</a>
+        <a href="#a0000000024">3 Burnside’s Theorem</a>
         
         <ol>
             
@@ -484,7 +484,7 @@
     </li>
 
     <li>
-        <a href="#a0000000025">3.1 Example</a>
+        <a href="#a0000000026">3.1 Example</a>
         
     </li>
 
@@ -494,18 +494,18 @@
     </li>
 
     <li>
-        <a href="#a0000000026">4 Example</a>
+        <a href="#a0000000027">4 Example</a>
         
     </li>
 
     <li>
-        <a href="#a0000000039">5 Pólya enumeration</a>
+        <a href="#a0000000040">5 Pólya enumeration</a>
         
         <ol>
             
             
     <li>
-        <a href="#a0000000058">5.1 Example</a>
+        <a href="#a0000000059">5.1 Example</a>
         
     </li>
 
@@ -970,12 +970,12 @@ Then, for example, we can represent
 <ul class="itemize" id="a0000000017">
 <li id="a0000000018">
 <p>
-\((3)\) as \(x_1\); 
+\((1)\) as \(x_1\); 
 </p>
 </li>
 <li id="a0000000019">
 <p>
-\((1)(2)(3)(4)\) as \(x_1^4\); 
+\((12)\) as \(x_2\); 
 </p>
 </li>
 <li id="a0000000020">
@@ -985,10 +985,15 @@ Then, for example, we can represent
 </li>
 <li id="a0000000021">
 <p>
-\((13)(24)\) as \(x_2\); 
+\((13)(24)\) as \(x_2^2\); 
 </p>
 </li>
 <li id="a0000000022">
+<p>
+\((1)(2)(3)(4)\) as \(x_1^4\); 
+</p>
+</li>
+<li id="a0000000023">
 <p>
 \((1)(2)(34)\) as \(x_1^2x_2\). 
 </p>
@@ -1081,9 +1086,9 @@ For example, \((13)\) means \( 1 \to 3\) and \(3 \to 1\), so \(1\) and \(3\) mus
 So if there are \(m\) colours, each \(x_i\) represents a set of elements that can be coloured \(m\) different ways. 
 </p>
 </section><section class="section">
-<h2 id="a0000000023">3 Burnside’s Theorem</h2>
+<h2 id="a0000000024">3 Burnside’s Theorem</h2>
 <p>
-<div class="thmwrapper theorem*_thmwrapper" id="a0000000024">
+<div class="thmwrapper theorem*_thmwrapper" id="a0000000025">
 <h5 class="thmheading theorem*_thmheading" id="_theorem_">
 <span class="thmcaption theorem*_thmcaption">
     Theorem
@@ -1099,7 +1104,7 @@ Then the number of \(m\)-colourings of configurations acted upon by \(G\) is \(P
 </p>
 </div></div></p>
 <section class="subsection">
-<h3 id="a0000000025">3.1 Example</h3>
+<h3 id="a0000000026">3.1 Example</h3>
 <p>
 For colouring the vertices of a square, we have 
 </p>
@@ -1113,11 +1118,11 @@ We can 2-colour this in
 </p>
 </section>
 </section><section class="section">
-<h2 id="a0000000026">4 Example</h2>
+<h2 id="a0000000027">4 Example</h2>
 <p>
 How many ways are there to colour the vertices of a regular pentagon with up to 5 colours? 
 </p>
-<div class="centered"> <div class="tikzcd" id="a0000000027">
+<div class="centered"> <div class="tikzcd" id="a0000000028">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
     		\foreach \angle/\n in {90/1,378/2,306/3,234/4,162/5}{
     			\node (n\n) at (\angle:1) {};
@@ -1137,7 +1142,7 @@ First we consider the five rotations.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000028">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000029">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/1,378/2,306/3,234/4,162/5}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1180,7 +1185,7 @@ First we consider the five rotations.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000029">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000030">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/5,378/1,306/2,234/3,162/4}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1223,7 +1228,7 @@ First we consider the five rotations.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000030">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000031">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/4,378/5,306/1,234/2,162/3}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1266,7 +1271,7 @@ First we consider the five rotations.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000031">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000032">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/3,378/4,306/5,234/1,162/2}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1309,7 +1314,7 @@ First we consider the five rotations.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000032">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000033">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/2,378/3,306/4,234/5,162/1}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1354,7 +1359,7 @@ First we consider the five rotations.
 <p>
 Next we consider the following five reflections. 
 </p>
-<div class="centered"> <div class="tikzcd" id="a0000000033">
+<div class="centered"> <div class="tikzcd" id="a0000000034">
 <img alt="\begin{tikzpicture} [every path/.style={very thick}]
     		\foreach \angle/\n in {90/1,378/2,306/3,234/4,162/5}{
     			\node[inner sep=0] (n\n) at (\angle:1) {};
@@ -1378,7 +1383,7 @@ Next we consider the following five reflections.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000034">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000035">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/4,378/3,306/2,234/1,162/5}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1421,7 +1426,7 @@ Next we consider the following five reflections.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000035">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000036">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/3,378/2,306/1,234/5,162/4}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1464,7 +1469,7 @@ Next we consider the following five reflections.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000036">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000037">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/2,378/1,306/5,234/4,162/3}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1507,7 +1512,7 @@ Next we consider the following five reflections.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000037">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000038">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/1,378/5,306/4,234/3,162/2}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1550,7 +1555,7 @@ Next we consider the following five reflections.
 </p>
 </td>
 <td colspan="" rowspan="" style="text-align:left"><p>
-<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000038">
+<span class="raisebox" style="vertical-align: -22.5pt"><div class="tikzcd" id="a0000000039">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}] \foreach \angle /\n in {90/5,378/4,306/3,234/2,162/1}{ \node (n\n ) at (\angle :1) {\n }; } 
 
 \foreach \from /\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{ \draw (\from ) – (\to ); } 
@@ -1601,11 +1606,11 @@ Thus we can 5-colour the shape in
  ways. 
 </p>
 </section><section class="section">
-<h2 id="a0000000039">5 Pólya enumeration</h2>
+<h2 id="a0000000040">5 Pólya enumeration</h2>
 <p>
 For colouring the vertices of a square like this 
 </p>
-<div class="centered"> <div class="tikzcd" id="a0000000040">
+<div class="centered"> <div class="tikzcd" id="a0000000041">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node (A) at (0,1) {};
 			\node (B) at (1,1) {};
@@ -1622,15 +1627,15 @@ we obtained the function
 </p>
 <span class="dmath">\[ P(x_1,x_2,x_3,x_4) = \frac{1}{8}\left( x_1^4+2x_4+3x_2^2+2x_1^2x_2 \right)\text{.} \]</span>
 <p>
-Elements in \(x_1\) (e.g. \((1)\))can be coloured either 
+Elements in \(x_1\) (e.g. \((1)\)) can be coloured either 
 </p>
-<ul class="itemize" id="a0000000041">
-<li id="a0000000042">
+<ul class="itemize" id="a0000000042">
+<li id="a0000000043">
 <p>
 blue: \(1+b\); 
 </p>
 </li>
-<li id="a0000000043">
+<li id="a0000000044">
 <p>
 green: \(1+g\). 
 </p>
@@ -1645,13 +1650,13 @@ There is one element in \(x_1\) and we require that it has a colour, therefore i
 <p>
 For \(x_2\) (e.g. \((12)\)), we have 
 </p>
-<ul class="itemize" id="a0000000044">
-<li id="a0000000045">
+<ul class="itemize" id="a0000000045">
+<li id="a0000000046">
 <p>
 blue: \(1+b+b^2\); 
 </p>
 </li>
-<li id="a0000000046">
+<li id="a0000000047">
 <p>
 green: \(1+g+g^2\). 
 </p>
@@ -1674,10 +1679,10 @@ Now consider
 These terms generate the 6 ways of colouring the square. 
 </p>
 <p>
-<span class="sffamily"><div class="minipage" id="a0000000047" style="width: 93.95100000000001pt"><div class="centered"><p>
+<span class="sffamily"><div class="minipage" id="a0000000048" style="width: 93.95100000000001pt"><div class="centered"><p>
 \(b^4\) 
 </p>
-<div class="tikzcd" id="a0000000048">
+<div class="tikzcd" id="a0000000049">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node[fill=cyan] (A) at (0,1) {b};
 			\node[fill=cyan] (B) at (1,1) {b};
@@ -1689,10 +1694,10 @@ These terms generate the 6 ways of colouring the square.
 			}
 		\end{tikzpicture}" src="images/img-0022.svg"/>
 </div>
-</div></div> <div class="minipage" id="a0000000049" style="width: 93.95100000000001pt"><div class="centered"><p>
+</div></div> <div class="minipage" id="a0000000050" style="width: 93.95100000000001pt"><div class="centered"><p>
 \(b^3g\) 
 </p>
-<div class="tikzcd" id="a0000000050">
+<div class="tikzcd" id="a0000000051">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node[fill=cyan] (A) at (0,1) {b};
 			\node[fill=cyan] (B) at (1,1) {b};
@@ -1704,10 +1709,10 @@ These terms generate the 6 ways of colouring the square.
 			}
 		\end{tikzpicture}" src="images/img-0023.svg"/>
 </div>
-</div></div> <div class="minipage" id="a0000000051" style="width: 93.95100000000001pt"><div class="centered"><p>
+</div></div> <div class="minipage" id="a0000000052" style="width: 93.95100000000001pt"><div class="centered"><p>
 \(2b^2g^2\) 
 </p>
-<div class="tikzcd" id="a0000000052">
+<div class="tikzcd" id="a0000000053">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node[fill=cyan] (A) at (0,1) {b};
 			\node[fill=cyan] (B) at (1,1) {b};
@@ -1722,7 +1727,7 @@ These terms generate the 6 ways of colouring the square.
 <p>
 <span class="vspace bigskip"></span>
 </p>
-<div class="tikzcd" id="a0000000053">
+<div class="tikzcd" id="a0000000054">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node[fill=cyan] (A) at (0,1) {b};
 			\node[fill=lime] (B) at (1,1) {g};
@@ -1734,10 +1739,10 @@ These terms generate the 6 ways of colouring the square.
 			}
 		\end{tikzpicture}" src="images/img-0025.svg"/>
 </div>
-</div></div> <div class="minipage" id="a0000000054" style="width: 93.95100000000001pt"><div class="centered"><p>
+</div></div> <div class="minipage" id="a0000000055" style="width: 93.95100000000001pt"><div class="centered"><p>
 \(bg^3\) 
 </p>
-<div class="tikzcd" id="a0000000055">
+<div class="tikzcd" id="a0000000056">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node[fill=cyan] (A) at (0,1) {b};
 			\node[fill=lime] (B) at (1,1) {g};
@@ -1749,10 +1754,10 @@ These terms generate the 6 ways of colouring the square.
 			}
 		\end{tikzpicture}" src="images/img-0026.svg"/>
 </div>
-</div></div> <div class="minipage" id="a0000000056" style="width: 93.95100000000001pt"><div class="centered"><p>
+</div></div> <div class="minipage" id="a0000000057" style="width: 93.95100000000001pt"><div class="centered"><p>
 \(g^4\) 
 </p>
-<div class="tikzcd" id="a0000000057">
+<div class="tikzcd" id="a0000000058">
 <img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
 			\node[fill=lime] (A) at (0,1) {g};
 			\node[fill=lime] (B) at (1,1) {g};
@@ -1767,7 +1772,7 @@ These terms generate the 6 ways of colouring the square.
 </div></div> <span class="rmfamily"></span></span>
 </p>
 <section class="subsection">
-<h3 id="a0000000058">5.1 Example</h3>
+<h3 id="a0000000059">5.1 Example</h3>
 <p>
 For colouring the vertices of the regular pentagon we found 
 </p>
@@ -1776,6 +1781,118 @@ For colouring the vertices of the regular pentagon we found
 Then 
 </p>
 <span><script type="math/tex; mode=display">\begin{align*}  P(b+g,\dots ,b^5+g^5) & = \frac{1}{10} \left( (b+g)^5 + 4(b^5+g^5) + 5(b+g)(b^2+g^2)^2 \right)\\ & =b^5 + b^4g + 2b^3g^2 + 2b^2g^3 + bg^4 + g^5\text{.}\end{align*}</script></span>
+<p>
+These terms generate the 8 ways to 2-colour the regular pentagon. 
+</p>
+<p>
+<span class="sffamily"><div class="minipage" id="a0000000060" style="width: 78.449085pt"><div class="centered"><p>
+\(b^5\) 
+</p>
+<div class="tikzcd" id="a0000000061">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/b/cyan,306/3/b/cyan,234/4/b/cyan,162/5/b/cyan}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0028.svg"/>
+</div>
+</div></div> <div class="minipage" id="a0000000062" style="width: 78.449085pt"><div class="centered"><p>
+\(b^4g\) 
+</p>
+<div class="tikzcd" id="a0000000063">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/b/cyan,306/3/b/cyan,234/4/b/cyan,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0029.svg"/>
+</div>
+</div></div> <div class="minipage" id="a0000000064" style="width: 78.449085pt"><div class="centered"><p>
+\(2b^3g^2\) 
+</p>
+<div class="tikzcd" id="a0000000065">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/b/cyan,306/3/b/cyan,234/4/g/lime,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0030.svg"/>
+</div>
+<div class="tikzcd" id="a0000000066">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/b/cyan,306/3/g/lime,234/4/b/cyan,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0031.svg"/>
+</div>
+</div></div> <div class="minipage" id="a0000000067" style="width: 78.449085pt"><div class="centered"><p>
+\(2b^2g^3\) 
+</p>
+<div class="tikzcd" id="a0000000068">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/b/cyan,306/3/g/lime,234/4/g/lime,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0032.svg"/>
+</div>
+<div class="tikzcd" id="a0000000069">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/g/lime,306/3/b/cyan,234/4/g/lime,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0033.svg"/>
+</div>
+</div></div> <div class="minipage" id="a0000000070" style="width: 78.449085pt"><div class="centered"><p>
+\(bg^4\) 
+</p>
+<div class="tikzcd" id="a0000000071">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/b/cyan,378/2/g/lime,306/3/g/lime,234/4/g/lime,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0034.svg"/>
+</div>
+</div></div> <div class="minipage" id="a0000000072" style="width: 78.449085pt"><div class="centered"><p>
+\(g^5\) 
+</p>
+<div class="tikzcd" id="a0000000073">
+<img alt="\begin{tikzpicture} [every node/.style={draw,circle},every path/.style={very thick}]
+			\foreach \angle/\n/\c/\col in {90/1/g/lime,378/2/g/lime,306/3/g/lime,234/4/g/lime,162/5/g/lime}{
+				\node[fill=\col] (n\n) at (\angle:1) {\c};
+			}
+			
+			\foreach \from/\to in {n1/n2,n2/n3,n3/n4,n4/n5,n5/n1}{
+				\draw (\from) -- (\to);
+			}
+		\end{tikzpicture}" src="images/img-0035.svg"/>
+</div>
+</div></div> <span class="rmfamily"></span></span>
+</p>
 </section>
 </section>
 <script id="plastex-labels" type="application/json">{}</script>
@@ -1793,7 +1910,7 @@ Then
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2025-03-14</p>
+        <p>This page last generated: 2025-03-18</p>
         
         
         
