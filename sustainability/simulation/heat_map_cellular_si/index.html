@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2025-02-20" />
+            <meta name="date" content="2025-03-20" />
         
 
         <title>Heat map cellular simulation | Mathematics for Sustainability (part 2)</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1740058466.400782">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1742497376.27405">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1740058466.400782">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1742497376.27405">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1740058466.400782">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1742497376.27405">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1740058466.400782', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1742497376.27405', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1740058466.400782"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1742497376.27405"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1740058466.400782"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1742497376.27405"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1740058466.400782"></script>
+            <script defer src="../../static/customisation.js?build_time=1742497376.27405"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1740058466.400782" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1740058466.400782" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1740058466.400782" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1742497376.27405" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1742497376.27405" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1742497376.27405" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1740058466.400782">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1742497376.27405">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1740058466.400782">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1742497376.27405">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -422,6 +422,8 @@
             <a rel="prev" href="../probability_cellular/index.html">Previous: Probability cellular automata</a>
             
             
+            <a rel="next" href="../heat_map_cellular_1/index.html">Next: Heat map cellular simulation - bug fix</a>
+            
         </p>
         
     </nav>
@@ -495,22 +497,22 @@ for r in range(50):
 <p>Now, let's position an exit with score <code>0</code> in the middle of the right hand end of the grid.</p>
 <div class="highlight"><pre><span></span>heatmap[25][69] = 0
 </pre></div>
-<p>To fill in our heatmap requires a series of loops. We use <code>count</code> to work out how far away from an exit we currently are. We look through the grid for any cells which are next to a cell with score <code>count</code>, and set those cells to <code>count+1</code>. We keep doing this until there are no <code>-1</code> scores left in the heat map, which we track using a variable called <code>heatmapIncomplete</code>.</p>
-<div class="highlight"><pre><span></span>count = 0
+<p>To fill in our heatmap requires a series of loops. We use <code>heatmap_max</code> to work out how far away from an exit we currently are. We look through the grid for any cells which are next to a cell with score <code>heatmap_max</code>, and set those cells to <code>heatmap_max+1</code>. We keep doing this until there are no <code>-1</code> scores left in the heat map, which we track using a variable called <code>heatmapIncomplete</code>.</p>
+<div class="highlight"><pre><span></span>heatmap_max = 0
 heatmapIncomplete = True
 while heatmapIncomplete:
     for r in range(50):
         for c in range(70):
             if heatmap[r][c] == -1:
-                if r-1&gt;0 and heatmap[r-1][c] == count:
-                    heatmap[r][c] = count+1
-                elif c-1&gt;0 and heatmap[r][c-1] == count:
-                    heatmap[r][c] = count+1
-                elif r+1&lt;50 and heatmap[r+1][c] == count:
-                    heatmap[r][c] = count+1
-                elif c+1&lt;70 and heatmap[r][c+1] == count:
-                    heatmap[r][c] = count+1
-    count += 1
+                if r-1&gt;0 and heatmap[r-1][c] == heatmap_max:
+                    heatmap[r][c] = heatmap_max+1
+                elif c-1&gt;0 and heatmap[r][c-1] == heatmap_max:
+                    heatmap[r][c] = heatmap_max+1
+                elif r+1&lt;50 and heatmap[r+1][c] == heatmap_max:
+                    heatmap[r][c] = heatmap_max+1
+                elif c+1&lt;70 and heatmap[r][c+1] == heatmap_max:
+                    heatmap[r][c] = heatmap_max+1
+    heatmap_max += 1
 
     heatmapIncomplete = False
     for row in heatmap:
@@ -552,34 +554,37 @@ window.mainloop()
 </pre></div>
 <p>This should draw a room with some people and an exit. After drawing the grid and before <code>window.update()</code>, we need to tell our people to move. This is different from the other situations because we don't want to destroy people (like putting out fires) and we don't want to move two people to the same cell. </p>
 <p>To do this, we set up <code>nextgrid</code> and initially fill it with blank spaces. </p>
-<div class="highlight"><pre><span></span>for r in range(len(grid)):
+<div class="highlight"><pre><span></span>nextgrid = []
+for r in range(len(grid)):
     thisrow = []
     for c in range(len(grid[0])):
         thisrow.append(0)
     nextgrid.append(thisrow)
 </pre></div>
-<p>Now we loop across the grid and, for each person not by an exit, we search for the neighbouring cell with the lowest score on the heatmap. If this cell is empty, we put our person there. If not, we leave them where they were in the current iteration. (Note that this automatically removes anyone adjacent to an exit.)</p>
-<div class="highlight"><pre><span></span>for r in range(len(grid)):
-    for c in range(len(grid[0])):
-        if grid[r][c] == 1 and heatmap[r][c] &gt; 1: # person not by exit
-            min_r = r
-            min_c = c
-            if r-1&gt;0 and heatmap[r-1][c] &lt; heatmap[r][c]:
-                min_r = r-1
-                min_c = c
-            if c-1&gt;0 and heatmap[r][c-1] &lt; heatmap[r][c]:
-                min_r = r
-                min_c = c-1
-            if r+1&lt;50 and heatmap[r+1][c] &lt; heatmap[r][c]:
-                min_r = r+1
-                min_c = c
-            if c+1&lt;70 and heatmap[r][c+1] &lt; heatmap[r][c]:
-                min_r = r
-                min_c = c+1
-            if nextgrid[min_r][min_c] == 0:
-                nextgrid[min_r][min_c] = 1
-            else:
-                nextgrid[r][c] = 1
+<p>Now we loop across the grid multiple times. First we look for any people at the exits, then we move away from the exits in turn considering people in order of distance from the exits until we reach <code>heatmap_max</code>, the highest score given to cells people can move in. For each person not by an exit, we search for the neighbouring cell with the lowest score on the <code>heatmap</code>. If this cell is empty, we put our person there. If not, we leave them where they were in the current iteration. (Note that this automatically removes anyone adjacent to an exit.) </p>
+<div class="highlight"><pre><span></span>for h in range(0,heatmap_max):
+    for r in range(len(grid)):
+        for c in range(len(grid[0])):
+            if heatmap[r][c] == h:
+                if grid[r][c] == 1 and heatmap[r][c] &gt; 1: # person not by exit
+                    min_r = r
+                    min_c = c
+                    if r-1&gt;0 and heatmap[r-1][c] &lt; heatmap[r][c]:
+                        min_r = r-1
+                        min_c = c
+                    if c-1&gt;0 and heatmap[r][c-1] &lt; heatmap[r][c]:
+                        min_r = r
+                        min_c = c-1
+                    if r+1&lt;50 and heatmap[r+1][c] &lt; heatmap[r][c]:
+                        min_r = r+1
+                        min_c = c
+                    if c+1&lt;70 and heatmap[r][c+1] &lt; heatmap[r][c]:
+                        min_r = r
+                        min_c = c+1
+                    if nextgrid[min_r][min_c] == 0:
+                        nextgrid[min_r][min_c] = 1
+                    else:
+                        nextgrid[r][c] = 1
 </pre></div>
 <p>Now that we have finished building <code>nextgrid</code>, we copy this onto <code>grid</code> as in the previous simulations.</p>
 <div class="highlight"><pre><span></span>for r in range(len(grid)):
@@ -618,7 +623,7 @@ window.mainloop()
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2025-02-20</p>
+        <p>This page last generated: 2025-03-20</p>
         
         
         
