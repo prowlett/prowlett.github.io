@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="562.256287pt" height="649.23761pt" viewBox="0 0 562.256287 649.23761" version="1.1">
+<defs>
+<clipPath id="clip1">
+  <path d="M 0 256 L 562.257812 256 L 562.257812 393 L 0 393 Z M 0 256 "/>
+</clipPath>
+<clipPath id="clip2">
+  <path d="M 0 264 L 562.257812 264 L 562.257812 385 L 0 385 Z M 0 264 "/>
+</clipPath>
+</defs>
+<g id="surface1">
+<path style=" stroke:none;fill-rule:evenodd;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 4 484.617188 L 281.128906 644.617188 L 558.257812 484.617188 L 558.257812 164.617188 L 281.128906 4.617188 L 4 164.617188 Z M 4 484.617188 "/>
+<path style="fill:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4 484.617188 L 281.128906 644.617188 L 558.257812 484.617188 L 558.257812 164.617188 L 281.128906 4.617188 L 4 164.617188 Z M 4 484.617188 "/>
+<g clip-path="url(#clip1)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:136;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4 324.617188 L 558.257812 324.617188 "/>
+</g>
+<g clip-path="url(#clip2)" clip-rule="nonzero">
+<path style="fill:none;stroke-width:120;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(100%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4 324.617188 L 558.257812 324.617188 "/>
+</g>
+<path style="fill:none;stroke-width:136;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 142.5625 564.617188 L 419.691406 84.617188 "/>
+<path style="fill:none;stroke-width:120;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,100%);stroke-opacity:1;stroke-miterlimit:4;" d="M 142.5625 564.617188 L 419.691406 84.617188 "/>
+<path style="fill:none;stroke-width:136;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 142.5625 84.617188 L 419.691406 564.617188 "/>
+<path style="fill:none;stroke-width:120;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,66.665649%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 142.5625 84.617188 L 419.691406 564.617188 "/>
+<path style="fill:none;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(0%,0%,0%);stroke-opacity:1;stroke-miterlimit:4;" d="M 4 484.617188 L 281.128906 644.617188 L 558.257812 484.617188 L 558.257812 164.617188 L 281.128906 4.617188 L 4 164.617188 Z M 4 484.617188 "/>
+</g>
+</svg>
