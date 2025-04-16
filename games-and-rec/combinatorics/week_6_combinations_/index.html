@@ -7,7 +7,7 @@
             <meta name="robots" content="noindex">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
             <meta name="author" content="Peter Rowlett" />
-            <meta name="date" content="2025-03-13" />
+            <meta name="date" content="2025-04-16" />
         
 
         <title>Week 6: Combinations and permutations | Game Theory and Recreational Mathematics</title>
@@ -15,41 +15,41 @@
         
     
     
-            <link rel="stylesheet" href="../../static/styles.css?build_time=1741880919.331145">
+            <link rel="stylesheet" href="../../static/styles.css?build_time=1744818678.472515">
             
             
         
-    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1741880919.331145">
+    <link rel="stylesheet" id="customiseCodeCSS" href="../../static/pygmentize.css?build_time=1744818678.472515">
 
-    <link rel="stylesheet" href="../../static/print.css?build_time=1741880919.331145">
+    <link rel="stylesheet" href="../../static/print.css?build_time=1744818678.472515">
 
 
         
     
 			<script>
-				var chirun_static_url = new URL('../../static?build_time=1741880919.331145', location.href);
+				var chirun_static_url = new URL('../../static?build_time=1744818678.472515', location.href);
 			</script>
 
             
-                <script defer src="../../static/mathjax_config.js?build_time=1741880919.331145"></script>
+                <script defer src="../../static/mathjax_config.js?build_time=1744818678.472515"></script>
                 <script type="text/javascript" id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
             
 
-            <script type="module" src="../../static/localisation.js?build_time=1741880919.331145"></script>
+            <script type="module" src="../../static/localisation.js?build_time=1744818678.472515"></script>
 
-            <script defer src="../../static/customisation.js?build_time=1741880919.331145"></script>
+            <script defer src="../../static/customisation.js?build_time=1744818678.472515"></script>
 
             
 
             
         
-    <script defer src="../../static/code.js?build_time=1741880919.331145" type="module"></script>
-    <script defer src="../../static/embed_numbas.js?build_time=1741880919.331145" type="module"></script>
-    <script defer src="../../static/embed_qrcode.js?build_time=1741880919.331145" type="module"></script>
+    <script defer src="../../static/code.js?build_time=1744818678.472515" type="module"></script>
+    <script defer src="../../static/embed_numbas.js?build_time=1744818678.472515" type="module"></script>
+    <script defer src="../../static/embed_qrcode.js?build_time=1744818678.472515" type="module"></script>
 
 
         <template id="runnable-code-template">
-            <link rel="stylesheet" href="../../static/code.css?build_time=1741880919.331145">
+            <link rel="stylesheet" href="../../static/code.css?build_time=1744818678.472515">
             <div class="runnable-code-wrapper">
                 <section class="fullscreenable code">
                     <div id="code"></div>
@@ -230,7 +230,7 @@
         </template>
 
         <template id="embed-numbas-template">
-            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1741880919.331145">
+            <link rel="stylesheet" href="../../static/embed_numbas.css?build_time=1744818678.472515">
             <details id="wrapper" data-completion-status="incomplete">
                 <summary>
                     <h1 id="title">Test Yourself</h1>
@@ -981,7 +981,7 @@ In the two-line notation, we can write out the first permutation to be performed
 </p>
 <span class="dmath">\[  \sigma \tau = (1 \,  2 \,  4)(1 \,  2)(3 \,  4) = (1 \,  4 \,  3)(2) = (1 \,  4 \,  3)  \]</span>
 <p>
- In this example, we can think about what happens to each of the numbers from \(1\) to \(4\). For \(1\), the right-most cycle \((3 \,  4)\) doesn’t move it, the next cycle \((1 \,  2)\) swaps it with \(2\), and then the left-most cycle \((1 \,  2 \,  4)\) sends that \(2\) to \(4\). So \(1\) ultimately ends up at \(4\). Similarly, \(2\) is swapped with \(1\) by \((1 \,  2)\) before being sent back to \(2\) by the cycle \((1 \,  2 \,  4)\). The number \(3\) is sent to \(4\) by \((3 \,  4)\), is not affected by \((1 \,  2)\), but is then sent to \(1\) by the cycle \((1 \,  2 \,  4)\). Finally, \(4\) is sent to \(3\), then left alone, then sent to \(1\) by the left-most cycle. 
+ In this example, we can think about what happens to each of the numbers from \(1\) to \(4\). For \(1\), the right-most cycle \((3 \,  4)\) doesn’t move it, the next cycle \((1 \,  2)\) swaps it with \(2\), and then the left-most cycle \((1 \,  2 \,  4)\) sends that \(2\) to \(4\). So \(1\) ultimately ends up at \(4\). Similarly, \(2\) is swapped with \(1\) by \((1 \,  2)\) before being sent back to \(2\) by the cycle \((1 \,  2 \,  4)\). The number \(3\) is sent to \(4\) by \((3 \,  4)\), is not affected by \((1 \,  2)\), but is then sent to \(1\) by the cycle \((1 \,  2 \,  4)\). Finally, \(4\) is sent to \(3\), then left alone by the remaining cycles. 
 </p>
 <p>
 Using diagrams, we can think of this as stacking the diagram for \(\tau \) on top of the diagram for \(\sigma \). 
@@ -1542,7 +1542,7 @@ In general, we can arrange \(n\) stars amongst \(k\) bars by choosing \(k\) symb
 
     <div id="footer-text">
         <p>Generated using <a target="_blank" href="https://chirun.org.uk">Chirun</a> v1.2.1, written by the Digital Learning Unit, School of Mathematics &amp; Statistics, Newcastle University</p>
-        <p>This page last generated: 2025-03-13</p>
+        <p>This page last generated: 2025-04-16</p>
         
         
         
